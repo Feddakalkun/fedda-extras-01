@@ -1,0 +1,430 @@
+{
+  "3": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 213,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "206",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "4": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "blendermix_v20.safetensors"
+    },
+    "_meta": {
+      "title": "CheckpointLoaderSimple"
+    }
+  },
+  "6": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "16",
+        0
+      ],
+      "clip": [
+        "262",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "POSITIVE"
+    }
+  },
+  "7": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "12",
+        0
+      ],
+      "clip": [
+        "262",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "NEGATIVE"
+    }
+  },
+  "8": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "3",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "11": {
+    "class_type": "Text Multiline",
+    "inputs": {
+      "text": "score_9, score_8_up, score_7_up, score_9, score_8_up, score_7_up, yuffie looking at the viewer"
+    },
+    "_meta": {
+      "title": "BASIC PROMPT"
+    }
+  },
+  "12": {
+    "class_type": "Text Multiline",
+    "inputs": {
+      "text": "score_6, score_5, score_4, tan line, muscular, censored, furry, child, kid, teen, chibi, watermark, text, verybadimagenegative_v1.3, boring composition, boring perspective, simple background, source_pony, bad_hands, bad_feet, deformed, malformed, missing_limbs, extra_limbs, missing_digits, missing_fingers, bad_fingers, simple background, white background, realistic, 2d, birthmarks, spots, moles, 2girls, multiple girls"
+    },
+    "_meta": {
+      "title": "NEGATIVE"
+    }
+  },
+  "16": {
+    "class_type": "ShowText|pysssss",
+    "inputs": {
+      "text": [
+        "127",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "GENERATED PROMPT"
+    }
+  },
+  "20": {
+    "class_type": "Text Multiline",
+    "inputs": {
+      "text": "nude breast, shy nervous, flower in hair, necklace, medium breasts, cleavage, camel toe, seductive smile, half closed eyes, outdoors, sunset, wet skin, ocean, tropical island, "
+    },
+    "_meta": {
+      "title": "DETAILS"
+    }
+  },
+  "55": {
+    "class_type": "UltralyticsDetectorProvider",
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "56": {
+    "class_type": "SAMLoader",
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "_meta": {
+      "title": "SAMLoader"
+    }
+  },
+  "57": {
+    "class_type": "FaceDetailer",
+    "inputs": {
+      "guide_size": 1152,
+      "guide_size_for": true,
+      "max_size": 1152,
+      "seed": 24,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 0.4,
+      "feather": 4,
+      "noise_mask": "enabled",
+      "force_inpaint": false,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 8,
+      "bbox_crop_factor": 1.5,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 2,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "61",
+        0
+      ],
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "4",
+        1
+      ],
+      "vae": [
+        "4",
+        2
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "bbox_detector": [
+        "55",
+        0
+      ],
+      "sam_model_opt": [
+        "56",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "FaceDetailer (Output)"
+    }
+  },
+  "58": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "IMAGE/EXTRAS-01/0",
+      "images": [
+        "57",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "FACEFIXED"
+    }
+  },
+  "59": {
+    "class_type": "LatentUpscaleBy",
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 1.2500000000000002,
+      "samples": [
+        "3",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LatentUpscaleBy"
+    }
+  },
+  "60": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 213,
+      "steps": 20,
+      "cfg": 7,
+      "sampler_name": "dpmpp_sde",
+      "scheduler": "karras",
+      "denoise": 0.65,
+      "model": [
+        "4",
+        0
+      ],
+      "positive": [
+        "6",
+        0
+      ],
+      "negative": [
+        "7",
+        0
+      ],
+      "latent_image": [
+        "59",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "61": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "60",
+        0
+      ],
+      "vae": [
+        "4",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "62": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "IMAGE/EXTRAS-01/0",
+      "images": [
+        "61",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "WITHOUT FACEFIX"
+    }
+  },
+  "64": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "IMAGE/EXTRAS-01/0",
+      "images": [
+        "8",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "FIRST RENDER"
+    }
+  },
+  "127": {
+    "class_type": "Text Concatenate",
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "11",
+        0
+      ],
+      "text_b": [
+        "250",
+        0
+      ],
+      "text_c": [
+        "252",
+        0
+      ],
+      "text_d": [
+        "20",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "206": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "264",
+        0
+      ],
+      "height": [
+        "264",
+        1
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "EmptyLatentImage"
+    }
+  },
+  "250": {
+    "class_type": "easy promptLine",
+    "inputs": {
+      "prompt": "moana1\npocahontas\nElsa princess",
+      "start_index": 0,
+      "max_rows": 1,
+      "remove_empty_lines": ""
+    },
+    "_meta": {
+      "title": "FEMALE NAME - batch"
+    }
+  },
+  "251": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "250",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "output prompt"
+    }
+  },
+  "252": {
+    "class_type": "easy promptLine",
+    "inputs": {
+      "prompt": "A woman on all fours, arching her back, looking over her shoulder with a sultry gaze, her hair cascading down her back\nA woman lying on her side, one leg bent, revealing her curves, with a playful smile, her hands gently caressing her body\nA woman sitting on a chair, legs spread wide, leaning back with a confident and teasing expression, her hands resting on her thighs\nA woman standing with her back to the viewer, bending over slightly, revealing her assets, with a coy glance over her shoulder\nA woman lying on her stomach, propped up on her elbows, her legs slightly apart, looking back with a seductive smile\nA woman in a provocative pose, one leg lifted and bent, her hands running through her hair, with a look of pure desire\nA woman sitting on the edge of a bed, legs spread, leaning back on her hands, her body inviting and alluring\nA woman standing against a wall, one leg bent and pressed against it, her hands on her hips, with a dominant and teasing demeanor\nA woman lying on her back, one leg lifted, her hands gently caressing her body, with a look of anticipation and pleasure\nA woman sitting on a table, legs crossed, leaning back with her hands behind her, her body language inviting and provocative",
+      "start_index": 0,
+      "max_rows": 9,
+      "remove_empty_lines": ""
+    },
+    "_meta": {
+      "title": "POSE - batch"
+    }
+  },
+  "253": {
+    "class_type": "easy showAnything",
+    "inputs": {
+      "anything": [
+        "252",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "output promp"
+    }
+  },
+  "262": {
+    "class_type": "CLIPSetLastLayer",
+    "inputs": {
+      "stop_at_clip_layer": -2,
+      "clip": [
+        "4",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "CLIPSetLastLayer"
+    }
+  },
+  "264": {
+    "class_type": "AspectRatioImageSize",
+    "inputs": {
+      "width": 768,
+      "height": 0,
+      "aspect_ratio": "3:2",
+      "direction": "Vertical"
+    },
+    "_meta": {
+      "title": "AspectRatioImageSize"
+    }
+  }
+}

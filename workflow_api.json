@@ -1,1 +1,113 @@
-{}
+{
+  "extras-01-sdxl-batch": {
+    "name": "SDXL Batch",
+    "description": "SDXL with an upscale pass and a face pass. The prompt is built from four parts.",
+    "module": "extras-01",
+    "filename": "sdxl/batch.json",
+    "inputs": {
+      "prompt": {
+        "node_id": "252",
+        "input_key": "prompt",
+        "label": "Scene",
+        "control": "text",
+        "multiline": true
+      },
+      "subject": {
+        "node_id": "250",
+        "input_key": "prompt",
+        "label": "Subject",
+        "control": "text",
+        "multiline": true
+      },
+      "quality_tags": {
+        "node_id": "11",
+        "input_key": "text",
+        "label": "Quality tags",
+        "control": "text",
+        "multiline": true
+      },
+      "detail_tags": {
+        "node_id": "20",
+        "input_key": "text",
+        "label": "Detail tags",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "12",
+        "input_key": "text",
+        "label": "Negative",
+        "control": "text",
+        "multiline": true
+      },
+      "checkpoint": {
+        "node_id": "4",
+        "input_key": "ckpt_name",
+        "label": "Checkpoint",
+        "control": "select"
+      },
+      "width": {
+        "node_id": "264",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "264",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio"
+      },
+      "seed": {
+        "node_ids": [
+          "3",
+          "60",
+          "57"
+        ],
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "3",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "3",
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "sampler": {
+        "node_id": "3",
+        "input_key": "sampler_name",
+        "label": "Sampler"
+      },
+      "upscale_by": {
+        "node_id": "59",
+        "input_key": "scale_by",
+        "label": "Upscale by"
+      },
+      "batch_size": {
+        "node_id": "206",
+        "input_key": "batch_size",
+        "label": "Batch size"
+      }
+    },
+    "presets": [
+      {
+        "label": "Fast",
+        "note": "For trying a prompt out.",
+        "values": {
+          "steps": 14,
+          "upscale_by": 1.0
+        }
+      },
+      {
+        "label": "Full",
+        "note": "Upscale and face pass, as built.",
+        "values": {
+          "steps": 20,
+          "upscale_by": 1.25
+        }
+      }
+    ]
+  }
+}

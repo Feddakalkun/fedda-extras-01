@@ -7,12 +7,15 @@
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "image"
+        "image",
+        "extras-01-sdxl-batch"
       ],
-      "workflows": [],
+      "workflows": [
+        "sdxl/batch.json"
+      ],
       "custom_nodes": [],
       "models": [],
-      "notes": "Add tabs here as workflows are converted. Each tab id must also be a key in workflow_api.json."
+      "notes": "Extra workflows, installed from a folder rather than shipped with the app."
     }
   ]
 }
