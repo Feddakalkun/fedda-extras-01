@@ -1,13 +1,20 @@
 {
+  "areas": [
+    {
+      "id": "nsfw",
+      "label": "NSFW",
+      "description": "Workflows installed from a folder, not shipped with the app."
+    }
+  ],
   "modules": [
     {
       "id": "extras-01",
       "label": "Extra Workflows",
-      "area": "image",
+      "area": "nsfw",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "image",
+        "nsfw",
         "extras-01-sdxl-batch"
       ],
       "workflows": [
