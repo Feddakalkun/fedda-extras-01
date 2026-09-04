@@ -1,12 +1,14 @@
 {
   "modules": [
     {
-      "id": "xxx-pack",
+      "id": "extras-01",
       "label": "Extra Workflows",
       "area": "image",
       "pack": "booster",
       "enabled": true,
-      "tabs": ["image"],
+      "tabs": [
+        "image"
+      ],
       "workflows": [],
       "custom_nodes": [],
       "models": [],
