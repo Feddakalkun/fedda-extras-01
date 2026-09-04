@@ -2,7 +2,7 @@
   "extras-01-sdxl-batch": {
     "name": "SDXL Batch",
     "description": "SDXL with an upscale pass and a face pass. The prompt is built from four parts.",
-    "module": "extras-01",
+    "module": "extras-01-sdxl-batch",
     "filename": "sdxl/batch.json",
     "inputs": {
       "prompt": {
@@ -113,7 +113,7 @@
   "extras-01-klein-nsfw": {
     "name": "Klein NSFW",
     "description": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels.",
-    "module": "extras-01",
+    "module": "extras-01-klein-nsfw",
     "filename": "klein/nsfw.json",
     "inputs": {
       "prompt": {
@@ -214,7 +214,7 @@
   "extras-01-realism-converter": {
     "name": "Realism Converter",
     "description": "Turns an existing picture photographic in two passes: Flux.2 Klein rebuilds it, then Z-Image Turbo refines at low denoise. Grain and contrast are applied last.",
-    "module": "extras-01",
+    "module": "extras-01-realism-converter",
     "filename": "realism/converter.json",
     "inputs": {
       "image": {

@@ -8,20 +8,65 @@
   ],
   "modules": [
     {
-      "id": "extras-01",
-      "label": "Extra Workflows",
+      "id": "extras-01-sdxl-batch",
+      "label": "SDXL Batch",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
       "tabs": [
         "nsfw",
-        "extras-01-sdxl-batch",
-        "extras-01-klein-nsfw",
+        "extras-01-sdxl-batch"
+      ],
+      "workflows": [
+        "sdxl/batch.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "blendermix_v20.safetensors"
+      ],
+      "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts."
+    },
+    {
+      "id": "extras-01-klein-nsfw",
+      "label": "Klein NSFW",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-klein-nsfw"
+      ],
+      "workflows": [
+        "klein/nsfw.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "nsfwKlein.safetensors",
+        "qwen_3_8b_fp8mixed.safetensors",
+        "flux2-vae.safetensors"
+      ],
+      "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels."
+    },
+    {
+      "id": "extras-01-realism-converter",
+      "label": "Realism Converter",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
         "extras-01-realism-converter"
       ],
       "workflows": [
-        "sdxl/batch.json",
-        "klein/nsfw.json",
         "realism/converter.json"
       ],
       "custom_nodes": [
@@ -34,8 +79,6 @@
         }
       ],
       "models": [
-        "blendermix_v20.safetensors",
-        "nsfwKlein.safetensors",
         "flux-2-klein-9b-fp8.safetensors",
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors",
@@ -43,7 +86,7 @@
         "qwen_3_4b.safetensors",
         "z-image-vae.safetensors"
       ],
-      "notes": "Extra workflows, installed from a folder rather than shipped with the app."
+      "notes": "Turns an existing picture photographic in two passes: Flux.2 Klein rebuilds it, then Z-Image Turbo refines at low denoise."
     }
   ]
 }
