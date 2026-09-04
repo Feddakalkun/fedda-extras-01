@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "id": "xxx-pack",
+      "label": "Extra Workflows",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": ["image"],
+      "workflows": [],
+      "custom_nodes": [],
+      "models": [],
+      "notes": "Add tabs here as workflows are converted. Each tab id must also be a key in workflow_api.json."
+    }
+  ]
+}

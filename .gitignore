@@ -1,0 +1,11 @@
+# Nothing generated belongs here. A pack is declarations and graphs.
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.webm
+*.safetensors
+*.gguf
+*.ckpt
+*.pt
+*.pth
