@@ -1,0 +1,252 @@
+{
+  "1205": {
+    "class_type": "RandomNoise",
+    "inputs": {
+      "noise_seed": 1074742713512551
+    },
+    "_meta": {
+      "title": "RandomNoise"
+    }
+  },
+  "1206": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "IMAGE/FLUX-2-klein/0",
+      "images": [
+        "1220",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SaveImage"
+    }
+  },
+  "1207": {
+    "class_type": "Text Concatenate",
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "1212",
+        0
+      ],
+      "text_b": [
+        "1211",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "1208": {
+    "class_type": "easy int",
+    "inputs": {
+      "value": 10
+    },
+    "_meta": {
+      "title": "STEPS"
+    }
+  },
+  "1210": {
+    "class_type": "AspectRatioImageSize",
+    "inputs": {
+      "width": 1504,
+      "height": 1504,
+      "aspect_ratio": "16:9",
+      "direction": "Horizontal"
+    },
+    "_meta": {
+      "title": "AspectRatioImageSize"
+    }
+  },
+  "1211": {
+    "class_type": "Load Styles CSV",
+    "inputs": {
+      "styles": "No Style",
+      "csv_file_path": "styles.csv"
+    },
+    "_meta": {
+      "title": "Load Styles CSV"
+    }
+  },
+  "1212": {
+    "class_type": "PrimitiveStringMultiline",
+    "inputs": {
+      "value": "a cowgirls on a horse on the beach at sunset riding sexy nude"
+    },
+    "_meta": {
+      "title": "Prompt"
+    }
+  },
+  "1213": {
+    "class_type": "SamplerCustomAdvanced",
+    "inputs": {
+      "noise": [
+        "1205",
+        0
+      ],
+      "guider": [
+        "1223",
+        0
+      ],
+      "sampler": [
+        "1222",
+        0
+      ],
+      "sigmas": [
+        "1221",
+        0
+      ],
+      "latent_image": [
+        "1214",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SamplerCustomAdvanced"
+    }
+  },
+  "1214": {
+    "class_type": "EmptyFlux2LatentImage",
+    "inputs": {
+      "width": [
+        "1210",
+        0
+      ],
+      "height": [
+        "1210",
+        1
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "EmptyFlux2LatentImage"
+    }
+  },
+  "1215": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "",
+      "clip": [
+        "1217",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "1216": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "nsfwKlein.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "1217": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen_3_8b_fp8mixed.safetensors",
+      "type": "flux2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIPLoader"
+    }
+  },
+  "1218": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "flux2-vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAELoader"
+    }
+  },
+  "1219": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "1207",
+        0
+      ],
+      "clip": [
+        "1217",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "1220": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "1213",
+        0
+      ],
+      "vae": [
+        "1218",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "1221": {
+    "class_type": "Flux2Scheduler",
+    "inputs": {
+      "steps": [
+        "1208",
+        0
+      ],
+      "width": [
+        "1210",
+        0
+      ],
+      "height": [
+        "1210",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Flux2Scheduler"
+    }
+  },
+  "1222": {
+    "class_type": "KSamplerSelect",
+    "inputs": {
+      "sampler_name": "euler"
+    },
+    "_meta": {
+      "title": "KSamplerSelect"
+    }
+  },
+  "1223": {
+    "class_type": "CFGGuider",
+    "inputs": {
+      "cfg": 1,
+      "model": [
+        "1216",
+        0
+      ],
+      "positive": [
+        "1219",
+        0
+      ],
+      "negative": [
+        "1215",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CFGGuider"
+    }
+  }
+}

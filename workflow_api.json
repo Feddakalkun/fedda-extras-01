@@ -109,5 +109,208 @@
         }
       }
     ]
+  },
+  "extras-01-klein-nsfw": {
+    "name": "Klein NSFW",
+    "description": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels.",
+    "module": "extras-01",
+    "filename": "klein/nsfw.json",
+    "inputs": {
+      "prompt": {
+        "node_id": "1212",
+        "input_key": "value",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "1215",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "style": {
+        "node_id": "1211",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "aspect_ratio": {
+        "node_id": "1210",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "1210",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "width": {
+        "node_id": "1210",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "height": {
+        "node_id": "1210",
+        "input_key": "height",
+        "label": "Height"
+      },
+      "steps": {
+        "node_id": "1208",
+        "input_key": "value",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "1205",
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "cfg": {
+        "node_id": "1223",
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "batch_size": {
+        "node_id": "1214",
+        "input_key": "batch_size",
+        "label": "Batch size"
+      },
+      "sampler": {
+        "node_id": "1222",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "model_build": {
+        "node_id": "1216",
+        "input_key": "unet_name",
+        "label": "Model build",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "1217",
+        "input_key": "clip_name",
+        "label": "Text encoder build",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "1217",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "A woman standing at the rail of a ferry in late afternoon light, wind in her hair, the coastline out of focus behind her.",
+      "aspect_ratio": "16:9",
+      "direction": "Horizontal",
+      "steps": 10,
+      "cfg": 1
+    }
+  },
+  "extras-01-realism-converter": {
+    "name": "Realism Converter",
+    "description": "Turns an existing picture photographic in two passes: Flux.2 Klein rebuilds it, then Z-Image Turbo refines at low denoise. Grain and contrast are applied last.",
+    "module": "extras-01",
+    "filename": "realism/converter.json",
+    "inputs": {
+      "image": {
+        "node_id": "1010",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "1062",
+        "input_key": "value",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "1020",
+        "input_key": "string",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "style": {
+        "node_ids": [
+          "1018",
+          "1053"
+        ],
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "working_size": {
+        "node_id": "1048",
+        "input_key": "width",
+        "label": "Working width"
+      },
+      "working_height": {
+        "node_id": "1048",
+        "input_key": "height",
+        "label": "Working height"
+      },
+      "steps": {
+        "node_id": "1043",
+        "input_key": "value",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "1063",
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "cfg": {
+        "node_id": "1027",
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "refine_seed": {
+        "node_id": "1055",
+        "input_key": "seed",
+        "label": "Refine seed"
+      },
+      "refine_denoise": {
+        "node_id": "1055",
+        "input_key": "denoise",
+        "label": "Refine denoise"
+      },
+      "grain": {
+        "node_id": "1064",
+        "input_key": "strength",
+        "label": "Film grain"
+      },
+      "contrast": {
+        "node_id": "1065",
+        "input_key": "factor",
+        "label": "Contrast"
+      },
+      "model_build": {
+        "node_id": "1036",
+        "input_key": "unet_name",
+        "label": "Model build",
+        "control": "select"
+      },
+      "refine_build": {
+        "node_id": "1047",
+        "input_key": "unet_name",
+        "label": "Refine model",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "photographic, natural skin texture, available light",
+      "steps": 5,
+      "refine_denoise": 0.2,
+      "grain": 0.02,
+      "contrast": 1.12
+    }
   }
 }
