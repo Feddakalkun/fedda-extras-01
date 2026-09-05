@@ -461,7 +461,7 @@
   },
   "extras-01-wan22-txt2vid": {
     "name": "Wan 2.2 Text to Video",
-    "description": "A clip from a prompt on Wan 2.2 14B. Two passes - high noise then low - at four steps each, through an uncensored text encoder.",
+    "description": "A clip from a prompt on Wan 2.2 14B. Two passes - high noise then low - at four steps each, through an uncensored text encoder. Frames are doubled after sampling, so the clip is smooth at the same speed - set Smoothing to 1 to turn that off, and halve Frames per second if you do.",
     "module": "extras-01-wan22-txt2vid",
     "filename": "wan22/txt2vid.json",
     "inputs": {
@@ -478,6 +478,14 @@
         "label": "Negative Prompt",
         "control": "text",
         "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "471",
+          "261"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs"
       },
       "style": {
         "node_id": "477",
@@ -544,6 +552,11 @@
         "input_key": "frame_rate",
         "label": "Frames per second"
       },
+      "smoothing": {
+        "node_id": "478",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
       "model_high": {
         "node_id": "257",
         "input_key": "unet_name",
@@ -576,7 +589,7 @@
   },
   "extras-01-wan22-img2vid": {
     "name": "Wan 2.2 Image to Video",
-    "description": "Animates a picture you supply. Two passes on Wan 2.2 14B at four steps each, through an uncensored text encoder.",
+    "description": "Animates a picture you supply. Two passes on Wan 2.2 14B at four steps each, through an uncensored text encoder. Frames are doubled after sampling, so the clip is smooth at the same speed - set Smoothing to 1 to turn that off, and halve Frames per second if you do.",
     "module": "extras-01-wan22-img2vid",
     "filename": "wan22/img2vid.json",
     "inputs": {
@@ -600,6 +613,14 @@
         "label": "Negative Prompt",
         "control": "text",
         "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -660,6 +681,11 @@
         "input_key": "frame_rate",
         "label": "Frames per second"
       },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
       "model_high": {
         "node_id": "270",
         "input_key": "unet_name",
@@ -692,7 +718,7 @@
   },
   "extras-01-wan22-flf2vid": {
     "name": "Wan 2.2 First to Last Frame",
-    "description": "A clip that starts on one picture and ends on another. Wan 2.2 14B fills what happens in between.",
+    "description": "A clip that starts on one picture and ends on another. Wan 2.2 14B fills what happens in between. Frames are doubled after sampling, so the clip is smooth at the same speed - set Smoothing to 1 to turn that off, and halve Frames per second if you do.",
     "module": "extras-01-wan22-flf2vid",
     "filename": "wan22/flf2vid.json",
     "inputs": {
@@ -791,6 +817,11 @@
         "node_id": "244",
         "input_key": "frame_rate",
         "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "469",
+        "input_key": "multiplier",
+        "label": "Smoothing"
       },
       "model_high": {
         "node_id": "246",
