@@ -97,5 +97,11 @@
     "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
     "min_bytes": 104857600,
     "_note": "First-to-last frame only: it encodes both end pictures so the clip knows where it starts and stops."
+  },
+  "rife49.pth": {
+    "root_relative_path": "ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation/ckpts/rife/rife49.pth",
+    "url": "https://huggingface.co/marduk191/rife/resolve/main/rife49.pth",
+    "min_bytes": 10485760,
+    "_note": "20.4 GB is a typo waiting to happen - it is 21345274 bytes, about 20 MB. RIFE keeps its checkpoint inside its own pack folder rather than under ComfyUI/models, which is what root_relative_path is for. The node would fetch it itself, but its first source answers 404 for this file, so it is fetched here from the mirror the pack falls back to - up front, with a progress bar, instead of mid-run."
   }
 }

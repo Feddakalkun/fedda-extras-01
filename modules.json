@@ -140,7 +140,8 @@
         "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
         "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
         "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
-        "wan_2.1_vae.safetensors"
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
       ],
       "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024."
     },
@@ -165,7 +166,8 @@
         "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
         "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
         "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
-        "wan_2.1_vae.safetensors"
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
       ],
       "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one."
     },
@@ -191,7 +193,8 @@
         "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
         "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
         "wan_2.1_vae.safetensors",
-        "clip_vision_h.safetensors"
+        "clip_vision_h.safetensors",
+        "rife49.pth"
       ],
       "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well."
     }
