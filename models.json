@@ -8,7 +8,9 @@
   "flux-2-klein-9b-fp8.safetensors": {
     "relative_dir": "diffusion_models",
     "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-9b-fp8/resolve/main/flux-2-klein-9b-fp8.safetensors",
-    "min_bytes": 1073741824
+    "min_bytes": 1073741824,
+    "_note": "9.44 GB. black-forest-labs gates this one, so the app's own gated path handles it: it shows the licence link, checks whether the account has already accepted, and says so. Comfy-Org mirrors the text encoder from this model but not the weights, so there is no open source to point at instead.",
+    "gated": true
   },
   "qwen_3_8b_fp8mixed.safetensors": {
     "relative_dir": "text_encoders",
@@ -35,5 +37,11 @@
     "url": "https://huggingface.co/Comfy-Org/z_image_turbo/resolve/main/split_files/vae/ae.safetensors",
     "min_bytes": 104857600,
     "_note": "Served as ae.safetensors and saved under the name the graph asks for."
+  },
+  "nsfwKlein.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/comfyuistudio/nsfwKLein/resolve/main/nsfwKlein.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "8.45 GB. Open repo, no token needed. The origin reports 9078610848 bytes, which is the size on the machine this was converted from."
   }
 }
