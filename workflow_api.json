@@ -317,5 +317,146 @@
       "grain": 0.02,
       "contrast": 1.12
     }
+  },
+  "extras-01-inpaint-pro": {
+    "name": "Inpaint Pro",
+    "description": "Repaints part of a picture and finds the part itself. The mask is matted, grown and softened before it is used, and a ControlNet holds the result to the shape of what was there.",
+    "module": "extras-01-inpaint-pro",
+    "filename": "inpaint/pro-automask.json",
+    "inputs": {
+      "image": {
+        "node_id": "491",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "501",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "493",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "loras": {
+        "node_id": "498",
+        "type": "loras",
+        "label": "LoRAs"
+      },
+      "style": {
+        "node_id": "495",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "mask_face": {
+        "node_id": "490",
+        "input_key": "face",
+        "label": "Mask face"
+      },
+      "mask_hair": {
+        "node_id": "490",
+        "input_key": "hair",
+        "label": "Mask hair"
+      },
+      "mask_body": {
+        "node_id": "490",
+        "input_key": "body",
+        "label": "Mask body"
+      },
+      "mask_clothes": {
+        "node_id": "490",
+        "input_key": "clothes",
+        "label": "Mask clothes"
+      },
+      "mask_accessories": {
+        "node_id": "490",
+        "input_key": "accessories",
+        "label": "Mask accessories"
+      },
+      "mask_background": {
+        "node_id": "490",
+        "input_key": "background",
+        "label": "Mask background"
+      },
+      "mask_confidence": {
+        "node_id": "490",
+        "input_key": "confidence",
+        "label": "Mask confidence"
+      },
+      "mask_edges": {
+        "node_id": "490",
+        "input_key": "detail_method",
+        "label": "Mask edges",
+        "control": "select"
+      },
+      "mask_grow": {
+        "node_id": "513",
+        "input_key": "dilation",
+        "label": "Grow mask (px)"
+      },
+      "mask_softness": {
+        "node_id": "515",
+        "input_key": "amount",
+        "label": "Soften mask (px)"
+      },
+      "guidance_strength": {
+        "node_id": "499",
+        "input_key": "strength",
+        "label": "Hold to original"
+      },
+      "guidance_end": {
+        "node_id": "499",
+        "input_key": "end_percent",
+        "label": "Hold until"
+      },
+      "seed": {
+        "node_id": "508",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "508",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "508",
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "denoise": {
+        "node_id": "508",
+        "input_key": "denoise",
+        "label": "Denoise"
+      },
+      "sampler": {
+        "node_id": "508",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "checkpoint": {
+        "node_id": "512",
+        "input_key": "ckpt_name",
+        "label": "Checkpoint",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "a plain linen shirt, natural folds, matching the light",
+      "steps": 20,
+      "denoise": 1,
+      "mask_grow": 50,
+      "mask_softness": 50,
+      "guidance_strength": 0.4
+    }
   }
 }

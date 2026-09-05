@@ -1,0 +1,367 @@
+{
+  "490": {
+    "class_type": "LayerMask: PersonMaskUltra V2",
+    "inputs": {
+      "face": true,
+      "hair": true,
+      "body": true,
+      "clothes": true,
+      "accessories": true,
+      "background": false,
+      "confidence": 0.2,
+      "detail_method": "VITMatte",
+      "detail_erode": 6,
+      "detail_dilate": 6,
+      "black_point": 0.01,
+      "white_point": 0.99,
+      "process_detail": true,
+      "device": "cuda",
+      "max_megapixels": 2,
+      "images": [
+        "491",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SELECT THE PART YOU WANT TO REPLACE"
+    }
+  },
+  "491": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "pose.png"
+    },
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "492": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "508",
+        0
+      ],
+      "vae": [
+        "512",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "493": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "",
+      "clip": [
+        "498",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "NEGATIVE PROMPT"
+    }
+  },
+  "494": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "500",
+        0
+      ],
+      "clip": [
+        "498",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Positive Prompt from Styles"
+    }
+  },
+  "495": {
+    "class_type": "Load Styles CSV",
+    "inputs": {
+      "styles": "No Style",
+      "csv_file_path": "styles.csv"
+    },
+    "_meta": {
+      "title": "CHOOSE STYLE"
+    }
+  },
+  "496": {
+    "class_type": "SetUnionControlNetType",
+    "inputs": {
+      "type": "segment",
+      "control_net": [
+        "510",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SetUnionControlNetType"
+    }
+  },
+  "498": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "None",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "512",
+        0
+      ],
+      "clip": [
+        "512",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "499": {
+    "class_type": "ControlNetInpaintingAliMamaApply",
+    "inputs": {
+      "strength": 0.4,
+      "start_percent": 0,
+      "end_percent": 0.5,
+      "positive": [
+        "511",
+        0
+      ],
+      "negative": [
+        "511",
+        1
+      ],
+      "control_net": [
+        "496",
+        0
+      ],
+      "vae": [
+        "512",
+        2
+      ],
+      "image": [
+        "502",
+        1
+      ],
+      "mask": [
+        "502",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "IMG2IMG STRENGHT"
+    }
+  },
+  "500": {
+    "class_type": "Text Concatenate",
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "501",
+        0
+      ],
+      "text_b": [
+        "495",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "501": {
+    "class_type": "String Literal",
+    "inputs": {
+      "string": "WOMAN"
+    },
+    "_meta": {
+      "title": "POSITIVE PROMPT"
+    }
+  },
+  "502": {
+    "class_type": "InpaintCropImproved",
+    "inputs": {
+      "downscale_algorithm": "bilinear",
+      "upscale_algorithm": "bicubic",
+      "preresize": true,
+      "preresize_mode": "ensure minimum resolution",
+      "preresize_min_width": 1024,
+      "preresize_min_height": 1024,
+      "preresize_max_width": 16384,
+      "preresize_max_height": 16384,
+      "mask_fill_holes": true,
+      "mask_expand_pixels": 0,
+      "mask_invert": false,
+      "mask_blend_pixels": 32,
+      "mask_hipass_filter": 0.1,
+      "extend_for_outpainting": false,
+      "extend_up_factor": 1,
+      "extend_down_factor": 1,
+      "extend_left_factor": 1,
+      "extend_right_factor": 1,
+      "context_from_mask_extend_factor": 1.2,
+      "output_resize_to_target_size": true,
+      "output_target_width": 1024,
+      "output_target_height": 1024,
+      "output_padding": "32",
+      "device_mode": "cpu (compatible)",
+      "image": [
+        "491",
+        0
+      ],
+      "mask": [
+        "515",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "InpaintCropImproved"
+    }
+  },
+  "503": {
+    "class_type": "InpaintStitchImproved",
+    "inputs": {
+      "stitcher": [
+        "502",
+        0
+      ],
+      "inpainted_image": [
+        "492",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "InpaintStitchImproved"
+    }
+  },
+  "508": {
+    "class_type": "KSampler",
+    "inputs": {
+      "seed": 89,
+      "steps": 20,
+      "cfg": 1,
+      "sampler_name": "lcm",
+      "scheduler": "karras",
+      "denoise": 1,
+      "model": [
+        "498",
+        0
+      ],
+      "positive": [
+        "499",
+        0
+      ],
+      "negative": [
+        "499",
+        1
+      ],
+      "latent_image": [
+        "511",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "509": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "IMAGE/XXX/0",
+      "images": [
+        "503",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SaveImage"
+    }
+  },
+  "510": {
+    "class_type": "ControlNetLoader",
+    "inputs": {
+      "control_net_name": "controlnet-union-sdxl-1.0.safetensors"
+    },
+    "_meta": {
+      "title": "ControlNetLoader"
+    }
+  },
+  "511": {
+    "class_type": "InpaintModelConditioning",
+    "inputs": {
+      "noise_mask": true,
+      "positive": [
+        "494",
+        0
+      ],
+      "negative": [
+        "493",
+        0
+      ],
+      "vae": [
+        "512",
+        2
+      ],
+      "pixels": [
+        "502",
+        1
+      ],
+      "mask": [
+        "502",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "InpaintModelConditioning"
+    }
+  },
+  "512": {
+    "class_type": "CheckpointLoaderSimple",
+    "inputs": {
+      "ckpt_name": "realism-sdxl.safetensors"
+    },
+    "_meta": {
+      "title": "CheckpointLoaderSimple"
+    }
+  },
+  "513": {
+    "class_type": "ImpactDilateMask",
+    "inputs": {
+      "dilation": 50,
+      "mask": [
+        "490",
+        1
+      ]
+    },
+    "_meta": {
+      "title": "ImpactDilateMask"
+    }
+  },
+  "515": {
+    "class_type": "MaskBlur+",
+    "inputs": {
+      "amount": 50,
+      "device": "auto",
+      "mask": [
+        "513",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "MaskBlur+"
+    }
+  }
+}

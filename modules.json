@@ -87,6 +87,29 @@
         "z-image-vae.safetensors"
       ],
       "notes": "Turns an existing picture photographic in two passes: Flux.2 Klein rebuilds it, then Z-Image Turbo refines at low denoise."
+    },
+    {
+      "id": "extras-01-inpaint-pro",
+      "label": "Inpaint Pro",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-inpaint-pro"
+      ],
+      "workflows": [
+        "inpaint/pro-automask.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "realism-sdxl.safetensors",
+        "controlnet-union-sdxl-1.0.safetensors"
+      ],
+      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
     }
   ]
 }

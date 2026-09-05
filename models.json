@@ -43,5 +43,17 @@
     "url": "https://huggingface.co/comfyuistudio/nsfwKLein/resolve/main/nsfwKlein.safetensors",
     "min_bytes": 1073741824,
     "_note": "8.45 GB. Open repo, no token needed. The origin reports 9078610848 bytes, which is the size on the machine this was converted from."
+  },
+  "realism-sdxl.safetensors": {
+    "relative_dir": "checkpoints",
+    "url": "https://huggingface.co/comfyuistudio/realism-sdxl/resolve/main/realism-sdxl.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "6.46 GB. Open repo. The origin reports 6938075194 bytes."
+  },
+  "controlnet-union-sdxl-1.0.safetensors": {
+    "relative_dir": "controlnet",
+    "url": "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "2.34 GB. Served as diffusion_pytorch_model_promax.safetensors and saved under the name the graph asks for. The promax build is the one that carries the inpainting mode this workflow selects."
   }
 }
