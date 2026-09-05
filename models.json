@@ -131,5 +131,19 @@
     "min_bytes": 104857600,
     "optional": true,
     "_note": "293 MB. Wan LoRA - 800 tensors on diffusion_model.blocks.*, checked by reading the safetensors header rather than trusting the repo name. All four are the same byte count and four different sha256s: same architecture and rank, different weights. The low-noise half of a pair; Wan 2.2 samples twice and needs both."
+  },
+  "wan22-f4c3spl4sh-100epoc-high-k3nk.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Lfayp/wan-lora/resolve/main/wan22-f4c3spl4sh-100epoc-high-k3nk.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "319116504 bytes, sha256 begins a68ee10bb0f3 - which is the same file as the one this pack was built against, hashed on both sides rather than matched on size. The high-noise half; the two halves are different epochs and different sizes, which is what the source published."
+  },
+  "wan22-f4c3spl4sh-154epoc-low-k3nk.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/isokingsan/momoiro.club/resolve/main/wan22-f4c3spl4sh-154epoc-low-k3nk.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "306807976 bytes, sha256 begins 683d6a84430b - which is the same file as the one this pack was built against, hashed on both sides rather than matched on size. The low-noise half; the two halves are different epochs and different sizes, which is what the source published."
   }
 }
