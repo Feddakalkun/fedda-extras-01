@@ -103,5 +103,12 @@
     "url": "https://huggingface.co/marduk191/rife/resolve/main/rife49.pth",
     "min_bytes": 10485760,
     "_note": "20.4 GB is a typo waiting to happen - it is 21345274 bytes, about 20 MB. RIFE keeps its checkpoint inside its own pack folder rather than under ComfyUI/models, which is what root_relative_path is for. The node would fetch it itself, but its first source answers 404 for this file, so it is fetched here from the mirror the pack falls back to - up front, with a progress bar, instead of mid-run."
+  },
+  "Wan2.2-Low-MysticXXX-v2.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Skoll000/Mystic/resolve/main/Wan2.2-Low-MysticXXX-v2.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "293 MB, checked. Wan 2.2 samples in two passes and a LoRA is trained per pass, so this is half a pair - the matching High has no source here yet and the low-noise pass alone is a weaker effect, not a broken one. Mirror: Geemt/wan2.2-loras, same size."
   }
 }

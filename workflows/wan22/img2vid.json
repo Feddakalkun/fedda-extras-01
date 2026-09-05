@@ -398,7 +398,25 @@
       "clip": [
         "218",
         0
-      ]
+      ],
+      "lora_14": {
+        "on": false,
+        "lora": "MysticXXX\\Wan2.2-I2V-Low-MysticXXX.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_15": {
+        "on": false,
+        "lora": "Wan22\\Dreamlay\\DR34ML4Y_I2V_14B_LOW.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_16": {
+        "on": false,
+        "lora": "Wan22\\f4c3spl4sh\\wan22-f4c3spl4sh-154epoc-low-k3nk.safetensors",
+        "strength": 0.15,
+        "strengthTwo": null
+      }
     },
     "_meta": {
       "title": "LOW"
@@ -496,7 +514,25 @@
       "clip": [
         "218",
         0
-      ]
+      ],
+      "lora_14": {
+        "on": false,
+        "lora": "Wan22\\MysticXXX\\Wan2.2-I2V-High-MysticXXX.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_15": {
+        "on": false,
+        "lora": "Wan22\\Dreamlay\\DR34ML4Y_I2V_14B_HIGH.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_16": {
+        "on": false,
+        "lora": "f4c3spl4sh\\wan22-f4c3spl4sh-100epoc-high-k3nk.safetensors",
+        "strength": 0.15,
+        "strengthTwo": null
+      }
     },
     "_meta": {
       "title": "HIGH"
