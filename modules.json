@@ -134,7 +134,7 @@
         "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
         "wan_2.1_vae.safetensors"
       ],
-      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work."
+      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024."
     },
     {
       "id": "extras-01-wan22-img2vid",

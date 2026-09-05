@@ -341,7 +341,7 @@
   "313": {
     "class_type": "AspectRatioImageSize",
     "inputs": {
-      "width": 1024,
+      "width": 720,
       "height": 0,
       "aspect_ratio": "16:9",
       "direction": "Horizontal"
