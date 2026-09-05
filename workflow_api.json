@@ -130,6 +130,11 @@
         "control": "text",
         "multiline": true
       },
+      "loras": {
+        "node_id": "1224",
+        "type": "loras",
+        "label": "LoRAs"
+      },
       "style": {
         "node_id": "1211",
         "input_key": "styles",
