@@ -458,5 +458,368 @@
       "mask_softness": 50,
       "guidance_strength": 0.4
     }
+  },
+  "extras-01-wan22-txt2vid": {
+    "name": "Wan 2.2 Text to Video",
+    "description": "A clip from a prompt on Wan 2.2 14B. Two passes - high noise then low - at four steps each, through an uncensored text encoder.",
+    "module": "extras-01-wan22-txt2vid",
+    "filename": "wan22/txt2vid.json",
+    "inputs": {
+      "prompt": {
+        "node_id": "476",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "258",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "style": {
+        "node_id": "477",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "length": {
+        "node_id": "225",
+        "input_key": "value",
+        "label": "Length"
+      },
+      "width": {
+        "node_id": "313",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "313",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "313",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "262",
+          "223"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "262",
+          "223"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "262",
+          "223"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "264",
+          "222"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "256",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "model_high": {
+        "node_id": "257",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "213",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "214",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "214",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "a woman walking along a harbour at dusk, camera tracking beside her",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-img2vid": {
+    "name": "Wan 2.2 Image to Video",
+    "description": "Animates a picture you supply. Two passes on Wan 2.2 14B at four steps each, through an uncensored text encoder.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length"
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-flf2vid": {
+    "name": "Wan 2.2 First to Last Frame",
+    "description": "A clip that starts on one picture and ends on another. Wan 2.2 14B fills what happens in between.",
+    "module": "extras-01-wan22-flf2vid",
+    "filename": "wan22/flf2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "241",
+        "input_key": "image",
+        "label": "First frame",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "image2": {
+        "node_id": "239",
+        "input_key": "image",
+        "label": "Last frame",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "242",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "236",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "length": {
+        "node_id": "235",
+        "input_key": "value",
+        "label": "Frames"
+      },
+      "width": {
+        "node_ids": [
+          "315",
+          "316"
+        ],
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_ids": [
+          "315",
+          "316"
+        ],
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_ids": [
+          "315",
+          "316"
+        ],
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "245",
+          "243"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "245",
+          "243"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "245",
+          "243"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "251",
+          "249"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "244",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "model_high": {
+        "node_id": "246",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "231",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "232",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "232",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "a slow push in, the light warming as it goes",
+      "length": 81
+    }
   }
 }

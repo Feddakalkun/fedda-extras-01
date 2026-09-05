@@ -1,0 +1,436 @@
+{
+  "231": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "232": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIPLoader"
+    }
+  },
+  "235": {
+    "class_type": "easy int",
+    "inputs": {
+      "value": 81
+    },
+    "_meta": {
+      "title": "LENGTH (frames)"
+    }
+  },
+  "236": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走",
+      "clip": [
+        "232",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "237": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAELoader"
+    }
+  },
+  "239": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "flf2.png"
+    },
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "240": {
+    "class_type": "WanFirstLastFrameToVideo",
+    "inputs": {
+      "width": [
+        "315",
+        1
+      ],
+      "height": [
+        "315",
+        2
+      ],
+      "length": [
+        "235",
+        0
+      ],
+      "batch_size": 1,
+      "positive": [
+        "242",
+        0
+      ],
+      "negative": [
+        "236",
+        0
+      ],
+      "vae": [
+        "237",
+        0
+      ],
+      "clip_vision_start_image": [
+        "281",
+        0
+      ],
+      "clip_vision_end_image": [
+        "280",
+        0
+      ],
+      "start_image": [
+        "315",
+        0
+      ],
+      "end_image": [
+        "316",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "WanFirstLastFrameToVideo"
+    }
+  },
+  "241": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "flf1.png"
+    },
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "242": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "woman dancing ",
+      "clip": [
+        "232",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "243": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "disable",
+      "noise_seed": 2,
+      "steps": 6,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 3,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": "disable",
+      "model": [
+        "249",
+        0
+      ],
+      "positive": [
+        "240",
+        0
+      ],
+      "negative": [
+        "240",
+        1
+      ],
+      "latent_image": [
+        "245",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "KSamplerAdvanced"
+    }
+  },
+  "244": {
+    "class_type": "VHS_VideoCombine",
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "VIDEO/WAN22/0",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "250",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VHS_VideoCombine"
+    }
+  },
+  "245": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": 126061538882226,
+      "steps": 6,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 0,
+      "end_at_step": 3,
+      "return_with_leftover_noise": "enable",
+      "model": [
+        "251",
+        0
+      ],
+      "positive": [
+        "240",
+        0
+      ],
+      "negative": [
+        "240",
+        1
+      ],
+      "latent_image": [
+        "240",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "KSamplerAdvanced"
+    }
+  },
+  "246": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "247": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-I2V-HIGH-4steps-lora-rank64-Seko-V1.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "246",
+        0
+      ],
+      "clip": [
+        "232",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "248": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-I2V-LOW-4steps-lora-rank64-Seko-V1.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "231",
+        0
+      ],
+      "clip": [
+        "232",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "249": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 8.000000000000002,
+      "model": [
+        "468",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "250": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "243",
+        0
+      ],
+      "vae": [
+        "237",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "251": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 8.000000000000002,
+      "model": [
+        "467",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "252": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    },
+    "_meta": {
+      "title": "CLIPVisionLoader"
+    }
+  },
+  "253": {
+    "class_type": "CLIPVisionLoader",
+    "inputs": {
+      "clip_name": "clip_vision_h.safetensors"
+    },
+    "_meta": {
+      "title": "CLIPVisionLoader"
+    }
+  },
+  "280": {
+    "class_type": "CLIPVisionEncode",
+    "inputs": {
+      "crop": "center",
+      "clip_vision": [
+        "252",
+        0
+      ],
+      "image": [
+        "316",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIPVisionEncode"
+    }
+  },
+  "281": {
+    "class_type": "CLIPVisionEncode",
+    "inputs": {
+      "crop": "center",
+      "clip_vision": [
+        "253",
+        0
+      ],
+      "image": [
+        "315",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIPVisionEncode"
+    }
+  },
+  "315": {
+    "class_type": "AspectRatioResizeImage",
+    "inputs": {
+      "width": 720,
+      "height": 0,
+      "aspect_ratio": "4:3",
+      "direction": "Vertical",
+      "crop_method": "Stretch",
+      "image": [
+        "241",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "AspectRatioResizeImage"
+    }
+  },
+  "316": {
+    "class_type": "AspectRatioResizeImage",
+    "inputs": {
+      "width": 720,
+      "height": 0,
+      "aspect_ratio": "4:3",
+      "direction": "Vertical",
+      "crop_method": "Stretch",
+      "image": [
+        "239",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "AspectRatioResizeImage"
+    }
+  },
+  "467": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "247",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  },
+  "468": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "248",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  }
+}

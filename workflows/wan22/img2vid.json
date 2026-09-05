@@ -1,0 +1,505 @@
+{
+  "217": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "218": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIPLoader"
+    }
+  },
+  "219": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAELoader"
+    }
+  },
+  "220": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 5,
+      "model": [
+        "466",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "226": {
+    "class_type": "WanImageToVideo",
+    "inputs": {
+      "width": [
+        "314",
+        1
+      ],
+      "height": [
+        "314",
+        2
+      ],
+      "length": [
+        "470",
+        0
+      ],
+      "batch_size": 1,
+      "positive": [
+        "265",
+        0
+      ],
+      "negative": [
+        "273",
+        0
+      ],
+      "vae": [
+        "219",
+        0
+      ],
+      "start_image": [
+        "314",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "WanImageToVideo"
+    }
+  },
+  "265": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "a man start to kiss the woman ",
+      "clip": [
+        "218",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "266": {
+    "class_type": "easy int",
+    "inputs": {
+      "value": 10
+    },
+    "_meta": {
+      "title": "LENGTH  LENGTH IN SECONDS"
+    }
+  },
+  "269": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 5,
+      "model": [
+        "465",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "270": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "271": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": 1064,
+      "steps": 4,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 0,
+      "end_at_step": 2,
+      "return_with_leftover_noise": "enable",
+      "model": [
+        "269",
+        0
+      ],
+      "positive": [
+        "226",
+        0
+      ],
+      "negative": [
+        "226",
+        1
+      ],
+      "latent_image": [
+        "226",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "KSamplerAdvanced"
+    }
+  },
+  "272": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "disable",
+      "noise_seed": 1064,
+      "steps": 4,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 2,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": "disable",
+      "model": [
+        "220",
+        0
+      ],
+      "positive": [
+        "226",
+        0
+      ],
+      "negative": [
+        "226",
+        1
+      ],
+      "latent_image": [
+        "271",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "KSamplerAdvanced"
+    }
+  },
+  "273": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走",
+      "clip": [
+        "218",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "274": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "272",
+        0
+      ],
+      "vae": [
+        "219",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "276": {
+    "class_type": "VHS_VideoCombine",
+    "inputs": {
+      "frame_rate": 30,
+      "loop_count": 0,
+      "filename_prefix": "VIDEO/WAN22/0",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "274",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VHS_VideoCombine"
+    }
+  },
+  "278": {
+    "class_type": "LoadImage",
+    "inputs": {
+      "image": "pose2.png"
+    },
+    "_meta": {
+      "title": "LoadImage"
+    }
+  },
+  "314": {
+    "class_type": "AspectRatioResizeImage",
+    "inputs": {
+      "width": 720,
+      "height": 0,
+      "aspect_ratio": "1:1",
+      "direction": "Horizontal",
+      "crop_method": "Stretch",
+      "image": [
+        "278",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "AspectRatioResizeImage"
+    }
+  },
+  "465": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "480",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  },
+  "466": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "479",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  },
+  "470": {
+    "class_type": "SimpleMath+",
+    "inputs": {
+      "value": "a*15",
+      "a": [
+        "266",
+        0
+      ],
+      "b": 0.0,
+      "c": 0.0
+    },
+    "_meta": {
+      "title": "SimpleMath+"
+    }
+  },
+  "479": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-I2V-LOW-4steps-lora-rank64-Seko-V1.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_2": {
+        "on": false,
+        "lora": "Oral-Ins-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_3": {
+        "on": false,
+        "lora": "CumShot-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_4": {
+        "on": false,
+        "lora": "wan-nsfw-e14-fixed.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "Wan2.2_Double-Penetration-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "PussyLoRA_LowNoise_Wan2.2_HearmemanAI.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_7": {
+        "on": false,
+        "lora": "V3TWERKLOW.safetensors",
+        "strength": 0.3,
+        "strengthTwo": null
+      },
+      "lora_8": {
+        "on": false,
+        "lora": "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_low_noise.safetensors",
+        "strength": 0.7,
+        "strengthTwo": null
+      },
+      "lora_9": {
+        "on": false,
+        "lora": "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_low_noise.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "Fingering-I2V.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_11": {
+        "on": true,
+        "lora": "Wan2.1_I2V_14B_FusionX_LoRA.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_12": {
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_13": {
+        "on": true,
+        "lora": "KISSLOW.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "217",
+        0
+      ],
+      "clip": [
+        "218",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LOW"
+    }
+  },
+  "480": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-I2V-HIGH-4steps-lora-rank64-Seko-V1.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_2": {
+        "on": false,
+        "lora": "Oral-Ins-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_3": {
+        "on": false,
+        "lora": "CumShot-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_4": {
+        "on": false,
+        "lora": "wan-nsfw-e14-fixed.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "Wan2.2_Double-Penetration-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "PussyLoRA_HighNoise_Wan2.2_HearmemanAI.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_7": {
+        "on": false,
+        "lora": "V3TWERKHIGH.safetensors",
+        "strength": 0.3,
+        "strengthTwo": null
+      },
+      "lora_8": {
+        "on": false,
+        "lora": "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_high_noise.safetensors",
+        "strength": 0.7,
+        "strengthTwo": null
+      },
+      "lora_9": {
+        "on": false,
+        "lora": "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_high_noise.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "Fingering-I2V.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_11": {
+        "on": true,
+        "lora": "Wan2.1_I2V_14B_FusionX_LoRA.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_12": {
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_13": {
+        "on": true,
+        "lora": "KISSHIGH.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "270",
+        0
+      ],
+      "clip": [
+        "218",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "HIGH"
+    }
+  }
+}

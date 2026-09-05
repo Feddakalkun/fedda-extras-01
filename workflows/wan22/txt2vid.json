@@ -1,0 +1,552 @@
+{
+  "213": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "LOW"
+    }
+  },
+  "214": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "type": "wan",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIPLoader"
+    }
+  },
+  "215": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "wan_2.1_vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAELoader"
+    }
+  },
+  "216": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "223",
+        0
+      ],
+      "vae": [
+        "215",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "222": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 5,
+      "model": [
+        "464",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "223": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "disable",
+      "noise_seed": 1156,
+      "steps": 4,
+      "cfg": 1.5,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 2,
+      "end_at_step": 10000,
+      "return_with_leftover_noise": "disable",
+      "model": [
+        "222",
+        0
+      ],
+      "positive": [
+        "224",
+        0
+      ],
+      "negative": [
+        "258",
+        0
+      ],
+      "latent_image": [
+        "262",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LOW"
+    }
+  },
+  "224": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": [
+        "475",
+        0
+      ],
+      "clip": [
+        "214",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Positive Prompt)"
+    }
+  },
+  "225": {
+    "class_type": "easy int",
+    "inputs": {
+      "value": 10
+    },
+    "_meta": {
+      "title": "LENGTH IN SECONDS"
+    }
+  },
+  "256": {
+    "class_type": "VHS_VideoCombine",
+    "inputs": {
+      "frame_rate": 24,
+      "loop_count": 0,
+      "filename_prefix": "VIDEO/WAN22/0",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true,
+      "images": [
+        "473",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VHS_VideoCombine"
+    }
+  },
+  "257": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "HIGH"
+    }
+  },
+  "258": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "text": "bright colors, overexposed, static, blurred details, subtitles, still image quality, extra limbs, low quality, JPEG artifacts.\n",
+      "clip": [
+        "214",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIP Text Encode (Negative Prompt)"
+    }
+  },
+  "259": {
+    "class_type": "EmptyHunyuanLatentVideo",
+    "inputs": {
+      "width": [
+        "313",
+        0
+      ],
+      "height": [
+        "313",
+        1
+      ],
+      "length": [
+        "469",
+        0
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "EmptyHunyuanLatentVideo"
+    }
+  },
+  "261": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-T2V-4steps-LOW-rank64-Seko-V2.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "strength": 0.8,
+        "strengthTwo": null
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_4": {
+        "on": false,
+        "lora": "Instareal_low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "wan2.2_t2v_lownoise_pov_missionary_v1.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "Oral-Ins-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_7": {
+        "on": false,
+        "lora": "CumShot-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_8": {
+        "on": false,
+        "lora": "wan-nsfw-e14-fixed.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_9": {
+        "on": false,
+        "lora": "Wan22-T2V-DildoRide-LOW.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "Wan22-T2V-DoggyStyle-LOW.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_11": {
+        "on": false,
+        "lora": "Wan2.2_Double-Penetration-Low.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_12": {
+        "on": false,
+        "lora": "PussyLoRA_LowNoise_Wan2.2_HearmemanAI.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_13": {
+        "on": false,
+        "lora": "V3TWERKLOW.safetensors",
+        "strength": 0.3,
+        "strengthTwo": null
+      },
+      "lora_14": {
+        "on": false,
+        "lora": "Fingering-T2V.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_15": {
+        "on": true,
+        "lora": "KISSLOW.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "213",
+        0
+      ],
+      "clip": [
+        "214",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LOW"
+    }
+  },
+  "262": {
+    "class_type": "KSamplerAdvanced",
+    "inputs": {
+      "add_noise": "enable",
+      "noise_seed": 1156,
+      "steps": 4,
+      "cfg": 1.5,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "start_at_step": 0,
+      "end_at_step": 2,
+      "return_with_leftover_noise": "enable",
+      "model": [
+        "264",
+        0
+      ],
+      "positive": [
+        "224",
+        0
+      ],
+      "negative": [
+        "258",
+        0
+      ],
+      "latent_image": [
+        "259",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "HIGH"
+    }
+  },
+  "264": {
+    "class_type": "ModelSamplingSD3",
+    "inputs": {
+      "shift": 5,
+      "model": [
+        "463",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ModelSamplingSD3"
+    }
+  },
+  "313": {
+    "class_type": "AspectRatioImageSize",
+    "inputs": {
+      "width": 1024,
+      "height": 0,
+      "aspect_ratio": "16:9",
+      "direction": "Horizontal"
+    },
+    "_meta": {
+      "title": "AspectRatioImageSize"
+    }
+  },
+  "463": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "471",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  },
+  "464": {
+    "class_type": "wanBlockSwap",
+    "inputs": {
+      "model": [
+        "261",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "wanBlockSwap"
+    }
+  },
+  "469": {
+    "class_type": "SimpleMath+",
+    "inputs": {
+      "value": "a*16",
+      "a": [
+        "225",
+        0
+      ],
+      "b": 0.0,
+      "c": 0.0
+    },
+    "_meta": {
+      "title": "SimpleMath+"
+    }
+  },
+  "471": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      },
+      "lora_1": {
+        "on": true,
+        "lora": "Wan2.2-T2V-4steps-HIGH-rank64-Seko-V2.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "strength": 0.8,
+        "strengthTwo": null
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_4": {
+        "on": false,
+        "lora": "Instareal_high.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_5": {
+        "on": false,
+        "lora": "wan2.2_t2v_highnoise_pov_missionary_v1.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_6": {
+        "on": false,
+        "lora": "Oral-Ins-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_7": {
+        "on": false,
+        "lora": "CumShot-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_8": {
+        "on": false,
+        "lora": "wan-nsfw-e14-fixed.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_9": {
+        "on": false,
+        "lora": "Wan22-T2V-DildoRide-HIGH.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_10": {
+        "on": false,
+        "lora": "Wan22-T2V-DoggyStyle-HIGH.safetensors",
+        "strength": 0.5,
+        "strengthTwo": null
+      },
+      "lora_11": {
+        "on": false,
+        "lora": "Wan2.2_Double-Penetration-High.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_12": {
+        "on": false,
+        "lora": "PussyLoRA_HighNoise_Wan2.2_HearmemanAI.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_13": {
+        "on": false,
+        "lora": "V3TWERKHIGH.safetensors",
+        "strength": 0.3,
+        "strengthTwo": null
+      },
+      "lora_14": {
+        "on": false,
+        "lora": "Fingering-T2V.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_15": {
+        "on": true,
+        "lora": "KISSHIGH.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "➕ Add Lora": "",
+      "model": [
+        "257",
+        0
+      ],
+      "clip": [
+        "214",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "HIGH"
+    }
+  },
+  "473": {
+    "class_type": "ImageSelector",
+    "inputs": {
+      "selected_indexes": "12:-1",
+      "images": [
+        "216",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LAST IMAGE"
+    }
+  },
+  "475": {
+    "class_type": "Text Concatenate",
+    "inputs": {
+      "delimiter": ", ",
+      "clean_whitespace": "true",
+      "text_a": [
+        "476",
+        0
+      ],
+      "text_b": [
+        "477",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "476": {
+    "class_type": "String Literal",
+    "inputs": {
+      "string": "closeup of 2 beaty sexy woman kissing with tongue, in a luxury room"
+    },
+    "_meta": {
+      "title": "PROMPT"
+    }
+  },
+  "477": {
+    "class_type": "Load Styles CSV",
+    "inputs": {
+      "styles": "No Style",
+      "csv_file_path": "styles.csv"
+    },
+    "_meta": {
+      "title": "Load Styles CSV"
+    }
+  }
+}

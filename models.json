@@ -55,5 +55,47 @@
     "url": "https://huggingface.co/xinsir/controlnet-union-sdxl-1.0/resolve/main/diffusion_pytorch_model_promax.safetensors",
     "min_bytes": 1073741824,
     "_note": "2.34 GB. Served as diffusion_pytorch_model_promax.safetensors and saved under the name the graph asks for. The promax build is the one that carries the inpainting mode this workflow selects."
+  },
+  "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "13.31 GB. Wan 2.2 14B runs as a pair - high noise first, then low - so both halves are needed."
+  },
+  "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "13.31 GB. Wan 2.2 14B runs as a pair - high noise first, then low - so both halves are needed."
+  },
+  "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "13.31 GB. Wan 2.2 14B runs as a pair - high noise first, then low - so both halves are needed."
+  },
+  "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/resolve/main/split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "13.31 GB. Wan 2.2 14B runs as a pair - high noise first, then low - so both halves are needed."
+  },
+  "nsfw_wan_umt5-xxl_fp8_scaled.safetensors": {
+    "relative_dir": "text_encoders",
+    "url": "https://huggingface.co/NSFW-API/NSFW-Wan-UMT5-XXL/resolve/main/nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "6.27 GB. This is the part that is actually NSFW-specific here - an uncensored UMT5 text encoder. The diffusion models above are stock Wan."
+  },
+  "wan_2.1_vae.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",
+    "min_bytes": 104857600,
+    "_note": "0.24 GB. Wan 2.2 uses the 2.1 VAE."
+  },
+  "clip_vision_h.safetensors": {
+    "relative_dir": "clip_vision",
+    "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors",
+    "min_bytes": 104857600,
+    "_note": "First-to-last frame only: it encodes both end pictures so the clip knows where it starts and stops."
   }
 }

@@ -110,6 +110,82 @@
         "controlnet-union-sdxl-1.0.safetensors"
       ],
       "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
+    },
+    {
+      "id": "extras-01-wan22-txt2vid",
+      "label": "Wan 2.2 Text to Video",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-txt2vid"
+      ],
+      "workflows": [
+        "wan22/txt2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_t2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_t2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work."
+    },
+    {
+      "id": "extras-01-wan22-img2vid",
+      "label": "Wan 2.2 Image to Video",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-img2vid"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors"
+      ],
+      "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one."
+    },
+    {
+      "id": "extras-01-wan22-flf2vid",
+      "label": "Wan 2.2 First to Last Frame",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-flf2vid"
+      ],
+      "workflows": [
+        "wan22/flf2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "clip_vision_h.safetensors"
+      ],
+      "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well."
     }
   ]
 }
