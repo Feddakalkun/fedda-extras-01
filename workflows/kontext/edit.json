@@ -36,7 +36,7 @@
         "type": "PowerLoraLoaderHeaderWidget"
       },
       "lora_1": {
-        "on": true,
+        "on": false,
         "lora": "None",
         "strength": 1.0,
         "strengthTwo": null
