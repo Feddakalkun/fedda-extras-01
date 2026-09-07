@@ -48,18 +48,6 @@
       "title": "STEPS"
     }
   },
-  "1210": {
-    "class_type": "AspectRatioImageSize",
-    "inputs": {
-      "width": 1504,
-      "height": 1504,
-      "aspect_ratio": "16:9",
-      "direction": "Horizontal"
-    },
-    "_meta": {
-      "title": "AspectRatioImageSize"
-    }
-  },
   "1211": {
     "class_type": "Load Styles CSV",
     "inputs": {
@@ -190,11 +178,11 @@
         0
       ],
       "width": [
-        "1210",
+        "1234",
         0
       ],
       "height": [
-        "1210",
+        "1234",
         1
       ]
     },
@@ -262,25 +250,30 @@
     }
   },
   "1231": {
-    "class_type": "ImageScale",
+    "class_type": "ImageScaleToTotalPixels",
     "inputs": {
       "image": [
         "1230",
         0
       ],
       "upscale_method": "lanczos",
-      "width": [
-        "1210",
-        0
-      ],
-      "height": [
-        "1210",
-        1
-      ],
-      "crop": "center"
+      "megapixels": 1.3,
+      "resolution_steps": 16
     },
     "_meta": {
-      "title": "FIT TO SIZE"
+      "title": "FIT TO A PIXEL BUDGET"
+    }
+  },
+  "1234": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "1231",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "SIZE FROM THE PICTURE"
     }
   },
   "1232": {

@@ -857,7 +857,7 @@
   },
   "extras-01-klein-nsfw-img2img": {
     "name": "Klein NSFW - Redraw",
-    "description": "Redraw a picture you already have on the Flux.2 Klein finetune. Denoise decides how much of it survives: low keeps the picture, high keeps only the composition.",
+    "description": "Redraw a picture you already have on the Flux.2 Klein finetune. The upload keeps its own shape; denoise decides how much of it survives.",
     "module": "extras-01-klein-nsfw-img2img",
     "filename": "klein/nsfw-img2img.json",
     "inputs": {
@@ -891,28 +891,6 @@
         "input_key": "styles",
         "label": "Style",
         "control": "select"
-      },
-      "aspect_ratio": {
-        "node_id": "1210",
-        "input_key": "aspect_ratio",
-        "label": "Aspect ratio",
-        "control": "select"
-      },
-      "direction": {
-        "node_id": "1210",
-        "input_key": "direction",
-        "label": "Orientation",
-        "control": "select"
-      },
-      "width": {
-        "node_id": "1210",
-        "input_key": "width",
-        "label": "Width"
-      },
-      "height": {
-        "node_id": "1210",
-        "input_key": "height",
-        "label": "Height"
       },
       "steps": {
         "node_id": "1208",
@@ -953,6 +931,11 @@
         "label": "Text encoder on",
         "control": "select"
       },
+      "megapixels": {
+        "node_id": "1231",
+        "input_key": "megapixels",
+        "label": "Size (megapixels)"
+      },
       "denoise": {
         "node_id": "1233",
         "input_key": "denoise",
@@ -961,11 +944,10 @@
     },
     "example": {
       "prompt": "A woman standing at the rail of a ferry in late afternoon light, wind in her hair, the coastline out of focus behind her.",
-      "aspect_ratio": "16:9",
-      "direction": "Horizontal",
       "steps": 10,
       "cfg": 1,
-      "denoise": 0.7
+      "denoise": 0.7,
+      "megapixels": 1.3
     }
   }
 }
