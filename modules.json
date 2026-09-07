@@ -83,11 +83,11 @@
       "family": "extras-01",
       "family_label": "Extra Workflows",
       "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-realism-converter"
       ],
       "workflows": [
@@ -141,11 +141,11 @@
       "family": "extras-01",
       "family_label": "Extra Workflows",
       "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-kontext-edit"
       ],
       "workflows": [
