@@ -961,5 +961,71 @@
       "denoise": 0.7,
       "megapixels": 1.3
     }
+  },
+  "extras-01-kontext-edit": {
+    "name": "Kontext Edit",
+    "description": "Change a picture by describing the change. FLUX Kontext conditions on the image instead of repainting a hole in it, so the face, the pose and the light stay put.",
+    "module": "extras-01-kontext-edit",
+    "filename": "kontext/edit.json",
+    "inputs": {
+      "image": {
+        "node_id": "5",
+        "input_key": "image",
+        "label": "Picture to edit",
+        "control": "file"
+      },
+      "prompt": {
+        "node_id": "9",
+        "input_key": "value",
+        "label": "What to change",
+        "control": "text",
+        "multiline": true,
+        "note": "An instruction, not a description of the whole picture: 'take the jacket off', 'make it night'. Everything you do not mention is meant to stay."
+      },
+      "loras": {
+        "node_id": "4",
+        "type": "loras",
+        "label": "LoRAs"
+      },
+      "style": {
+        "node_id": "10",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "guidance": {
+        "node_id": "13",
+        "input_key": "guidance",
+        "label": "How literally to take it",
+        "note": "2.5 is the usual. Higher follows the words harder and drifts further from the picture; lower barely changes anything."
+      },
+      "steps": {
+        "node_id": "17",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "17",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "sampler": {
+        "node_id": "17",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "checkpoint": {
+        "node_id": "1",
+        "input_key": "ckpt_name",
+        "label": "Model",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "make it night, lit only by the window",
+      "guidance": 2.5,
+      "steps": 20
+    }
   }
 }

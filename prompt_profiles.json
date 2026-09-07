@@ -39,6 +39,13 @@
       "steer": "This redraws a picture that already exists, so describe the finished photograph rather than the change - what the frame looks like once it is done, carrying over the pose, the framing and the light from the original. Never write an instruction: not 'remove her dress', but the body, the skin, the shadow under it and where the light falls. Be specific and anatomical; that is what carries an explicit image on this checkpoint. No keyword strings and no quality padding."
     },
 
+    "extras-01-kontext-edit": {
+      "match": ["extras-01-kontext-edit"],
+      "words": 45,
+      "steer": "Kontext takes an instruction, not a description. Write what should change and nothing else - 'take the jacket off and let the light fall on her shoulder', not a fresh account of the whole photograph. Everything left unsaid is kept, so listing the room and the lighting again only gives the model permission to redraw them. One or two sentences. Be concrete about the thing being changed and silent about the rest.",
+      "caption": "Describe this image plainly: who is in it, what they are wearing, how they are placed, the room, and the light. This is context for someone about to edit it, so say what is there rather than what could be. If any part of it is explicit, say so plainly. 40-70 words, no preamble."
+    },
+
     "extras-01-realism-converter": {
       "match": ["extras-01-realism-converter"],
       "words": 110,

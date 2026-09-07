@@ -136,6 +136,31 @@
       "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
     },
     {
+      "id": "extras-01-kontext-edit",
+      "label": "Kontext Edit",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-kontext-edit"
+      ],
+      "workflows": [
+        "kontext/edit.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "flux1-dev-kontext_fp8_scaled.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "clip_l-for-gguf.safetensors",
+        "ae.safetensors"
+      ],
+      "notes": "Change a picture by describing the change. Kontext puts the image in the conditioning rather than the latent, so identity, pose and light survive an edit."
+    },
+    {
       "id": "extras-01-wan22-txt2vid",
       "label": "Wan 2.2 Text to Video",
       "family": "extras-01",
