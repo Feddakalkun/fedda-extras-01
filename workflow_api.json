@@ -854,5 +854,118 @@
       "prompt": "a slow push in, the light warming as it goes",
       "length": 81
     }
+  },
+  "extras-01-klein-nsfw-img2img": {
+    "name": "Klein NSFW - Redraw",
+    "description": "Redraw a picture you already have on the Flux.2 Klein finetune. Denoise decides how much of it survives: low keeps the picture, high keeps only the composition.",
+    "module": "extras-01-klein-nsfw-img2img",
+    "filename": "klein/nsfw-img2img.json",
+    "inputs": {
+      "image": {
+        "node_id": "1230",
+        "input_key": "image",
+        "label": "Picture to redraw",
+        "control": "file"
+      },
+      "prompt": {
+        "node_id": "1212",
+        "input_key": "value",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "1215",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "loras": {
+        "node_id": "1224",
+        "type": "loras",
+        "label": "LoRAs"
+      },
+      "style": {
+        "node_id": "1211",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "aspect_ratio": {
+        "node_id": "1210",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "1210",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "width": {
+        "node_id": "1210",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "height": {
+        "node_id": "1210",
+        "input_key": "height",
+        "label": "Height"
+      },
+      "steps": {
+        "node_id": "1208",
+        "input_key": "value",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "1205",
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "cfg": {
+        "node_id": "1223",
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "sampler": {
+        "node_id": "1222",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "model_build": {
+        "node_id": "1216",
+        "input_key": "unet_name",
+        "label": "Model build",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "1217",
+        "input_key": "clip_name",
+        "label": "Text encoder build",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "1217",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      },
+      "denoise": {
+        "node_id": "1233",
+        "input_key": "denoise",
+        "label": "How much to change"
+      }
+    },
+    "example": {
+      "prompt": "A woman standing at the rail of a ferry in late afternoon light, wind in her hair, the coastline out of focus behind her.",
+      "aspect_ratio": "16:9",
+      "direction": "Horizontal",
+      "steps": 10,
+      "cfg": 1,
+      "denoise": 0.7
+    }
   }
 }

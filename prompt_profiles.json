@@ -33,6 +33,12 @@
       "steer": "This is a Flux.2 Klein finetune, and it reads long natural-language description rather than tags. Write it as a photograph a person took: the body, the pose, what is worn or not worn, the room, and light with a direction and a source. Be specific about anatomy and about where skin catches the light - that is what carries an explicit image on this checkpoint. No keyword strings, and no quality padding: 'masterpiece', '8k' and 'ultra detailed' do nothing and push out the words that do."
     },
 
+    "extras-01-klein-nsfw-img2img": {
+      "match": ["extras-01-klein-nsfw-img2img"],
+      "words": 110,
+      "steer": "This redraws a picture that already exists, so describe the finished photograph rather than the change - what the frame looks like once it is done, carrying over the pose, the framing and the light from the original. Never write an instruction: not 'remove her dress', but the body, the skin, the shadow under it and where the light falls. Be specific and anatomical; that is what carries an explicit image on this checkpoint. No keyword strings and no quality padding."
+    },
+
     "extras-01-realism-converter": {
       "match": ["extras-01-realism-converter"],
       "words": 110,
