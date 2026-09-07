@@ -61,7 +61,7 @@
       "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
       "area": "nsfw",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
       "tabs": [
         "nsfw",
         "extras-01-klein-nsfw-img2img"
@@ -75,7 +75,7 @@
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors"
       ],
-      "notes": "Redraw a picture you already have on the Flux.2 Klein finetune. The composition is carried by the image rather than by a ControlNet - there is no ControlNet for Flux.2 - so denoise is what decides how much of the original survives."
+      "notes": "HIDDEN. Denoise trades composition against change on one scalar, and on this checkpoint there was no setting that did both. Kontext Edit does the same job by conditioning on the picture instead. Set enabled back to true to try it again - nothing else was removed."
     },
     {
       "id": "extras-01-realism-converter",
