@@ -2,11 +2,11 @@
   "490": {
     "class_type": "LayerMask: PersonMaskUltra V2",
     "inputs": {
-      "face": true,
-      "hair": true,
-      "body": true,
+      "face": false,
+      "hair": false,
+      "body": false,
       "clothes": true,
-      "accessories": true,
+      "accessories": false,
       "background": false,
       "confidence": 0.2,
       "detail_method": "VITMatte",
@@ -252,8 +252,8 @@
     "inputs": {
       "seed": 89,
       "steps": 20,
-      "cfg": 1,
-      "sampler_name": "lcm",
+      "cfg": 6.0,
+      "sampler_name": "dpmpp_2m",
       "scheduler": "karras",
       "denoise": 1,
       "model": [
@@ -340,7 +340,7 @@
   "513": {
     "class_type": "ImpactDilateMask",
     "inputs": {
-      "dilation": 50,
+      "dilation": 12,
       "mask": [
         "490",
         1
@@ -353,7 +353,7 @@
   "515": {
     "class_type": "MaskBlur+",
     "inputs": {
-      "amount": 50,
+      "amount": 12,
       "device": "auto",
       "mask": [
         "513",

@@ -374,7 +374,8 @@
       "mask_clothes": {
         "node_id": "490",
         "input_key": "clothes",
-        "label": "Mask clothes"
+        "label": "Mask clothes",
+        "note": "The mask to start from. Turning on face, hair and body as well selects the whole person, which is a mask that cannot land right because it is not aimed at anything."
       },
       "mask_accessories": {
         "node_id": "490",
@@ -400,17 +401,20 @@
       "mask_grow": {
         "node_id": "513",
         "input_key": "dilation",
-        "label": "Grow mask (px)"
+        "label": "Grow mask (px)",
+        "note": "Pixels added around the mask. 50 reaches well past whatever was selected; 10 to 15 is usually enough to cover an edge."
       },
       "mask_softness": {
         "node_id": "515",
         "input_key": "amount",
-        "label": "Soften mask (px)"
+        "label": "Soften mask (px)",
+        "note": "How far the edge fades. Keep it near mask_grow."
       },
       "guidance_strength": {
         "node_id": "499",
         "input_key": "strength",
-        "label": "Hold to original"
+        "label": "Hold to original",
+        "note": "The ControlNet's hold on the original. Lower it if the result keeps coming back unchanged; 0 turns it off."
       },
       "guidance_end": {
         "node_id": "499",
@@ -430,18 +434,21 @@
       "cfg": {
         "node_id": "508",
         "input_key": "cfg",
-        "label": "CFG Scale"
+        "label": "CFG Scale",
+        "note": "realism-sdxl is a plain SDXL - its own header says epsilon - so it needs 5 to 8. At 1 the prompt barely reaches the sampler, which is what 'it changes too little' looks like."
       },
       "denoise": {
         "node_id": "508",
         "input_key": "denoise",
-        "label": "Denoise"
+        "label": "Denoise",
+        "note": "1 is right here - the mask already decides what is repainted."
       },
       "sampler": {
         "node_id": "508",
         "input_key": "sampler_name",
         "label": "Sampler",
-        "control": "select"
+        "control": "select",
+        "note": "dpmpp_2m for this checkpoint. lcm is for a distilled model, and on a normal SDXL it washes the result out."
       },
       "checkpoint": {
         "node_id": "512",
@@ -451,12 +458,14 @@
       }
     },
     "example": {
-      "prompt": "a plain linen shirt, natural folds, matching the light",
+      "prompt": "bare skin, the light and shadow of the original photograph",
       "steps": 20,
       "denoise": 1,
-      "mask_grow": 50,
-      "mask_softness": 50,
-      "guidance_strength": 0.4
+      "mask_grow": 12,
+      "mask_softness": 12,
+      "guidance_strength": 0.4,
+      "cfg": 6.0,
+      "sampler": "dpmpp_2m"
     }
   },
   "extras-01-wan22-txt2vid": {
