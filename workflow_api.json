@@ -250,12 +250,14 @@
         ],
         "input_key": "styles",
         "label": "Style",
-        "control": "select"
+        "control": "select",
+        "note": "This page was tuned against Photography | Fine Art. The list used to be 26 entries and did not contain it, so it opened on whatever was first - it is 320 now and the right one is there."
       },
       "working_size": {
         "node_id": "1048",
         "input_key": "width",
-        "label": "Working width"
+        "label": "Working width",
+        "note": "The Klein pass runs here. 2000 is the tuned size; smaller loses the texture the whole page exists to add."
       },
       "working_height": {
         "node_id": "1048",
@@ -275,7 +277,8 @@
       "cfg": {
         "node_id": "1027",
         "input_key": "cfg",
-        "label": "CFG Scale"
+        "label": "CFG Scale",
+        "note": "1 is correct - Klein is distilled and does not want guidance."
       },
       "refine_seed": {
         "node_id": "1055",
@@ -285,17 +288,20 @@
       "refine_denoise": {
         "node_id": "1055",
         "input_key": "denoise",
-        "label": "Refine denoise"
+        "label": "Refine denoise",
+        "note": "The Z-Image pass over the Klein result. 0.2 tightens skin and texture without moving anything; past about 0.35 it starts redrawing faces."
       },
       "grain": {
         "node_id": "1064",
         "input_key": "strength",
-        "label": "Film grain"
+        "label": "Film grain",
+        "note": "Sensor noise. 0.02 is barely there and doing most of the work: a render is too clean, and a photograph never is. 0 looks synthetic again; past 0.05 it looks like a bad scan."
       },
       "contrast": {
         "node_id": "1065",
         "input_key": "factor",
-        "label": "Contrast"
+        "label": "Contrast",
+        "note": "1.12 - a lift, not a look. AI output sits flat in the midtones and this is what stops it reading as a render."
       },
       "model_build": {
         "node_id": "1036",
@@ -308,6 +314,17 @@
         "input_key": "unet_name",
         "label": "Refine model",
         "control": "select"
+      },
+      "refine_steps": {
+        "node_id": "1055",
+        "input_key": "steps",
+        "label": "Refine steps"
+      },
+      "refine_shift": {
+        "node_id": "1022",
+        "input_key": "shift",
+        "label": "Refine shift",
+        "note": "How hard the refine pass bites. 3 is the tuned value - higher pushes texture further and starts inventing it."
       }
     },
     "example": {
@@ -315,7 +332,10 @@
       "steps": 5,
       "refine_denoise": 0.2,
       "grain": 0.02,
-      "contrast": 1.12
+      "contrast": 1.12,
+      "style": "Photography | Fine Art",
+      "refine_steps": 5,
+      "refine_shift": 3
     }
   },
   "extras-01-inpaint-pro": {
