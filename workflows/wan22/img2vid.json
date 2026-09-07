@@ -95,7 +95,7 @@
   "266": {
     "class_type": "easy int",
     "inputs": {
-      "value": 10
+      "value": 6
     },
     "_meta": {
       "title": "LENGTH  LENGTH IN SECONDS"
@@ -222,7 +222,7 @@
   "276": {
     "class_type": "VHS_VideoCombine",
     "inputs": {
-      "frame_rate": 60,
+      "frame_rate": 30,
       "loop_count": 0,
       "filename_prefix": "VIDEO/WAN22/0",
       "format": "video/h264-mp4",

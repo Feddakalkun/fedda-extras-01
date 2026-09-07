@@ -496,7 +496,8 @@
       "length": {
         "node_id": "225",
         "input_key": "value",
-        "label": "Length"
+        "label": "Length (seconds)",
+        "unit": "seconds"
       },
       "width": {
         "node_id": "313",
@@ -625,7 +626,8 @@
       "length": {
         "node_id": "266",
         "input_key": "value",
-        "label": "Length"
+        "label": "Length (seconds)",
+        "unit": "seconds"
       },
       "width": {
         "node_id": "314",
