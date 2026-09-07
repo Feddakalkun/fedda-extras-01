@@ -895,7 +895,8 @@
       "steps": {
         "node_id": "1208",
         "input_key": "value",
-        "label": "Steps"
+        "label": "Steps",
+        "note": "Denoise trims the schedule, so these are not all spent: at 0.7 a 24-step setting samples 17. Below about 16 there is no middle to find."
       },
       "seed": {
         "node_id": "1205",
@@ -934,17 +935,19 @@
       "megapixels": {
         "node_id": "1231",
         "input_key": "megapixels",
-        "label": "Size (megapixels)"
+        "label": "Size (megapixels)",
+        "note": "The upload keeps its own shape; this is only how many pixels it is given."
       },
       "denoise": {
         "node_id": "1233",
         "input_key": "denoise",
-        "label": "How much to change"
+        "label": "How much to change",
+        "note": "0.5 keeps the picture, 0.7 keeps the pose and framing, 0.9 keeps only the composition. If 0.7 leaves the clothes on, raise steps before raising this."
       }
     },
     "example": {
       "prompt": "A woman standing at the rail of a ferry in late afternoon light, wind in her hair, the coastline out of focus behind her.",
-      "steps": 10,
+      "steps": 24,
       "cfg": 1,
       "denoise": 0.7,
       "megapixels": 1.3
