@@ -390,7 +390,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "➕ Add Lora": "",
+      "\u2795 Add Lora": "",
       "model": [
         "217",
         0
@@ -506,7 +506,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "➕ Add Lora": "",
+      "\u2795 Add Lora": "",
       "model": [
         "270",
         0
@@ -557,6 +557,32 @@
     "class_type": "RIFE VFI",
     "_meta": {
       "title": "RIFE VFI"
+    }
+  },
+  "286": {
+    "class_type": "ImageSelector",
+    "inputs": {
+      "selected_indexes": "-1",
+      "images": [
+        "274",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "LAST IMAGE"
+    }
+  },
+  "296": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "filename_prefix": "VIDEO/WAN22/lastframe",
+      "images": [
+        "286",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Last frame - feed this into Image to Video to continue"
     }
   }
 }

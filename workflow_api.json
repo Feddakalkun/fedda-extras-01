@@ -526,7 +526,8 @@
         "node_id": "225",
         "input_key": "value",
         "label": "Length (seconds)",
-        "unit": "seconds"
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
       },
       "width": {
         "node_id": "313",
@@ -656,7 +657,8 @@
         "node_id": "266",
         "input_key": "value",
         "label": "Length (seconds)",
-        "unit": "seconds"
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
       },
       "width": {
         "node_id": "314",
@@ -784,7 +786,8 @@
       "length": {
         "node_id": "235",
         "input_key": "value",
-        "label": "Frames"
+        "label": "Frames",
+        "note": "Wan 2.2 generates about five seconds - roughly 81 frames at 16 fps. Past that the clip repeats rather than continuing. Chain from the last frame this saves beside the video to go further."
       },
       "width": {
         "node_ids": [
