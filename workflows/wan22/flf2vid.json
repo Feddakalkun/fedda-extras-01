@@ -32,7 +32,7 @@
   "236": {
     "class_type": "CLIPTextEncode",
     "inputs": {
-      "text": "frozen subject, no movement at all, subtitles, watermark, camera shake, camera pan, camera tilt, camera zoom, dolly, tracking shot, handheld, orbiting camera, moving camera, scene change, cut, jump cut, transition, multiple shots, montage, bright colors, overexposed, blurred details, extra limbs, deformed hands, low quality, JPEG artifacts",
+      "text": "frozen subject, no movement at all, subtitles, watermark, camera shake, camera pan, camera tilt, camera zoom, dolly, tracking shot, handheld, orbiting camera, moving camera, scene change, cut, jump cut, transition, multiple shots, montage, bright colors, overexposed, blurred details, extra limbs, deformed hands, low quality, JPEG artifacts, face change, different face, different woman, different person, identity change, morphing face, changing appearance, reframing, recomposition, subject leaves frame",
       "clip": [
         "232",
         0
