@@ -73,7 +73,7 @@
         "extras-01-wan22"
       ],
       "words": 130,
-      "steer": "Wan 2.2 weights the opening of the prompt most heavily, so the order is the instruction: subject first, then the action, then the camera, then the scene. Write one continuous physical act described plainly and anatomically - who is doing what to whom, at what pace, and what the body does in response. Then the camera in an operator's words: static, slow push in, handheld, orbiting. Then say what holds still, because a shot where everything moves comes apart. One act described well beats three competing ones in a clip this short."
+      "steer": "Wan 2.2 weights the opening of the prompt most heavily, so the order is the instruction: subject first, then the action, then the scene. Write one continuous physical act described plainly and anatomically - who is doing what to whom, at what pace, and what the body does in response.\n\nNever write camera movement. No push in, pull back, pan, tilt, orbit, handheld or tracking, and no shot sizes that imply a move. The camera is locked off on a tripod and stays there; say so once at the end if it helps, and otherwise leave the camera out of the prompt entirely. Wan will invent a move from any camera word it is given.\n\nOne act, continuous, no sequence. Do not write 'then', 'after that', 'next' or any beat that turns the clip into a series of moments - the model renders each beat as its own shot and the result looks like several clips stitched together. The whole clip is one uninterrupted moment lasting a few seconds. Say what holds still, because a shot where everything moves comes apart."
     },
     "extras-01-wan22-img2vid": {
       "match": [
@@ -81,7 +81,7 @@
         "extras-01-wan22-flf2vid"
       ],
       "words": 110,
-      "steer": "The first frame exists already, so do not describe the people, the clothing or the room - they are given, and describing them tells the model to redraw them, which is what identity drift looks like. Write only what happens next, in Wan's order: the act first, plainly and anatomically, then the camera, then what holds still. Keep faces, bodies and light stable across the clip."
+      "steer": "The first frame exists already, so do not describe the people, the clothing or the room - they are given, and describing them tells the model to redraw them, which is what identity drift looks like. Write only what happens next: the act, plainly and anatomically, then what holds still.\n\nNever write camera movement, and do not name the camera at all if you can avoid it. The shot is locked off. Any word like push, pull, pan, tilt, orbit, track or handheld makes Wan move it, and the first frame is the one thing that must not drift.\n\nOne continuous act, no beats. No 'then', no 'after', no second moment - a prompt written as a sequence comes back looking like several clips joined end to end. Keep faces, bodies and light stable across the whole clip."
     }
   }
 }

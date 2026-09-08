@@ -614,7 +614,7 @@
       }
     },
     "example": {
-      "prompt": "a woman walking along a harbour at dusk, camera tracking beside her",
+      "prompt": "a woman walks along a harbour at dusk, coat moving in the wind",
       "length": 6
     }
   },
@@ -745,7 +745,7 @@
       }
     },
     "example": {
-      "prompt": "she turns her head towards the camera and smiles",
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
       "length": 6
     }
   },
@@ -883,7 +883,7 @@
       }
     },
     "example": {
-      "prompt": "a slow push in, the light warming as it goes",
+      "prompt": "she lowers her head slowly, the light warming as she does",
       "length": 81
     }
   },

@@ -151,7 +151,7 @@
   "258": {
     "class_type": "CLIPTextEncode",
     "inputs": {
-      "text": "bright colors, overexposed, static, blurred details, subtitles, still image quality, extra limbs, low quality, JPEG artifacts.\n",
+      "text": "frozen subject, no movement at all, subtitles, watermark, camera shake, camera pan, camera tilt, camera zoom, dolly, tracking shot, handheld, orbiting camera, moving camera, scene change, cut, jump cut, transition, multiple shots, montage, bright colors, overexposed, blurred details, extra limbs, deformed hands, low quality, JPEG artifacts",
       "clip": [
         "214",
         0
