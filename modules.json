@@ -246,6 +246,240 @@
         "rife49.pth"
       ],
       "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well."
+    },
+    {
+      "id": "extras-01-wan22-i2v-kiss",
+      "label": "Wan 2.2 Kiss",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-kiss"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for the two of them kissing."
+    },
+    {
+      "id": "extras-01-wan22-i2v-oral",
+      "label": "Wan 2.2 Oral",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-oral"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for oral sex."
+    },
+    {
+      "id": "extras-01-wan22-i2v-deepthroat",
+      "label": "Wan 2.2 Deepthroat",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-deepthroat"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for deep oral, taking it far back."
+    },
+    {
+      "id": "extras-01-wan22-i2v-cumshot",
+      "label": "Wan 2.2 Cumshot",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-cumshot"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for finishing on her."
+    },
+    {
+      "id": "extras-01-wan22-i2v-fingering",
+      "label": "Wan 2.2 Fingering",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-fingering"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for fingers working her."
+    },
+    {
+      "id": "extras-01-wan22-i2v-missionary",
+      "label": "Wan 2.2 Missionary POV",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-missionary"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for penetration from his point of view."
+    },
+    {
+      "id": "extras-01-wan22-i2v-doggy",
+      "label": "Wan 2.2 Doggy",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-doggy"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for her on all fours, entered from behind."
+    },
+    {
+      "id": "extras-01-wan22-i2v-cowgirl",
+      "label": "Wan 2.2 Reverse Cowgirl",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-cowgirl"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for her riding him, facing away."
+    },
+    {
+      "id": "extras-01-wan22-i2v-twerk",
+      "label": "Wan 2.2 Twerk",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-i2v-twerk"
+      ],
+      "workflows": [
+        "wan22/img2vid.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Image to video, tuned for hips working, no partner needed."
     }
   ]
 }

@@ -380,12 +380,12 @@
       },
       "lora_12": {
         "on": true,
-        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 1,
         "strengthTwo": null
       },
       "lora_13": {
-        "on": true,
+        "on": false,
         "lora": "KISSLOW.safetensors",
         "strength": 1,
         "strengthTwo": null
@@ -415,6 +415,30 @@
         "on": false,
         "lora": "Wan22\\f4c3spl4sh\\wan22-f4c3spl4sh-154epoc-low-k3nk.safetensors",
         "strength": 0.15,
+        "strengthTwo": null
+      },
+      "lora_17": {
+        "on": false,
+        "lora": "Wan22\\wan2.2-i2v-oral-insertion-v1.0\\wan2.2-i2v-low-oral-insertion-v1.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_18": {
+        "on": false,
+        "lora": "Wan22\\jfj-deepthroat\\jfj-deepthroat-W22-I2V-LN.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_19": {
+        "on": false,
+        "lora": "Sensual_fingering\\Sensual_fingering_v1_low_noise.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_20": {
+        "on": false,
+        "lora": "POV_Missionary_Insertion\\W22_LN_i2v_POV_Missionary_Insertion_v1.safetensors",
+        "strength": 1,
         "strengthTwo": null
       }
     },
@@ -496,12 +520,12 @@
       },
       "lora_12": {
         "on": true,
-        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 1,
         "strengthTwo": null
       },
       "lora_13": {
-        "on": true,
+        "on": false,
         "lora": "KISSHIGH.safetensors",
         "strength": 1,
         "strengthTwo": null
@@ -531,6 +555,30 @@
         "on": false,
         "lora": "f4c3spl4sh\\wan22-f4c3spl4sh-100epoc-high-k3nk.safetensors",
         "strength": 0.15,
+        "strengthTwo": null
+      },
+      "lora_17": {
+        "on": false,
+        "lora": "Wan22\\wan2.2-i2v-oral-insertion-v1.0\\wan2.2-i2v-high-oral-insertion-v1.0.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_18": {
+        "on": false,
+        "lora": "Wan22\\jfj-deepthroat\\jfj-deepthroat-W22-I2V-HN.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_19": {
+        "on": false,
+        "lora": "Wan22\\Sensual_fingering\\Sensual_fingering_v1_high_noise.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_20": {
+        "on": false,
+        "lora": "POV_Missionary_Insertion\\W22_HN_i2v_POV_Missionary_Insertion_v1.safetensors",
+        "strength": 1,
         "strengthTwo": null
       }
     },

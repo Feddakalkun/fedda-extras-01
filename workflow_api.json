@@ -1050,5 +1050,1211 @@
       "guidance": 2.5,
       "steps": 20
     }
+  },
+  "extras-01-wan22-i2v-kiss": {
+    "name": "Wan 2.2 Kiss",
+    "description": "Animates a picture you supply into the two of them kissing. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "KISSHIGH.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-oral": {
+    "name": "Wan 2.2 Oral",
+    "description": "Animates a picture you supply into oral sex. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "wan2.2-i2v-high-oral-insertion-v1.0.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-deepthroat": {
+    "name": "Wan 2.2 Deepthroat",
+    "description": "Animates a picture you supply into deep oral, taking it far back. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "jfj-deepthroat-W22-I2V-HN.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-cumshot": {
+    "name": "Wan 2.2 Cumshot",
+    "description": "Animates a picture you supply into finishing on her. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "CumShot-High.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-fingering": {
+    "name": "Wan 2.2 Fingering",
+    "description": "Animates a picture you supply into fingers working her. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "Sensual_fingering_v1_high_noise.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-missionary": {
+    "name": "Wan 2.2 Missionary POV",
+    "description": "Animates a picture you supply into penetration from his point of view. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "W22_HN_i2v_POV_Missionary_Insertion_v1.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-doggy": {
+    "name": "Wan 2.2 Doggy",
+    "description": "Animates a picture you supply into her on all fours, entered from behind. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_high_noise.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-cowgirl": {
+    "name": "Wan 2.2 Reverse Cowgirl",
+    "description": "Animates a picture you supply into her riding him, facing away. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_high_noise.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
+  },
+  "extras-01-wan22-i2v-twerk": {
+    "name": "Wan 2.2 Twerk",
+    "description": "Animates a picture you supply into hips working, no partner needed. Same graph and same two-pass Wan 2.2 setup as Image to Video, with this act's LoRA pair already on. Upload a frame that already shows what the act needs - if it happens below the crop, Wan tilts down to find it and the body it invents there is not hers.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/img2vid.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs",
+        "slots_on": [
+          "V3TWERKHIGH.safetensors"
+        ]
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length (seconds)",
+        "unit": "seconds",
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "she turns her head towards the camera and smiles, then holds the look",
+      "length": 6
+    }
   }
 }
