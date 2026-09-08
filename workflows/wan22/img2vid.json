@@ -222,7 +222,7 @@
   "276": {
     "class_type": "VHS_VideoCombine",
     "inputs": {
-      "frame_rate": 30,
+      "frame_rate": 32,
       "loop_count": 0,
       "filename_prefix": "VIDEO/WAN22/0",
       "format": "video/h264-mp4",
