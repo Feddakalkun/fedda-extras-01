@@ -620,7 +620,7 @@
   },
   "extras-01-wan22-img2vid": {
     "name": "Wan 2.2 Image to Video",
-    "description": "Animates a picture you supply. Two passes on Wan 2.2 14B at four steps each, through an uncensored text encoder. Frames are doubled after sampling, so the clip is smooth at the same speed - set Smoothing to 1 to turn that off, and halve Frames per second if you do.",
+    "description": "Animates a picture you supply. Upload a frame that already shows everything the action needs - if the act happens below the crop, Wan tilts down to find it, and the body it invents down there is not hers. That single move is what most identity drift here actually is. Two passes on Wan 2.2 14B at four steps each, through an uncensored text encoder. Frames are doubled after sampling, so the clip is smooth at the same speed - set Smoothing to 1 to turn that off, and halve Frames per second if you do.",
     "module": "extras-01-wan22-img2vid",
     "filename": "wan22/img2vid.json",
     "inputs": {
