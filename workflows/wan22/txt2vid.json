@@ -273,7 +273,7 @@
         "strengthTwo": null
       },
       "lora_15": {
-        "on": true,
+        "on": false,
         "lora": "KISSLOW.safetensors",
         "strength": 1,
         "strengthTwo": null
@@ -480,7 +480,7 @@
         "strengthTwo": null
       },
       "lora_15": {
-        "on": true,
+        "on": false,
         "lora": "KISSHIGH.safetensors",
         "strength": 1,
         "strengthTwo": null
