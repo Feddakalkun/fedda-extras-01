@@ -145,5 +145,31 @@
     "min_bytes": 104857600,
     "optional": true,
     "_note": "306807976 bytes, sha256 begins 683d6a84430b - which is the same file as the one this pack was built against, hashed on both sides rather than matched on size. The low-noise half; the two halves are different epochs and different sizes, which is what the source published."
+  },
+  "krea2_turbo_fp8_scaled.safetensors": {
+    "relative_dir": "unet",
+    "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",
+    "min_bytes": 4294967296
+  },
+  "qwen3vl_4b_fp8_scaled.safetensors": {
+    "relative_dir": "text_encoders",
+    "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+    "min_bytes": 2147483648
+  },
+  "qwen_image_vae.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/vae/qwen_image_vae.safetensors",
+    "min_bytes": 104857600
+  },
+  "MidJounreyNSFWKrea2Raw.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/MidJounreyNSFWKrea2Raw.safetensors",
+    "min_bytes": 157286400,
+    "_note": "Spelling is the upstream file's, typo and all - it is the filename the graph asks for."
+  },
+  "snofs_krea_v1_4.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/snofs_krea_v1_4.safetensors",
+    "min_bytes": 1258291200
   }
 }
