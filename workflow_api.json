@@ -2416,5 +2416,71 @@
       "prompt3": "she leans back against the wall, breathing, hands at her sides",
       "prompt4": "she looks up into the camera and holds still"
     }
+  },
+  "extras-01-krea2-nsfw": {
+    "name": "Krea 2 XXX",
+    "filename": "krea2/nsfw.json",
+    "module": "extras-01-krea2-nsfw",
+    "description": "Text to image on Krea 2 Turbo, through a Qwen3-VL text encoder. Eight steps at CFG 1 - it is a distilled model, so a higher CFG burns it rather than sharpening it. The style is joined onto the end of your prompt, so write the picture and let the style say how it looks.",
+    "inputs": {
+      "prompt": {
+        "node_id": "168",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "style": {
+        "node_id": "170",
+        "input_key": "styles",
+        "label": "Style"
+      },
+      "aspect_ratio": {
+        "node_id": "150",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio"
+      },
+      "megapixels": {
+        "node_id": "150",
+        "input_key": "megapixels",
+        "label": "Size (megapixels)"
+      },
+      "scene_loras": {
+        "node_ids": [
+          "173"
+        ],
+        "type": "lora_slots",
+        "label": "LoRAs"
+      },
+      "steps": {
+        "node_id": "151",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "151",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "note": "Krea 2 Turbo is distilled and wants 1. Above about 2 it posterises rather than sharpens."
+      },
+      "sampler": {
+        "node_id": "151",
+        "input_key": "sampler_name",
+        "label": "Sampler"
+      },
+      "seed": {
+        "node_id": "151",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "denoise": {
+        "node_id": "151",
+        "input_key": "denoise",
+        "label": "Denoise"
+      }
+    },
+    "example": {
+      "prompt": "a woman lying back on rumpled white sheets, morning light across her stomach, one knee raised, looking at the camera"
+    }
   }
 }

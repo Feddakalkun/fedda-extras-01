@@ -1,0 +1,211 @@
+{
+  "152": {
+    "class_type": "EmptyLatentImage",
+    "inputs": {
+      "width": [
+        "150",
+        0
+      ],
+      "height": [
+        "150",
+        1
+      ],
+      "batch_size": 1
+    },
+    "_meta": {
+      "title": "EmptyLatentImage"
+    }
+  },
+  "154": {
+    "class_type": "VAEDecode",
+    "inputs": {
+      "samples": [
+        "151",
+        0
+      ],
+      "vae": [
+        "164",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "VAEDecode"
+    }
+  },
+  "156": {
+    "class_type": "CLIPTextEncode",
+    "inputs": {
+      "clip": [
+        "165",
+        0
+      ],
+      "text": [
+        "160",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "CLIPTextEncode"
+    }
+  },
+  "160": {
+    "class_type": "Text Concatenate",
+    "inputs": {
+      "text_a": [
+        "168",
+        0
+      ],
+      "text_b": [
+        "170",
+        0
+      ],
+      "delimiter": ",",
+      "clean_whitespace": "true"
+    },
+    "_meta": {
+      "title": "Text Concatenate"
+    }
+  },
+  "164": {
+    "class_type": "VAELoader",
+    "inputs": {
+      "vae_name": "qwen_image_vae.safetensors"
+    },
+    "_meta": {
+      "title": "VAELoader"
+    }
+  },
+  "165": {
+    "class_type": "CLIPLoader",
+    "inputs": {
+      "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+      "type": "krea2",
+      "device": "default"
+    },
+    "_meta": {
+      "title": "CLIPLoader"
+    }
+  },
+  "166": {
+    "class_type": "UNETLoader",
+    "inputs": {
+      "unet_name": "krea2_turbo_fp8_scaled.safetensors",
+      "weight_dtype": "default"
+    },
+    "_meta": {
+      "title": "UNETLoader"
+    }
+  },
+  "158": {
+    "class_type": "SaveImage",
+    "inputs": {
+      "images": [
+        "154",
+        0
+      ],
+      "filename_prefix": "IMAGE/KREA2new/0"
+    },
+    "_meta": {
+      "title": "SaveImage"
+    }
+  },
+  "150": {
+    "class_type": "ResolutionSelector",
+    "inputs": {
+      "aspect_ratio": "1:1 (Square)",
+      "megapixels": 2.2,
+      "multiple": 8
+    },
+    "_meta": {
+      "title": "ResolutionSelector"
+    }
+  },
+  "151": {
+    "class_type": "KSampler",
+    "inputs": {
+      "model": [
+        "173",
+        0
+      ],
+      "positive": [
+        "156",
+        0
+      ],
+      "negative": [
+        "155",
+        0
+      ],
+      "latent_image": [
+        "152",
+        0
+      ],
+      "seed": 1023656935977775,
+      "steps": 8,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 1
+    },
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "170": {
+    "class_type": "Load Styles CSV",
+    "inputs": {
+      "styles": "Experimental | Biomechanical Angel 3D",
+      "csv_file_path": "styles.csv"
+    },
+    "_meta": {
+      "title": "Load Styles CSV"
+    }
+  },
+  "155": {
+    "class_type": "ConditioningZeroOut",
+    "inputs": {
+      "conditioning": [
+        "156",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "ConditioningZeroOut"
+    }
+  },
+  "168": {
+    "class_type": "String Literal",
+    "inputs": {
+      "string": "a sexy silver style futurism woman sex scene pussy penis"
+    },
+    "_meta": {
+      "title": "String Literal"
+    }
+  },
+  "173": {
+    "class_type": "Power Lora Loader (rgthree)",
+    "inputs": {
+      "model": [
+        "166",
+        0
+      ],
+      "lora_1": {
+        "on": true,
+        "lora": "MidJounreyNSFWKrea2Raw.safetensors",
+        "strength": 0.9999999999999998,
+        "strengthTwo": null
+      },
+      "lora_2": {
+        "on": true,
+        "lora": "snofs_krea_v1_4.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "PowerLoraLoaderHeaderWidget": {
+        "type": "PowerLoraLoaderHeaderWidget"
+      }
+    },
+    "_meta": {
+      "title": "Power Lora Loader (rgthree)"
+    }
+  }
+}

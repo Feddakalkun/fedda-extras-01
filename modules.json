@@ -506,6 +506,32 @@
         "rife49.pth"
       ],
       "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
+    },
+    {
+      "id": "extras-01-krea2-nsfw",
+      "label": "Krea 2 XXX",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-krea2-nsfw"
+      ],
+      "workflows": [
+        "krea2/nsfw.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "MidJounreyNSFWKrea2Raw.safetensors",
+        "snofs_krea_v1_4.safetensors"
+      ],
+      "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     }
   ]
 }
