@@ -1,0 +1,977 @@
+{
+  "1": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "3": {
+    "inputs": {
+      "_widget_0": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "4": {
+    "inputs": {
+      "model": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "5": {
+    "inputs": {
+      "positive": [
+        "26",
+        0
+      ],
+      "negative": [
+        "15",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ],
+      "clip_vision_output": 640,
+      "start_image": [
+        "148",
+        0
+      ],
+      "width": [
+        "148",
+        1
+      ],
+      "height": [
+        "148",
+        2
+      ],
+      "length": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "WanImageToVideo"
+  },
+  "11": {
+    "inputs": {
+      "model": [
+        "12",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "14": {
+    "inputs": {
+      "model": [
+        "10",
+        0
+      ],
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "5",
+        1
+      ],
+      "latent_image": [
+        "13",
+        0
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "15": {
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "24": {
+    "inputs": {
+      "samples": [
+        "14",
+        0
+      ],
+      "vae": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "30": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "32": {
+    "inputs": {
+      "_widget_0": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "33": {
+    "inputs": {
+      "model": [
+        "30",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "34": {
+    "inputs": {
+      "positive": [
+        "55",
+        0
+      ],
+      "negative": [
+        "44",
+        0
+      ],
+      "vae": [
+        "32",
+        0
+      ],
+      "clip_vision_output": 640,
+      "start_image": [
+        "21",
+        0
+      ],
+      "width": [
+        "148",
+        1
+      ],
+      "height": [
+        "148",
+        2
+      ],
+      "length": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "WanImageToVideo"
+  },
+  "41": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "43": {
+    "inputs": {
+      "model": [
+        "39",
+        0
+      ],
+      "positive": [
+        "34",
+        0
+      ],
+      "negative": [
+        "34",
+        1
+      ],
+      "latent_image": [
+        "42",
+        0
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "44": {
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "53": {
+    "inputs": {
+      "samples": [
+        "43",
+        0
+      ],
+      "vae": [
+        "32",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "40": {
+    "inputs": {
+      "model": [
+        "41",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "21": {
+    "inputs": {
+      "images": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "50": {
+    "inputs": {
+      "images": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "13": {
+    "inputs": {
+      "model": [
+        "9",
+        0
+      ],
+      "positive": [
+        "5",
+        0
+      ],
+      "negative": [
+        "5",
+        1
+      ],
+      "latent_image": [
+        "5",
+        2
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "42": {
+    "inputs": {
+      "model": [
+        "38",
+        0
+      ],
+      "positive": [
+        "34",
+        0
+      ],
+      "negative": [
+        "34",
+        1
+      ],
+      "latent_image": [
+        "34",
+        2
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "72": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "74": {
+    "inputs": {
+      "_widget_0": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "75": {
+    "inputs": {
+      "model": [
+        "72",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "76": {
+    "inputs": {
+      "positive": [
+        "94",
+        0
+      ],
+      "negative": [
+        "79",
+        0
+      ],
+      "vae": [
+        "74",
+        0
+      ],
+      "clip_vision_output": 640,
+      "start_image": [
+        "50",
+        0
+      ],
+      "width": [
+        "148",
+        1
+      ],
+      "height": [
+        "148",
+        2
+      ],
+      "length": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "WanImageToVideo"
+  },
+  "77": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "78": {
+    "inputs": {
+      "model": [
+        "100",
+        0
+      ],
+      "positive": [
+        "76",
+        0
+      ],
+      "negative": [
+        "76",
+        1
+      ],
+      "latent_image": [
+        "99",
+        0
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "79": {
+    "inputs": {
+      "clip": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "87": {
+    "inputs": {
+      "samples": [
+        "78",
+        0
+      ],
+      "vae": [
+        "74",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "95": {
+    "inputs": {
+      "images": [
+        "87",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "99": {
+    "inputs": {
+      "model": [
+        "97",
+        0
+      ],
+      "positive": [
+        "76",
+        0
+      ],
+      "negative": [
+        "76",
+        1
+      ],
+      "latent_image": [
+        "76",
+        2
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "98": {
+    "inputs": {
+      "_widget_0": "She sucks his penis very quickly, all the way down to his testicles. She puts his entire penis in her mouth very quickly and then pulls it out very quickly, and this repeats over and over again, very fast and furious. A lot of white saliva drips from her mouth and flows profusely down his penis. The camera is still, the point of view is still, and the shot is still.",
+      "_widget_1": "Select the prefix to add to the text",
+      "_widget_2": "\ud83d\udc64Select the subject add to the text",
+      "_widget_3": "\ud83c\udfacSelect the action add to the text",
+      "_widget_4": "\ud83d\udc5aSelect the clothes add to the text",
+      "_widget_5": "\u2600\ufe0fSelect the illumination environment add to the text",
+      "_widget_6": "\ud83c\udf9e\ufe0fSelect the background add to the text",
+      "_widget_7": "\ud83d\udd1eSelect the nsfw add to the text",
+      "_widget_8": [
+        false,
+        true
+      ]
+    },
+    "class_type": "easy prompt"
+  },
+  "89": {
+    "inputs": {
+      "model": [
+        "77",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "101": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "103": {
+    "inputs": {
+      "_widget_0": "wan_2.1_vae.safetensors"
+    },
+    "class_type": "VAELoader"
+  },
+  "104": {
+    "inputs": {
+      "model": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "105": {
+    "inputs": {
+      "positive": [
+        "121",
+        0
+      ],
+      "negative": [
+        "108",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ],
+      "clip_vision_output": 640,
+      "start_image": [
+        "95",
+        0
+      ],
+      "width": [
+        "148",
+        1
+      ],
+      "height": [
+        "148",
+        2
+      ],
+      "length": [
+        "29",
+        0
+      ]
+    },
+    "class_type": "WanImageToVideo"
+  },
+  "106": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "107": {
+    "inputs": {
+      "model": [
+        "126",
+        0
+      ],
+      "positive": [
+        "105",
+        0
+      ],
+      "negative": [
+        "105",
+        1
+      ],
+      "latent_image": [
+        "123",
+        0
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "108": {
+    "inputs": {
+      "clip": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "116": {
+    "inputs": {
+      "samples": [
+        "107",
+        0
+      ],
+      "vae": [
+        "103",
+        0
+      ]
+    },
+    "class_type": "VAEDecode"
+  },
+  "123": {
+    "inputs": {
+      "model": [
+        "125",
+        0
+      ],
+      "positive": [
+        "105",
+        0
+      ],
+      "negative": [
+        "105",
+        1
+      ],
+      "latent_image": [
+        "105",
+        2
+      ],
+      "noise_seed": [
+        "138",
+        0
+      ]
+    },
+    "class_type": "KSamplerAdvanced"
+  },
+  "129": {
+    "inputs": {
+      "model": [
+        "106",
+        0
+      ]
+    },
+    "class_type": "ModelSamplingSD3"
+  },
+  "124": {
+    "inputs": {
+      "_widget_0": "The man pulls his penis out of the girl's mouth and then ejaculates a powerful ejaculation of semen, a sticky liquid, from his penis. A huge amount of semen lands on the girl's face and hair, splashing her face. She is completely covered in semen, semen, a heavy ejaculation, orgasm, semen on her breasts, camera angle, sexy smile, completely covered in semen, semen stains on her hair, masturbation, semen splattering, spitting, laughing.",
+      "_widget_1": "Select the prefix to add to the text",
+      "_widget_2": "\ud83d\udc64Select the subject add to the text",
+      "_widget_3": "\ud83c\udfacSelect the action add to the text",
+      "_widget_4": "\ud83d\udc5aSelect the clothes add to the text",
+      "_widget_5": "\u2600\ufe0fSelect the illumination environment add to the text",
+      "_widget_6": "\ud83c\udf9e\ufe0fSelect the background add to the text",
+      "_widget_7": "\ud83d\udd1eSelect the nsfw add to the text",
+      "_widget_8": [
+        false,
+        true
+      ]
+    },
+    "class_type": "easy prompt"
+  },
+  "71": {
+    "inputs": {
+      "_widget_0": "A man appears and she sucks his penis. Static camera, fixed viewpoint, still shot.",
+      "_widget_1": "Select the prefix to add to the text",
+      "_widget_2": "\ud83d\udc64Select the subject add to the text",
+      "_widget_3": "\ud83c\udfacSelect the action add to the text",
+      "_widget_4": "\ud83d\udc5aSelect the clothes add to the text",
+      "_widget_5": "\u2600\ufe0fSelect the illumination environment add to the text",
+      "_widget_6": "\ud83c\udf9e\ufe0fSelect the background add to the text",
+      "_widget_7": "\ud83d\udd1eSelect the nsfw add to the text",
+      "_widget_8": [
+        false,
+        true
+      ]
+    },
+    "class_type": "easy prompt"
+  },
+  "55": {
+    "inputs": {
+      "clip": [
+        "31",
+        0
+      ],
+      "text": [
+        "71",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "94": {
+    "inputs": {
+      "clip": [
+        "73",
+        0
+      ],
+      "text": [
+        "98",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "121": {
+    "inputs": {
+      "clip": [
+        "102",
+        0
+      ],
+      "text": [
+        "124",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "138": {
+    "inputs": {
+      "_widget_0": 2,
+      "_widget_1": "fixed"
+    },
+    "class_type": "PrimitiveInt"
+  },
+  "132": {
+    "inputs": {
+      "images": [
+        "133",
+        0
+      ],
+      "audio": "frame_rate",
+      "meta_batch": "loop_count",
+      "vae": "filename_prefix"
+    },
+    "class_type": "VHS_VideoCombine"
+  },
+  "147": {
+    "inputs": {
+      "images": [
+        "53",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "145": {
+    "inputs": {
+      "images": [
+        "87",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "146": {
+    "inputs": {
+      "images": [
+        "116",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "144": {
+    "inputs": {
+      "images": [
+        "24",
+        0
+      ]
+    },
+    "class_type": "ImageSelector"
+  },
+  "130": {
+    "inputs": {
+      "image1": [
+        "144",
+        0
+      ],
+      "image2": [
+        "147",
+        0
+      ]
+    },
+    "class_type": "ImageBatch"
+  },
+  "131": {
+    "inputs": {
+      "image1": [
+        "130",
+        0
+      ],
+      "image2": [
+        "145",
+        0
+      ]
+    },
+    "class_type": "ImageBatch"
+  },
+  "133": {
+    "inputs": {
+      "image1": [
+        "131",
+        0
+      ],
+      "image2": [
+        "146",
+        0
+      ]
+    },
+    "class_type": "ImageBatch"
+  },
+  "26": {
+    "inputs": {
+      "clip": [
+        "2",
+        0
+      ],
+      "text": [
+        "70",
+        0
+      ]
+    },
+    "class_type": "CLIPTextEncode"
+  },
+  "29": {
+    "inputs": {
+      "_widget_0": 81
+    },
+    "class_type": "easy int"
+  },
+  "12": {
+    "inputs": {
+      "_widget_0": "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+      "_widget_1": "fp8_e4m3fn_fast"
+    },
+    "class_type": "UNETLoader"
+  },
+  "9": {
+    "inputs": {
+      "model": [
+        "11",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "10": {
+    "inputs": {
+      "model": [
+        "4",
+        0
+      ],
+      "clip": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "38": {
+    "inputs": {
+      "model": [
+        "40",
+        0
+      ],
+      "clip": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "39": {
+    "inputs": {
+      "model": [
+        "33",
+        0
+      ],
+      "clip": [
+        "31",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "97": {
+    "inputs": {
+      "model": [
+        "89",
+        0
+      ],
+      "clip": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "100": {
+    "inputs": {
+      "model": [
+        "75",
+        0
+      ],
+      "clip": [
+        "73",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "125": {
+    "inputs": {
+      "model": [
+        "129",
+        0
+      ],
+      "clip": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "126": {
+    "inputs": {
+      "model": [
+        "104",
+        0
+      ],
+      "clip": [
+        "102",
+        0
+      ]
+    },
+    "class_type": "Power Lora Loader (rgthree)"
+  },
+  "2": {
+    "inputs": {
+      "_widget_0": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "_widget_1": "wan",
+      "_widget_2": "default"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "31": {
+    "inputs": {
+      "_widget_0": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "_widget_1": "wan",
+      "_widget_2": "default"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "73": {
+    "inputs": {
+      "_widget_0": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "_widget_1": "wan",
+      "_widget_2": "default"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "102": {
+    "inputs": {
+      "_widget_0": "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+      "_widget_1": "wan",
+      "_widget_2": "default"
+    },
+    "class_type": "CLIPLoader"
+  },
+  "70": {
+    "inputs": {
+      "_widget_0": "woman grabs her dress and pulls of, to reveil her naked breasts,showing her naked boobs, she pulls opff her clothes from her tits",
+      "_widget_1": "Select the prefix to add to the text",
+      "_widget_2": "\ud83d\udc64Select the subject add to the text",
+      "_widget_3": "\ud83c\udfacSelect the action add to the text",
+      "_widget_4": "\ud83d\udc5aSelect the clothes add to the text",
+      "_widget_5": "\u2600\ufe0fSelect the illumination environment add to the text",
+      "_widget_6": "\ud83c\udf9e\ufe0fSelect the background add to the text",
+      "_widget_7": "\ud83d\udd1eSelect the nsfw add to the text",
+      "_widget_8": [
+        false,
+        true
+      ]
+    },
+    "class_type": "easy prompt"
+  },
+  "25": {
+    "inputs": {
+      "_widget_0": "ComfyUI_00051_.png",
+      "_widget_1": "image"
+    },
+    "class_type": "LoadImage"
+  },
+  "148": {
+    "inputs": {
+      "image": [
+        "25",
+        0
+      ]
+    },
+    "class_type": "AspectRatioResizeImage"
+  }
+}
