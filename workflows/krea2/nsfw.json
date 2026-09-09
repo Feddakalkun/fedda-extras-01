@@ -153,7 +153,7 @@
   "170": {
     "class_type": "Load Styles CSV",
     "inputs": {
-      "styles": "Experimental | Biomechanical Angel 3D",
+      "styles": "No Style",
       "csv_file_path": "styles.csv"
     },
     "_meta": {
