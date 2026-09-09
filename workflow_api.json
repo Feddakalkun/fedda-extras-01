@@ -516,6 +516,14 @@
         "type": "lora_slots",
         "label": "Scene LoRAs"
       },
+      "loras": {
+        "node_ids": [
+          "471",
+          "261"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "style": {
         "node_id": "477",
         "input_key": "styles",
@@ -652,6 +660,14 @@
         ],
         "type": "lora_slots",
         "label": "Scene LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -1089,6 +1105,14 @@
           "KISSHIGH.safetensors"
         ]
       },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "length": {
         "node_id": "266",
         "input_key": "value",
@@ -1222,6 +1246,14 @@
         "slots_on": [
           "wan2.2-i2v-high-oral-insertion-v1.0.safetensors"
         ]
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -1357,6 +1389,14 @@
           "jfj-deepthroat-W22-I2V-HN.safetensors"
         ]
       },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "length": {
         "node_id": "266",
         "input_key": "value",
@@ -1490,6 +1530,14 @@
         "slots_on": [
           "CumShot-High.safetensors"
         ]
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -1625,6 +1673,14 @@
           "Sensual_fingering_v1_high_noise.safetensors"
         ]
       },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "length": {
         "node_id": "266",
         "input_key": "value",
@@ -1758,6 +1814,14 @@
         "slots_on": [
           "W22_HN_i2v_POV_Missionary_Insertion_v1.safetensors"
         ]
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -1893,6 +1957,14 @@
           "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_high_noise.safetensors"
         ]
       },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "length": {
         "node_id": "266",
         "input_key": "value",
@@ -2026,6 +2098,14 @@
         "slots_on": [
           "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_high_noise.safetensors"
         ]
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -2161,6 +2241,14 @@
           "V3TWERKHIGH.safetensors"
         ]
       },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
       "length": {
         "node_id": "266",
         "input_key": "value",
@@ -2291,6 +2379,14 @@
         ],
         "type": "lora_slots",
         "label": "Scene LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "length": {
         "node_id": "266",
@@ -2451,6 +2547,13 @@
         ],
         "type": "lora_slots",
         "label": "LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "173"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
       },
       "steps": {
         "node_id": "151",

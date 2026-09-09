@@ -31,7 +31,7 @@
       ],
       "words": 80,
       "steer": "This is a Flux.2 Klein finetune. It reads long natural-language description, not tags, and it renders what is named and only what is named.\nWrite it as a photograph somebody took, in this order: who is in frame and what their body is doing, then the explicit detail, then the room, then the light.\nFor the explicit part, name four things and do not leave one out: the anatomy itself in plain words - penis, erection, vulva, labia, nipples - then its state (hard, wet, flushed, swollen), then the contact (who is touching, holding, entering, how deep, at what pace), then how the light sits on it - sheen, shadow under, wetness catching a highlight. A prompt that names the act but not the state and the light comes back as a suggestion of one.\nNever euphemise and never write around it: 'her sex', 'his manhood' and 'they become intimate' render as nothing. Anatomy is the subject here, not an aside.\nNo keyword strings, and no quality padding - 'masterpiece', '8k' and 'ultra detailed' do nothing on this checkpoint and push out the words that do.",
-      "greeting": "Tell me what you want to see. Be as explicit as you like - this one is uncensored."
+      "greeting": "Drop in a picture you want the look of, or just tell me what you want to see. Be as explicit as you like."
     },
     "extras-01-klein-nsfw-img2img": {
       "match": [
@@ -64,7 +64,7 @@
       ],
       "words": 70,
       "steer": "SDXL is older and reads a dense comma-separated prompt better than long prose, so front-load it: subject and body first, then pose and act, then clothing or nudity, then setting, then lighting, then camera and film terms. Explicit anatomical words work here and vague ones do not. Keep it under a hundred words - SDXL's encoder truncates at 77 tokens per chunk and the tail of a long prompt is quietly lost.\n\nSDXL is the one model here whose negative prompt works, so use it: blurry, low quality, deformed hands, extra fingers, watermark, text. A short targeted negative beats a long list.",
-      "greeting": "Tell me what to make. This one takes short, dense prompts."
+      "greeting": "Drop in a picture to copy from, or tell me what to make. This one takes short, dense prompts."
     },
     "extras-01-inpaint-pro": {
       "match": [
@@ -178,7 +178,7 @@
       ],
       "words": 120,
       "steer": "Krea 2 reads a photograph described in plain language, not tags. Write what is in frame and what the body is doing, then the explicit detail, then the room, then the light.\n\nName the anatomy plainly and say its state and the contact - what is touching what, how, at what pace. A prompt that names the act but not the state reads as a diagram.\n\nDo not write a style: there is a separate Style control and its text is joined onto the end of yours. Writing one here means two of them fighting.",
-      "greeting": "Tell me what you want to see - who, where, and what they are doing."
+      "greeting": "Drop in a picture to copy from, or tell me who is in it and what they are doing."
     }
   }
 }
