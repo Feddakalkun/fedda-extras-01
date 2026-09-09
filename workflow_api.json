@@ -2256,5 +2256,165 @@
       "prompt": "she turns her head towards the camera and smiles, then holds the look",
       "length": 6
     }
+  },
+  "extras-01-wan22-scene4": {
+    "name": "Wan 2.2 Long Scene",
+    "description": "Four clips in a row, each starting from the last frame of the one before, joined into one. That is how a scene runs past Wan's five seconds - asking for a longer clip repeats the same motion, while continuing from where it stopped does not. Four prompts, one per stretch: write them as one thing happening, in order. Length is per stretch, so six seconds is a twenty-four second scene and four times the render.",
+    "module": "extras-01-wan22-img2vid",
+    "filename": "wan22/scene4.json",
+    "inputs": {
+      "image": {
+        "node_id": "278",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*"
+      },
+      "prompt": {
+        "node_id": "265",
+        "input_key": "text",
+        "label": "1. Opening",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "273",
+        "input_key": "text",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "480",
+          "479"
+        ],
+        "type": "lora_slots",
+        "label": "Scene LoRAs"
+      },
+      "length": {
+        "node_id": "266",
+        "input_key": "value",
+        "label": "Length of each stretch (seconds)",
+        "unit": "seconds",
+        "note": "Per stretch, not for the whole scene. Four of them, so six seconds here is a twenty-four second clip - and four times the render time."
+      },
+      "width": {
+        "node_id": "314",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "aspect_ratio": {
+        "node_id": "314",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "control": "select"
+      },
+      "direction": {
+        "node_id": "314",
+        "input_key": "direction",
+        "label": "Orientation",
+        "control": "select"
+      },
+      "seed": {
+        "node_ids": [
+          "271",
+          "272",
+          "2271",
+          "2272",
+          "3271",
+          "3272",
+          "4271",
+          "4272"
+        ],
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_ids": [
+          "271",
+          "272"
+        ],
+        "input_key": "cfg",
+        "label": "CFG Scale"
+      },
+      "shift": {
+        "node_ids": [
+          "269",
+          "220"
+        ],
+        "input_key": "shift",
+        "label": "Shift"
+      },
+      "frame_rate": {
+        "node_id": "276",
+        "input_key": "frame_rate",
+        "label": "Frames per second"
+      },
+      "smoothing": {
+        "node_id": "481",
+        "input_key": "multiplier",
+        "label": "Smoothing"
+      },
+      "model_high": {
+        "node_id": "270",
+        "input_key": "unet_name",
+        "label": "Model - high noise",
+        "control": "select"
+      },
+      "model_low": {
+        "node_id": "217",
+        "input_key": "unet_name",
+        "label": "Model - low noise",
+        "control": "select"
+      },
+      "encoder_build": {
+        "node_id": "218",
+        "input_key": "clip_name",
+        "label": "Text encoder",
+        "control": "select"
+      },
+      "encoder_device": {
+        "node_id": "218",
+        "input_key": "device",
+        "label": "Text encoder on",
+        "control": "select"
+      },
+      "prompt2": {
+        "node_id": "2265",
+        "input_key": "text",
+        "label": "2. Then",
+        "control": "text",
+        "multiline": true
+      },
+      "prompt3": {
+        "node_id": "3265",
+        "input_key": "text",
+        "label": "3. Then",
+        "control": "text",
+        "multiline": true
+      },
+      "prompt4": {
+        "node_id": "4265",
+        "input_key": "text",
+        "label": "4. Ending",
+        "control": "text",
+        "multiline": true
+      }
+    },
+    "example": {
+      "prompt": "she looks down and starts to undo the strap on her shoulder",
+      "prompt2": "the strap falls and she pulls the dress down off her chest",
+      "prompt3": "she leans back against the wall, breathing, hands at her sides",
+      "prompt4": "she looks up into the camera and holds still"
+    }
   }
 }

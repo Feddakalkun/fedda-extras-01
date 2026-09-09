@@ -480,6 +480,32 @@
         "rife49.pth"
       ],
       "notes": "Image to video, tuned for hips working, no partner needed."
+    },
+    {
+      "id": "extras-01-wan22-scene4",
+      "label": "Wan 2.2 Long Scene",
+      "family": "extras-01",
+      "family_label": "Extra Workflows",
+      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-wan22-scene4"
+      ],
+      "workflows": [
+        "wan22/scene4.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "wan2.2_i2v_high_noise_14B_fp8_scaled.safetensors",
+        "wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "rife49.pth"
+      ],
+      "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
     }
   ]
 }
