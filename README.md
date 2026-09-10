@@ -14,7 +14,11 @@ and nothing else.
 ## Adding a workflow
 
 1. Convert the ComfyUI export with the app's `scripts/ui_to_api.py`
-2. Save it under `workflows/<family>/<name>.json`
+2. Save it under `workflows/<family>/<name>.json`, in a family the app does
+   not ship itself. The app looks for a graph in its own workflows folder
+   before any pack's, so a pack file at `minimax-h3/txt2vid.json` is never
+   read - the page runs the app's graph of that name instead, and nothing
+   says so. That is why the HD MiniMax graphs live in `minimax-h3-hd/`.
 3. Add an entry to `workflow_api.json` whose `filename` is that relative path
 4. Add the tab id to the module's `tabs` in `modules.json`
 5. Add any model it needs to `models.json`, or it will be red on every machine

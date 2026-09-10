@@ -171,5 +171,11 @@
     "relative_dir": "loras",
     "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/snofs_krea_v1_4.safetensors",
     "min_bytes": 1258291200
+  },
+  "minimax_h3_latent_upscaler_3d_fp16.safetensors": {
+    "relative_dir": "latent_upscale_models",
+    "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_fp16.safetensors",
+    "min_bytes": 629145600,
+    "_note": "690,592,672 bytes. The fp16 safetensors build, not the fp32 .pth the early-access canvas names. The node opens a .pth with torch.load(weights_only=False), which is pickle and can run code; a safetensors file is read as tensors and nothing else. The node runs at fp16 either way, so the .pth was also twice the download for no difference in the result."
   }
 }

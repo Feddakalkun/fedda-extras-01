@@ -10,9 +10,9 @@
     {
       "id": "extras-01-sdxl-batch",
       "label": "SDXL Batch",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -27,14 +27,17 @@
       "models": [
         "blendermix_v20.safetensors"
       ],
-      "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts."
+      "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts.",
+      "group": "nsfw-sdxl",
+      "group_label": "SDXL",
+      "group_description": "Batches from text, and repainting part of a picture."
     },
     {
       "id": "extras-01-klein-nsfw",
       "label": "Klein NSFW",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -51,14 +54,17 @@
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors"
       ],
-      "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels."
+      "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels.",
+      "group": "nsfw-klein",
+      "group_label": "Flux.2 Klein",
+      "group_description": "Pictures from text, and redrawing one you have."
     },
     {
       "id": "extras-01-klein-nsfw-img2img",
       "label": "Klein NSFW - Redraw",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": false,
@@ -75,7 +81,10 @@
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors"
       ],
-      "notes": "HIDDEN. Denoise trades composition against change on one scalar, and on this checkpoint there was no setting that did both. Kontext Edit does the same job by conditioning on the picture instead. Set enabled back to true to try it again - nothing else was removed."
+      "notes": "HIDDEN. Denoise trades composition against change on one scalar, and on this checkpoint there was no setting that did both. Kontext Edit does the same job by conditioning on the picture instead. Set enabled back to true to try it again - nothing else was removed.",
+      "group": "nsfw-klein",
+      "group_label": "Flux.2 Klein",
+      "group_description": "Pictures from text, and redrawing one you have."
     },
     {
       "id": "extras-01-realism-converter",
@@ -115,12 +124,12 @@
     {
       "id": "extras-01-inpaint-pro",
       "label": "Inpaint Pro",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
       "area": "nsfw",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
       "tabs": [
         "nsfw",
         "extras-01-inpaint-pro"
@@ -133,7 +142,36 @@
         "realism-sdxl.safetensors",
         "controlnet-union-sdxl-1.0.safetensors"
       ],
-      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
+      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download.",
+      "group": "nsfw-sdxl",
+      "group_label": "SDXL",
+      "group_description": "Batches from text, and repainting part of a picture."
+    },
+    {
+      "id": "extras-01-inpaint-pro-brush",
+      "label": "Inpaint",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-inpaint-pro-brush"
+      ],
+      "workflows": [
+        "inpaint/pro-brush.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "realism-sdxl.safetensors",
+        "controlnet-union-sdxl-1.0.safetensors"
+      ],
+      "notes": "Paint over what should change and write what should be there.",
+      "group": "nsfw-sdxl",
+      "group_label": "SDXL",
+      "group_description": "Batches from text, and repainting part of a picture."
     },
     {
       "id": "extras-01-kontext-edit",
@@ -163,9 +201,9 @@
     {
       "id": "extras-01-wan22-txt2vid",
       "label": "Wan 2.2 Text to Video",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -192,14 +230,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024."
+      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024.",
+      "group": "nsfw-wan22",
+      "group_label": "Wan 2.2",
+      "group_description": "Clips from text, a picture or two frames, and long scenes."
     },
     {
       "id": "extras-01-wan22-img2vid",
       "label": "Wan 2.2 Image to Video",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -218,14 +259,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one."
+      "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one.",
+      "group": "nsfw-wan22",
+      "group_label": "Wan 2.2",
+      "group_description": "Clips from text, a picture or two frames, and long scenes."
     },
     {
       "id": "extras-01-wan22-flf2vid",
       "label": "Wan 2.2 First to Last Frame",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -245,14 +289,17 @@
         "clip_vision_h.safetensors",
         "rife49.pth"
       ],
-      "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well."
+      "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well.",
+      "group": "nsfw-wan22",
+      "group_label": "Wan 2.2",
+      "group_description": "Clips from text, a picture or two frames, and long scenes."
     },
     {
       "id": "extras-01-wan22-i2v-kiss",
       "label": "Wan 2.2 Kiss",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -271,14 +318,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for the two of them kissing."
+      "notes": "Image to video, tuned for the two of them kissing.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-oral",
       "label": "Wan 2.2 Oral",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -297,14 +347,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for oral sex."
+      "notes": "Image to video, tuned for oral sex.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-deepthroat",
       "label": "Wan 2.2 Deepthroat",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -323,14 +376,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for deep oral, taking it far back."
+      "notes": "Image to video, tuned for deep oral, taking it far back.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-cumshot",
       "label": "Wan 2.2 Cumshot",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -349,14 +405,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for finishing on her."
+      "notes": "Image to video, tuned for finishing on her.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-fingering",
       "label": "Wan 2.2 Fingering",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -375,14 +434,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for fingers working her."
+      "notes": "Image to video, tuned for fingers working her.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-missionary",
       "label": "Wan 2.2 Missionary POV",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -401,14 +463,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for penetration from his point of view."
+      "notes": "Image to video, tuned for penetration from his point of view.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-doggy",
       "label": "Wan 2.2 Doggy",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -427,14 +492,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for her on all fours, entered from behind."
+      "notes": "Image to video, tuned for her on all fours, entered from behind.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-cowgirl",
       "label": "Wan 2.2 Reverse Cowgirl",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -453,14 +521,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for her riding him, facing away."
+      "notes": "Image to video, tuned for her riding him, facing away.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-i2v-twerk",
       "label": "Wan 2.2 Twerk",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -479,14 +550,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Image to video, tuned for hips working, no partner needed."
+      "notes": "Image to video, tuned for hips working, no partner needed.",
+      "group": "nsfw-wan22-acts",
+      "group_label": "Wan 2.2 Acts",
+      "group_description": "One page per act, each tuned for it."
     },
     {
       "id": "extras-01-wan22-scene4",
       "label": "Wan 2.2 Long Scene",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -505,14 +579,17 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
+      "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window.",
+      "group": "nsfw-wan22",
+      "group_label": "Wan 2.2",
+      "group_description": "Clips from text, a picture or two frames, and long scenes."
     },
     {
       "id": "extras-01-krea2-nsfw",
       "label": "Krea 2 XXX",
-      "family": "extras-01",
-      "family_label": "Extra Workflows",
-      "family_description": "Extra workflows, installed from a folder rather than shipped with the app.",
+      "family": "nsfw-image",
+      "family_label": "Image",
+      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
       "area": "nsfw",
       "pack": "booster",
       "enabled": true,
@@ -531,7 +608,171 @@
         "MidJounreyNSFWKrea2Raw.safetensors",
         "snofs_krea_v1_4.safetensors"
       ],
-      "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
+      "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair.",
+      "group": "nsfw-krea2",
+      "group_label": "Krea 2",
+      "group_description": "Pictures from text."
+    },
+    {
+      "id": "extras-01-minimax-h3-txt2vid",
+      "label": "MiniMax H3 HD Text to Video",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-minimax-h3-txt2vid"
+      ],
+      "workflows": [
+        "minimax-h3-hd/txt2vid.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "Comfyui_Minimax_h3_latent_Upscaler",
+          "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git",
+          "folder": "Comfyui_Minimax_h3_latent_Upscaler",
+          "note": "MinimaxH3LatentUpscaler3D - the 2x latent upscale between the two passes",
+          "pin": "d7c01b9011f2e8439493f6c02c29995a27df276f"
+        },
+        "ComfyUI-VideoHelperSuite",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax_h3_video_vae_fp16.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors",
+        "minimax_h3_latent_upscaler_3d_fp16.safetensors"
+      ],
+      "notes": "Video with its own sound from text, rendered in two passes and upscaled 2x.",
+      "group": "nsfw-minimax-h3-hd",
+      "group_label": "MiniMax H3 HD",
+      "group_description": "Video with its own sound, upscaled 2x."
+    },
+    {
+      "id": "extras-01-minimax-h3-img2vid",
+      "label": "MiniMax H3 HD Image to Video",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-minimax-h3-img2vid"
+      ],
+      "workflows": [
+        "minimax-h3-hd/img2vid.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "Comfyui_Minimax_h3_latent_Upscaler",
+          "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git",
+          "folder": "Comfyui_Minimax_h3_latent_Upscaler",
+          "note": "MinimaxH3LatentUpscaler3D - the 2x latent upscale between the two passes",
+          "pin": "d7c01b9011f2e8439493f6c02c29995a27df276f"
+        },
+        "ComfyUI-VideoHelperSuite",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax_h3_video_vae_fp16.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors",
+        "minimax_h3_latent_upscaler_3d_fp16.safetensors"
+      ],
+      "notes": "Animates a picture with sound, in two passes and upscaled 2x.",
+      "group": "nsfw-minimax-h3-hd",
+      "group_label": "MiniMax H3 HD",
+      "group_description": "Video with its own sound, upscaled 2x."
+    },
+    {
+      "id": "extras-01-minimax-h3-video-edit",
+      "label": "MiniMax H3 HD Video Edit",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-minimax-h3-video-edit"
+      ],
+      "workflows": [
+        "minimax-h3-hd/video-edit.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "Comfyui_Minimax_h3_latent_Upscaler",
+          "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git",
+          "folder": "Comfyui_Minimax_h3_latent_Upscaler",
+          "note": "MinimaxH3LatentUpscaler3D - the 2x latent upscale between the two passes",
+          "pin": "d7c01b9011f2e8439493f6c02c29995a27df276f"
+        },
+        "ComfyUI-VideoHelperSuite",
+        "ComfyUI-tbox",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax_h3_video_vae_fp16.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors",
+        "minimax_h3_latent_upscaler_3d_fp16.safetensors"
+      ],
+      "notes": "Changes something in a clip you have, keeping the motion, upscaled 2x.",
+      "group": "nsfw-minimax-h3-hd",
+      "group_label": "MiniMax H3 HD",
+      "group_description": "Video with its own sound, upscaled 2x."
+    },
+    {
+      "id": "extras-01-minimax-h3-ref-images",
+      "label": "MiniMax H3 HD Eight References",
+      "family": "nsfw-video",
+      "family_label": "Video",
+      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "area": "nsfw",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "nsfw",
+        "extras-01-minimax-h3-ref-images"
+      ],
+      "workflows": [
+        "minimax-h3-hd/ref-images.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "Comfyui_Minimax_h3_latent_Upscaler",
+          "url": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git",
+          "folder": "Comfyui_Minimax_h3_latent_Upscaler",
+          "note": "MinimaxH3LatentUpscaler3D - the 2x latent upscale between the two passes",
+          "pin": "d7c01b9011f2e8439493f6c02c29995a27df276f"
+        },
+        "ComfyUI-VideoHelperSuite",
+        "rgthree-comfy"
+      ],
+      "models": [
+        "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax_h3_video_vae_fp16.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_fl2v_lightx2v_turbo_4step_v0.1_comfy_resized_avg_rank_21_bf16.safetensors",
+        "minimax_h3_latent_upscaler_3d_fp16.safetensors"
+      ],
+      "notes": "Up to eight reference pictures steering one clip with sound, upscaled 2x.",
+      "group": "nsfw-minimax-h3-hd",
+      "group_label": "MiniMax H3 HD",
+      "group_description": "Video with its own sound, upscaled 2x."
     }
   ]
 }
