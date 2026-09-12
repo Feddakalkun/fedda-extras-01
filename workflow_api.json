@@ -763,7 +763,33 @@
     "example": {
       "prompt": "she turns her head towards the camera and smiles, then holds the look",
       "length": 6
-    }
+    },
+    "presets": [
+      {
+        "label": "Fast",
+        "note": "Quick tries. 480p, 3s.",
+        "values": {
+          "width": 480,
+          "length": 3
+        }
+      },
+      {
+        "label": "Balanced",
+        "note": "The one to keep. 640p, 4s.",
+        "values": {
+          "width": 640,
+          "length": 4
+        }
+      },
+      {
+        "label": "Best",
+        "note": "Slower, for a keeper. 768p, 5s.",
+        "values": {
+          "width": 768,
+          "length": 5
+        }
+      }
+    ]
   },
   "extras-01-wan22-flf2vid": {
     "name": "Wan 2.2 First to Last Frame",
@@ -2655,6 +2681,12 @@
         "type": "loras",
         "label": "LoRAs"
       },
+      "turbo": {
+        "node_id": "311",
+        "type": "lora_slots",
+        "label": "Turbo LoRA (fast)",
+        "note": "On uses the 4-step turbo LoRA - fast, keep Steps low (8). Turn it off and raise Steps (about 20) for best quality, which is the slower mode Alex ships."
+      },
       "encoder_device": {
         "node_ids": [
           "144"
@@ -2753,6 +2785,12 @@
         "type": "loras",
         "label": "LoRAs"
       },
+      "turbo": {
+        "node_id": "312",
+        "type": "lora_slots",
+        "label": "Turbo LoRA (fast)",
+        "note": "On uses the 4-step turbo LoRA - fast, keep Steps low (8). Turn it off and raise Steps (about 20) for best quality, which is the slower mode Alex ships."
+      },
       "encoder_device": {
         "node_ids": [
           "128"
@@ -2822,6 +2860,12 @@
         "node_id": "313",
         "type": "loras",
         "label": "LoRAs"
+      },
+      "turbo": {
+        "node_id": "313",
+        "type": "lora_slots",
+        "label": "Turbo LoRA (fast)",
+        "note": "On uses the 4-step turbo LoRA - fast, keep Steps low (8). Turn it off and raise Steps (about 20) for best quality, which is the slower mode Alex ships."
       },
       "encoder_device": {
         "node_ids": [
@@ -2950,6 +2994,12 @@
         "node_id": "314",
         "type": "loras",
         "label": "LoRAs"
+      },
+      "turbo": {
+        "node_id": "314",
+        "type": "lora_slots",
+        "label": "Turbo LoRA (fast)",
+        "note": "On uses the 4-step turbo LoRA - fast, keep Steps low (8). Turn it off and raise Steps (about 20) for best quality, which is the slower mode Alex ships."
       },
       "encoder_device": {
         "node_ids": [

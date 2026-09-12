@@ -253,7 +253,7 @@
   "314": {
     "class_type": "AspectRatioResizeImage",
     "inputs": {
-      "width": 720,
+      "width": 512,
       "height": 0,
       "aspect_ratio": "1:1",
       "direction": "Horizontal",
@@ -390,7 +390,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "\u2795 Add Lora": "",
+      "➕ Add Lora": "",
       "model": [
         "217",
         0
@@ -530,7 +530,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "\u2795 Add Lora": "",
+      "➕ Add Lora": "",
       "model": [
         "270",
         0
