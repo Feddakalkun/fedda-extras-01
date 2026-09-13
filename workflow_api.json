@@ -2651,5 +2651,66 @@
     },
     "agent": false,
     "layout": "canvas"
+  },
+  "extras-01-chroma-txt2img": {
+    "name": "Chroma1-HD",
+    "filename": "chroma/txt2img.json",
+    "module": "extras-01-chroma-txt2img",
+    "description": "Text to image on Chroma1-HD - a de-distilled Flux with the licence and the guardrails removed, read through a flan-t5-xxl text encoder. Real CFG works here, unlike the distilled models, so it takes a proper negative prompt.",
+    "inputs": {
+      "prompt": {
+        "node_id": "748",
+        "input_key": "text",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "749",
+        "input_key": "text",
+        "label": "Negative prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "width": {
+        "node_id": "737",
+        "input_key": "width",
+        "label": "Width"
+      },
+      "height": {
+        "node_id": "737",
+        "input_key": "height",
+        "label": "Height"
+      },
+      "steps": {
+        "node_id": "751",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "694",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "note": "Chroma is de-distilled, so CFG steers instead of burning. Around 4 is a sane start."
+      },
+      "sampler": {
+        "node_id": "700",
+        "input_key": "sampler_name",
+        "label": "Sampler"
+      },
+      "seed": {
+        "node_id": "718",
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "shift": {
+        "node_id": "701",
+        "input_key": "shift",
+        "label": "Shift"
+      }
+    },
+    "example": {
+      "prompt": "a woman standing at a rain-streaked window at night, city lights bokeh behind her, soft rim light on her shoulder, film grain"
+    }
   }
 }

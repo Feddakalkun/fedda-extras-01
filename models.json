@@ -177,5 +177,23 @@
     "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_fp16.safetensors",
     "min_bytes": 629145600,
     "_note": "690,592,672 bytes. The fp16 safetensors build, not the fp32 .pth the early-access canvas names. The node opens a .pth with torch.load(weights_only=False), which is pickle and can run code; a safetensors file is read as tensors and nothing else. The node runs at fp16 either way, so the .pth was also twice the download for no difference in the result."
+  },
+  "Chroma1-HD.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/lodestones/Chroma1-HD/resolve/main/Chroma1-HD.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "Chroma1-HD, ~17.8 GB bf16. Open repo (lodestones), no token. min_bytes only guards a truncated download."
+  },
+  "flan-t5-xxl_float8_e4m3fn_scaled_stochastic.safetensors": {
+    "relative_dir": "text_encoders",
+    "url": "https://huggingface.co/silveroxides/flan-t5-xxl-encoder-only/resolve/main/flan-t5-xxl_float8_e4m3fn_scaled_stochastic.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "flan-t5-xxl encoder, fp8 scaled. Chroma reads its prompt through this, loaded with CLIPLoader type 'chroma'. Open repo."
+  },
+  "ae.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/resolve/main/split_files/vae/ae.safetensors",
+    "min_bytes": 104857600,
+    "_note": "The Flux/Lumina ae.safetensors VAE, the file Chroma's VAELoader asks for by name. Distinct from z-image's VAE, which is saved as z-image-vae.safetensors."
   }
 }

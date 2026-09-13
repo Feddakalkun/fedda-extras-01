@@ -612,6 +612,24 @@
       "group": "nsfw-krea2",
       "group_label": "Krea 2",
       "group_description": "Pictures from text."
+    },
+    {
+      "id": "extras-01-chroma-txt2img",
+      "label": "Chroma1-HD",
+      "pack": "booster",
+      "area": "nsfw",
+      "family": "nsfw-image",
+      "group": "nsfw-chroma",
+      "group_label": "Chroma1-HD",
+      "group_description": "Chroma1-HD - a de-distilled Flux, no licence and no guardrails. CFG works, so it takes a negative prompt.",
+      "familyLabel": null,
+      "tabs": [
+        "nsfw",
+        "extras-01-chroma-txt2img"
+      ],
+      "workflows": [
+        "chroma/txt2img.json"
+      ]
     }
   ]
 }
