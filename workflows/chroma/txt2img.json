@@ -32,7 +32,7 @@
   },
   "700": {
     "inputs": {
-      "sampler_name": "euler"
+      "sampler_name": "res_multistep"
     },
     "class_type": "KSamplerSelect"
   },
@@ -42,7 +42,7 @@
         "731",
         0
       ],
-      "shift": 1.0
+      "shift": 3.0
     },
     "class_type": "ModelSamplingAuraFlow"
   },
@@ -159,7 +159,7 @@
         "701",
         0
       ],
-      "steps": 32,
+      "steps": 42,
       "alpha": 0.35,
       "beta": 0.35
     },
