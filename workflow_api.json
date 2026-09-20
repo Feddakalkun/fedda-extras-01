@@ -2560,7 +2560,8 @@
       "aspect_ratio": {
         "node_id": "150",
         "input_key": "aspect_ratio",
-        "label": "Aspect ratio"
+        "label": "Aspect ratio",
+        "basic": true
       },
       "megapixels": {
         "node_id": "150",
