@@ -206,6 +206,15 @@
         "input_key": "device",
         "label": "Text encoder on",
         "control": "select"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "9003",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster."
       }
     },
     "example": {
@@ -1017,6 +1026,15 @@
         "input_key": "denoise",
         "label": "How much to change",
         "note": "0.5 keeps the picture, 0.7 keeps the pose and framing, 0.9 keeps only the composition. If 0.7 leaves the clothes on, raise steps before raising this."
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "9003",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster."
       }
     },
     "example": {
@@ -1085,6 +1103,15 @@
         "input_key": "ckpt_name",
         "label": "Model",
         "control": "select"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "9003",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster."
       }
     },
     "example": {
