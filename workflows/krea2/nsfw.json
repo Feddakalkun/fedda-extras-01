@@ -100,7 +100,7 @@
     "class_type": "SaveImage",
     "inputs": {
       "images": [
-        "154",
+        "181",
         0
       ],
       "filename_prefix": "IMAGE/KREA2new/0"
@@ -206,6 +206,93 @@
     },
     "_meta": {
       "title": "Power Lora Loader (rgthree)"
+    }
+  },
+  "179": {
+    "class_type": "UltralyticsDetectorProvider",
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "_meta": {
+      "title": "Face detector"
+    }
+  },
+  "180": {
+    "class_type": "SAMLoader",
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "_meta": {
+      "title": "SAM"
+    }
+  },
+  "181": {
+    "class_type": "FaceDetailer",
+    "inputs": {
+      "guide_size": 1152,
+      "guide_size_for": true,
+      "max_size": 1152,
+      "seed": 314,
+      "steps": 9,
+      "cfg": 1,
+      "sampler_name": "euler",
+      "scheduler": "simple",
+      "denoise": 0.44,
+      "feather": 4,
+      "noise_mask": "enabled",
+      "force_inpaint": false,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 8,
+      "bbox_crop_factor": 1.5,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 2,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "154",
+        0
+      ],
+      "model": [
+        "173",
+        0
+      ],
+      "clip": [
+        "165",
+        0
+      ],
+      "vae": [
+        "164",
+        0
+      ],
+      "positive": [
+        "156",
+        0
+      ],
+      "negative": [
+        "155",
+        0
+      ],
+      "bbox_detector": [
+        "179",
+        0
+      ],
+      "sam_model_opt": [
+        "180",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Face detailer"
     }
   }
 }

@@ -2565,7 +2565,8 @@
       "megapixels": {
         "node_id": "150",
         "input_key": "megapixels",
-        "label": "Size (megapixels)"
+        "label": "Size (megapixels)",
+        "basic": true
       },
       "scene_loras": {
         "node_ids": [
@@ -2584,7 +2585,8 @@
       "steps": {
         "node_id": "151",
         "input_key": "steps",
-        "label": "Steps"
+        "label": "Steps",
+        "advanced": true
       },
       "cfg": {
         "node_id": "151",
@@ -2606,6 +2608,15 @@
         "node_id": "151",
         "input_key": "denoise",
         "label": "Denoise"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "181",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster, and keeps the base image as it came out."
       }
     },
     "example": {
