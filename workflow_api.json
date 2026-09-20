@@ -2602,7 +2602,8 @@
       "seed": {
         "node_id": "151",
         "input_key": "seed",
-        "label": "Seed"
+        "label": "Seed",
+        "advanced": true
       },
       "denoise": {
         "node_id": "151",
