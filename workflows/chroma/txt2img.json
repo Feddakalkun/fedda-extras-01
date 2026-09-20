@@ -84,7 +84,7 @@
   "740": {
     "inputs": {
       "images": [
-        "298",
+        "181",
         0
       ],
       "filename_prefix": "IMAGE/CHROMA-SIMPLE/0"
@@ -164,5 +164,92 @@
       "beta": 0.35
     },
     "class_type": "BetaSamplingScheduler"
+  },
+  "179": {
+    "class_type": "UltralyticsDetectorProvider",
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "_meta": {
+      "title": "Face detector"
+    }
+  },
+  "180": {
+    "class_type": "SAMLoader",
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "AUTO"
+    },
+    "_meta": {
+      "title": "SAM"
+    }
+  },
+  "181": {
+    "class_type": "FaceDetailer",
+    "inputs": {
+      "guide_size": 1024,
+      "guide_size_for": true,
+      "max_size": 1024,
+      "seed": 314,
+      "steps": 25,
+      "cfg": 4.0,
+      "sampler_name": "res_multistep",
+      "scheduler": "beta",
+      "denoise": 0.4,
+      "feather": 4,
+      "noise_mask": "enabled",
+      "force_inpaint": false,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 8,
+      "bbox_crop_factor": 1.5,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 2,
+      "tiled_encode": false,
+      "tiled_decode": false,
+      "image": [
+        "298",
+        0
+      ],
+      "model": [
+        "701",
+        0
+      ],
+      "clip": [
+        "741",
+        0
+      ],
+      "vae": [
+        "710",
+        0
+      ],
+      "positive": [
+        "748",
+        0
+      ],
+      "negative": [
+        "749",
+        0
+      ],
+      "bbox_detector": [
+        "179",
+        0
+      ],
+      "sam_model_opt": [
+        "180",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Face detailer"
+    }
   }
 }

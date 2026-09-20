@@ -2720,6 +2720,15 @@
         "node_id": "701",
         "input_key": "shift",
         "label": "Shift"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "181",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster, and keeps the base image as it came out."
       }
     },
     "example": {
