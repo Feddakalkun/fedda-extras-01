@@ -4,9 +4,9 @@
     {
       "id": "extras-01-sdxl-batch",
       "label": "SDXL Batch",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-sdxl",
+      "family_label": "SDXL",
+      "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
       "pack": "booster",
       "enabled": true,
@@ -21,17 +21,14 @@
       "models": [
         "blendermix_v20.safetensors"
       ],
-      "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts.",
-      "group": "nsfw-sdxl",
-      "group_label": "SDXL",
-      "group_description": "Batches from text, and repainting part of a picture."
+      "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts."
     },
     {
       "id": "extras-01-klein-nsfw",
       "label": "Klein",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-klein",
+      "family_label": "Flux.2 Klein",
+      "family_description": "Pictures from text, and redrawing one you have.",
       "area": "image",
       "pack": "booster",
       "enabled": true,
@@ -48,17 +45,14 @@
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors"
       ],
-      "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels.",
-      "group": "nsfw-klein",
-      "group_label": "Flux.2 Klein",
-      "group_description": "Pictures from text, and redrawing one you have."
+      "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels."
     },
     {
       "id": "extras-01-klein-nsfw-img2img",
       "label": "Klein - Redraw",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-klein",
+      "family_label": "Flux.2 Klein",
+      "family_description": "Pictures from text, and redrawing one you have.",
       "area": "image",
       "pack": "booster",
       "enabled": false,
@@ -75,10 +69,7 @@
         "qwen_3_8b_fp8mixed.safetensors",
         "flux2-vae.safetensors"
       ],
-      "notes": "HIDDEN. Denoise trades composition against change on one scalar, and on this checkpoint there was no setting that did both. Kontext Edit does the same job by conditioning on the picture instead. Set enabled back to true to try it again - nothing else was removed.",
-      "group": "nsfw-klein",
-      "group_label": "Flux.2 Klein",
-      "group_description": "Pictures from text, and redrawing one you have."
+      "notes": "HIDDEN. Denoise trades composition against change on one scalar, and on this checkpoint there was no setting that did both. Kontext Edit does the same job by conditioning on the picture instead. Set enabled back to true to try it again - nothing else was removed."
     },
     {
       "id": "extras-01-realism-converter",
@@ -118,9 +109,9 @@
     {
       "id": "extras-01-inpaint-pro",
       "label": "Inpaint Pro",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-sdxl",
+      "family_label": "SDXL",
+      "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
       "pack": "booster",
       "enabled": false,
@@ -136,17 +127,14 @@
         "realism-sdxl.safetensors",
         "controlnet-union-sdxl-1.0.safetensors"
       ],
-      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download.",
-      "group": "nsfw-sdxl",
-      "group_label": "SDXL",
-      "group_description": "Batches from text, and repainting part of a picture."
+      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
     },
     {
       "id": "extras-01-inpaint-pro-brush",
       "label": "Inpaint",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-sdxl",
+      "family_label": "SDXL",
+      "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
       "pack": "booster",
       "enabled": true,
@@ -162,10 +150,7 @@
         "realism-sdxl.safetensors",
         "controlnet-union-sdxl-1.0.safetensors"
       ],
-      "notes": "Paint over what should change and write what should be there.",
-      "group": "nsfw-sdxl",
-      "group_label": "SDXL",
-      "group_description": "Batches from text, and repainting part of a picture."
+      "notes": "Paint over what should change and write what should be there."
     },
     {
       "id": "extras-01-kontext-edit",
@@ -195,9 +180,9 @@
     {
       "id": "extras-01-wan22-txt2vid",
       "label": "Wan 2.2 Text to Video",
-      "family": "nsfw-video",
+      "family": "nsfw-wan22",
       "family_label": "Wan 2.2",
-      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
       "pack": "booster",
       "enabled": true,
@@ -224,17 +209,14 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024.",
-      "group": "nsfw-wan22",
-      "group_label": "Wan 2.2",
-      "group_description": "Clips from text, a picture or two frames, and long scenes."
+      "notes": "A clip from a prompt on Wan 2.2 14B. The LoRA stack the graph carries is left as saved - the four-step distill LoRA in it is what makes four steps work. Opens at 720: measured on a 24 GB card, the same clip took 360s at 720 and 1134s at 1024."
     },
     {
       "id": "extras-01-wan22-img2vid",
       "label": "Wan 2.2 Image to Video",
-      "family": "nsfw-video",
+      "family": "nsfw-wan22",
       "family_label": "Wan 2.2",
-      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
       "pack": "booster",
       "enabled": true,
@@ -253,17 +235,14 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one.",
-      "group": "nsfw-wan22",
-      "group_label": "Wan 2.2",
-      "group_description": "Clips from text, a picture or two frames, and long scenes."
+      "notes": "Animates a picture you supply. Same two-pass Wan 2.2 setup as the text one."
     },
     {
       "id": "extras-01-wan22-flf2vid",
       "label": "Wan 2.2 First to Last Frame",
-      "family": "nsfw-video",
+      "family": "nsfw-wan22",
       "family_label": "Wan 2.2",
-      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
       "pack": "booster",
       "enabled": true,
@@ -283,17 +262,14 @@
         "clip_vision_h.safetensors",
         "rife49.pth"
       ],
-      "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well.",
-      "group": "nsfw-wan22",
-      "group_label": "Wan 2.2",
-      "group_description": "Clips from text, a picture or two frames, and long scenes."
+      "notes": "A clip between two pictures. Six steps rather than four, and it needs the CLIP-Vision encoder as well."
     },
     {
       "id": "extras-01-wan22-scene4",
       "label": "Wan 2.2 Long Scene",
-      "family": "nsfw-video",
+      "family": "nsfw-wan22",
       "family_label": "Wan 2.2",
-      "family_description": "Clips from text, a picture, or a clip you already have.",
+      "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
       "pack": "booster",
       "enabled": true,
@@ -312,17 +288,14 @@
         "wan_2.1_vae.safetensors",
         "rife49.pth"
       ],
-      "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window.",
-      "group": "nsfw-wan22",
-      "group_label": "Wan 2.2",
-      "group_description": "Clips from text, a picture or two frames, and long scenes."
+      "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
     },
     {
       "id": "extras-01-krea2-nsfw",
       "label": "Krea 2",
-      "family": "nsfw-image",
-      "family_label": "Studio",
-      "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
+      "family": "nsfw-krea2",
+      "family_label": "Krea 2",
+      "family_description": "Pictures from text.",
       "area": "image",
       "pack": "booster",
       "enabled": true,
@@ -341,20 +314,14 @@
         "MidJounreyNSFWKrea2Raw.safetensors",
         "snofs_krea_v1_4.safetensors"
       ],
-      "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair.",
-      "group": "nsfw-krea2",
-      "group_label": "Krea 2",
-      "group_description": "Pictures from text."
+      "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     },
     {
       "id": "extras-01-chroma-txt2img",
       "label": "Chroma1-HD",
       "pack": "booster",
       "area": "image",
-      "family": "nsfw-image",
-      "group": "nsfw-chroma",
-      "group_label": "Chroma1-HD",
-      "group_description": "Chroma1-HD - a de-distilled Flux, no licence and no guardrails. CFG works, so it takes a negative prompt.",
+      "family": "nsfw-chroma",
       "familyLabel": null,
       "tabs": [
         "image",
@@ -363,7 +330,8 @@
       "workflows": [
         "chroma/txt2img.json"
       ],
-      "family_label": "Studio"
+      "family_label": "Chroma1-HD",
+      "family_description": "Chroma1-HD - a de-distilled Flux, no licence and no guardrails. CFG works, so it takes a negative prompt."
     }
   ]
 }
