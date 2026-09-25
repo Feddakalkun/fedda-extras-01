@@ -1,23 +1,17 @@
 {
-  "areas": [
-    {
-      "id": "nsfw",
-      "label": "NSFW",
-      "description": "Workflows installed from a folder, not shipped with the app."
-    }
-  ],
+  "areas": [],
   "modules": [
     {
       "id": "extras-01-sdxl-batch",
       "label": "SDXL Batch",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-sdxl-batch"
       ],
       "workflows": [
@@ -34,15 +28,15 @@
     },
     {
       "id": "extras-01-klein-nsfw",
-      "label": "Klein NSFW",
+      "label": "Klein",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-klein-nsfw"
       ],
       "workflows": [
@@ -61,15 +55,15 @@
     },
     {
       "id": "extras-01-klein-nsfw-img2img",
-      "label": "Klein NSFW - Redraw",
+      "label": "Klein - Redraw",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": false,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-klein-nsfw-img2img"
       ],
       "workflows": [
@@ -125,13 +119,13 @@
       "id": "extras-01-inpaint-pro",
       "label": "Inpaint Pro",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": false,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-inpaint-pro"
       ],
       "workflows": [
@@ -151,13 +145,13 @@
       "id": "extras-01-inpaint-pro-brush",
       "label": "Inpaint",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-inpaint-pro-brush"
       ],
       "workflows": [
@@ -202,13 +196,13 @@
       "id": "extras-01-wan22-txt2vid",
       "label": "Wan 2.2 Text to Video",
       "family": "nsfw-video",
-      "family_label": "Video",
+      "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture, or a clip you already have.",
-      "area": "nsfw",
+      "area": "video",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "video",
         "extras-01-wan22-txt2vid"
       ],
       "workflows": [
@@ -239,13 +233,13 @@
       "id": "extras-01-wan22-img2vid",
       "label": "Wan 2.2 Image to Video",
       "family": "nsfw-video",
-      "family_label": "Video",
+      "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture, or a clip you already have.",
-      "area": "nsfw",
+      "area": "video",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "video",
         "extras-01-wan22-img2vid"
       ],
       "workflows": [
@@ -268,13 +262,13 @@
       "id": "extras-01-wan22-flf2vid",
       "label": "Wan 2.2 First to Last Frame",
       "family": "nsfw-video",
-      "family_label": "Video",
+      "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture, or a clip you already have.",
-      "area": "nsfw",
+      "area": "video",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "video",
         "extras-01-wan22-flf2vid"
       ],
       "workflows": [
@@ -298,13 +292,13 @@
       "id": "extras-01-wan22-scene4",
       "label": "Wan 2.2 Long Scene",
       "family": "nsfw-video",
-      "family_label": "Video",
+      "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture, or a clip you already have.",
-      "area": "nsfw",
+      "area": "video",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "video",
         "extras-01-wan22-scene4"
       ],
       "workflows": [
@@ -325,15 +319,15 @@
     },
     {
       "id": "extras-01-krea2-nsfw",
-      "label": "Krea 2 XXX",
+      "label": "Krea 2",
       "family": "nsfw-image",
-      "family_label": "Image",
+      "family_label": "Studio",
       "family_description": "Pictures: from text, redrawn, or repainted where you mask.",
-      "area": "nsfw",
+      "area": "image",
       "pack": "booster",
       "enabled": true,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-krea2-nsfw"
       ],
       "workflows": [
@@ -356,19 +350,20 @@
       "id": "extras-01-chroma-txt2img",
       "label": "Chroma1-HD",
       "pack": "booster",
-      "area": "nsfw",
+      "area": "image",
       "family": "nsfw-image",
       "group": "nsfw-chroma",
       "group_label": "Chroma1-HD",
       "group_description": "Chroma1-HD - a de-distilled Flux, no licence and no guardrails. CFG works, so it takes a negative prompt.",
       "familyLabel": null,
       "tabs": [
-        "nsfw",
+        "image",
         "extras-01-chroma-txt2img"
       ],
       "workflows": [
         "chroma/txt2img.json"
-      ]
+      ],
+      "family_label": "Studio"
     }
   ]
 }
