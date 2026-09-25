@@ -4,7 +4,7 @@
     {
       "id": "extras-01-sdxl-batch",
       "label": "SDXL Batch",
-      "family": "nsfw-sdxl",
+      "family": "sdxl",
       "family_label": "SDXL",
       "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
@@ -24,9 +24,9 @@
       "notes": "SDXL with an upscale pass and a face pass. The prompt is built from four parts."
     },
     {
-      "id": "extras-01-klein-nsfw",
+      "id": "extras-01-klein",
       "label": "Klein",
-      "family": "nsfw-klein",
+      "family": "klein",
       "family_label": "Flux.2 Klein",
       "family_description": "Pictures from text, and redrawing one you have.",
       "area": "image",
@@ -34,7 +34,7 @@
       "enabled": true,
       "tabs": [
         "image",
-        "extras-01-klein-nsfw"
+        "extras-01-klein"
       ],
       "workflows": [
         "klein/nsfw.json"
@@ -48,9 +48,9 @@
       "notes": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels."
     },
     {
-      "id": "extras-01-klein-nsfw-img2img",
+      "id": "extras-01-klein-img2img",
       "label": "Klein - Redraw",
-      "family": "nsfw-klein",
+      "family": "klein",
       "family_label": "Flux.2 Klein",
       "family_description": "Pictures from text, and redrawing one you have.",
       "area": "image",
@@ -58,7 +58,7 @@
       "enabled": false,
       "tabs": [
         "image",
-        "extras-01-klein-nsfw-img2img"
+        "extras-01-klein-img2img"
       ],
       "workflows": [
         "klein/nsfw-img2img.json"
@@ -109,7 +109,7 @@
     {
       "id": "extras-01-inpaint-pro",
       "label": "Inpaint Pro",
-      "family": "nsfw-sdxl",
+      "family": "sdxl",
       "family_label": "SDXL",
       "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
@@ -132,7 +132,7 @@
     {
       "id": "extras-01-inpaint-pro-brush",
       "label": "Inpaint",
-      "family": "nsfw-sdxl",
+      "family": "sdxl",
       "family_label": "SDXL",
       "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
@@ -180,7 +180,7 @@
     {
       "id": "extras-01-wan22-txt2vid",
       "label": "Wan 2.2 Text to Video",
-      "family": "nsfw-wan22",
+      "family": "wan22",
       "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
@@ -214,7 +214,7 @@
     {
       "id": "extras-01-wan22-img2vid",
       "label": "Wan 2.2 Image to Video",
-      "family": "nsfw-wan22",
+      "family": "wan22",
       "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
@@ -240,7 +240,7 @@
     {
       "id": "extras-01-wan22-flf2vid",
       "label": "Wan 2.2 First to Last Frame",
-      "family": "nsfw-wan22",
+      "family": "wan22",
       "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
@@ -267,7 +267,7 @@
     {
       "id": "extras-01-wan22-scene4",
       "label": "Wan 2.2 Long Scene",
-      "family": "nsfw-wan22",
+      "family": "wan22",
       "family_label": "Wan 2.2",
       "family_description": "Clips from text, a picture or two frames, and long scenes.",
       "area": "video",
@@ -291,9 +291,9 @@
       "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
     },
     {
-      "id": "extras-01-krea2-nsfw",
+      "id": "extras-01-krea2",
       "label": "Krea 2",
-      "family": "nsfw-krea2",
+      "family": "krea2",
       "family_label": "Krea 2",
       "family_description": "Pictures from text.",
       "area": "image",
@@ -301,7 +301,7 @@
       "enabled": true,
       "tabs": [
         "image",
-        "extras-01-krea2-nsfw"
+        "extras-01-krea2"
       ],
       "workflows": [
         "krea2/nsfw.json"
@@ -321,7 +321,7 @@
       "label": "Chroma1-HD",
       "pack": "booster",
       "area": "image",
-      "family": "nsfw-chroma",
+      "family": "chroma",
       "familyLabel": null,
       "tabs": [
         "image",

@@ -110,10 +110,10 @@
       }
     ]
   },
-  "extras-01-klein-nsfw": {
+  "extras-01-klein": {
     "name": "Klein NSFW",
     "description": "Text to image on a Flux.2 Klein finetune. One sampler pass, sized from an aspect ratio rather than raw pixels.",
-    "module": "extras-01-klein-nsfw",
+    "module": "extras-01-klein",
     "filename": "klein/nsfw.json",
     "inputs": {
       "prompt": {
@@ -938,10 +938,10 @@
       "length": 81
     }
   },
-  "extras-01-klein-nsfw-img2img": {
+  "extras-01-klein-img2img": {
     "name": "Klein NSFW - Redraw",
     "description": "Redraw a picture you already have on the Flux.2 Klein finetune. The upload keeps its own shape; denoise decides how much of it survives.",
-    "module": "extras-01-klein-nsfw-img2img",
+    "module": "extras-01-klein-img2img",
     "filename": "klein/nsfw-img2img.json",
     "inputs": {
       "image": {
@@ -2566,10 +2566,10 @@
       "prompt4": "she looks up into the camera and holds still"
     }
   },
-  "extras-01-krea2-nsfw": {
+  "extras-01-krea2": {
     "name": "Krea 2 XXX",
     "filename": "krea2/nsfw.json",
-    "module": "extras-01-krea2-nsfw",
+    "module": "extras-01-krea2",
     "description": "Text to image on Krea 2 Turbo, through a Qwen3-VL text encoder. Eight steps at CFG 1 - it is a distilled model, so a higher CFG burns it rather than sharpening it. The style is joined onto the end of your prompt, so write the picture and let the style say how it looks.",
     "inputs": {
       "prompt": {
