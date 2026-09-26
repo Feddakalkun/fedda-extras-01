@@ -2477,6 +2477,7 @@
           "4272"
         ],
         "input_key": "noise_seed",
+        "type": "seed_sequence",
         "label": "Seed"
       },
       "steps": {
