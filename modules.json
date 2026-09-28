@@ -25,6 +25,7 @@
     },
     {
       "id": "extras-01-klein",
+      "status": "verified",
       "label": "Klein",
       "family": "klein",
       "family_label": "Flux.2 Klein",
@@ -179,6 +180,7 @@
     },
     {
       "id": "extras-01-wan22-txt2vid",
+      "status": "beta",
       "label": "Wan 2.2 Text to Video",
       "family": "wan22",
       "family_label": "Wan 2.2",
@@ -213,6 +215,7 @@
     },
     {
       "id": "extras-01-wan22-img2vid",
+      "status": "beta",
       "label": "Wan 2.2 Image to Video",
       "family": "wan22",
       "family_label": "Wan 2.2",
@@ -239,6 +242,7 @@
     },
     {
       "id": "extras-01-wan22-flf2vid",
+      "status": "beta",
       "label": "Wan 2.2 First to Last Frame",
       "family": "wan22",
       "family_label": "Wan 2.2",
@@ -266,6 +270,7 @@
     },
     {
       "id": "extras-01-wan22-scene4",
+      "status": "beta",
       "label": "Wan 2.2 Long Scene",
       "family": "wan22",
       "family_label": "Wan 2.2",
@@ -292,6 +297,7 @@
     },
     {
       "id": "extras-01-krea2",
+      "status": "verified",
       "label": "Krea 2",
       "family": "krea2",
       "family_label": "Krea 2",
