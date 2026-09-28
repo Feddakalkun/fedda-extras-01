@@ -9,7 +9,7 @@
       "family_description": "Batches from text, and repainting part of a picture.",
       "area": "image",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
       "tabs": [
         "image",
         "extras-01-sdxl-batch"
@@ -132,6 +132,7 @@
     },
     {
       "id": "extras-01-inpaint-pro-brush",
+      "status": "verified",
       "label": "Inpaint",
       "family": "sdxl",
       "family_label": "SDXL",
