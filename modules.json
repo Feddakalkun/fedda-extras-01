@@ -112,10 +112,10 @@
       "label": "Inpaint · auto mask",
       "family": "sdxl",
       "family_label": "SDXL",
-      "family_description": "Batches from text, and repainting part of a picture.",
+      "family_description": "Repaint part of a picture - paint the mask yourself, or let it find the area.",
       "area": "image",
       "pack": "booster",
-      "enabled": false,
+      "enabled": true,
       "tabs": [
         "image",
         "extras-01-inpaint-pro"
