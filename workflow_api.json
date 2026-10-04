@@ -358,7 +358,10 @@
         "input_key": "image",
         "label": "Source image",
         "control": "file",
-        "accept": "image/*"
+        "accept": "image/*",
+        "prune_when_empty": true,
+        "wide": true,
+        "show_when": { "field": "use_folder", "equals": false }
       },
       "prompt": {
         "node_id": "501",
@@ -464,7 +467,7 @@
         "node_id": "508",
         "input_key": "cfg",
         "label": "CFG Scale",
-        "note": "realism-sdxl is a plain SDXL - its own header says epsilon - so it needs 5 to 8. At 1 the prompt barely reaches the sampler, which is what 'it changes too little' looks like."
+        "note": "realism-sdxl is a distilled (LCM-type) model despite what its header says - keep CFG at 1. Higher values over-cook it into a cross-hatch/mesh texture."
       },
       "denoise": {
         "node_id": "508",
@@ -477,24 +480,64 @@
         "input_key": "sampler_name",
         "label": "Sampler",
         "control": "select",
-        "note": "dpmpp_2m for this checkpoint. lcm is for a distilled model, and on a normal SDXL it washes the result out."
+        "note": "lcm - this checkpoint is distilled. A normal sampler like dpmpp_2m at higher CFG fries the result into a mesh pattern."
       },
       "checkpoint": {
         "node_id": "512",
         "input_key": "ckpt_name",
         "label": "Checkpoint",
         "control": "select"
+      },
+      "use_folder": {
+        "node_id": "521",
+        "input_key": "switch",
+        "default": false,
+        "label": "Load from folder"
+      },
+      "folder": {
+        "node_id": "520",
+        "input_key": "folder",
+        "label": "Folder path",
+        "control": "text",
+        "required": true,
+        "prune_when_empty": true,
+        "basic": true,
+        "wide": true,
+        "show_when": { "field": "use_folder", "equals": true },
+        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
+      },
+      "include_subfolders": {
+        "node_id": "520",
+        "input_key": "include_subfolders",
+        "label": "Include subfolders",
+        "show_when": { "field": "use_folder", "equals": true }
+      },
+      "folder_start": {
+        "node_id": "520",
+        "input_key": "start_index",
+        "label": "Start at image #",
+        "basic": true,
+        "show_when": { "field": "use_folder", "equals": true },
+        "note": "Which image in the folder to begin at (0 is the first)."
+      },
+      "folder_count": {
+        "node_id": "520",
+        "input_key": "image_load_cap",
+        "label": "How many",
+        "basic": true,
+        "show_when": { "field": "use_folder", "equals": true },
+        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
       }
     },
     "example": {
       "prompt": "bare skin, the light and shadow of the original photograph",
       "steps": 20,
       "denoise": 1,
-      "mask_grow": 12,
-      "mask_softness": 12,
+      "mask_grow": 50,
+      "mask_softness": 50,
       "guidance_strength": 0.4,
-      "cfg": 6.0,
-      "sampler": "dpmpp_2m"
+      "cfg": 1.0,
+      "sampler": "lcm"
     }
   },
   "extras-01-wan22-txt2vid": {
