@@ -340,6 +340,57 @@
       ],
       "family_label": "Chroma1-HD",
       "family_description": "Chroma1-HD - a de-distilled Flux, no licence and no guardrails. CFG works, so it takes a negative prompt."
+    },
+    {
+      "id": "extras-01-inpaint-krea2",
+      "status": "beta",
+      "label": "Inpaint · auto mask",
+      "family": "krea2",
+      "family_label": "Krea 2",
+      "family_description": "Repaint part of a picture - paint the mask yourself, or let it find the area.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-inpaint-krea2"
+      ],
+      "workflows": [
+        "inpaint/krea2-automask.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors"
+      ],
+      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
+    },
+    {
+      "id": "extras-01-inpaint-fluxfill",
+      "status": "beta",
+      "label": "Inpaint · auto mask",
+      "family": "flux-fill",
+      "family_label": "FLUX Fill",
+      "family_description": "Repaint part of a picture - paint the mask yourself, or let it find the area.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-inpaint-fluxfill"
+      ],
+      "workflows": [
+        "inpaint/fluxfill-automask.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "fluxFillFP8_v10.safetensors",
+        "clip_l-for-gguf.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "ae.safetensors"
+      ],
+      "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
     }
   ]
 }

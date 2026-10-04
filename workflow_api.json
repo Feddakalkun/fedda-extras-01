@@ -361,7 +361,10 @@
         "accept": "image/*",
         "prune_when_empty": true,
         "wide": true,
-        "show_when": { "field": "use_folder", "equals": false }
+        "show_when": {
+          "field": "use_folder",
+          "equals": false
+        }
       },
       "prompt": {
         "node_id": "501",
@@ -503,21 +506,30 @@
         "prune_when_empty": true,
         "basic": true,
         "wide": true,
-        "show_when": { "field": "use_folder", "equals": true },
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
         "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
       },
       "include_subfolders": {
         "node_id": "520",
         "input_key": "include_subfolders",
         "label": "Include subfolders",
-        "show_when": { "field": "use_folder", "equals": true }
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        }
       },
       "folder_start": {
         "node_id": "520",
         "input_key": "start_index",
         "label": "Start at image #",
         "basic": true,
-        "show_when": { "field": "use_folder", "equals": true },
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
         "note": "Which image in the folder to begin at (0 is the first)."
       },
       "folder_count": {
@@ -525,7 +537,10 @@
         "input_key": "image_load_cap",
         "label": "How many",
         "basic": true,
-        "show_when": { "field": "use_folder", "equals": true },
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
         "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
       }
     },
@@ -2804,6 +2819,372 @@
     },
     "example": {
       "prompt": "a woman standing at a rain-streaked window at night, city lights bokeh behind her, soft rim light on her shoulder, film grain"
+    }
+  },
+  "extras-01-inpaint-krea2": {
+    "name": "Inpaint Pro Krea2",
+    "description": "Automask inpaint on Krea2. Finds the part to repaint by itself (or paint it), then regenerates it with Krea2.",
+    "module": "extras-01-inpaint-krea2",
+    "filename": "inpaint/krea2-automask.json",
+    "inputs": {
+      "image": {
+        "node_id": "491",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*",
+        "prune_when_empty": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": false
+        }
+      },
+      "mask_face": {
+        "node_id": "490",
+        "input_key": "face",
+        "label": "Mask face"
+      },
+      "mask_hair": {
+        "node_id": "490",
+        "input_key": "hair",
+        "label": "Mask hair"
+      },
+      "mask_body": {
+        "node_id": "490",
+        "input_key": "body",
+        "label": "Mask body"
+      },
+      "mask_clothes": {
+        "node_id": "490",
+        "input_key": "clothes",
+        "label": "Mask clothes",
+        "note": "The mask to start from. Turning on face, hair and body as well selects the whole person, which is a mask that cannot land right because it is not aimed at anything."
+      },
+      "mask_accessories": {
+        "node_id": "490",
+        "input_key": "accessories",
+        "label": "Mask accessories"
+      },
+      "mask_background": {
+        "node_id": "490",
+        "input_key": "background",
+        "label": "Mask background"
+      },
+      "mask_confidence": {
+        "node_id": "490",
+        "input_key": "confidence",
+        "label": "Mask confidence"
+      },
+      "mask_edges": {
+        "node_id": "490",
+        "input_key": "detail_method",
+        "label": "Mask edges",
+        "control": "select"
+      },
+      "mask_grow": {
+        "node_id": "513",
+        "input_key": "dilation",
+        "label": "Grow mask (px)",
+        "note": "Pixels added around the mask. 50 reaches well past whatever was selected; 10 to 15 is usually enough to cover an edge."
+      },
+      "mask_softness": {
+        "node_id": "515",
+        "input_key": "amount",
+        "label": "Soften mask (px)",
+        "note": "How far the edge fades. Keep it near mask_grow."
+      },
+      "use_folder": {
+        "node_id": "521",
+        "input_key": "switch",
+        "default": false,
+        "label": "Load from folder"
+      },
+      "folder": {
+        "node_id": "520",
+        "input_key": "folder",
+        "label": "Folder path",
+        "control": "text",
+        "required": true,
+        "prune_when_empty": true,
+        "basic": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
+      },
+      "include_subfolders": {
+        "node_id": "520",
+        "input_key": "include_subfolders",
+        "label": "Include subfolders",
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        }
+      },
+      "folder_start": {
+        "node_id": "520",
+        "input_key": "start_index",
+        "label": "Start at image #",
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Which image in the folder to begin at (0 is the first)."
+      },
+      "folder_count": {
+        "node_id": "520",
+        "input_key": "image_load_cap",
+        "label": "How many",
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
+      },
+      "prompt": {
+        "node_id": "609",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "610",
+        "input_key": "string",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "seed": {
+        "node_id": "607",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "607",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "607",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "note": "This model is distilled - keep CFG at 1."
+      },
+      "denoise": {
+        "node_id": "607",
+        "input_key": "denoise",
+        "label": "Denoise",
+        "note": "How much of the masked area is repainted. Lower keeps more of the original underneath."
+      },
+      "sampler": {
+        "node_id": "607",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      }
+    },
+    "example": {
+      "prompt": "sunglasses",
+      "mask_grow": 50,
+      "mask_softness": 90,
+      "denoise": 0.85,
+      "steps": 8,
+      "cfg": 1.0,
+      "sampler": "euler"
+    }
+  },
+  "extras-01-inpaint-fluxfill": {
+    "name": "Inpaint Pro FLUX Fill",
+    "description": "Automask inpaint on FLUX Fill - a dedicated inpaint model, so the repaint blends in seamlessly.",
+    "module": "extras-01-inpaint-fluxfill",
+    "filename": "inpaint/fluxfill-automask.json",
+    "inputs": {
+      "image": {
+        "node_id": "491",
+        "input_key": "image",
+        "label": "Source image",
+        "control": "file",
+        "accept": "image/*",
+        "prune_when_empty": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": false
+        }
+      },
+      "mask_face": {
+        "node_id": "490",
+        "input_key": "face",
+        "label": "Mask face"
+      },
+      "mask_hair": {
+        "node_id": "490",
+        "input_key": "hair",
+        "label": "Mask hair"
+      },
+      "mask_body": {
+        "node_id": "490",
+        "input_key": "body",
+        "label": "Mask body"
+      },
+      "mask_clothes": {
+        "node_id": "490",
+        "input_key": "clothes",
+        "label": "Mask clothes",
+        "note": "The mask to start from. Turning on face, hair and body as well selects the whole person, which is a mask that cannot land right because it is not aimed at anything."
+      },
+      "mask_accessories": {
+        "node_id": "490",
+        "input_key": "accessories",
+        "label": "Mask accessories"
+      },
+      "mask_background": {
+        "node_id": "490",
+        "input_key": "background",
+        "label": "Mask background"
+      },
+      "mask_confidence": {
+        "node_id": "490",
+        "input_key": "confidence",
+        "label": "Mask confidence"
+      },
+      "mask_edges": {
+        "node_id": "490",
+        "input_key": "detail_method",
+        "label": "Mask edges",
+        "control": "select"
+      },
+      "mask_grow": {
+        "node_id": "513",
+        "input_key": "dilation",
+        "label": "Grow mask (px)",
+        "note": "Pixels added around the mask. 50 reaches well past whatever was selected; 10 to 15 is usually enough to cover an edge."
+      },
+      "mask_softness": {
+        "node_id": "515",
+        "input_key": "amount",
+        "label": "Soften mask (px)",
+        "note": "How far the edge fades. Keep it near mask_grow."
+      },
+      "use_folder": {
+        "node_id": "521",
+        "input_key": "switch",
+        "default": false,
+        "label": "Load from folder"
+      },
+      "folder": {
+        "node_id": "520",
+        "input_key": "folder",
+        "label": "Folder path",
+        "control": "text",
+        "required": true,
+        "prune_when_empty": true,
+        "basic": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
+      },
+      "include_subfolders": {
+        "node_id": "520",
+        "input_key": "include_subfolders",
+        "label": "Include subfolders",
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        }
+      },
+      "folder_start": {
+        "node_id": "520",
+        "input_key": "start_index",
+        "label": "Start at image #",
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Which image in the folder to begin at (0 is the first)."
+      },
+      "folder_count": {
+        "node_id": "520",
+        "input_key": "image_load_cap",
+        "label": "How many",
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
+      },
+      "prompt": {
+        "node_id": "609",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "negative": {
+        "node_id": "610",
+        "input_key": "string",
+        "label": "Negative Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "seed": {
+        "node_id": "607",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "607",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "cfg": {
+        "node_id": "607",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "note": "This model is distilled - keep CFG at 1."
+      },
+      "denoise": {
+        "node_id": "607",
+        "input_key": "denoise",
+        "label": "Denoise",
+        "note": "How much of the masked area is repainted. Lower keeps more of the original underneath."
+      },
+      "sampler": {
+        "node_id": "607",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "guidance": {
+        "node_ids": [
+          "604",
+          "605"
+        ],
+        "input_key": "guidance",
+        "label": "Guidance",
+        "note": "FLUX distilled guidance. ~30 for Fill inpaint; lower follows the original more."
+      }
+    },
+    "example": {
+      "prompt": "sunglasses",
+      "mask_grow": 50,
+      "mask_softness": 90,
+      "denoise": 1.0,
+      "steps": 10,
+      "cfg": 1.0,
+      "sampler": "euler",
+      "guidance": 30
     }
   }
 }
