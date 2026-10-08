@@ -109,7 +109,7 @@
     },
     {
       "id": "extras-01-inpaint-pro",
-      "status": "beta",
+      "status": "verified",
       "label": "Inpaint · auto mask",
       "family": "sdxl",
       "family_label": "SDXL",
