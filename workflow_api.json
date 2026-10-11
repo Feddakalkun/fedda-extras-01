@@ -361,10 +361,7 @@
         "accept": "image/*",
         "prune_when_empty": true,
         "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": false
-        }
+        "required": true
       },
       "prompt": {
         "node_id": "501",
@@ -372,18 +369,6 @@
         "label": "Prompt",
         "control": "text",
         "multiline": true
-      },
-      "negative": {
-        "node_id": "493",
-        "input_key": "text",
-        "label": "Negative Prompt",
-        "control": "text",
-        "multiline": true
-      },
-      "loras": {
-        "node_id": "498",
-        "type": "loras",
-        "label": "LoRAs"
       },
       "style": {
         "node_id": "495",
@@ -449,7 +434,8 @@
         "node_id": "499",
         "input_key": "strength",
         "label": "Hold to original",
-        "note": "The ControlNet's hold on the original. Lower it if the result keeps coming back unchanged; 0 turns it off."
+        "note": "The ControlNet's hold on the original. Lower it if the result keeps coming back unchanged; 0 turns it off.",
+        "basic": true
       },
       "guidance_end": {
         "node_id": "499",
@@ -464,7 +450,8 @@
       "steps": {
         "node_id": "508",
         "input_key": "steps",
-        "label": "Steps"
+        "label": "Steps",
+        "advanced": true
       },
       "cfg": {
         "node_id": "508",
@@ -490,58 +477,6 @@
         "input_key": "ckpt_name",
         "label": "Checkpoint",
         "control": "select"
-      },
-      "use_folder": {
-        "node_id": "521",
-        "input_key": "switch",
-        "default": false,
-        "label": "Load from folder"
-      },
-      "folder": {
-        "node_id": "520",
-        "input_key": "folder",
-        "label": "Folder path",
-        "control": "text",
-        "required": true,
-        "prune_when_empty": true,
-        "basic": true,
-        "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
-      },
-      "include_subfolders": {
-        "node_id": "520",
-        "input_key": "include_subfolders",
-        "label": "Include subfolders",
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        }
-      },
-      "folder_start": {
-        "node_id": "520",
-        "input_key": "start_index",
-        "label": "Start at image #",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Which image in the folder to begin at (0 is the first)."
-      },
-      "folder_count": {
-        "node_id": "520",
-        "input_key": "image_load_cap",
-        "label": "How many",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
       }
     },
     "example": {
@@ -553,7 +488,8 @@
       "guidance_strength": 0.4,
       "cfg": 1.0,
       "sampler": "lcm"
-    }
+    },
+    "agent": false
   },
   "extras-01-wan22-txt2vid": {
     "name": "Wan 2.2 Text to Video",
