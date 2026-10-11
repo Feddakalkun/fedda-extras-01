@@ -489,7 +489,8 @@
       "cfg": 1.0,
       "sampler": "lcm"
     },
-    "agent": false
+    "agent": false,
+    "layout": "canvas"
   },
   "extras-01-wan22-txt2vid": {
     "name": "Wan 2.2 Text to Video",
