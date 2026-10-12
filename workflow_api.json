@@ -2648,6 +2648,93 @@
       "prompt": "a woman lying back on rumpled white sheets, morning light across her stomach, one knee raised, looking at the camera"
     }
   },
+  "extras-01-character-creator": {
+    "name": "Character Creator",
+    "filename": "krea2/nsfw.json",
+    "module": "extras-01-character-creator",
+    "description": "Build a consistent character and generate her across outfits and scenes. Krea 2 base; pick LoRAs and lock the look.",
+    "inputs": {
+      "prompt": {
+        "node_id": "168",
+        "input_key": "string",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true
+      },
+      "style": {
+        "node_id": "170",
+        "input_key": "styles",
+        "label": "Style"
+      },
+      "aspect_ratio": {
+        "node_id": "150",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "basic": true
+      },
+      "megapixels": {
+        "node_id": "150",
+        "input_key": "megapixels",
+        "label": "Size (megapixels)",
+        "basic": true
+      },
+      "scene_loras": {
+        "node_ids": [
+          "173"
+        ],
+        "type": "lora_slots",
+        "label": "LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "173"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
+      "steps": {
+        "node_id": "151",
+        "input_key": "steps",
+        "label": "Steps",
+        "advanced": true
+      },
+      "cfg": {
+        "node_id": "151",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "note": "Krea 2 Turbo is distilled and wants 1. Above about 2 it posterises rather than sharpens."
+      },
+      "sampler": {
+        "node_id": "151",
+        "input_key": "sampler_name",
+        "label": "Sampler"
+      },
+      "seed": {
+        "node_id": "151",
+        "input_key": "seed",
+        "label": "Seed",
+        "advanced": true
+      },
+      "denoise": {
+        "node_id": "151",
+        "input_key": "denoise",
+        "label": "Denoise"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "181",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster, and keeps the base image as it came out."
+      }
+    },
+    "example": {
+      "prompt": "a woman lying back on rumpled white sheets, morning light across her stomach, one knee raised, looking at the camera"
+    },
+    "layout": "creator"
+  },
   "extras-01-inpaint-pro-brush": {
     "name": "Inpaint",
     "description": "Paint over what should change, then write what should be there.",

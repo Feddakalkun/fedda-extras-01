@@ -325,6 +325,34 @@
       "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     },
     {
+      "id": "extras-01-character-creator",
+      "status": "verified",
+      "label": "Character Creator",
+      "family": "character-creator",
+      "family_label": "Character Creator",
+      "family_description": "Make your own consistent character and generate a whole set.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-character-creator"
+      ],
+      "workflows": [
+        "krea2/nsfw.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "MidJounreyNSFWKrea2Raw.safetensors",
+        "snofs_krea_v1_4.safetensors"
+      ],
+      "notes": "Consistent-character creator on Krea 2 - preview + gallery on the left, the builder on the right.",
+      "featured": true
+    },
+    {
       "id": "extras-01-chroma-txt2img",
       "label": "Chroma1-HD",
       "pack": "booster",
