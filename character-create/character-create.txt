@@ -1,0 +1,178 @@
+=====================================================
+CHROMA PROMPTS — "LOCKED GIRL" SERIES (petite 18, brunette)
+Modell: chroma | aspect_ratio: 4:5 | seed låst pr. sett
+Senere: INGEN negative prompt
+=====================================================
+
+--- BASE IDENTITY (brukt i alle, del av hver prompt) ---
+"Photorealistic 4:5 ... of a petite 18-year-old woman, very cute sweet face, big round doe eyes, soft cheeks, small nose, gentle sweet smile, long wavy light-brown hair, completely bare clean face with NO makeup, real natural skin, slim petite figure."
+
+--- SENERE OPPSKRIFT (levende øyne + varmt lys, lagt til base) ---
+"Bright eyes with catchlights, soft warm directional lighting with gentle shadows."
+
+
+=====================================================
+SETT 1 — SØTERE ANSIKT (identitet)
+=====================================================
+1. Photorealistic Instagram 4:5 close-up portrait of a young petite 18-year-old girl, very cute sweet face, big round doe eyes, soft full cheeks, small button nose, gentle sweet smile with dimples, youthful soft features. Long wavy light-brown hair, natural real skin, barely-there makeup, girl-next-door cute. Soft natural light, 85mm, realistic skin, high quality.
+2. Photorealistic Instagram 4:5 portrait of a young petite 18-year-old girl, very cute sweet face, big round doe eyes, soft cheeks, small nose, shy sweet smile. Long wavy light-brown hair worn down, natural real skin, no heavy makeup. Cozy natural indoor light, 85mm, realistic skin, high quality.
+3. Photorealistic Instagram 4:5 full-body photo of a young petite 18-year-old TikTok girl, very cute sweet face, big round doe eyes, soft cheeks, sweet smile. Long wavy light-brown hair, natural real skin. Standing mirror selfie, cute crop top and skirt, bright room, natural light, 50mm, realistic skin, high quality.
+4. Photorealistic Instagram 4:5 full-body photo of a young petite 18-year-old girl, cute sweet face, big doe eyes, soft cheeks, gentle smile. Long wavy light-brown hair, natural real skin. Casual cute outfit, oversized sweater and shorts, sitting on the floor, candid cozy, natural light, 50mm, realistic skin, high quality.
+
+
+=====================================================
+SETT 2 — TREND / COSPLAY (waist-up, låst seed 123456)
+=====================================================
+[Base] + ...
+1. ... dressed as a CHEERLEADER: red and white crop top and pleated mini skirt, white sneakers, holding pom-poms, bright gym, natural light.
+2. ... in E-GIRL GOTH style: black cropped top, black pleated mini skirt, black thigh-high stockings, choker, moody bedroom, natural light.
+3. ... in Y2K style: low-rise jeans, cropped baby tee, butterfly hair clips, sunny street, natural light.
+4. ... in SCHOOLGIRL preppy style: white shirt, plaid pleated skirt, knee-high socks, school hallway, natural light.
+5. ... as a CAT-GIRL: black fitted top, cat ears headband, black choker, cozy room, natural light.
+6. ... in a cute MAID outfit: black and white maid dress, white frilly apron and headband, bright kitchen, natural light.
+7. ... as a soft FAIRY ANGEL: pastel flowing dress, delicate wings, flower crown, dreamy garden, soft light.
+8. ... as a COWGIRL: denim shirt, cowboy hat, boots, sunny ranch, warm natural light.
+
+
+=====================================================
+SETT 3 — COSPLAY FULLFIGUR + REN HUD (låst seed 123456)
+=====================================================
+[Base: full-body + no makeup] + ...
+1. ... dressed as a CHEERLEADER: red and white crop top and pleated mini skirt, white sneakers, pom-poms, bright gym, full body head to toe.
+2. ... in E-GIRL GOTH style: black cropped top, black pleated mini skirt, black thigh-high stockings, choker, moody bedroom, full body head to toe.
+3. ... in Y2K style: low-rise jeans, cropped baby tee, butterfly hair clips, sunny street, full body head to toe.
+4. ... in SCHOOLGIRL preppy style: white shirt, plaid pleated skirt, knee-high socks, school hallway, full body head to toe.
+5. ... as a CAT-GIRL: black fitted top, black skirt, cat ears headband, black choker, cozy room, full body head to toe.
+6. ... in a cute MAID outfit: black and white maid dress, white frilly apron and headband, bright kitchen, full body head to toe.
+7. ... as a soft FAIRY ANGEL: pastel flowing dress, delicate wings, flower crown, dreamy garden, full body head to toe.
+8. ... as a COWGIRL: denim shirt, cowboy hat, boots, sunny ranch, full body head to toe.
+
+
+=====================================================
+SETT 4 — OUTFIT-SERIE (låst seed 123456)
+=====================================================
+1. ... wearing an oversized cozy hoodie and leggings, casual home, soft light.
+2. ... wearing a plain white tee and high-waisted jeans, bright street, natural light.
+3. ... wearing a flowy floral summer sundress, sunny park, natural light.
+4. ... wearing a fitted crop top and baggy cargo pants, urban street, natural light.
+5. ... wearing a chunky knit sweater and a mini skirt, autumn park, warm light.
+6. ... wearing a denim jacket and denim shorts, casual outdoors, natural light.
+7. ... wearing a simple little black dress, evening city, soft light.
+8. ... wearing athleisure, a sports bra and leggings, bright gym, natural light.
+9. ... wearing a silky matching pajama set, cozy bedroom morning, soft light.
+10. ... wearing an oversized blazer and tailored trousers, smart casual, city office, natural light.
+11. ... wearing a puffer jacket, jeans and a beanie, snowy winter street, soft light.
+12. ... wearing a short satin party dress and heels, night party, warm light.
+
+
+=====================================================
+SETT 5 — BIKINI / LINGERIE (låst seed 123456)
+=====================================================
+1. ... wearing a white two-piece bikini, standing on a sunny beach, looking over her shoulder AWAY from the camera.
+2. ... wearing a black bikini, sitting by a pool, side profile, looking off to the side.
+3. ... wearing a pastel bikini, lying on a beach towel propped on her elbows, looking away.
+4. ... wearing a bikini, standing at a pool edge, THREE-QUARTER BACK view, glancing back over her shoulder.
+5. ... wearing a bikini, walking along the shoreline, candid mid-step, looking away.
+6. ... wearing a bikini, sitting on the sand, three-quarter view, looking at the horizon.
+7. ... wearing a lace lingerie set, sitting on the edge of a bed, looking down and away.
+8. ... wearing a silk slip lingerie dress, standing in front of a mirror, side profile.
+9. ... wearing a lace lingerie set, lying on a bed, glancing back over her shoulder.
+10. ... wearing a matching lingerie set, standing, THREE-QUARTER BACK view.
+11. ... wearing a satin lingerie set, sitting on the floor, looking over her shoulder.
+12. ... wearing a fitted black bodysuit, standing, looking away, three-quarter view.
+
+
+=====================================================
+SETT 6 — TRANGT / AVSLØRENDE (låst seed 123456)
+=====================================================
+1. ... wearing a tiny TIGHT micro bikini that hugs her body, three-quarter view looking away, sunny poolside.
+2. ... wearing a very tight bodycon mini dress that clings to every curve, side profile looking away, evening city.
+3. ... wearing a sheer see-through mesh dress over a tiny top, looking over her shoulder.
+4. ... wearing a tight cutout bodycon dress, three-quarter back view glancing back.
+5. ... wearing a skintight glossy latex mini dress, side profile looking away, dark studio.
+6. ... wearing a tight cropped top and a very short micro skirt, looking away, natural daylight.
+7. ... wearing a tight bodycon dress with a high thigh slit, over-the-shoulder glance.
+8. ... wearing a tight ribbed tank dress that hugs her body, three-quarter back view.
+9. ... wearing a tiny tight string bikini, back view looking over her shoulder, beach.
+10. ... wearing tight shiny leather-look leggings and a cropped top, looking away, urban studio.
+11. ... wearing a sheer tight long-sleeve top and tiny shorts, side profile.
+12. ... wearing a tight strapless mini dress that clings to her body, looking down and away.
+
+
+=====================================================
+SETT 7 — RØFF STIL (låst seed 123456)
+=====================================================
+1. ... wearing an oversized flannel shirt, ripped baggy jeans and a beanie, casual rough street style.
+2. ... wearing baggy cargo pants and a fitted tank top, workwear rough style, three-quarter view.
+3. ... wearing a worn band tee, distressed denim jeans and combat boots, grunge rough style.
+4. ... wearing an oversized hoodie and baggy joggers, relaxed rough street style, side profile.
+5. ... wearing denim overalls over a tee, rough casual style.
+6. ... wearing an oversized bomber jacket and cargo pants, streetwear rough style, three-quarter back.
+7. ... wearing a big skater tee, baggy jeans and a cap, skater rough style, skatepark.
+8. ... wearing a plaid shirt, denim mini skirt, black tights and boots, grunge style.
+9. ... wearing a rugged workwear boilersuit, side profile, industrial setting.
+10. ... wearing a black leather moto jacket, ripped jeans and boots, edgy rough style, urban night.
+11. ... wearing a chunky worn sweater and baggy pants, comfy rough style, sitting, loft.
+12. ... wearing a sporty tracksuit with a zip hoodie, rough street style, three-quarter view.
+
+
+=====================================================
+SETT 8 — RØFF + AVSLØRENDE (del 1) (låst seed 123456)
+=====================================================
+1. ... wearing an OPEN oversized flannel shirt over a bikini, standing, looking away.
+2. ... wearing an OPEN bomber jacket over lace lingerie, three-quarter view looking away.
+3. ... wearing an OPEN denim jacket over a bikini, side profile looking away.
+4. ... wearing an unzipped oversized hoodie over lingerie, looking down and away.
+5. ... wearing baggy cargo pants and a bikini top, three-quarter back view.
+6. ... wearing baggy jeans and a lace bralette, looking away.
+7. ... wearing an OPEN oversized shirt over a bikini, over-the-shoulder glance.
+8. ... wearing an open tracksuit jacket over lingerie, looking away.
+9. ... wearing an OPEN leather moto jacket over a bikini, side profile, urban night.
+10. ... wearing a tied flannel shirt over a bikini, looking away.
+11. ... wearing ripped jeans and a bikini top, three-quarter view.
+12. ... wearing an open plaid shirt over lingerie, sitting, looking away.
+
+
+=====================================================
+SETT 9 — RØFF + AVSLØRENDE (del 2) (låst seed 123456)
+=====================================================
+1. ... wearing an OPEN puffer jacket over a bikini, standing relaxed hands in pockets, looking away.
+2. ... wearing an OPEN puffer jacket over lace lingerie, SITTING relaxed on a step, looking away.
+3. ... wearing open workwear overalls over a bikini, standing relaxed lean, looking away.
+4. ... wearing an open workwear jacket over lingerie, SITTING on a wooden crate, legs loosely crossed.
+5. ... TOPLESS under an open oversized button shirt, standing relaxed, looking away.
+6. ... TOPLESS under an open flannel shirt, SITTING with knees up, looking away.
+7. ... TOPLESS under an open denim shirt, leaning back against a wall, looking away.
+8. ... wearing an open flannel over a bikini, SITTING cross-legged on the floor, looking away.
+9. ... wearing only an open oversized shirt (no top underneath), SITTING on the floor leaning on one hand.
+10. ... wearing an open shirt over lingerie, SITTING on the edge of a bed, looking away.
+11. ... wearing an open puffer jacket over a bikini, walking candid mid-step, looking away.
+12. ... wearing open workwear over lingerie, standing relaxed, looking away.
+
+
+=====================================================
+SETT 10 — HÅR-VARIANTER (låst seed 123456)
+=====================================================
+[Base: portrait + white tee] + ...
+1. hair in a HIGH PONYTAIL
+2. hair in a MESSY BUN
+3. LONG LOOSE WAVY hair worn down
+4. SLEEK STRAIGHT hair down
+5. hair in TWIN BRAIDS
+6. hair in SPACE BUNS
+7. HALF-UP HALF-DOWN hair
+8. hair in a LOW BUN with loose strands
+
+
+=====================================================
+SETT 11 — NY OPPSKRIFT, FULL PROMPT (eksempel, brukt på nytt på hår + røff+avsl del1/2)
+=====================================================
+MAL:
+"Photorealistic 4:5 full-body photo of a petite 18-year-old woman with a very cute sweet face, big round doe eyes, soft cheeks, small nose, gentle sweet smile, long wavy light-brown hair, bare clean face no makeup, natural real skin, slim petite figure. Bright eyes with catchlights, soft warm directional lighting with gentle shadows. She wears [PLAGG], [POSITUR], [SETTING], 50mm, high quality."
+
+(seed 401-408 = hår | 501-512 = røff+avsl del2 | 601-612 = røff+avsl del1)
+
+=====================================================
+NEGATIVE PROMPT (brukt før du ba om å droppe den):
+"glam, supermodel, makeup, plastic skin, airbrushed, over-smooth, sharp angular features, mature, blurry, stiff"
+=====================================================
