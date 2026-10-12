@@ -2772,10 +2772,7 @@
         "accept": "image/*",
         "prune_when_empty": true,
         "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": false
-        }
+        "required": true
       },
       "mask_face": {
         "node_id": "490",
@@ -2831,69 +2828,10 @@
         "label": "Soften mask (px)",
         "note": "How far the edge fades. Keep it near mask_grow."
       },
-      "use_folder": {
-        "node_id": "521",
-        "input_key": "switch",
-        "default": false,
-        "label": "Load from folder"
-      },
-      "folder": {
-        "node_id": "520",
-        "input_key": "folder",
-        "label": "Folder path",
-        "control": "text",
-        "required": true,
-        "prune_when_empty": true,
-        "basic": true,
-        "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
-      },
-      "include_subfolders": {
-        "node_id": "520",
-        "input_key": "include_subfolders",
-        "label": "Include subfolders",
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        }
-      },
-      "folder_start": {
-        "node_id": "520",
-        "input_key": "start_index",
-        "label": "Start at image #",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Which image in the folder to begin at (0 is the first)."
-      },
-      "folder_count": {
-        "node_id": "520",
-        "input_key": "image_load_cap",
-        "label": "How many",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
-      },
       "prompt": {
         "node_id": "609",
         "input_key": "string",
         "label": "Prompt",
-        "control": "text",
-        "multiline": true
-      },
-      "negative": {
-        "node_id": "610",
-        "input_key": "string",
-        "label": "Negative Prompt",
         "control": "text",
         "multiline": true
       },
@@ -2905,7 +2843,8 @@
       "steps": {
         "node_id": "607",
         "input_key": "steps",
-        "label": "Steps"
+        "label": "Steps",
+        "advanced": true
       },
       "cfg": {
         "node_id": "607",
@@ -2917,7 +2856,8 @@
         "node_id": "607",
         "input_key": "denoise",
         "label": "Denoise",
-        "note": "How much of the masked area is repainted. Lower keeps more of the original underneath."
+        "note": "How much of the masked area is repainted. Lower keeps more of the original underneath.",
+        "basic": true
       },
       "sampler": {
         "node_id": "607",
@@ -2934,7 +2874,9 @@
       "steps": 8,
       "cfg": 1.0,
       "sampler": "euler"
-    }
+    },
+    "agent": false,
+    "layout": "canvas"
   },
   "extras-01-inpaint-fluxfill": {
     "name": "Inpaint Pro FLUX Fill",
@@ -2950,10 +2892,7 @@
         "accept": "image/*",
         "prune_when_empty": true,
         "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": false
-        }
+        "required": true
       },
       "mask_face": {
         "node_id": "490",
@@ -3009,69 +2948,10 @@
         "label": "Soften mask (px)",
         "note": "How far the edge fades. Keep it near mask_grow."
       },
-      "use_folder": {
-        "node_id": "521",
-        "input_key": "switch",
-        "default": false,
-        "label": "Load from folder"
-      },
-      "folder": {
-        "node_id": "520",
-        "input_key": "folder",
-        "label": "Folder path",
-        "control": "text",
-        "required": true,
-        "prune_when_empty": true,
-        "basic": true,
-        "wide": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Full path to the folder of images. Only used when 'Load from folder' is on."
-      },
-      "include_subfolders": {
-        "node_id": "520",
-        "input_key": "include_subfolders",
-        "label": "Include subfolders",
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        }
-      },
-      "folder_start": {
-        "node_id": "520",
-        "input_key": "start_index",
-        "label": "Start at image #",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "Which image in the folder to begin at (0 is the first)."
-      },
-      "folder_count": {
-        "node_id": "520",
-        "input_key": "image_load_cap",
-        "label": "How many",
-        "basic": true,
-        "show_when": {
-          "field": "use_folder",
-          "equals": true
-        },
-        "note": "How many images to process in one run. 1 does them one at a time; 0 does the whole folder in a single run."
-      },
       "prompt": {
         "node_id": "609",
         "input_key": "string",
         "label": "Prompt",
-        "control": "text",
-        "multiline": true
-      },
-      "negative": {
-        "node_id": "610",
-        "input_key": "string",
-        "label": "Negative Prompt",
         "control": "text",
         "multiline": true
       },
@@ -3083,7 +2963,8 @@
       "steps": {
         "node_id": "607",
         "input_key": "steps",
-        "label": "Steps"
+        "label": "Steps",
+        "advanced": true
       },
       "cfg": {
         "node_id": "607",
@@ -3110,7 +2991,8 @@
         ],
         "input_key": "guidance",
         "label": "Guidance",
-        "note": "FLUX distilled guidance. ~30 for Fill inpaint; lower follows the original more."
+        "note": "FLUX distilled guidance. ~30 for Fill inpaint; lower follows the original more.",
+        "basic": true
       }
     },
     "example": {
@@ -3122,6 +3004,8 @@
       "cfg": 1.0,
       "sampler": "euler",
       "guidance": 30
-    }
+    },
+    "agent": false,
+    "layout": "canvas"
   }
 }
