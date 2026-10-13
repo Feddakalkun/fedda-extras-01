@@ -678,7 +678,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -732,12 +735,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1166,7 +1173,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1220,12 +1230,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1308,7 +1322,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1362,12 +1379,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1450,7 +1471,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1504,12 +1528,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1592,7 +1620,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1646,12 +1677,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1734,7 +1769,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1788,12 +1826,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -1876,7 +1918,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -1930,12 +1975,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -2018,7 +2067,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -2072,12 +2124,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -2160,7 +2216,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -2214,12 +2273,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
@@ -2302,7 +2365,10 @@
         "input_key": "value",
         "label": "Length (seconds)",
         "unit": "seconds",
-        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces."
+        "note": "Wan 2.2 generates about five seconds of motion. Asking for more makes a longer file, not a longer performance - the clip runs out of motion and repeats. To go further, use the last frame this saves beside the video as the start image for Image to Video, and join the pieces.",
+        "ui_min": 1,
+        "ui_max": 10,
+        "ui_step": 1
       },
       "width": {
         "node_id": "314",
@@ -2356,12 +2422,16 @@
       "frame_rate": {
         "node_id": "276",
         "input_key": "frame_rate",
-        "label": "Frames per second"
+        "label": "Frames per second",
+        "advanced": true,
+        "note": "Must equal 16 x Smoothing, or the clip plays at the wrong speed. Left alone (32 with Smoothing 2), the clip lasts exactly Length seconds."
       },
       "smoothing": {
         "node_id": "481",
         "input_key": "multiplier",
-        "label": "Smoothing"
+        "label": "Smoothing",
+        "advanced": true,
+        "note": "Frame interpolation after sampling: 2 doubles the frames (smooth). Change it only with Frames per second (16 x this) or the duration shifts."
       },
       "model_high": {
         "node_id": "270",
