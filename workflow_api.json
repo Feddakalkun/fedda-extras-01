@@ -3164,5 +3164,32 @@
     },
     "agent": false,
     "layout": "canvas"
+  },
+  "extras-01-minimax-infinite": {
+    "name": "MiniMax H3 Infinite",
+    "description": "Long-take MiniMax H3 reference-to-video with synced voice - one continuous take from a reference image, a voice clip and per-shot prompts.",
+    "module": "extras-01-minimax-infinite",
+    "filename": "minimax/infinite.json",
+    "layout": "minimax-infinite",
+    "inputs": {
+      "track_data": { "node_id": "46", "input_key": "track_data", "label": "Timeline" },
+      "resolution": { "node_id": "46", "input_key": "resolution", "label": "Resolution" },
+      "project_name": { "node_id": "15", "input_key": "project_name", "label": "Project name" },
+      "project_save": { "node_id": "15", "input_key": "project_save", "label": "On save" },
+      "seed": { "node_id": "15", "input_key": "seed", "label": "Seed", "role": "seed" },
+      "segment_start_number": { "node_id": "15", "input_key": "segment_start_number", "label": "From shot" },
+      "segment_count": { "node_id": "15", "input_key": "segment_count", "label": "Shot count" },
+      "sampling_plan": { "node_id": "15", "input_key": "sampling_plan", "label": "Sampling plan" },
+      "sampling_mode": { "node_id": "15", "input_key": "sampling_mode", "label": "Sampling mode" },
+      "first_pass_only": { "node_id": "15", "input_key": "1st_pass_only", "label": "1st pass only" },
+      "disable_2nd_noise": { "node_id": "15", "input_key": "disable_2nd_noise", "label": "Disable 2nd noise" },
+      "upscale_by": { "node_id": "15", "input_key": "upscale_by", "label": "Upscale by" },
+      "upscale_model": { "node_id": "15", "input_key": "upscale_model", "label": "Upscale model" },
+      "enabled_tiling": { "node_id": "15", "input_key": "enabled_tiling", "label": "Tiling" },
+      "steps": { "node_id": "22", "input_key": "steps", "label": "Steps" },
+      "scheduler": { "node_id": "22", "input_key": "scheduler", "label": "Scheduler" },
+      "denoise": { "node_id": "22", "input_key": "denoise", "label": "Denoise" },
+      "sampler": { "node_id": "20", "input_key": "sampler_name", "label": "Sampler" }
+    }
   }
 }

@@ -419,6 +419,48 @@
         "ae.safetensors"
       ],
       "notes": "Repaints part of a picture and finds the part itself. Mask edges are matted with VITMatte, which transformers fetches once on first use; set Mask edges to GuidedFilter to avoid that download."
+    },
+    {
+      "id": "extras-01-minimax-infinite",
+      "status": "beta",
+      "label": "MiniMax H3 Infinite",
+      "family": "minimax",
+      "family_label": "MiniMax H3",
+      "family_description": "Long-take reference video with synced voice - one continuous take from a reference image and a voice clip.",
+      "area": "video",
+      "pack": "booster",
+      "enabled": false,
+      "tabs": [
+        "video",
+        "extras-01-minimax-infinite"
+      ],
+      "workflows": [
+        "minimax/infinite.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "ComfyUI-Easy-Media",
+          "url": "https://github.com/yolain/ComfyUI-Easy-Media.git",
+          "folder": "ComfyUI-Easy-Media",
+          "note": "MultiTrack timeline editor/project/combine - the long-take orchestration. Needs FFmpeg on PATH.",
+          "pin": "e1893122c0e5a26d3544e99e4b35124d64901e66"
+        },
+        {
+          "name": "ComfyUI-Pixaroma",
+          "url": "https://github.com/pixaroma/ComfyUI-Pixaroma.git",
+          "folder": "ComfyUI-Pixaroma",
+          "note": "PixaromaLoraLoader + PixaromaFreeVram used in the core model path.",
+          "pin": "09104c176ab4634427ba6caa31ebbcd86cee1ccd"
+        }
+      ],
+      "models": [
+        "minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors",
+        "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+        "minimax_h3_video_vae_int8_convrot.safetensors",
+        "minimax_h3_audio_vae_fp32.safetensors",
+        "minimax_h3_latent_upscaler_3d_fp16.safetensors"
+      ],
+      "notes": "HIDDEN (enabled:false) until an end-to-end run is verified. Long-take MiniMax H3 ref2va: a reference image, a voice clip and per-shot prompts rendered as one continuous video. Very heavy - about 40 GB of weights juggled on a 24 GB card via offloading (64 GB system RAM recommended); keep frames x megapixels under ~540 per shot or it OOMs. int8 video VAE is the default to save VRAM. FFmpeg is required for Easy-Media."
     }
   ]
 }

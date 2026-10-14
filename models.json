@@ -178,6 +178,30 @@
     "min_bytes": 629145600,
     "_note": "690,592,672 bytes. The fp16 safetensors build, not the fp32 .pth the early-access canvas names. The node opens a .pth with torch.load(weights_only=False), which is pickle and can run code; a safetensors file is read as tensors and nothing else. The node runs at fp16 either way, so the .pth was also twice the download for no difference in the result."
   },
+  "minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/MATLOWAI/minimax-h3-fused-turbo-int8-convrot/resolve/main/diffusion_models/minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors",
+    "min_bytes": 18000000000,
+    "_note": "20.98 GB. MiniMax H3 ref2va base, fused refdelta + turbo (8-step), int8 quant. The heavy one - nearly fills a 24 GB card at the sampling pass, so ComfyUI offloads it around the 32B text encoder. Keep frames x megapixels under ~540 per shot or it OOMs."
+  },
+  "qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors": {
+    "relative_dir": "text_encoders",
+    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/text_encoders/qwen3vl_32b_minimax_h3_nvfp4_awq.safetensors",
+    "min_bytes": 14000000000,
+    "_note": "15.69 GB. Qwen3-VL 32B text encoder for MiniMax H3, NVFP4 (4-bit) AWQ - the smallest of three builds (int8 is 27 GB, bf16 51 GB), the only one that fits a 24 GB card. NVFP4 is native on RTX 50-series; on Ampere (3090) it runs via dequant, so slower but functional."
+  },
+  "minimax_h3_video_vae_int8_convrot.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_int8_convrot.safetensors",
+    "min_bytes": 2500000000,
+    "_note": "2.81 GB. The int8 video VAE (not the 5.21 GB fp16) - chosen to save VRAM on a tight 24 GB card; negligible quality difference at decode."
+  },
+  "minimax_h3_audio_vae_fp32.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors",
+    "min_bytes": 500000000,
+    "_note": "0.61 GB. MiniMax H3 audio VAE."
+  },
   "Chroma1-HD.safetensors": {
     "relative_dir": "diffusion_models",
     "url": "https://huggingface.co/lodestones/Chroma1-HD/resolve/main/Chroma1-HD.safetensors",
