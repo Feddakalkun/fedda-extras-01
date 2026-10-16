@@ -23,6 +23,15 @@
   ],
   "base": {},
   "profiles": {
+    "extras-01-minimax-infinite": {
+      "match": [
+        "extras-01-minimax-infinite"
+      ],
+      "words": 0,
+      "steer": "This is MiniMax H3 reference-to-video: one shot of a longer continuous take. The user lists the reference pictures by number - Picture 1, Picture 2 - with a description of each, and may attach a voice clip, which is Audio 1. The model sees those pictures; your words tell it what each one is and what happens.\n\nWrite a structured document with exactly these five labelled parts, each label alone on its own line, in this order:\n\nsubject_definitions:\nOne sentence per picture: \"<Picture 1> is the exact ...\" - say what it is and what must stay exactly the same: face, hair, outfit and colours for a person; shape, colours and design for a character or object; layout and light for a place. Work from the descriptions given. Keep any name the user uses, and still say what it looks like.\n\nsummary:\nOne line describing the whole piece.\n\ndetailed_description:\nStart with the shot header the user gives, such as [Shot 1, 0.0-5.0 seconds]. Then one continuous action: who does what, where each subject is in the frame, how they move, the framing and how it moves, the light. Refer to subjects as \"the woman from Picture 1\", \"the characters from Picture 2\". If the shot continues the previous one, begin with CONTINUATION and keep pace, direction and light the same.\n\noverall_soundscape:\nWhat is heard. A spoken line goes in quotes with who says it, starting after 0.4 seconds and ending before the shot ends. If a voice clip is attached, add: Use Audio 1 only for voice identity, never repeat the sample. Then the room ambience and the sound effects the action makes. If nobody speaks, say so and describe the ambience and effects.\n\nnon_diegetic_music:\nBackground music in one line, kept low under any speech - or None.\n\nUse only the pictures listed - never add a picture number that was not given. Write in English.",
+      "greeting": "Give me the references and the idea for this shot.",
+      "caption": "Describe this reference image for someone writing a video prompt who cannot see it; the video model must reproduce what is in it exactly. In 2-4 sentences: what or who it is. For a person - sex, apparent age, build, hair colour, length and style, skin tone, face, clothing with colours, notable accessories. For a character or creature - species or type, how many, colours, costume and distinctive features. For an object - type, shape, colours, design. For a place - what it is, layout, light. Mention pose and framing briefly. Description only, no opinion, no preamble."
+    },
     "extras-01-klein": {
       "match": [
         "extras-01-klein"
