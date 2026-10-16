@@ -3188,7 +3188,8 @@
       "steps": { "node_id": "22", "input_key": "steps", "label": "Steps" },
       "scheduler": { "node_id": "22", "input_key": "scheduler", "label": "Scheduler" },
       "denoise": { "node_id": "22", "input_key": "denoise", "label": "Denoise" },
-      "sampler": { "node_id": "20", "input_key": "sampler_name", "label": "Sampler" }
+      "sampler": { "node_id": "20", "input_key": "sampler_name", "label": "Sampler" },
+      "lora_state": { "node_id": "37", "input_key": "LoraLoaderState", "label": "LoRAs" }
     }
   }
 }

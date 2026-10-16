@@ -150,19 +150,7 @@
   "37": {
     "class_type": "PixaromaLoraLoader",
     "inputs": {
-      "loras_ui": {
-        "version": 1,
-        "loras": [],
-        "sep": ", ",
-        "step": 0.05,
-        "defStrength": 1,
-        "linkStrength": true,
-        "civitai": true,
-        "thumbs": true,
-        "hideExt": true,
-        "accent": null,
-        "cacheMode": "last"
-      },
+      "LoraLoaderState": "{\"loras\":[],\"sep\":\", \",\"cacheMode\":\"last\"}",
       "model": [
         "11",
         0

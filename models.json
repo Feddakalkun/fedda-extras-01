@@ -219,5 +219,23 @@
     "url": "https://huggingface.co/Comfy-Org/Lumina_Image_2.0_Repackaged/resolve/main/split_files/vae/ae.safetensors",
     "min_bytes": 104857600,
     "_note": "The Flux/Lumina ae.safetensors VAE, the file Chroma's VAELoader asks for by name. Distinct from z-image's VAE, which is saved as z-image-vae.safetensors."
+  },
+  "h3-realism-people-t2v-i2v-r2v.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA/resolve/main/h3-realism-people-t2v-i2v-r2v.safetensors",
+    "min_bytes": 120000000,
+    "_note": "131,229,656 bytes. fal MiniMax H3 Realism People LoRA (t2v, i2v, r2v). Trigger word r34l1sm; scale 1.0, 0.6-0.8 for a lighter touch. Offered as a switch on MiniMax H3 Infinite, fetched on first use."
+  },
+  "TaoMate-H3-3step-ComfyUI.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI/resolve/main/TaoMate-H3-3step-ComfyUI.safetensors",
+    "min_bytes": 1100000000,
+    "_note": "1,240,539,224 bytes. MiniMax H3 3-step distill LoRA, for very few steps. Offered as a switch on MiniMax H3 Infinite, fetched on first use."
+  },
+  "H3_SPEED_slider.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/siraxe/H3_slider_experiments/resolve/main/H3_SPEED_slider.safetensors",
+    "min_bytes": 130000000,
+    "_note": "149,166,648 bytes. Experimental MiniMax H3 speed slider LoRA. Offered as a switch on MiniMax H3 Infinite, fetched on first use."
   }
 }
