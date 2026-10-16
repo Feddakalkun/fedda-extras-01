@@ -174,9 +174,9 @@
   },
   "minimax_h3_latent_upscaler_3d_fp16.safetensors": {
     "relative_dir": "latent_upscale_models",
-    "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_fp16.safetensors",
+    "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors",
     "min_bytes": 629145600,
-    "_note": "690,592,672 bytes. The fp16 safetensors build, not the fp32 .pth the early-access canvas names. The node opens a .pth with torch.load(weights_only=False), which is pickle and can run code; a safetensors file is read as tensors and nothing else. The node runs at fp16 either way, so the .pth was also twice the download for no difference in the result."
+    "_note": "690,592,672 bytes. Served as minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors and saved under the name the graph asks for. The fp16 safetensors build, not the fp32 .pth: the node opens a .pth with torch.load(weights_only=False), which is pickle and can run code, and it runs at fp16 either way. The URL once pointed at the repo root and 404d - the files live in the conv_v1 folder."
   },
   "minimax_h3_fused_refdelta_r1024_turbo8_mystic07_int8_convrot.safetensors": {
     "relative_dir": "diffusion_models",
