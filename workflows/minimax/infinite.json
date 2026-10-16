@@ -56,16 +56,15 @@
     "inputs": {
       "project_name": "FEDDA Take",
       "project_save": "override",
-      "segment_start_number": 1,
+      "segment_start_index": 0,
       "segment_count": -1,
       "seed": 0,
       "sampling_plan": "custom",
       "sampling_mode": "single",
-      "1st_pass_only": false,
-      "disable_2nd_noise": false,
-      "upscale_by": 1.5,
+      "sampling_mode.1st_pass_only": false,
+      "sampling_mode.disable_noise": false,
+      "sampling_mode.upscale_by": 1.5,
       "upscale_model": "minimax_h3_latent_upscaler_3d_fp16.safetensors",
-      "enabled_tiling": "false",
       "tracks_info": [
         "46",
         0
@@ -78,16 +77,8 @@
         "20",
         0
       ],
-      "sampler_2nd": [
-        "24",
-        0
-      ],
       "sigmas": [
         "22",
-        0
-      ],
-      "sigmas_2nd": [
-        "33",
         0
       ]
     },
@@ -154,24 +145,6 @@
     },
     "_meta": {
       "title": "★ Steps — set them here (beta scheduler)"
-    }
-  },
-  "24": {
-    "class_type": "KSamplerSelect",
-    "inputs": {
-      "sampler_name": "sa_solver"
-    },
-    "_meta": {
-      "title": "KSamplerSelect"
-    }
-  },
-  "33": {
-    "class_type": "ManualSigmas",
-    "inputs": {
-      "sigmas": "0.50, 0.30, 0.14, 0.06, 0.0"
-    },
-    "_meta": {
-      "title": "Pass 2 sigmas (only used if sampling_mode = dual — ignore)"
     }
   },
   "37": {
