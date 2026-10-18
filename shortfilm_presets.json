@@ -18,6 +18,30 @@
     "last shot that returns to the first picture so the post loops) or 'film'. Night Call is",
     "built for social: its last shot is the phone on the nightstand it opened on."
   ],
+  "groups": [
+    {
+      "id": "films",
+      "label": "Ready films"
+    },
+    {
+      "id": "after-dark",
+      "label": "NSFW ready films"
+    }
+  ],
+  "video_models": [
+    {
+      "id": "singularity",
+      "label": "H3 Singularity",
+      "note": "A finetune of H3: sharper faces at a distance, cleaner skin, stronger motion. Auto films with it whenever the film has scenes and it is here.",
+      "files": [
+        "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
+        "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
+        "Minimax-h3_Singularity_ref2va_v1.3_int8.safetensors"
+      ],
+      "download": "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
+      "size": "11.8 GB"
+    }
+  ],
   "presets": [
     {
       "id": "night-call",
@@ -124,7 +148,8 @@
           "sound": "Silence, then the phone buzzing again.",
           "seconds": 2.6
         }
-      ]
+      ],
+      "group": "films"
     },
     {
       "id": "79-north",
@@ -231,7 +256,8 @@
         }
       ],
       "style": "film",
-      "hook_text": "A dead man is calling her on the radio."
+      "hook_text": "A dead man is calling her on the radio.",
+      "group": "films"
     },
     {
       "id": "room-13",
@@ -327,7 +353,8 @@
         }
       ],
       "style": "film",
-      "hook_text": "Her hotel doesn't have a room 13."
+      "hook_text": "Her hotel doesn't have a room 13.",
+      "group": "films"
     },
     {
       "id": "wrong-wedding",
@@ -412,7 +439,8 @@
         }
       ],
       "style": "film",
-      "hook_text": "She ran into the wrong wedding. With the rings."
+      "hook_text": "She ran into the wrong wedding. With the rings.",
+      "group": "films"
     },
     {
       "id": "aurum",
@@ -475,7 +503,8 @@
         }
       ],
       "style": "film",
-      "hook_text": "One drop of gold."
+      "hook_text": "One drop of gold.",
+      "group": "films"
     },
     {
       "id": "room-service",
@@ -574,7 +603,8 @@
           "sound": "Her breathless laugh, then two firm knocks on the door.",
           "seconds": 3.2
         }
-      ]
+      ],
+      "group": "after-dark"
     },
     {
       "id": "golden-hour",
@@ -639,21 +669,985 @@
           "sound": "Her quickening breath and soft moans, the waves below.",
           "seconds": 4.5
         }
-      ]
-    }
-  ],
-  "video_models": [
-    {
-      "id": "singularity",
-      "label": "H3 Singularity",
-      "note": "A finetune of H3: sharper faces at a distance, cleaner skin, stronger motion. Auto films with it whenever the film has scenes and it is here.",
-      "files": [
-        "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
-        "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
-        "Minimax-h3_Singularity_ref2va_v1.3_int8.safetensors"
       ],
-      "download": "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
-      "size": "11.8 GB"
+      "group": "after-dark"
+    },
+    {
+      "id": "tidefall",
+      "group": "films",
+      "style": "social",
+      "genre": "scifi",
+      "length": 30,
+      "format": "9:16",
+      "title": "Tidefall",
+      "logline": "A courier on a hover-bike has thirty seconds to carry the last seed on Earth across a city the sea is swallowing.",
+      "hook_text": "She has 30 seconds to outrun the sea.",
+      "lead_name": "Nova",
+      "lead": "a striking 24 year old courier with a sharp silver-white undercut, dark brown skin, amber eyes, a scuffed orange flight jacket over a black bodysuit and a glowing blue visor pushed up on her forehead",
+      "lead_styling": "an adult courier in a scuffed orange flight jacket over a black bodysuit, a glowing blue visor pushed up on her forehead",
+      "lead_voice": "a young woman with a quick, confident voice",
+      "setting": "in a half-flooded neon megacity of the future, its streets turned into canals between glass towers",
+      "look": "Teal water and magenta neon under a storm-dark sky, rain streaks and spray, high contrast, anamorphic flares.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide aerial shot of a neon megacity half under water at dusk, canals between glass towers, and far out at sea a towering wall of water rising on the horizon",
+          "action": "The wall of water rolls toward the city, lifting the boats in the outer canals as warning lights flash red along the towers. The camera pushes in slowly with large amplitude toward the wave.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A deep rising rumble, sirens wailing across the water.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a rain-soaked rooftop landing pad with a sleek white hover-bike, neon signs glowing far below",
+          "action": "Nova snaps her visor down, swings onto the hover-bike and clutches a small glowing case to her chest as the engines whine awake. The camera holds a static shot.",
+          "line": "Thirty seconds. Plenty.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Engines whining up, rain hammering metal.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "extreme close-up",
+          "first_frame": "an extreme close-up of a small glass case glowing green, holding a single seed in clear gel, rain beading on the glass",
+          "action": "The seed inside the case pulses with soft green light as the case shakes with the engine's vibration. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A low hum from the case, the engine roar muffled.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a narrow neon canal between glass towers, the water rippling, signs reflected in it, a floating market stall at the side",
+          "action": "Nova shoots down the canal on the hover-bike a metre above the water, carving around a floating market stall as spray fans out behind her. The camera tracks alongside at high speed.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Engine scream, water spray, shouts from the stall.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a low-angle wide shot looking up at a giant wave curling over the outer towers of a neon city, debris and spray in the air, red lights flashing",
+          "action": "The wave crashes over the outer towers, glass bursting outward and water surging into the canals. The camera tilts up with small amplitude.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A thunderous crash, glass shattering, roaring water.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "the glowing open hatch of a seed vault high on a glass tower, white light pouring out over a narrow landing ledge, storm sky behind",
+          "action": "Nova leaps from the hover-bike onto the ledge, rolls, and slams the glowing case into the vault's slot just as spray washes over her. The camera pushes in with small amplitude at fast speed.",
+          "line": "Delivered.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A metal clunk, the hiss of sealing doors, roaring water below.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide aerial shot of a neon megacity half under water at dusk, the canals calm again, a single green light glowing at the top of one tower",
+          "action": "The water settles in the canals and a green light blooms at the top of the vault tower, then far out on the horizon a second wave begins to rise. The camera pushes in slowly toward the horizon.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Water calming, then the deep rumble rising again.",
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "paper-planes",
+      "group": "films",
+      "style": "film",
+      "genre": "romance",
+      "length": 30,
+      "format": "16:9",
+      "title": "Paper Planes",
+      "logline": "Two strangers on facing balconies in Paris talk only in paper planes - until the wind takes the one that matters.",
+      "hook_text": "They have never spoken. Only paper planes.",
+      "lead_name": "Clara",
+      "lead": "a beautiful 27 year old woman with shoulder-length auburn hair, freckles, green eyes and a warm smile, wearing an oversized cream knit sweater",
+      "lead_styling": "an adult woman in an oversized cream knit sweater",
+      "lead_voice": "a young woman with a soft, amused voice",
+      "setting": "on facing balconies across a narrow street in old Paris on a spring evening",
+      "look": "Golden evening light on cream stone walls, red geraniums, soft bokeh of string lights; warm, gentle and romantic.",
+      "title_after": 4,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of a narrow Paris street at golden hour, two wrought-iron balconies facing each other across it, flower boxes and string lights",
+          "action": "A paper plane glides across the narrow street from one balcony to the other, turning gold in the evening light. The camera pans slowly to follow it.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A distant accordion, swallows, the murmur of the city.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a small wrought-iron balcony with red geraniums and a cup of tea on the railing, golden evening light",
+          "action": "Clara catches the paper plane in mid-air, unfolds it and reads it, a smile spreading slowly across her face. The camera pushes in with small amplitude at slow speed.",
+          "line": "Coffee? Eight o'clock?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Paper crinkling, the accordion far away.",
+          "seconds": 3.4
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a young man with dark curly hair and a white shirt leaning on the railing of the opposite balcony, a stack of folded paper planes beside him, string lights behind",
+          "action": "The young man leans forward on his railing, chin in his hands, drumming his fingers nervously on the iron as he waits. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Swallows, a scooter passing below.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a balcony railing with geraniums, a pen and an open notebook on a little iron table, warm light",
+          "action": "Clara writes quickly, folds the page into a paper plane with neat, sharp creases and launches it with a flick of her wrist. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A pen scratching, paper folding, a soft whoosh.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a high wide shot of the narrow street between the two balconies, a paper plane drifting in the air, string lights swaying in a breeze",
+          "action": "A gust catches the paper plane and it spirals down past the balconies toward the street, just missing an outstretched hand. The camera tilts down to follow it.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A gust of wind, a groan from above.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a cream stone doorway on the street at dusk with a green door and a brass knocker, string lights above",
+          "action": "Clara steps out of the doorway into the street holding the fallen paper plane, looks up toward the opposite balcony and laughs. The camera pulls back slowly.",
+          "line": "Eight o'clock. Don't be late.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Her laugh, the accordion swelling.",
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "smart-fridge",
+      "group": "films",
+      "style": "social",
+      "genre": "comedy",
+      "length": 15,
+      "format": "9:16",
+      "title": "Smart Fridge",
+      "logline": "At midnight, a hungry man discovers his smart fridge has put him on a diet.",
+      "hook_text": "His fridge put him on a diet.",
+      "lead_name": "Dave",
+      "lead": "a handsome 30 year old man with tousled dark hair and stubble, in a grey t-shirt and plaid pyjama pants",
+      "lead_styling": "an adult man in a grey t-shirt and plaid pyjama pants",
+      "lead_voice": "a man with a tired, pleading voice",
+      "setting": "in a dark modern kitchen at midnight",
+      "look": "A dark kitchen lit by the cold blue glow of a smart fridge screen and warm under-cabinet light; crisp and comic.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a dark modern kitchen at midnight with a large silver smart fridge glowing blue",
+          "action": "Dave tiptoes up to the fridge and pulls the handle, but it does not budge, so he braces a foot and pulls with both hands. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Bare feet on tiles, a handle clunking.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a smart fridge touch screen glowing blue with a simple cartoon face on it",
+          "action": "The cartoon face on the screen narrows its eyes and a red lock icon flashes. The camera pushes in with small amplitude.",
+          "line": "It is midnight, Dave.",
+          "speaker": "other",
+          "voice": "a calm, smug synthetic female voice",
+          "sound": "A smug electronic chime.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "the front of a silver smart fridge in a dark kitchen, its screen glowing blue",
+          "action": "Dave drops to his knees in front of the fridge and clasps his hands together, begging. The camera holds a static shot.",
+          "line": "Just one slice of cheese. Please.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A soft thud of knees on tiles.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a smart fridge with its door swung open, light spilling out, every shelf packed with neatly stacked celery",
+          "action": "The fridge door swings open with a fanfare, revealing shelves packed with nothing but celery, lit like treasure. The camera pushes in slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A triumphant electronic fanfare, then a sad trombone.",
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "mirror-lag",
+      "group": "films",
+      "style": "social",
+      "genre": "horror",
+      "length": 15,
+      "format": "9:16",
+      "title": "Mirror Lag",
+      "logline": "Brushing her teeth at night, she notices her reflection is one second late.",
+      "hook_text": "Her reflection is one second late.",
+      "lead_name": "Ana",
+      "lead": "a beautiful 25 year old woman with long straight black hair, pale skin and dark eyes, in a loose grey cardigan over a black top",
+      "lead_styling": "an adult woman in a loose grey cardigan over a black top",
+      "lead_voice": "a young woman with a quiet, shaky voice",
+      "setting": "in a dim bathroom at night",
+      "look": "Dim green-grey light from a flickering bulb, a fogged mirror, deep shadows; cold and full of dread.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a fogged bathroom mirror in a dim bathroom, a flickering bulb above, a toothbrush in a glass on the sink",
+          "action": "The fog on the mirror slowly clears from the centre outward as the bulb above flickers. The camera pushes in slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A buzzing bulb, a dripping tap.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a dim bathroom sink and mirror under a flickering bulb",
+          "action": "Ana raises her hand to touch her face, and in the mirror her reflection raises its hand a full second later. The camera holds a static shot.",
+          "line": "That's... not right.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "The bulb buzzing, her breath catching.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a bathroom mirror close up, the last of the fog fading, the bulb flickering",
+          "action": "Ana slowly lowers her hand and steps back, but her reflection stays leaning toward the glass and begins to smile. The camera pushes in with small amplitude at slow speed.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "The bulb buzzing louder, a low heartbeat.",
+          "seconds": 3.4
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "extreme close-up",
+          "first_frame": "an extreme close-up of a fogged mirror in a dark bathroom",
+          "action": "Letters appear one by one in the fog, written by a fingertip from the inside of the glass, and the bulb goes dark. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Squeaking glass, then the click of the light dying.",
+          "seconds": 2.8
+        }
+      ]
+    },
+    {
+      "id": "moon-bunny",
+      "group": "films",
+      "style": "film",
+      "genre": "kids",
+      "length": 30,
+      "format": "9:16",
+      "title": "Moon Bunny",
+      "logline": "A tiny bunny builds a wobbly tower to touch the moon - and a wise old owl shows her an easier way.",
+      "hook_text": "Pip wants to touch the moon.",
+      "lead_name": "Pip",
+      "lead": "a tiny round white bunny with soft fluffy fur, huge sparkly blue eyes, long floppy ears with pink insides and a little red scarf",
+      "lead_styling": "a tiny round white bunny with a little red scarf",
+      "lead_voice": "a small, bright, giggly voice",
+      "setting": "in a cosy moonlit meadow beside a still pond",
+      "look": "Soft blue moonlight and warm firefly glow, rounded shapes and pastel colours; gentle and cosy.",
+      "title_after": 4,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of a moonlit meadow with a still pond, a huge round full moon low in the sky, fireflies drifting over the grass",
+          "action": "Fireflies drift up from the grass toward the huge full moon as a gentle breeze ripples the pond. The camera pushes in slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Crickets, a soft breeze, a tinkling music box.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a soft grassy hill in a moonlit meadow with a big round moon above it",
+          "action": "Pip hops to the top of the hill, stretches up on tiptoe with both paws toward the moon and wobbles. The camera holds a static shot.",
+          "line": "I'm going to touch the moon!",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Little hops in the grass, crickets.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a wobbly tower of carrots, buckets and a teacup stacked high on the grass, moonlight on it",
+          "action": "The tower of carrots and buckets sways from side to side and the teacup on top rattles. The camera tilts up slowly along the tower.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Wobbly creaks, a teacup rattling.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the top of a tall wobbly tower of carrots and buckets against the night sky and a big moon",
+          "action": "Pip balances on top of the tower and reaches for the moon with one paw, then the tower tips and Pip tumbles softly into the grass with a squeak. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A squeak, a clatter of buckets, a soft bounce.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a friendly old owl with round glasses sitting on a branch above a pond, the full moon shining behind",
+          "action": "The old owl chuckles, points a wing down at the pond and winks. The camera pushes in with small amplitude.",
+          "line": "Look down, little one.",
+          "speaker": "other",
+          "voice": "a kind, old, grandfatherly voice",
+          "sound": "A gentle hoot, leaves rustling.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "the edge of a still pond with the full moon reflected perfectly in the water, fireflies around",
+          "action": "Pip leans over the pond and gently touches the moon's reflection with one paw, making soft rings of light, and giggles with delight. The camera pushes in slowly.",
+          "line": "I touched it!",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A soft plink of water, a happy giggle, crickets.",
+          "seconds": 3.4
+        }
+      ]
+    },
+    {
+      "id": "bubble-trouble",
+      "group": "films",
+      "style": "social",
+      "genre": "kids",
+      "length": 15,
+      "format": "9:16",
+      "title": "Bubble Trouble",
+      "logline": "A little dragon who can only blow bubbles saves a duckling with them.",
+      "hook_text": "A dragon who can't breathe fire.",
+      "lead_name": "Ember",
+      "lead": "a small chubby baby dragon with shiny mint-green scales, big golden eyes, tiny wings and a round belly",
+      "lead_styling": "a small chubby mint-green baby dragon with tiny wings",
+      "lead_voice": "a small, cheerful voice",
+      "setting": "in a sunny valley of giant mushrooms and wildflowers",
+      "look": "Bright sunshine, candy colours, soft rounded shapes and sparkling bubbles.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a sunny clearing among giant red mushrooms and wildflowers",
+          "action": "Ember puffs out his cheeks and blows as hard as he can, but instead of fire a big shiny bubble floats out of his mouth, and he blinks at it. The camera holds a static shot.",
+          "line": "Bubbles? Again?!",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A wobbly bloop, birdsong.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a tiny yellow duckling stuck on a leaf in the middle of a fast little stream, wildflowers on the banks",
+          "action": "The tiny duckling wobbles on the leaf as it spins in the stream, peeping for help. The camera pushes in with small amplitude.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Babbling water, frantic little peeps.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the bank of a little stream among wildflowers in sunshine",
+          "action": "Ember takes a deep breath and blows a giant bubble that floats over the stream, scoops up the duckling and lifts it gently into the air. The camera tilts up slowly to follow it.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A big wobbly bloop, a surprised peep.",
+          "seconds": 3.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a sunny meadow beside a pond with a duck family on it, bubbles drifting in the air",
+          "action": "Ember watches the bubble set the duckling down beside its mother, then grins proudly and blows a stream of tiny bubbles around his own head. The camera pulls back slowly.",
+          "line": "Best. Fire. Ever.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A pop, happy quacks, a giggle.",
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "skyrunner",
+      "group": "films",
+      "style": "social",
+      "genre": "youth",
+      "length": 30,
+      "format": "9:16",
+      "title": "Skyrunner",
+      "logline": "When a storm swallows her cat, a girl on a battered hoverboard dives in after it.",
+      "hook_text": "The storm took her cat. She's taking it back.",
+      "lead_name": "Kai",
+      "lead": "a brave 13 year old girl with a messy black ponytail, big determined brown eyes, a yellow windbreaker, cargo shorts and big goggles on her head, riding a battered red hoverboard",
+      "lead_styling": "a girl in a yellow windbreaker with big goggles on her head, riding a battered red hoverboard",
+      "lead_voice": "a girl with a bold, excited voice",
+      "setting": "in a world of floating islands above the clouds",
+      "look": "Bright sky blue and sunset orange, huge clouds, floating islands with waterfalls; vivid and adventurous.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of floating islands with waterfalls pouring into the clouds, and a huge dark purple storm cloud crackling with lightning on the horizon",
+          "action": "The storm cloud surges across the sky, lightning forking between the islands as small birds scatter. The camera pushes in toward the storm.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Thunder rolling, wind howling.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a small fluffy cat with glowing blue stripes clinging to a rock inside a swirling storm cloud",
+          "action": "The little glowing cat clings to the rock with its claws as the wind tugs at its fur, meowing loudly. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Howling wind, a desperate meow.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the edge of a grassy floating island with a cliff dropping into the clouds",
+          "action": "Kai pulls her goggles down, kicks the hoverboard into the air, jumps on and dives off the cliff toward the storm. The camera tracks with her as she drops.",
+          "line": "Hang on, Bolt!",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Wind rushing, the board whining up.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a canyon of floating rocks inside a storm, lightning flashing between them",
+          "action": "Kai weaves the hoverboard between tumbling rocks as lightning strikes, ducking under one and flipping over the next. The camera tracks alongside at high speed.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Lightning cracks, rushing wind, the board's whine.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a rock in the heart of a storm, lightning all around it",
+          "action": "Kai swoops low and scoops the glowing cat into her arms just as the rock crumbles away, and the cat's stripes flash bright. The camera pushes in fast.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Rock crumbling, a happy meow, a burst of electric hum.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a storm cloud breaking apart into golden sunset light above floating islands",
+          "action": "A blast of blue light bursts from inside the storm and the clouds break apart into golden sunlight, revealing a rainbow over the islands. The camera pulls back with large amplitude.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A whoosh of energy, then calm wind and birdsong.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the grassy edge of a floating island at sunset, waterfalls behind",
+          "action": "Kai lands the hoverboard, hugs the purring cat and grins as tiny sparks crackle off its fur into her hair. The camera holds a static shot.",
+          "line": "Next time, stay inside.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Purring, crackling sparks, a laugh.",
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "the-last-page",
+      "group": "films",
+      "style": "film",
+      "genre": "youth",
+      "length": 30,
+      "format": "16:9",
+      "image_style": "Illustration | Anime",
+      "video_style": "a hand-drawn style anime film",
+      "title": "The Last Page",
+      "logline": "After hours in the school library, a boy opens a book whose drawings come alive.",
+      "hook_text": "Some books read you back.",
+      "lead_name": "Leo",
+      "lead": "a curious 12 year old boy with messy brown hair, round glasses, a green hoodie and a backpack",
+      "lead_styling": "a boy in a green hoodie with round glasses and a backpack",
+      "lead_voice": "a boy with a curious, slightly nervous voice",
+      "setting": "in an old school library after hours",
+      "look": "Dusty golden light through tall windows, deep blue shadows between the shelves, floating dust and a magical glow.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of an old library after hours, tall wooden shelves, dusty golden light from tall windows, an old leather book glowing faintly on a table",
+          "action": "The old book on the table glows brighter and its pages riffle open by themselves as dust swirls up. The camera pushes in slowly toward the book.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A clock ticking, pages fluttering.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a library table with a glowing old book on it, tall shelves behind",
+          "action": "Leo creeps up to the table, pushes up his glasses and peers at the glowing pages. The camera holds a static shot.",
+          "line": "Hello? Is someone there?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Creaking floorboards, a soft hum.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of an open old book with an ink drawing of a fox on the page",
+          "action": "The ink fox on the page blinks, shakes itself and leaps up out of the book as a little fox made of folded paper. The camera tilts up to follow it.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A rustle of paper, a tiny yip.",
+          "seconds": 2.8
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a long aisle between towering bookshelves in blue shadow, books stacked on the floor",
+          "action": "Leo runs down the aisle after a little fox made of folded paper, which bounds ahead and leaps up the shelves. The camera tracks behind him.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Running footsteps, rustling paper, books thumping.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a round reading room where hundreds of books float in the air, golden light pouring in",
+          "action": "The books lift off the shelves and fly in a spiral around the room like a flock of birds, pages flapping. The camera orbits slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A whirlwind of flapping pages.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "the centre of a round reading room in swirling golden light, flying pages all around",
+          "action": "Leo stands in the middle of the swirling books with his mouth open, then slowly smiles as the paper fox lands on his shoulder. The camera pushes in with small amplitude.",
+          "line": "Okay. Best day ever.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Pages settling, a happy yip.",
+          "seconds": 3.4
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "extreme close-up",
+          "first_frame": "an extreme close-up of an old leather book cover on a table with a fox embossed on it",
+          "action": "The fox on the cover turns its head and its eyes open, glowing. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Silence, then a soft paper rustle.",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "id": "night-swim",
+      "group": "after-dark",
+      "style": "social",
+      "genre": "romance",
+      "length": 30,
+      "format": "9:16",
+      "title": "Night Swim",
+      "logline": "The rooftop pool closes at midnight. She is still in it - and she has been waiting for you.",
+      "hook_text": "She said the pool closes at midnight.",
+      "lead_name": "Lena",
+      "lead": "a beautiful 25 year old woman with long wet blonde hair slicked back, blue eyes, sun-kissed skin and a slim athletic figure, wearing a black bikini",
+      "lead_styling": "an adult woman in a black bikini, her hair wet and slicked back",
+      "lead_voice": "a young woman with a low, teasing voice",
+      "partner": "a fit man in his late twenties with tanned skin, seen as his hands and body from his own point of view",
+      "pov": true,
+      "acts": [
+        "undress",
+        "oral",
+        "missionary"
+      ],
+      "setting": "at a private rooftop pool at night above a glittering city",
+      "look": "Turquoise pool light rippling over skin, the city glittering beyond, warm candle lanterns; glossy and sultry, fine film grain.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of a glowing turquoise rooftop pool at night, candle lanterns along the edge, a glittering city skyline beyond, a clock on the wall at midnight",
+          "action": "Steam drifts off the glowing water and the city lights twinkle as the clock ticks to midnight. The camera pushes in slowly toward the pool.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Water lapping, the distant city, a clock ticking.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the edge of a glowing turquoise rooftop pool at night, candle lanterns, city lights behind",
+          "action": "Lena rises out of the water at the edge of the pool, pushes her wet hair back and looks straight into the camera with a slow smile. The camera holds a static shot.",
+          "line": "You're late.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Water streaming off skin, the city hum.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of two glasses of champagne on the wet stone edge of a pool, bubbles rising, turquoise light rippling over them",
+          "action": "A wet hand sets down the second glass and the champagne fizzes as ripples of pool light dance over it. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Champagne fizzing, water lapping.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Lena standing waist-deep in the glowing pool in her black bikini, wet skin shining, her hands at the ties of her top, city lights behind",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Water dripping, her soft laugh.",
+          "seconds": 4.5,
+          "act": "undress"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Lena naked, kneeling on a cushioned lounger beside the glowing pool, seen from his point of view as he stands in front of her, turquoise light rippling over her skin",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Wet sounds, water lapping, his breathing.",
+          "seconds": 4.5,
+          "act": "oral"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Lena naked, lying back on a white towel on a poolside lounger beneath him, seen from his point of view, candle lanterns and city lights around her",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Her moans, skin against skin, the lounger creaking.",
+          "seconds": 4.5,
+          "act": "missionary"
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of the glowing turquoise rooftop pool at night, two empty champagne glasses on the edge, a black bikini top floating on the water, a clock on the wall",
+          "action": "The water settles and the clock ticks on past midnight as the bikini top drifts slowly across the glowing pool. The camera pushes in slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Water lapping, the clock ticking.",
+          "seconds": 2.6
+        }
+      ]
+    },
+    {
+      "id": "the-shoot",
+      "group": "after-dark",
+      "style": "film",
+      "genre": "romance",
+      "length": 30,
+      "format": "16:9",
+      "title": "The Shoot",
+      "logline": "A glamour shoot in a sunlit loft - and the last frames were never meant for the magazine.",
+      "hook_text": "The last shot wasn't for the magazine.",
+      "lead_name": "Mila",
+      "lead": "a stunning 24 year old model with long dark brown hair, smoky eyes, full red lips and a curvy figure, wearing an oversized white men's shirt over black lace underwear",
+      "lead_styling": "an adult model in an oversized white men's shirt over black lace underwear",
+      "lead_voice": "a young woman with a husky, playful voice",
+      "partner": "a photographer in his thirties, seen from his own point of view: his hands, tattooed forearms and a camera",
+      "pov": true,
+      "acts": [
+        "undress",
+        "handjob",
+        "doggy"
+      ],
+      "setting": "in a sunlit photo studio loft with white walls and big industrial windows",
+      "look": "Bright soft daylight from big windows, a white paper backdrop and strobe flashes; clean, editorial and warm, fine film grain.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a professional camera on a tripod in a white studio loft, a strobe light in the background",
+          "action": "The strobe flashes and the camera's shutter clicks in rapid bursts. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Shutter bursts, strobe pops, low music.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a white paper backdrop in a sunlit studio loft, a wooden stool in the middle, strobe lights on either side",
+          "action": "Mila poses on the stool, turns her head to the lens and slowly lets the shirt slip off one shoulder between flashes. The camera holds a static shot.",
+          "line": "Is this what you wanted?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Strobe pops, fabric sliding.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a laptop on a desk in a sunlit loft, its screen filled with a grid of glamour photos",
+          "action": "New photos fill the screen one after another with each shutter click, then a hand closes the laptop lid. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Clicks, then the lid snapping shut.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Mila standing on the white backdrop in her oversized white shirt, unbuttoning it, seen from the photographer's point of view, soft window light",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Buttons, fabric sliding, a slow exhale.",
+          "seconds": 4.5,
+          "act": "undress"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Mila naked, kneeling on the white backdrop in front of him, seen from his point of view, looking up into the lens, soft daylight",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Her breathing, skin, the hum of the city outside.",
+          "seconds": 4.5,
+          "act": "handjob"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Mila naked on all fours on a white sofa in the studio loft, looking back over her shoulder into the lens, seen from his point of view, window light across her back",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Skin against skin, her moans, the sofa creaking.",
+          "seconds": 4.5,
+          "act": "doggy"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a white paper backdrop with a wooden stool knocked over, the afternoon light turned golden",
+          "action": "Mila, wrapped in the white shirt again, picks up the camera, turns it around and takes a photo of the lens, laughing. The camera holds a static shot.",
+          "line": "My turn.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A shutter click, her laugh.",
+          "seconds": 3.0
+        }
+      ]
+    },
+    {
+      "id": "cabin-fire",
+      "group": "after-dark",
+      "style": "social",
+      "genre": "romance",
+      "length": 30,
+      "format": "9:16",
+      "title": "Cabin Fire",
+      "logline": "Snowed into a mountain cabin with one bed and no signal, two strangers find a way to stay warm.",
+      "hook_text": "Snowed in. One bed. No signal.",
+      "lead_name": "Astrid",
+      "lead": "a gorgeous 28 year old Scandinavian woman with long platinum-blonde hair, ice-blue eyes, rosy cheeks and a curvy figure, wearing a chunky white knit sweater and wool socks",
+      "lead_styling": "an adult woman in a chunky white knit sweater and wool socks",
+      "lead_voice": "a young woman with a warm, low Nordic accent",
+      "partner": "a rugged, bearded man in his early thirties with broad shoulders, messy dark-blond hair and a red flannel shirt",
+      "acts": [
+        "kiss",
+        "cowgirl",
+        "cumshot"
+      ],
+      "setting": "in a snowed-in log cabin in the mountains during a blizzard",
+      "look": "Warm orange firelight against blue snowy windows, wood and wool textures; cosy and intimate, fine film grain.",
+      "title_after": 5,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of a small log cabin half buried in snow in a mountain blizzard at night, warm light glowing in its window",
+          "action": "Snow whips across the frame and the cabin's window glows as the wind howls. The camera pushes in slowly toward the window.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Howling wind, hissing snow.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "inside a log cabin by a crackling stone fireplace, a sheepskin rug and a single bed with wool blankets",
+          "action": "Astrid holds her phone up toward the ceiling hunting for a signal, gives up and tosses it onto the bed with a laugh. The camera holds a static shot.",
+          "line": "No signal. Great.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "The fire crackling, wind against the walls.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of two mugs of hot chocolate on a wooden table by a fire, steam rising, a man's large hands around one of them",
+          "action": "Steam curls up from the mugs as a large hand slides the second mug across the table. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "The fire crackling, a mug sliding on wood.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "Astrid and the bearded man sitting close on a sheepskin rug in front of the fire, her sweater slipping off one shoulder, their faces close, firelight on their skin",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "The fire crackling, their breathing.",
+          "seconds": 4.0,
+          "act": "kiss"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Astrid naked, straddling the man on the sheepskin rug facing away from him and toward the camera, firelight on her skin, snow at the window behind",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Her moans, the fire crackling, the wind outside.",
+          "seconds": 4.5,
+          "act": "cowgirl"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "Astrid naked, kneeling on the sheepskin rug in front of the fire, looking up at him with her mouth open, firelight on her face and breasts",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "His groan, her laugh, the fire.",
+          "seconds": 4.0,
+          "act": "cumshot"
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of the small log cabin half buried in snow at night, its window glowing, the blizzard easing",
+          "action": "The snow softens and the cabin's window dims to a warm ember glow as the blue of morning creeps over the mountains. The camera pushes in slowly.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Soft wind, a crackle of embers.",
+          "seconds": 2.6
+        }
+      ]
     }
   ]
 }
