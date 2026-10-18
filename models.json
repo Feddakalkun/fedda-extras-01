@@ -237,5 +237,11 @@
     "url": "https://huggingface.co/siraxe/H3_slider_experiments/resolve/main/H3_SPEED_slider.safetensors",
     "min_bytes": 130000000,
     "_note": "149,166,648 bytes. Experimental MiniMax H3 speed slider LoRA. Offered as a switch on MiniMax H3 Infinite, fetched on first use."
+  },
+  "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/WarmBloodAban/Minimax-h3_Singularity/resolve/main/Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
+    "min_bytes": 10737418240,
+    "_note": "11.8 GB - the same w4a8 size class as the app's own H3 build, so it sits beside the text encoder on 24 GB. A finetune of the H3 reference model (sharper faces at a distance, cleaner skin, stronger motion). The repo also has a pruned int8 (21 GB) and a full int8 (34 GB); Short film uses whichever is here."
   }
 }

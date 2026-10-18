@@ -476,6 +476,184 @@
       ],
       "style": "film",
       "hook_text": "One drop of gold."
+    },
+    {
+      "id": "room-service",
+      "style": "social",
+      "genre": "romance",
+      "length": 30,
+      "format": "9:16",
+      "title": "Room Service",
+      "logline": "She ordered champagne to her suite. He brought it up himself.",
+      "hook_text": "She only ordered champagne.",
+      "lead_name": "Elena",
+      "lead": "a beautiful 26 year old woman with long dark glossy hair, dark brown eyes, full lips and a slim figure, wearing a short black silk robe",
+      "lead_styling": "an adult woman wearing a short black silk robe",
+      "lead_voice": "a young woman with a low, warm voice",
+      "partner": "a tall, handsome man in his early thirties with short dark hair, light stubble and a strong build, in a white shirt with the sleeves rolled up and black trousers",
+      "acts": [
+        "kiss",
+        "oral",
+        "cowgirl"
+      ],
+      "setting": "in a luxury hotel suite high above a city at night",
+      "look": "Warm amber lamp light against the blue glow of the city through floor-to-ceiling windows; deep shadows, soft skin tones, fine film grain.",
+      "title_after": 6,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme close-up",
+          "first_frame": "an extreme close-up of a silver room service tray on a trolley in a dim hotel corridor, a bottle of champagne sweating in an ice bucket and two crystal glasses, warm light from a wall sconce",
+          "action": "A man's knuckles rap twice on the dark wooden door beside the trolley, the glasses chiming softly against each other. The camera pushes in with small amplitude at slow speed toward the door.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Two firm knocks on a heavy door, glass chiming, the hum of a quiet hotel corridor.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the open doorway of a luxury hotel suite at night, warm lamp light inside and the city glowing through the windows behind",
+          "action": "Elena opens the door and leans against the frame, her silk robe loosely tied, and looks him up and down with a slow smile. The camera holds a static shot.",
+          "line": "That's not what I ordered.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "The door latch clicking open, the soft city hum from inside the suite.",
+          "seconds": 3.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a close-up of a man's hands pouring champagne into two crystal glasses on a glass table in a dim hotel suite, the city lights blurred behind",
+          "action": "The champagne foams up to the rim of the glass and spills over his fingers onto the table as a silk belt slides to the floor in the background. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Champagne fizzing and pouring, a silk belt dropping softly.",
+          "seconds": 2.4
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "act": "kiss",
+          "first_frame": "a close-up of Elena and the man standing by the floor-to-ceiling window of the hotel suite at night, her silk robe falling open, their faces almost touching, the city lights behind them",
+          "action": "",
+          "line": "",
+          "sound": "Breathing, silk rustling, the distant city.",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "act": "oral",
+          "first_frame": "Elena naked, kneeling on the thick carpet in front of the man, who sits on the edge of the white hotel bed with his trousers open, her dark hair falling over her shoulders, warm lamp light",
+          "action": "",
+          "line": "",
+          "sound": "Wet sounds, his low groan, sheets shifting.",
+          "seconds": 4.5
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "act": "cowgirl",
+          "first_frame": "Elena naked, straddling the man on the white hotel bed facing away from him and toward the camera, her hands on his thighs, the city lights through the window behind them",
+          "action": "",
+          "line": "",
+          "sound": "Skin against skin, her moans rising, the bed creaking.",
+          "seconds": 4.5
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a tangle of white sheets on a hotel bed at night, warm lamp light, the city glowing through the windows",
+          "action": "Elena lies back across the sheets, flushed and breathless, and turns her head toward the door with a slow grin as another knock sounds. The camera pushes in with small amplitude at slow speed.",
+          "line": "Did you order more?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Her breathless laugh, then two firm knocks on the door.",
+          "seconds": 3.2
+        }
+      ]
+    },
+    {
+      "id": "golden-hour",
+      "style": "social",
+      "genre": "romance",
+      "length": 15,
+      "format": "9:16",
+      "title": "Golden Hour",
+      "logline": "Alone on a villa terrace at sunset, she lets the dress fall.",
+      "hook_text": "Nobody can see this terrace. Right?",
+      "lead_name": "Sofia",
+      "lead": "a beautiful 23 year old woman with sun-kissed skin, long honey-blonde hair, green eyes and a slim figure, wearing a thin white linen sundress",
+      "lead_styling": "an adult woman wearing a thin white linen sundress",
+      "lead_voice": "a young woman with a soft, playful voice",
+      "acts": [
+        "undress",
+        "fingering"
+      ],
+      "setting": "on the terrace of a white seaside villa at golden hour",
+      "look": "Low golden sunset light, long warm shadows and a glittering sea; soft haze, glowing skin, fine film grain.",
+      "title_after": 3,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of a white villa terrace above a glittering sea at sunset, a cushioned daybed, a glass of rose wine on the low wall, warm golden light",
+          "action": "A warm breeze ripples the white curtains of the open terrace door and the sea glitters below as the sun touches the horizon. The camera pans slowly to the right with small amplitude.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Waves far below, the breeze in the curtains, a distant gull.",
+          "seconds": 2.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the white stone railing of a villa terrace above the sea at sunset, golden light",
+          "action": "Sofia leans on the railing with her back to the sea, glances over her shoulder at the empty terrace and bites her lip with a slow smile. The camera holds a static shot.",
+          "line": "Just me.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "The breeze, the sea, her soft laugh.",
+          "seconds": 3.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "act": "undress",
+          "first_frame": "Sofia standing on the sunlit villa terrace in her thin white linen sundress, one hand at the strap on her shoulder, the golden sea behind her",
+          "action": "",
+          "line": "",
+          "sound": "Linen sliding over skin, the breeze, the waves.",
+          "seconds": 4.5
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "act": "fingering",
+          "first_frame": "Sofia naked, lying back on a white cushioned daybed on the terrace with her legs parted, golden sunset light across her body, the sea glittering behind",
+          "action": "",
+          "line": "",
+          "sound": "Her quickening breath and soft moans, the waves below.",
+          "seconds": 4.5
+        }
+      ]
+    }
+  ],
+  "video_models": [
+    {
+      "id": "singularity",
+      "label": "H3 Singularity",
+      "note": "A finetune of H3: sharper faces at a distance, cleaner skin, stronger motion. Auto films with it whenever the film has scenes and it is here.",
+      "files": [
+        "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
+        "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
+        "Minimax-h3_Singularity_ref2va_v1.3_int8.safetensors"
+      ],
+      "download": "Minimax-h3_Singularity_ref2va_v1.3_Pruned_w4a8.safetensors",
+      "size": "11.8 GB"
     }
   ]
 }
