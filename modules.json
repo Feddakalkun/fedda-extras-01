@@ -181,6 +181,60 @@
       "notes": "Change a picture by describing the change. Kontext puts the image in the conditioning rather than the latent, so identity, pose and light survive an edit."
     },
     {
+      "id": "extras-01-kontext-undress",
+      "status": "beta",
+      "label": "Kontext Undress",
+      "family": "extras-01-image",
+      "family_label": "Image Tools",
+      "family_description": "Make a render read as a photograph, or edit a picture by describing the change.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-kontext-undress"
+      ],
+      "workflows": [
+        "kontext/undress.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "flux1-dev-kontext_fp8_scaled.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "clip_l-for-gguf.safetensors",
+        "ae.safetensors",
+        "flx-cl-remover.safetensors"
+      ],
+      "notes": "Kontext Edit with the flx-cl-remover LoRA switched on and its own instruction. From the owner's FLUX XXX 4 graph; a folder runs one picture per Run."
+    },
+    {
+      "id": "extras-01-flux-xxx",
+      "status": "beta",
+      "label": "FLUX XXX",
+      "family": "flux-xxx",
+      "family_label": "FLUX XXX",
+      "family_description": "Text to image on the UltraReal FLUX fine-tune with the MysticXXX LoRA.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-flux-xxx"
+      ],
+      "workflows": [
+        "flux-xxx/txt2img.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "ultrarealFineTune_v4_fp8.safetensors",
+        "MysticXXX-V3.safetensors",
+        "t5xxl_fp8_e4m3fn.safetensors",
+        "clip_l-for-gguf.safetensors",
+        "ae.safetensors"
+      ],
+      "notes": "From the owner's FLUX XXX 4 graph (the ultra fine-tune group): UltraReal + MysticXXX v3, a 1.5x latent hi-res pass at 0.5 denoise as a switch."
+    },
+    {
       "id": "extras-01-wan22-txt2vid",
       "status": "beta",
       "label": "Wan 2.2 Text to Video",

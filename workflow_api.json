@@ -3191,5 +3191,264 @@
       "sampler": { "node_id": "20", "input_key": "sampler_name", "label": "Sampler" },
       "lora_state": { "node_id": "37", "input_key": "LoraLoaderState", "label": "LoRAs" }
     }
+  },
+  "extras-01-kontext-undress": {
+    "name": "Kontext Undress",
+    "description": "Takes the clothes off a picture with FLUX Kontext and a clothes-remover LoRA. Kontext edits the picture itself, so the face, the pose and the light stay put.",
+    "module": "extras-01-kontext-undress",
+    "filename": "kontext/undress.json",
+    "inputs": {
+      "image": {
+        "node_id": "5",
+        "input_key": "image",
+        "label": "Picture to edit",
+        "control": "file",
+        "prune_when_empty": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": false
+        }
+      },
+      "use_folder": {
+        "node_id": "521",
+        "input_key": "switch",
+        "default": false,
+        "label": "Load from folder"
+      },
+      "folder": {
+        "node_id": "520",
+        "input_key": "folder",
+        "label": "Folder path",
+        "control": "text",
+        "required": true,
+        "prune_when_empty": true,
+        "basic": true,
+        "wide": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Full path to the folder of pictures."
+      },
+      "folder_start": {
+        "node_id": "520",
+        "input_key": "start_index",
+        "label": "Start at picture #",
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Which picture to do next (0 is the first). It moves on by itself after every Run."
+      },
+      "folder_count": {
+        "node_id": "520",
+        "input_key": "image_load_cap",
+        "label": "Pictures per run",
+        "ui_min": 1,
+        "ui_max": 1,
+        "ui_step": 1,
+        "basic": true,
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        },
+        "note": "Kontext edits one picture at a time. Press Run again - or several times, they queue - for the next ones."
+      },
+      "include_subfolders": {
+        "node_id": "520",
+        "input_key": "include_subfolders",
+        "label": "Include subfolders",
+        "show_when": {
+          "field": "use_folder",
+          "equals": true
+        }
+      },
+      "prompt": {
+        "node_id": "9",
+        "input_key": "value",
+        "label": "What to change",
+        "control": "text",
+        "multiline": true,
+        "note": "What to do with the picture. The default is the LoRA's own instruction; add detail after it ('..., keep her necklace')."
+      },
+      "remover": {
+        "node_ids": [
+          "4"
+        ],
+        "type": "lora_slots",
+        "label": "Clothes remover LoRA"
+      },
+      "loras": {
+        "node_ids": [
+          "4"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
+      "style": {
+        "node_id": "10",
+        "input_key": "styles",
+        "label": "Style",
+        "control": "select"
+      },
+      "guidance": {
+        "node_id": "13",
+        "input_key": "guidance",
+        "label": "How literally to take it",
+        "note": "2.5 is the usual. Higher follows the words harder and drifts further from the picture; lower barely changes anything."
+      },
+      "steps": {
+        "node_id": "17",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "17",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "sampler": {
+        "node_id": "17",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "checkpoint": {
+        "node_id": "1",
+        "input_key": "ckpt_name",
+        "label": "Model",
+        "control": "select"
+      },
+      "face_detailer": {
+        "type": "bypass",
+        "node_id": "9003",
+        "pass_input": "image",
+        "label": "Face detailer",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "A second pass that re-renders the face at higher detail. Off skips it - faster."
+      }
+    },
+    "example": {
+      "prompt": "remove clothes, make the woman naked",
+      "guidance": 2.5,
+      "steps": 20
+    }
+  },
+  "extras-01-flux-xxx": {
+    "name": "FLUX XXX",
+    "description": "Text to image on the UltraReal FLUX fine-tune with the MysticXXX LoRA, and an optional hi-res pass.",
+    "module": "extras-01-flux-xxx",
+    "filename": "flux-xxx/txt2img.json",
+    "inputs": {
+      "prompt": {
+        "node_id": "5",
+        "input_key": "value",
+        "label": "Prompt",
+        "control": "text",
+        "multiline": true,
+        "required": true,
+        "wide": true,
+        "note": "Describe the picture plainly - who, doing what, where, the light. FLUX reads full sentences."
+      },
+      "width": {
+        "node_id": "9",
+        "input_key": "width",
+        "label": "Width",
+        "ui_min": 512,
+        "ui_max": 1536,
+        "ui_step": 64
+      },
+      "height": {
+        "node_id": "9",
+        "input_key": "height",
+        "label": "Height",
+        "ui_min": 512,
+        "ui_max": 1536,
+        "ui_step": 64
+      },
+      "hires": {
+        "type": "bypass",
+        "node_ids": [
+          "12",
+          "11"
+        ],
+        "pass_inputs": {
+          "12": "latent_image",
+          "11": "samples"
+        },
+        "default": true,
+        "label": "Hi-res pass",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "Scales the picture up 1.5x and runs a second pass over it at half strength - sharper detail, about twice the time. Off gives the first pass as it is."
+      },
+      "hires_scale": {
+        "node_id": "11",
+        "input_key": "scale_by",
+        "label": "Hi-res scale",
+        "ui_min": 1.1,
+        "ui_max": 2.0,
+        "ui_step": 0.05
+      },
+      "hires_denoise": {
+        "node_id": "12",
+        "input_key": "denoise",
+        "label": "Hi-res strength",
+        "ui_min": 0.2,
+        "ui_max": 0.8,
+        "ui_step": 0.05,
+        "note": "How much the second pass may change. 0.5 is the owner's setting."
+      },
+      "scene_loras": {
+        "node_ids": [
+          "4"
+        ],
+        "type": "lora_slots",
+        "label": "LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "4"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
+      "guidance": {
+        "node_id": "7",
+        "input_key": "guidance",
+        "label": "Guidance",
+        "note": "3.5 is FLUX's own. Lower is looser and more photographic, higher follows the words harder."
+      },
+      "steps": {
+        "node_id": "10",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "seed": {
+        "node_id": "10",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "sampler": {
+        "node_id": "10",
+        "input_key": "sampler_name",
+        "label": "Sampler",
+        "control": "select"
+      },
+      "model_build": {
+        "node_id": "1",
+        "input_key": "unet_name",
+        "label": "Model build",
+        "note": "Which UltraReal build. v4 fp8 is the one downloaded; an older build you have shows up here too."
+      }
+    },
+    "example": {
+      "prompt": "amateur photo of a sexy instagram model posing on a beach, a crowd of men recording her on their phones",
+      "steps": 20,
+      "guidance": 3.5
+    }
   }
 }
