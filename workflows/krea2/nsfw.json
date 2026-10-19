@@ -189,7 +189,7 @@
         0
       ],
       "lora_1": {
-        "on": true,
+        "on": false,
         "lora": "MidJounreyNSFWKrea2Raw.safetensors",
         "strength": 0.9999999999999998,
         "strengthTwo": null
@@ -197,6 +197,12 @@
       "lora_2": {
         "on": true,
         "lora": "snofs_krea_v1_4.safetensors",
+        "strength": 1,
+        "strengthTwo": null
+      },
+      "lora_3": {
+        "on": true,
+        "lora": "Krea2-realism-V2.safetensors",
         "strength": 1,
         "strengthTwo": null
       },

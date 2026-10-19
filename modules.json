@@ -374,7 +374,8 @@
         "qwen3vl_4b_fp8_scaled.safetensors",
         "qwen_image_vae.safetensors",
         "MidJounreyNSFWKrea2Raw.safetensors",
-        "snofs_krea_v1_4.safetensors"
+        "snofs_krea_v1_4.safetensors",
+        "Krea2-realism-V2.safetensors"
       ],
       "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     },
@@ -401,7 +402,8 @@
         "qwen3vl_4b_fp8_scaled.safetensors",
         "qwen_image_vae.safetensors",
         "MidJounreyNSFWKrea2Raw.safetensors",
-        "snofs_krea_v1_4.safetensors"
+        "snofs_krea_v1_4.safetensors",
+        "Krea2-realism-V2.safetensors"
       ],
       "notes": "Consistent-character creator on Krea 2 - preview + gallery on the left, the builder on the right.",
       "featured": true

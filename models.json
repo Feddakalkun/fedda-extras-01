@@ -172,6 +172,12 @@
     "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/snofs_krea_v1_4.safetensors",
     "min_bytes": 1258291200
   },
+  "Krea2-realism-V2.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/cusiman/Krea2-realism-V2/resolve/main/Krea2-realism-V2.safetensors",
+    "min_bytes": 1258291200,
+    "_note": "Realism LoRA for Krea 2: real skin, anatomy and photo look, SFW and NSFW. The author's weights: ~1 for realism, 1.5-2 for explicit scenes."
+  },
   "minimax_h3_latent_upscaler_3d_fp16.safetensors": {
     "relative_dir": "latent_upscale_models",
     "url": "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_fp16.safetensors",
