@@ -267,5 +267,11 @@
     "url": "https://huggingface.co/jackzheng/flux-fill-FP8/resolve/main/fluxFillFP8_v10.safetensors",
     "min_bytes": 10737418240,
     "_note": "FLUX.1 Fill dev in fp8, 11.9 GB. Open repo - the source the owner's own FLUX workflows name."
+  },
+  "flux1-dev-kontext_fp8_scaled.safetensors": {
+    "relative_dir": "checkpoints",
+    "url": "https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/resolve/main/split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors",
+    "min_bytes": 10737418240,
+    "_note": "FLUX.1 Kontext dev, fp8 scaled, 11.9 GB, Comfy-Org's open repackage. Saved in checkpoints because the Kontext graphs load it with CheckpointLoaderSimple, as the owner's own graph does."
   }
 }
