@@ -1648,6 +1648,219 @@
           "seconds": 2.6
         }
       ]
+    },
+    {
+      "id": "last-train",
+      "group": "films",
+      "style": "social",
+      "genre": "romance",
+      "length": 30,
+      "format": "9:16",
+      "shot_seconds": 14.5,
+      "continuous": true,
+      "title": "Last Train",
+      "logline": "She misses the last train home - and it comes back for her. Two 15-second takes, one unbroken moment.",
+      "hook_text": "The last train came back for her.",
+      "lead_name": "Emma",
+      "lead": "a beautiful 27 year old woman with long chestnut hair, hazel eyes and a soft smile, wearing a camel wool coat over a black dress and a red scarf",
+      "lead_styling": "an adult woman in a camel wool coat over a black dress and a red scarf",
+      "lead_voice": "a young woman with a warm, slightly breathless voice",
+      "setting": "on an empty underground platform at one in the morning",
+      "look": "Cold white tiles, one flickering strip light and the warm gold glow of a lit train carriage; soft haze, fine film grain.",
+      "title_after": 1,
+      "shots": [
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "an empty underground platform at night, white tiled walls, a single flickering strip light, a wooden bench, the dark mouth of the tunnel",
+          "action": "First, Emma hurries down the last steps onto the empty platform, out of breath, just as the train doors close and it pulls away. Then she drops her bag on the bench, laughs at herself and sits down, pulling her coat tight against the cold. Then a sound from the tunnel makes her look up: two headlights are coming back toward her. Finally she stands, lit by the approaching lights, not quite believing it. The camera starts wide and slowly pushes in to a medium shot of her face as the light grows.",
+          "line": "You're coming back? For me?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Footsteps on tiles, the train's doors hissing shut, then the hum of the tunnel and a train slowly returning.",
+          "seconds": 14.5
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "",
+          "action": "First, the train stops and its doors slide open in front of Emma: one carriage is lit warm gold, every other one is dark. Then a man inside the warm carriage holds up her lost red glove and smiles. Then Emma hesitates, glances back at the empty platform and steps inside as the doors close behind her. Finally the train begins to move and the platform lights slide past the windows behind them. The camera follows her through the doors and settles on the two of them in the golden light.",
+          "line": "Only one stop. Then I'm getting off.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "The doors sliding open, a soft chime, the train gathering speed, her quiet laugh.",
+          "seconds": 14.5
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "group": "films",
+      "style": "film",
+      "genre": "scifi",
+      "length": 30,
+      "format": "16:9",
+      "shot_seconds": 10,
+      "title": "Orbit",
+      "logline": "On a routine spacewalk, an astronaut sees something block out the sun. Three 10-second shots.",
+      "hook_text": "Something blocked out the sun.",
+      "lead_name": "Lea",
+      "lead": "a striking 34 year old astronaut with short dark hair, sharp grey eyes and a calm face, in a white spacesuit with a gold-tinted visor raised",
+      "lead_styling": "an adult astronaut in a white spacesuit with a gold-tinted visor raised",
+      "lead_voice": "a woman with a calm, controlled voice over a crackling radio",
+      "setting": "in low orbit above the night side of the Earth",
+      "look": "Black space, the blue rim of the Earth and the gold lights of night-time cities; hard sunlight, deep shadows, anamorphic flares.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wide shot of the night side of the Earth from orbit, city lights like gold veins, a space station's solar array in the foreground with one broken panel",
+          "action": "First, the broken solar panel shakes loose and starts to tumble slowly away, glinting in the sun. Then the camera glides along the array toward the station. Then a small tethered figure in a white suit floats into view at the edge of the station. Finally the figure reaches for a handrail as the Earth turns below.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Total silence, then the slow hiss of a suit's breathing.",
+          "seconds": 10
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "the outside of a space station module against black space, a handrail and a toolbox clipped to it, the Earth's blue rim below",
+          "action": "First, Lea pulls herself hand over hand along the rail and reaches the panel mount. Then a bolt spins out of her glove into space; she grabs for it and misses. Then she freezes as a shadow slides across her visor and the sunlight on her face goes out. Finally she slowly turns her head toward it, her eyes widening. The camera holds close on her helmet as something huge passes in the reflection on the glass.",
+          "line": "Houston... are you seeing this?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Her breathing, the radio crackling, a faint metallic tick.",
+          "seconds": 10
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a vast smooth black object sliding out of the Earth's shadow, lit along one edge by the sun, far bigger than the space station beside it",
+          "action": "First, the object turns slowly, without a sound. Then a ring of soft blue lights blinks on along its side, one by one. Then the camera pulls back and back, until the station and the tiny astronaut beside it are specks. Finally every blue light goes out at once.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A deep hum building through the suit radio, then sudden silence.",
+          "seconds": 10
+        }
+      ]
+    },
+    {
+      "id": "last-slice",
+      "group": "films",
+      "style": "social",
+      "genre": "comedy",
+      "length": 30,
+      "format": "9:16",
+      "shot_seconds": 10,
+      "title": "The Last Slice",
+      "logline": "Two roommates, one slice of pizza, midnight. Three 10-second shots.",
+      "hook_text": "There was one slice left.",
+      "lead_name": "Jonas",
+      "lead": "a handsome 28 year old man with messy blond hair and stubble, in a grey hoodie and checked pyjama pants",
+      "lead_styling": "an adult man in a grey hoodie and checked pyjama pants",
+      "lead_voice": "a man with a guilty, whispering voice",
+      "setting": "in a small shared kitchen at midnight",
+      "look": "Dark kitchen lit by the open fridge, then warm overhead light; crisp, bright and comic.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a dark small kitchen at midnight, an open pizza box with one slice left on the counter, the fridge glowing",
+          "action": "First, Jonas tiptoes into the dark kitchen in his socks, checking over his shoulder. Then he opens the pizza box and finds one last slice, and grins. Then he lifts it toward his mouth - and the ceiling light snaps on. Finally he freezes with the slice halfway to his mouth, eyes sliding sideways. The camera pushes in slowly on his guilty face.",
+          "line": "This is... not what it looks like.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Socks on tiles, the pizza box creaking open, a light switch clicking.",
+          "seconds": 10
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a young woman in pyjamas and a green face mask standing in a kitchen doorway, arms crossed, one fluffy slipper in her hand",
+          "action": "First, she narrows her eyes and taps the slipper slowly against her palm. Then she steps forward one step at a time, like a gunslinger. Then she raises the slipper like a sword and points it straight at the camera. Finally she holds out her other hand, palm up, waiting. The camera holds a static shot as she fills the frame.",
+          "line": "Put. It. Down.",
+          "speaker": "other",
+          "voice": "a calm, deadly woman's voice",
+          "sound": "Slow footsteps, the slipper tapping, a ticking clock.",
+          "seconds": 10
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a small kitchen table between two chairs, a single pizza slice on a plate in the middle, a ginger cat sitting on the counter behind",
+          "action": "First, Jonas and his roommate stare each other down across the table, hands hovering. Then they both lunge at once; the plate spins and the slice flies up into the air. Then the ginger cat leaps off the counter, catches the slice mid-air and runs out of the room with it. Finally the two of them stare at the empty plate, then at each other, and burst out laughing. The camera follows the flying slice, then settles on the two of them.",
+          "line": "...Rematch tomorrow?",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A scramble of chairs, a plate spinning, a triumphant cat's chirp, laughter.",
+          "seconds": 10
+        }
+      ]
+    },
+    {
+      "id": "morning-after",
+      "group": "after-dark",
+      "style": "social",
+      "genre": "romance",
+      "length": 30,
+      "format": "9:16",
+      "shot_seconds": 10,
+      "title": "Morning After",
+      "logline": "A note on the pillow, the shower running - and she is not done with him yet. Three 10-second shots.",
+      "hook_text": "She found a note on the pillow.",
+      "lead_name": "Nadia",
+      "lead": "a beautiful 29 year old woman with long wavy black hair, olive skin, dark brown eyes and a curvy figure, wrapped in a white hotel sheet",
+      "lead_styling": "an adult woman wrapped in a white hotel sheet",
+      "lead_voice": "a young woman with a low, amused voice",
+      "partner": "a tall, athletic man in his early thirties with dark curly hair and a short beard",
+      "acts": [
+        "oral",
+        "doggy"
+      ],
+      "setting": "in a sunlit hotel suite in the morning",
+      "look": "Soft morning sun through sheer curtains, white sheets, steam and warm skin tones; glowing and intimate, fine film grain.",
+      "title_after": 2,
+      "shots": [
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a sunlit hotel bedroom in the morning, rumpled white sheets, a handwritten note on the pillow, steam drifting from an open bathroom door",
+          "action": "First, Nadia wakes in the white sheets and stretches, then finds the note on the pillow. Then she reads it and a slow smile spreads across her face. Then she looks toward the bathroom, where the shower is running and steam drifts out. Finally she slips out of bed, lets the sheet fall away behind her and walks toward the steam. The camera follows her at hip height.",
+          "line": "Breakfast can wait.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "Sheets rustling, the shower running, a paper note unfolding.",
+          "seconds": 10
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Nadia naked, kneeling on the wet tiles of a steamy glass shower in front of the man, water running over both of them, morning light through the steam",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Running water, wet sounds, his groan echoing on the tiles.",
+          "seconds": 10,
+          "act": "oral"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "Nadia naked on all fours on the white hotel bed, the man behind her, morning sun across the sheets",
+          "action": "",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Skin against skin, her moans, the bed creaking, birds outside.",
+          "seconds": 10,
+          "act": "doggy"
+        }
+      ]
     }
   ]
 }
