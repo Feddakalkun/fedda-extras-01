@@ -261,5 +261,11 @@
     "url": "https://huggingface.co/comfyuistudio/flx-cl-remover/resolve/main/flx-cl-remover.safetensors",
     "min_bytes": 314572800,
     "_note": "Clothes remover LoRA for FLUX Kontext, 344 MB. Open repo."
+  },
+  "fluxFillFP8_v10.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/jackzheng/flux-fill-FP8/resolve/main/fluxFillFP8_v10.safetensors",
+    "min_bytes": 10737418240,
+    "_note": "FLUX.1 Fill dev in fp8, 11.9 GB. Open repo - the source the owner's own FLUX workflows name."
   }
 }
