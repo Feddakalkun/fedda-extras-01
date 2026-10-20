@@ -2666,6 +2666,7 @@
         "node_ids": [
           "173"
         ],
+        "basic": true,
         "type": "lora_slots",
         "label": "LoRAs"
       },
