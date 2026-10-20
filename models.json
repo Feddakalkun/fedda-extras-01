@@ -375,5 +375,33 @@
       "extras-01-krea2"
     ],
     "_note": "Krea 2 NSFW, 436 MB; 0.8-2.0, no trigger."
+  },
+  "NSFW_master_ZIT_000008766.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/thutes-gbr25/NSFW-MASTER-Z-IMAGE-TURBO/resolve/main/NSFW_master_ZIT_000008766.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "z-image"
+    ],
+    "_note": "Z-Image Turbo NSFW master, 1.2 GB, 16k downloads."
+  },
+  "Vagina_minimax-h3_epoch20.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/fdrtyu/H3_HMPussy/resolve/main/Vagina_minimax-h3_epoch20.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "minimax-h3"
+    ],
+    "_note": "HMPussy for MiniMax H3 (anatomy), 78 MB."
+  },
+  "NSFW_Qwen_TheseAlpacas_V2.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Oliver577/NSFW-Qwen-by-TheseAlpacas-V2/resolve/main/NSFW%20Qwen%20by%20TheseAlpacas%20V2.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "qwen-image",
+      "extras-01-qwen-uncensored"
+    ],
+    "_note": "NSFW for Qwen-Image 2.1 by TheseAlpacas, 0.8."
   }
 }
