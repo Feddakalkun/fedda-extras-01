@@ -2646,10 +2646,10 @@
         "basic": true,
         "choices": [
           {"value": "krea2_turbo_fp8_scaled.safetensors", "label": "Krea 2 Turbo"},
-          {"value": "moodyKrea2MixUncensoredV8FREEV8_v80BF16FP8_3213091.safetensors", "label": "Moody Mix"},
+          {"value": "Moody-Krea-Mix-v7_00002__clean_convrot_int8.safetensors", "label": "Moody Mix"},
           {"value": "krea_kroma_v0.3.1_turbo_opd_int8_convrot.safetensors", "label": "Kroma"}
         ],
-        "note": "Moody Mix is a community Krea 2 merge tuned for uncensored realism (12.8 GB, Civitai wants your API key). Kroma is the Chroma author's full fine-tune of Krea 2 - broader range, uncensored (14.1 GB). Either downloads on Run."
+        "note": "Moody Mix is a community Krea 2 merge tuned for uncensored realism (14.1 GB). Kroma is the Chroma author's full fine-tune of Krea 2 - broader range, uncensored (14.1 GB). Either downloads on Run."
       },
       "prompt": {
         "node_id": "168",

@@ -152,11 +152,11 @@
     "optional": true,
     "_note": "306807976 bytes, sha256 begins 683d6a84430b - which is the same file as the one this pack was built against, hashed on both sides rather than matched on size. The low-noise half; the two halves are different epochs and different sizes, which is what the source published."
   },
-  "moodyKrea2MixUncensoredV8FREEV8_v80BF16FP8_3213091.safetensors": {
+  "Moody-Krea-Mix-v7_00002__clean_convrot_int8.safetensors": {
     "relative_dir": "diffusion_models",
-    "url": "https://civitai.com/api/download/models/3327123?fileId=3213091",
-    "min_bytes": 12000000000,
-    "_note": "Moody Krea 2 Mix V8.0, fp8_scaled (12.8 GB) - the same format as the stock Krea 2 Turbo, so it runs on any card that runs that. A community Turbo merge tuned for uncensored realism; 119k downloads, 3.7k up / 9 down on Civitai. Civitai wants an API key for it (Settings)."
+    "url": "https://huggingface.co/catlover1937/moody-krea-mix/resolve/main/Moody-Krea-Mix-v7_00002__clean_convrot_int8.safetensors",
+    "min_bytes": 13000000000,
+    "_note": "Moody Krea 2 Mix v7 (the author's own Hugging Face repo), int8 convrot 14.1 GB - a community Krea 2 Turbo merge tuned for uncensored realism. Hugging Face, so no account or key; the Civitai V8 build refused downloads (403) even with a key."
   },
   "krea_kroma_v0.3.1_turbo_opd_int8_convrot.safetensors": {
     "relative_dir": "diffusion_models",
