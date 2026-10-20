@@ -86,6 +86,12 @@
     "min_bytes": 1073741824,
     "_note": "6.27 GB. This is the part that is actually NSFW-specific here - an uncensored UMT5 text encoder. The diffusion models above are stock Wan."
   },
+  "wan_animate_2_distill_int8_convrot.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/Comfy-Org/Wan-Animate-2/resolve/main/diffusion_models/wan_animate_2_distill_int8_convrot.safetensors",
+    "min_bytes": 15000000000,
+    "_note": "Wan-Animate-2 distilled (Aug 2026), Comfy-Org int8 convrot 16.7 GB: 10 steps, lcm, cfg 1."
+  },
   "wan_2.1_vae.safetensors": {
     "relative_dir": "vae",
     "url": "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors",

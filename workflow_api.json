@@ -3514,5 +3514,104 @@
         "label": "LoRAs"
       }
     }
+  },
+  "extras-01-wan22-animate": {
+    "name": "Wan Animate 2",
+    "filename": "wan22/animate.json",
+    "module": "extras-01-wan22-animate",
+    "description": "A character picture moves the way a video does - dance, gestures, a walk - with the video's own sound.",
+    "example": {
+      "prompt": "Character appearance description: A young woman with shoulder-length copper hair, freckles and a cream knitted sweater, light blue jeans and white sneakers, full body from head to toe. Background description: a sunlit Scandinavian living room with pale wooden floors and a large window.",
+      "motion": "A woman dancing playfully, swaying her hips and turning on the spot."
+    },
+    "inputs": {
+      "image": {
+        "node_id": "10",
+        "input_key": "image",
+        "label": "Character picture"
+      },
+      "video": {
+        "node_id": "11",
+        "input_key": "video",
+        "label": "Motion video",
+        "note": "The clip whose movement the character copies. A clear, full-body subject works best."
+      },
+      "prompt": {
+        "node_id": "5",
+        "input_key": "text",
+        "label": "Character",
+        "note": "What the character and the place look like - not what they do. Start with 'Character appearance description:'."
+      },
+      "motion": {
+        "node_id": "7",
+        "input_key": "text",
+        "label": "Motion",
+        "note": "One line on the movement in the video, e.g. 'a man doing energetic street dance'."
+      },
+      "width": {
+        "node_id": "12",
+        "input_key": "resize_type.width",
+        "label": "Width",
+        "ui_max": 1280,
+        "ui_step": 16
+      },
+      "height": {
+        "node_id": "12",
+        "input_key": "resize_type.height",
+        "label": "Height",
+        "ui_max": 1280,
+        "ui_step": 16
+      },
+      "length": {
+        "node_id": "18",
+        "input_key": "length",
+        "label": "Length",
+        "control": "chips",
+        "choices": [
+          {
+            "value": 49,
+            "label": "1.6 s"
+          },
+          {
+            "value": 81,
+            "label": "2.7 s"
+          },
+          {
+            "value": 121,
+            "label": "4 s"
+          },
+          {
+            "value": 161,
+            "label": "5.4 s"
+          }
+        ]
+      },
+      "seed": {
+        "node_id": "23",
+        "input_key": "noise_seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "21",
+        "input_key": "steps",
+        "label": "Steps",
+        "advanced": true,
+        "note": "The distilled model's setting is 10."
+      },
+      "pose_strength": {
+        "node_id": "18",
+        "input_key": "pose_strength",
+        "label": "Motion strength",
+        "advanced": true,
+        "note": "1 is the trained behaviour. Lower follows the video more loosely."
+      },
+      "reference_image_strength": {
+        "node_id": "18",
+        "input_key": "reference_image_strength",
+        "label": "Likeness strength",
+        "advanced": true,
+        "note": "How tightly the character keeps the picture's look. Above 1 resists drift; below lets the prompt restyle."
+      }
+    }
   }
 }

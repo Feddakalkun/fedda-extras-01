@@ -352,6 +352,32 @@
       "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
     },
     {
+      "id": "extras-01-wan22-animate",
+      "status": "beta",
+      "label": "Wan Animate 2",
+      "family": "wan22",
+      "area": "video",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "video",
+        "extras-01-wan22-animate"
+      ],
+      "workflows": [
+        "wan22/animate.json"
+      ],
+      "custom_nodes": [
+        "ComfyUI-VideoHelperSuite"
+      ],
+      "models": [
+        "wan_animate_2_distill_int8_convrot.safetensors",
+        "nsfw_wan_umt5-xxl_fp8_scaled.safetensors",
+        "wan_2.1_vae.safetensors",
+        "clip_vision_h.safetensors"
+      ],
+      "notes": "Wan-Animate-2 distilled from ComfyUI's template: a character picture plus a motion video, one 81-161 frame segment at 30 fps, the video's audio kept."
+    },
+    {
       "id": "extras-01-qwen-uncensored",
       "status": "beta",
       "label": "Uncensored",
