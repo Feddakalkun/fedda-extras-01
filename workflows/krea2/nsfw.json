@@ -191,7 +191,7 @@
       "lora_1": {
         "on": false,
         "lora": "MidJounreyNSFWKrea2Raw.safetensors",
-        "strength": 0.9999999999999998,
+        "strength": 0.6,
         "strengthTwo": null
       },
       "lora_2": {
