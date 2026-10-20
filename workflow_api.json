@@ -2638,6 +2638,18 @@
     "module": "extras-01-krea2",
     "description": "Text to image on Krea 2 Turbo, through a Qwen3-VL text encoder. Eight steps at CFG 1 - it is a distilled model, so a higher CFG burns it rather than sharpening it. The style is joined onto the end of your prompt, so write the picture and let the style say how it looks.",
     "inputs": {
+      "model": {
+        "node_id": "166",
+        "input_key": "unet_name",
+        "label": "Model",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {"value": "krea2_turbo_fp8_scaled.safetensors", "label": "Krea 2 Turbo"},
+          {"value": "moodyKrea2MixUncensoredV8FREEV8_v80BF16FP8_3213091.safetensors", "label": "Moody Mix"}
+        ],
+        "note": "Moody Mix is a community Krea 2 merge, tuned for uncensored realism. 12.8 GB, downloads on Run - Civitai wants your API key for it."
+      },
       "prompt": {
         "node_id": "168",
         "input_key": "string",

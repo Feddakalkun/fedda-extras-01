@@ -146,6 +146,12 @@
     "optional": true,
     "_note": "306807976 bytes, sha256 begins 683d6a84430b - which is the same file as the one this pack was built against, hashed on both sides rather than matched on size. The low-noise half; the two halves are different epochs and different sizes, which is what the source published."
   },
+  "moodyKrea2MixUncensoredV8FREEV8_v80BF16FP8_3213091.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://civitai.com/api/download/models/3327123?fileId=3213091",
+    "min_bytes": 12000000000,
+    "_note": "Moody Krea 2 Mix V8.0, fp8_scaled (12.8 GB) - the same format as the stock Krea 2 Turbo, so it runs on any card that runs that. A community Turbo merge tuned for uncensored realism; 119k downloads, 3.7k up / 9 down on Civitai. Civitai wants an API key for it (Settings)."
+  },
   "krea2_turbo_fp8_scaled.safetensors": {
     "relative_dir": "unet",
     "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",
