@@ -2304,6 +2304,325 @@
           "seconds": 4.8
         }
       ]
+    },
+    {
+      "id": "fedda-archetype",
+      "genre": "ad",
+      "length": 120,
+      "format": "16:9",
+      "title": "FEDDA Hub",
+      "logline": "Pink, Black, Green and Blue - four local models running wild on one RTX card, cut to the FEDDA song.",
+      "lead_name": "Pink",
+      "lead_styling": "an adult woman with tall pink bunny ears on a headband, wearing a cropped white techwear jacket with pink straps",
+      "lead": "a 23 year old woman with long pastel-pink hair, tall pink bunny ears on a headband, pale skin and a sharp, ice-cold confident face, wearing a cropped white techwear jacket with pink straps",
+      "lead_voice": "a young woman with a sharp, ice-cold voice",
+      "setting": "inside a glitching digital world of monitors, server racks and coloured light",
+      "look": "Glossy music-video lighting, deep blacks, saturated pink, green and blue neon, sharp and cinematic.",
+      "title_after": 2,
+      "group": "films",
+      "style": "film",
+      "hook_text": "FEDDA HUB - LOCAL AND UNHOLY",
+      "music": "shortfilm_music/fedda_archetype.mp3",
+      "refs": false,
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a dark room full of stacked old monitors, every screen glitching with pink, green and blue static",
+          "action": "The wall of monitors flickers on screen by screen, glitching in pink, green and blue static. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.4
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "the glowing fans and copper heatsink of a graphics card in a dark PC case, pink light",
+          "action": "The graphics card's fans spin up and its lights pulse in time like a heartbeat. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "four women in silhouette standing in a row in a dark room, lit from behind in pink, black, green and blue",
+          "action": "The four silhouettes lift their heads at the same moment as the lights behind them flare. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a bright white photo studio with framed photographs floating in the air around her",
+          "action": "Pink walks through the white studio as sharp photographs materialise in the air around her one after another. The camera tracks backward ahead of her.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a woman's face in clean white studio light, floating photographs reflected in her eyes",
+          "action": "Pink turns to the camera with an ice-cold confident look as a photograph snaps into focus beside her face. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a bright white studio filled with dozens of floating, perfectly sharp photographs",
+          "action": "Dozens of photographs sharpen from blur to crystal clarity all at once. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a white studio, a large glowing screen behind her showing a perfect portrait",
+          "action": "Pink snaps her fingers and the giant screen behind her renders a flawless portrait in a flash of white light. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a dark shadowed room with a wall of video screens playing moving clips, deep purple-black light, Black, a woman with long jet-black hair, tall black bunny ears, dark smoky eyes, wearing a long black hooded techwear coat standing in front of it",
+          "action": "Black steps out of the shadows in front of the wall of moving video screens, her coat dragging on the floor. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "the face of Black, a woman with long jet-black hair, tall black bunny ears, dark smoky eyes, wearing a long black hooded techwear coat half in shadow, lit by flickering video screens",
+          "action": "Black whispers into the dark while the video light flickers across half of her face. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a wall of video screens in a dark room, each screen playing a different moving clip, motion streaks",
+          "action": "The clips on every screen slide and smear into motion trails, as if the video is being pulled through the dark. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a graphics card glowing hot red in a dark rig, a temperature readout in the red",
+          "action": "The graphics card glows hotter and hotter, heat shimmer rising off it in the dark. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a neon-green tunnel of racing light streaks, Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes sprinting through it",
+          "action": "Green sprints through the tunnel of green light streaks at impossible speed. The camera tracks backward ahead of her.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium close-up",
+          "first_frame": "the grinning face of Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes in rushing green light, hair flying back",
+          "action": "Green grins into the wind of light, her hair whipping back. The camera holds a static shot with rapid light streaks.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "rows of server racks with green lights blinking at hyperspeed, motion blur",
+          "action": "Server lights blink faster and faster until they blur into solid green lines. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a racetrack of light at night with burning tire-like streaks of green fire, Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes skidding to a stop",
+          "action": "Green skids to a stop on the track of light, leaving burning green streaks behind her. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a dim room lit only by a blue error screen, rain streaming down the window, Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie sitting on the floor",
+          "action": "Blue sits on the floor hugging her knees in the blue light as the screen behind her freezes. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a monitor showing blue static breaking apart into falling pixels like ash",
+          "action": "The blue screen crumbles into falling pixels that drift down like ash. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "the face of Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie lit by blue static, a single tear",
+          "action": "Blue watches the screen with sad, calm eyes as a single tear runs down her cheek. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.3
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a dark room, a blue screen flickering back to life, Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie reaching toward it",
+          "action": "Blue reaches out and the screen flickers back to life, a progress bar starting from zero. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a stage built from server racks with sparks raining down and strobe lights in pink, black, green and blue, four women on it: Pink, a 23 year old woman with long pastel-pink hair, tall pink bunny ears on a headband, pale skin and a sharp, ice-cold confident face, wearing a cropped white techwear jacket with pink straps; Black, a woman with long jet-black hair, tall black bunny ears, dark smoky eyes, wearing a long black hooded techwear coat; Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes; Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie",
+          "action": "The four women stomp forward together as sparks rain down and the strobes hit on the beat. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a strobing stage of server racks, sparks behind her",
+          "action": "Pink screams into the strobe light, unhinged, as sparks explode behind her. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "an overheating graphics card melting and dripping glowing metal, smoke rising",
+          "action": "The graphics card melts, glowing metal dripping down as smoke pours out. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "Black, a woman with long jet-black hair, tall black bunny ears, dark smoky eyes, wearing a long black hooded techwear coat and Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes back to back on a strobing stage of server racks",
+          "action": "Black and Green headbang back to back as the floor shakes and the lights flash. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a huge digital door made of light on a dark stage, cracking apart",
+          "action": "The giant door of light cracks and shatters into fragments as the four women walk through it. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie dancing wildly on a stage in blue and pink strobe light",
+          "action": "Blue dances wildly now, smiling, spinning in the strobes. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.7
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a dark stage of server racks from above, four women in pink, black, green and blue light, sparks everywhere",
+          "action": "From above, the four women jump together as every rack flashes at once. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.8
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "four women standing in a row in soft smoke, each lit in her colour - pink, black, green and blue: Pink, a 23 year old woman with long pastel-pink hair, tall pink bunny ears on a headband, pale skin and a sharp, ice-cold confident face, wearing a cropped white techwear jacket with pink straps; Black, a woman with long jet-black hair, tall black bunny ears, dark smoky eyes, wearing a long black hooded techwear coat; Green, a woman with long neon-green hair, tall green bunny ears and a fierce grin, wearing a black racing jacket with neon-green stripes; Blue, a woman with long ice-blue hair, tall blue bunny ears and sad, calm eyes, wearing an oversized pale-blue hoodie",
+          "action": "The four women stand still in the smoke as their colours slowly fade to black. The camera slowly pulls back.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 5.0
+        }
+      ]
     }
   ]
 }
