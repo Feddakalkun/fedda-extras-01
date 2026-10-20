@@ -1861,6 +1861,103 @@
           "act": "doggy"
         }
       ]
+    },
+    {
+      "id": "night-shift",
+      "genre": "slopcore",
+      "length": 30,
+      "format": "16:9",
+      "title": "Night Shift",
+      "logline": "At 3 AM the machines run the startup - the last two humans are asleep on a beanbag.",
+      "lead_name": "Ida",
+      "lead_styling": "an adult woman in an oversized grey hoodie and black jeans, her hair in a messy bun",
+      "lead": "a 27 year old woman with dark hair in a messy bun, pale tired face and dark circles under her eyes, wearing an oversized grey hoodie and black jeans",
+      "lead_voice": "a young woman with a flat, sleepy voice",
+      "setting": "in a dim open-plan startup office at three in the morning, rows of humming Mac minis on steel shelves, monitors glowing",
+      "look": "Cold fluorescent light and monitor glow, deep shadows, quiet and still - like security footage.",
+      "title_after": 5,
+      "group": "films",
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a dark open-plan office at night, steel shelves stacked with rows of small silver computers, their status lights blinking, empty desks and chairs, cold fluorescent light",
+          "action": "Rows of small computers blink in the dark office; nothing else moves. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A low electrical hum, fans whirring, one distant beep.",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a big grey beanbag on the office floor under a desk, two monitors glowing above it",
+          "action": "Ida lies asleep on the grey beanbag, curled up in her hoodie, her laptop open on her stomach; the screens above her scroll on their own. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Soft breathing, keyboard clicks with no one typing.",
+          "seconds": 4.2
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a computer monitor in a dark office showing lines of code writing themselves, a cold cup of coffee beside the keyboard",
+          "action": "Lines of code type themselves across the screen while the coffee beside the keyboard sits untouched. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "Rapid soft clicking, a quiet notification chime.",
+          "seconds": 3.8
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "an empty office chair slowly turning in front of a glowing desk at night",
+          "action": "An empty office chair turns slowly by itself in front of a glowing desk, then stops. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A faint creak, the hum of the servers.",
+          "seconds": 3.6
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a sleepy young woman in a grey hoodie half-sitting up on a beanbag in a dark office, monitor light on her face",
+          "action": "Ida half-opens her eyes, glances at the screens, and mumbles to no one before sinking back into the beanbag. The camera holds a static shot.",
+          "line": "Ship it.",
+          "speaker": "lead",
+          "voice": "",
+          "sound": "A single soft chime from every computer at once.",
+          "seconds": 4.4
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a hallway of server shelves in a dark office, every status light turning green in a wave",
+          "action": "A wave of green status lights runs down the shelves of computers, one after another. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "A rising hum, a cascade of tiny beeps.",
+          "seconds": 4.0
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "extreme wide shot",
+          "first_frame": "the dark office from high in a corner, like a security camera, a woman asleep on a beanbag among glowing machines",
+          "action": "Seen from high in the corner, Ida sleeps on the beanbag while every machine around her keeps working. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "The hum settles into silence.",
+          "seconds": 4.2
+        }
+      ],
+      "style": "film",
+      "hook_text": "THE MACHINES TOOK THE NIGHT SHIFT"
     }
   ]
 }
