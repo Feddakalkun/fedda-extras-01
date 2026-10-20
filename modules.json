@@ -410,6 +410,8 @@
     },
     {
       "id": "extras-01-chroma-txt2img",
+      "enabled": false,
+      "_retired": "2026-10-20: replaced by Kroma (a model choice on the Krea 2 page). Chroma1-HD drifted to anime on short prompts.",
       "label": "Chroma1-HD",
       "pack": "booster",
       "area": "image",
