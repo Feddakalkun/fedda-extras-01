@@ -303,5 +303,77 @@
     "url": "https://huggingface.co/Comfy-Org/flux1-kontext-dev_ComfyUI/resolve/main/split_files/diffusion_models/flux1-dev-kontext_fp8_scaled.safetensors",
     "min_bytes": 10737418240,
     "_note": "FLUX.1 Kontext dev, fp8 scaled, 11.9 GB, Comfy-Org's open repackage. Saved in checkpoints because the Kontext graphs load it with CheckpointLoaderSimple, as the owner's own graph does."
+  },
+  "H3_POV_Missionary_Insertion.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/0xJuicybear/H3LoRA/resolve/main/H3_POV_Missionary_Insertion.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "minimax-h3"
+    ],
+    "_note": "POV missionary insertion. 0.6-0.8; wants a turbo LoRA, 6-8 steps, euler/simple."
+  },
+  "HMNSFW_AIO_V2.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/0xJuicybear/H3LoRA/resolve/main/HMNSFW_AIO_V2.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "minimax-h3"
+    ],
+    "_note": "All-in-one positions. Trigger hmmotion, 0.5; best on image to video."
+  },
+  "MinimaxH3-Blowjob-512_000000510.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Janxh/H3irty/resolve/main/MinimaxH3-Blowjob-512_000000510.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "minimax-h3"
+    ],
+    "_note": "Trigger 'blowjob, sucking penis', 0.8; reference-to-video pages."
+  },
+  "DR34ML4Y_I2V_14B_HIGH.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Fredjs/cfy/resolve/main/DR34ML4Y_I2V_14B_HIGH.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "extras-01-wan22"
+    ],
+    "_note": "Wan 2.2 high-noise. Triggers m15510n4ry, bl0wj0b, d0ubl3_bj, d0gg1e, c0wg1rl; 0.6-0.8."
+  },
+  "DR34ML4Y_I2V_14B_LOW.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Fredjs/cfy/resolve/main/DR34ML4Y_I2V_14B_LOW.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "extras-01-wan22"
+    ],
+    "_note": "Wan 2.2 low-noise half of the pair above."
+  },
+  "DR34ML4Y_LT3X_V3.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Fredjs/cfy/resolve/main/DR34ML4Y_LT3X_V3.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "ltx-23"
+    ],
+    "_note": "LTX 2.3 all-in-one, 1.9 GB. Triggers m15510n4ry / c0wg1rl; 0.5-0.8."
+  },
+  "LTX2.3-Rogue-Missionary-Cowgirl-v3.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Fredjs/cfy/resolve/main/LTX2.3-Rogue-Missionary-Cowgirl-v3.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "ltx-23"
+    ],
+    "_note": "LTX 2.3 missionary / cowgirl (not POV); 0.5-0.8."
+  },
+  "KNP_000003000.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Kutches/Kr3a/resolve/main/KNP_000003000.safetensors",
+    "min_bytes": 10000000,
+    "for": [
+      "extras-01-krea2"
+    ],
+    "_note": "Krea 2 NSFW, 436 MB; 0.8-2.0, no trigger."
   }
 }
