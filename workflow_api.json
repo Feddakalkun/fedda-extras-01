@@ -3464,5 +3464,55 @@
       "steps": 20,
       "guidance": 3.5
     }
+  },
+  "extras-01-qwen-uncensored": {
+    "name": "Qwen-Image 2.1 Uncensored",
+    "filename": "qwen/uncensored.json",
+    "module": "extras-01-qwen-uncensored",
+    "description": "Qwen-Image 2.1 without the safety tuning - the full base model, 25 steps, native to 2K.",
+    "inputs": {
+      "prompt": {
+        "node_id": "4",
+        "input_key": "prompt",
+        "label": "Prompt"
+      },
+      "width": {
+        "node_id": "5",
+        "input_key": "width",
+        "label": "Width",
+        "ui_max": 2048,
+        "note": "Qwen-Image 2.1 is native up to 2K. One megapixel is the fast default; four (2048 x 2048) is its full size."
+      },
+      "height": {
+        "node_id": "5",
+        "input_key": "height",
+        "label": "Height",
+        "ui_max": 2048
+      },
+      "seed": {
+        "node_id": "6",
+        "input_key": "seed",
+        "label": "Seed"
+      },
+      "steps": {
+        "node_id": "6",
+        "input_key": "steps",
+        "label": "Steps",
+        "advanced": true,
+        "note": "This is the full base model, not a turbo: 25 steps is its setting. Fewer comes out soft."
+      },
+      "cfg": {
+        "node_id": "6",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "advanced": true,
+        "note": "1 is correct for Turbo - it is guidance-distilled. Raising it burns the image."
+      },
+      "loras": {
+        "node_id": "11",
+        "type": "loras",
+        "label": "LoRAs"
+      }
+    }
   }
 }

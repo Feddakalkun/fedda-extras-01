@@ -158,6 +158,12 @@
     "min_bytes": 12000000000,
     "_note": "Kroma v0.3.1 Turbo OPD (Lodestones, the Chroma author) - a full fine-tune of Krea 2 with the Turbo delta merged in, on-policy distilled. int8 convrot build (14.1 GB) of lodestones/Kroma's 26 GB bf16. Same Krea 2 text encoder and VAE; Krea 2 LoRAs carry over."
   },
+  "qwen-image-2.1-UC-int8_convrot.safetensors": {
+    "relative_dir": "diffusion_models",
+    "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-Uncensored-Quantized/resolve/main/qwen-image-2.1-UC-int8_convrot.safetensors",
+    "min_bytes": 6000000000,
+    "_note": "Qwen-Image 2.1 base, uncensored (abenzerps), int8 convrot 7.3 GB. The most downloaded uncensored Qwen 2.1 build (2.7M). Qwen research licence."
+  },
   "krea2_turbo_fp8_scaled.safetensors": {
     "relative_dir": "unet",
     "url": "https://huggingface.co/Comfy-Org/Krea-2/resolve/main/diffusion_models/krea2_turbo_fp8_scaled.safetensors",

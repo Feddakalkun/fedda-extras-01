@@ -352,6 +352,31 @@
       "notes": "Four chained runs joined into one clip. The only way past Wan's five-second window."
     },
     {
+      "id": "extras-01-qwen-uncensored",
+      "status": "beta",
+      "label": "Uncensored",
+      "family": "qwen-image",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-qwen-uncensored"
+      ],
+      "workflows": [
+        "qwen/uncensored.json"
+      ],
+      "custom_nodes": [
+        "rgthree-comfy"
+      ],
+      "models": [
+        "qwen-image-2.1-UC-int8_convrot.safetensors",
+        "qwen3vl_8b_int8_convrot.safetensors",
+        "qwen_image_2.1_vae_bf16.safetensors"
+      ],
+      "notes": "Qwen-Image 2.1 base, uncensored, under the app's Qwen-Image card. 25 steps at cfg 1."
+    },
+    {
       "id": "extras-01-krea2",
       "status": "verified",
       "label": "Krea 2",
