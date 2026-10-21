@@ -1863,449 +1863,6 @@
       ]
     },
     {
-      "id": "night-shift",
-      "genre": "slopcore",
-      "length": 30,
-      "format": "16:9",
-      "title": "Night Shift",
-      "logline": "At 3 AM the machines run the startup - the last two humans are asleep on a beanbag.",
-      "lead_name": "Ida",
-      "lead_styling": "an adult woman in an oversized grey hoodie and black jeans, her hair in a messy bun",
-      "lead": "a 27 year old woman with dark hair in a messy bun, pale tired face and dark circles under her eyes, wearing an oversized grey hoodie and black jeans",
-      "lead_voice": "a young woman with a flat, sleepy voice",
-      "setting": "in a dim open-plan startup office at three in the morning, rows of humming Mac minis on steel shelves, monitors glowing",
-      "look": "Cold fluorescent light and monitor glow, deep shadows, quiet and still - like security footage.",
-      "title_after": 5,
-      "group": "films",
-      "shots": [
-        {
-          "lead_in_shot": false,
-          "framing": "extreme wide shot",
-          "first_frame": "a dark open-plan office at night, steel shelves stacked with rows of small silver computers, their status lights blinking, empty desks and chairs, cold fluorescent light",
-          "action": "Rows of small computers blink in the dark office; nothing else moves. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "A low electrical hum, fans whirring, one distant beep.",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "wide shot",
-          "first_frame": "a big grey beanbag on the office floor under a desk, two monitors glowing above it",
-          "action": "Ida lies asleep on the grey beanbag, curled up in her hoodie, her laptop open on her stomach; the screens above her scroll on their own. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "Soft breathing, keyboard clicks with no one typing.",
-          "seconds": 4.2
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "a computer monitor in a dark office showing lines of code writing themselves, a cold cup of coffee beside the keyboard",
-          "action": "Lines of code type themselves across the screen while the coffee beside the keyboard sits untouched. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "Rapid soft clicking, a quiet notification chime.",
-          "seconds": 3.8
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "medium shot",
-          "first_frame": "an empty office chair slowly turning in front of a glowing desk at night",
-          "action": "An empty office chair turns slowly by itself in front of a glowing desk, then stops. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "A faint creak, the hum of the servers.",
-          "seconds": 3.6
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium close-up",
-          "first_frame": "a sleepy young woman in a grey hoodie half-sitting up on a beanbag in a dark office, monitor light on her face",
-          "action": "Ida half-opens her eyes, glances at the screens, and mumbles to no one before sinking back into the beanbag. The camera holds a static shot.",
-          "line": "Ship it.",
-          "speaker": "lead",
-          "voice": "",
-          "sound": "A single soft chime from every computer at once.",
-          "seconds": 4.4
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "wide shot",
-          "first_frame": "a hallway of server shelves in a dark office, every status light turning green in a wave",
-          "action": "A wave of green status lights runs down the shelves of computers, one after another. The camera slowly pushes in.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "A rising hum, a cascade of tiny beeps.",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "extreme wide shot",
-          "first_frame": "the dark office from high in a corner, like a security camera, a woman asleep on a beanbag among glowing machines",
-          "action": "Seen from high in the corner, Ida sleeps on the beanbag while every machine around her keeps working. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "The hum settles into silence.",
-          "seconds": 4.2
-        }
-      ],
-      "style": "film",
-      "hook_text": "THE MACHINES TOOK THE NIGHT SHIFT"
-    },
-    {
-      "id": "look-thirteen",
-      "genre": "slopcore",
-      "length": 60,
-      "format": "16:9",
-      "title": "Look 13",
-      "logline": "Fashion week in a datacenter: one human model walks for an audience of laptops - and the laptops rate her.",
-      "lead_name": "Nova",
-      "lead_styling": "an adult woman in a white cropped puff-sleeve shirt, a black pleated skirt with a harness belt and a paper garment tag, black knee boots",
-      "lead": "a 24 year old woman with a black blunt jaw-length bob with one orange streak, pale skin with light freckles, sharp calm face, wearing a white cropped puff-sleeve shirt, a black pleated skirt with a harness belt and a paper garment tag, black knee boots",
-      "lead_voice": "a young woman with a cool, deadpan voice",
-      "setting": "in a cold datacenter turned into a fashion show: a long white catwalk running between two walls of server racks in a cold datacenter, blue status lights, rows of empty folding chairs with open laptops on them",
-      "look": "Cold fluorescent catwalk light, blue status lamps, deep black between the racks - a lookbook shot like security footage.",
-      "title_after": 6,
-      "group": "films",
-      "style": "film",
-      "hook_text": "THE AUDIENCE IS ALL LAPTOPS",
-      "shots": [
-        {
-          "lead_in_shot": false,
-          "framing": "extreme wide shot",
-          "first_frame": "a long white catwalk running between two walls of server racks in a cold datacenter, blue status lights, rows of empty folding chairs with open laptops on them, nobody on the catwalk yet",
-          "action": "The catwalk lights switch on one by one down the hall of server racks. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.6
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "medium shot",
-          "first_frame": "a row of empty folding chairs beside the catwalk, an open laptop on every seat, their screens glowing blue",
-          "action": "Every laptop on the chairs wakes up at the same moment, screens turning toward the catwalk. The camera slowly pushes in.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.4
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "wide shot",
-          "first_frame": "a long white catwalk running between two walls of server racks in a cold datacenter, blue status lights, rows of empty folding chairs with open laptops on them, a woman at the far end of the catwalk",
-          "action": "Nova steps onto the catwalk and walks toward the camera with a slow, perfect stride. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 5.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium shot",
-          "first_frame": "the middle of the white catwalk between server racks, blue light",
-          "action": "Nova walks past the racks, her paper garment tag swinging, her face completely calm. The camera tracks backward ahead of her.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.6
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "a laptop screen beside the catwalk showing a rating bar filling up, blue light",
-          "action": "A rating bar on a laptop screen fills to 98 percent, then flickers. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.8
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium close-up",
-          "first_frame": "the end of the white catwalk, a black wall of servers behind",
-          "action": "Nova reaches the end of the catwalk, stops, turns her head to the camera and speaks flatly.",
-          "line": "Look thirteen.",
-          "speaker": "lead",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.6
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "wide shot",
-          "first_frame": "rows of server racks with their status lights blinking green in a wave",
-          "action": "A wave of green lights runs down the racks like applause. The camera slowly pushes in.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "close-up",
-          "first_frame": "a woman's face in cold blue light against black servers",
-          "action": "Nova blinks once and does not smile. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.8
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "medium shot",
-          "first_frame": "a small printer on a steel shelf in the datacenter, a paper tag sliding out",
-          "action": "The printer slowly pushes out a new paper garment tag that reads nothing. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "wide shot",
-          "first_frame": "a long white catwalk running between two walls of server racks in a cold datacenter, blue status lights, rows of empty folding chairs with open laptops on them, a woman walking away down the catwalk",
-          "action": "Nova walks back down the catwalk away from the camera while the laptops follow her with their screens. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 5.0
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "an empty folding chair at the end of the row, a laptop on it with a dark screen",
-          "action": "The last laptop's screen goes dark, then shows a single blinking cursor. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.6
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "extreme wide shot",
-          "first_frame": "a long white catwalk running between two walls of server racks in a cold datacenter, blue status lights, rows of empty folding chairs with open laptops on them, the catwalk empty again",
-          "action": "The catwalk lights switch off one by one until only the blue status lights remain. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.6
-        }
-      ]
-    },
-    {
-      "id": "standup",
-      "genre": "slopcore",
-      "length": 30,
-      "format": "16:9",
-      "title": "Standup",
-      "logline": "The morning all-hands: one human presents the roadmap to a meeting room of laptops on chairs.",
-      "lead_name": "Jonas",
-      "lead_styling": "an adult man in a grey company fleece vest over a white t-shirt, a lanyard badge",
-      "lead": "a 34 year old man with short brown hair and a tired, polite face, wearing a grey company fleece vest over a white t-shirt and a lanyard badge",
-      "lead_voice": "a man with a flat, too-cheerful corporate voice",
-      "setting": "in a glass-walled startup meeting room at eight in the morning, a long table, every chair holding an open laptop instead of a person, a big screen on the wall",
-      "look": "Flat grey morning light through glass, cold screens, beige carpet - corporate and very quiet.",
-      "title_after": 4,
-      "group": "films",
-      "style": "film",
-      "hook_text": "EVERYONE IS ON MUTE",
-      "shots": [
-        {
-          "lead_in_shot": false,
-          "framing": "wide shot",
-          "first_frame": "a glass-walled meeting room, a long table, an open laptop on every chair, a big wall screen showing a slide titled with a chart",
-          "action": "Rows of laptops sit at the long table, their webcam lights on. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.2
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium shot",
-          "first_frame": "the front of the meeting room beside the big wall screen",
-          "action": "Jonas clicks to the next slide and gestures at a rising chart, smiling at the laptops.",
-          "line": "Great quarter, everyone.",
-          "speaker": "lead",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.4
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "one laptop on a chair, its webcam light glowing green",
-          "action": "The laptop's fan spins up with a soft whine as its screen scrolls a transcript of his words. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.6
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium close-up",
-          "first_frame": "a man by the wall screen in flat grey light",
-          "action": "Jonas waits for questions; nothing moves. He nods slowly to himself. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "a coffee mug on the meeting table beside a laptop, steam rising",
-          "action": "A single cup of coffee steams beside a laptop that types on its own. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.4
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "wide shot",
-          "first_frame": "the meeting room seen from the corridor through the glass wall",
-          "action": "Through the glass, the laptops all close their lids at the same moment while Jonas keeps presenting. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.6
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium shot",
-          "first_frame": "a man alone in front of a wall screen in a meeting room full of closed laptops",
-          "action": "Jonas looks at the closed laptops, then quietly closes his own. The camera slowly pulls back.",
-          "line": "Same time tomorrow.",
-          "speaker": "lead",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.2
-        }
-      ]
-    },
-    {
-      "id": "last-commute",
-      "genre": "slopcore",
-      "length": 30,
-      "format": "16:9",
-      "title": "Last Commute",
-      "logline": "Dawn in the city: the robotaxis run full routes with nobody inside, and one commuter has nowhere to go.",
-      "lead_name": "Mira",
-      "lead_styling": "an adult woman in a long beige trench coat over a black turtleneck, a tote bag",
-      "lead": "a 29 year old woman with straight dark-brown shoulder-length hair and a pale, quiet face, wearing a long beige trench coat over a black turtleneck, carrying a tote bag",
-      "lead_voice": "a young woman with a soft, flat voice",
-      "setting": "on a wide empty city street at dawn, glass office towers, a bus stop with a digital screen, white driverless robotaxis with spinning roof sensors",
-      "look": "Blue dawn light, wet asphalt, cold glass towers, one red traffic light - still and empty like a surveillance feed.",
-      "title_after": 4,
-      "group": "films",
-      "style": "film",
-      "hook_text": "NOBODY NEEDS TO GO ANYWHERE",
-      "shots": [
-        {
-          "lead_in_shot": false,
-          "framing": "extreme wide shot",
-          "first_frame": "a wide empty city avenue at dawn between glass towers, wet asphalt, one red traffic light",
-          "action": "A line of white robotaxis glides through the empty avenue in perfect spacing, all of them empty. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.4
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "wide shot",
-          "first_frame": "a bus stop with a glowing digital screen on an empty city street at dawn",
-          "action": "Mira stands alone at the bus stop holding her tote bag as the robotaxis pass without stopping. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.4
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "close-up",
-          "first_frame": "the digital screen at a bus stop at dawn",
-          "action": "The bus stop screen flickers from a timetable to a single line of text and back. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.4
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "medium close-up",
-          "first_frame": "a woman at a bus stop in blue dawn light, glass towers behind",
-          "action": "Mira looks at her phone, then up the empty street, and says quietly to no one.",
-          "line": "I think it's a holiday.",
-          "speaker": "lead",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.2
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "medium shot",
-          "first_frame": "a small white delivery robot rolling along a wet sidewalk at dawn",
-          "action": "A delivery robot rolls past her feet carrying a single coffee, then turns the corner. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 3.8
-        },
-        {
-          "lead_in_shot": false,
-          "framing": "wide shot",
-          "first_frame": "an empty glass office lobby at dawn, every light on, nobody inside",
-          "action": "Inside the empty lobby the turnstiles open and close by themselves. The camera slowly pushes in.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.0
-        },
-        {
-          "lead_in_shot": true,
-          "framing": "extreme wide shot",
-          "first_frame": "the empty avenue at dawn from high above, a small figure at a bus stop",
-          "action": "From high above, Mira sits down on the bus stop bench while the robotaxis keep circling the block. The camera holds a static shot.",
-          "line": "",
-          "speaker": "",
-          "voice": "",
-          "sound": "",
-          "seconds": 4.8
-        }
-      ]
-    },
-    {
       "id": "fedda-archetype",
       "genre": "ad",
       "length": 120,
@@ -2814,6 +2371,768 @@
       ],
       "music_start": 82,
       "music_end": 112
+    },
+    {
+      "id": "slop-nothing-leaves",
+      "genre": "slopcore",
+      "length": 60,
+      "format": "16:9",
+      "title": "Nothing Leaves",
+      "group": "films",
+      "style": "film",
+      "refs": false,
+      "title_after": 1,
+      "logline": "Deep in a dark forest, one bunny-eared operator makes pictures all night on one graphics card - and not a single frame ever leaves the machine.",
+      "hook_text": "NOTHING LEAVES THE MACHINE",
+      "lead_name": "Fen",
+      "lead": "a striking beautiful young woman in her twenties with a photorealistic human face, human skin and human features, amber eyes, cute slightly protruding front teeth with a little overbite, a faint dusting of soft pale down on her cheekbones, tall fluffy black bunny ears with teal-grey tips, a choppy black shag haircut with short bangs, dark plum lipstick, an oversized charcoal cable-knit sweater with the sleeves over her hands and a small brass tag on a black cord around her neck",
+      "lead_styling": "an adult woman with tall fluffy black bunny ears with teal-grey tips, cute slightly protruding front teeth, an oversized charcoal cable-knit sweater and a small brass tag on a black cord",
+      "lead_voice": "a young woman with a soft, flat, deadpan voice",
+      "setting": "in a moss-covered wooden cabin deep in a dark pine forest, full of humming graphics cards, old CRT monitors and tangled cables",
+      "look": "Dark teal-grey night, one warm amber lamp, green CRT glow, drifting fog, cinematic and still.",
+      "picture_look": "dark teal-grey night and one warm amber lamp, green CRT glow, drifting fog, cinematic 35mm film still, Kodak 500T, fine grain, deadpan stillness, a calm empty area of the frame, no text, no letters, no logos",
+      "song": {
+        "style": "dark forest synthwave, warm analog drum machine, deep pulsing bass, glassy music-box arpeggios, crackling vinyl texture, deadpan close female spoken verses, soft euphoric sung female chorus with a big reverb lift, eerie and cozy, clean modern mix, 120 BPM",
+        "lyrics": "[Verse 1 - spoken, deadpan]\nDeep in the woods there is one window lit.\nA graphics card hums and I talk to it.\nI type what I see behind my eyes.\nIt draws it slow and it never lies.\n\n[Chorus - sung, euphoric]\nNothing leaves the machine,\nnothing leaves, nothing is seen,\nevery picture that I dream\nstays with me in the machine.\n\n[Verse 2 - spoken, deadpan]\nFrame eight thousand one hundred ninety-two.\nSomething with horns is watching too.\nI brush the fans, I keep it warm.\nNo cloud up here, only the storm.\n\n[Chorus - sung, euphoric]\nNothing leaves the machine,\nnothing leaves, nothing is seen,\nevery picture that I dream\nstays with me in the machine."
+      },
+      "look_texts": {
+        "corner": "FRAME 01 /",
+        "card_title": "1x RTX - LOCAL",
+        "card_rows": [
+          [
+            "UNITS",
+            "1"
+          ],
+          [
+            "UPLOADS",
+            "0"
+          ],
+          [
+            "CLOUD",
+            "NONE"
+          ],
+          [
+            "WATCHERS",
+            "1 - HORNED"
+          ]
+        ],
+        "card_code": "FH-04-0001",
+        "lines": [
+          "FEDDA HUB - LOCAL MODE",
+          "SET - CABIN - DEEP FOREST"
+        ],
+        "accent_line": "03:00 - LIT BY GPU",
+        "section": "OFFLINE SINCE ALWAYS",
+        "meters": [
+          [
+            "GPUS",
+            1,
+            1
+          ],
+          [
+            "UPLOADS",
+            0,
+            9
+          ]
+        ],
+        "label": "OPERATOR - AWAKE",
+        "ticker": [
+          "NOTHING LEAVES THE MACHINE",
+          "VRAM 24 GB - 23.8 USED",
+          "CLOUD STATUS -> NOT INVITED",
+          "FAN SPEED 2400 RPM",
+          "PROMPTS TYPED 8,192",
+          "SIGNAL -> NONE - GOOD"
+        ]
+      },
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a dark pine forest at night in thick teal fog, a small moss-covered wooden cabin far away with one window glowing warm amber",
+          "action": "Fog drifts between the pines as the one amber window flickers softly. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Deep in the woods, one window.",
+          "hl": "one",
+          "counter": "FRAME 0001"
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "the inside of an old PC case covered in moss and dust, a graphics card with three fans and an amber status light, green CRT glow on the cables",
+          "action": "The graphics card's fans spin up and its amber light starts to pulse. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "The card wakes before I do.",
+          "hl": "card",
+          "counter": "FRAME 0024"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a nest of grey blankets on the wooden floor beside a humming tower of graphics cards, amber lamp light, green CRT glow, Fen sitting up in the blankets",
+          "action": "Fen sits up in the blankets, her tall ears slowly rising, and stares into the lens without blinking. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Good morning, machine.",
+          "hl": "machine",
+          "counter": "FRAME 0310",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "an old mechanical keyboard on a wooden desk under a green-glowing CRT monitor, Fen typing with the sweater sleeves over her hands",
+          "action": "Fen types slowly on the old keyboard, the green screen light moving across her face. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "I describe what I want to see.",
+          "hl": "see",
+          "counter": "FRAME 1024",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "an old CRT monitor in a dark wooden cabin drawing a picture of a horned rabbit creature with amber eyes in a foggy forest, scanlines, green glow",
+          "action": "The picture on the monitor builds up line by line from top to bottom. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "It draws it. Line by line.",
+          "hl": "draws",
+          "counter": "FRAME 2048",
+          "word": "LOCAL"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "an old silver microphone hanging from a wooden beam in a cabin full of humming graphics cards, teal fog, one amber lamp, Fen standing at the microphone",
+          "action": "Fen sings into the hanging microphone with half-closed eyes, swaying slightly, completely deadpan. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Nothing leaves the machine.",
+          "hl": "Nothing",
+          "counter": "FRAME 2711",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a dark pine forest at night in teal fog, a tall creature with long rabbit ears, curved horns and glowing amber eyes standing still between the trees, a lit cabin window far behind",
+          "action": "The horned creature stands perfectly still between the pines; only the fog moves. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Something watches the window.",
+          "hl": "watches",
+          "counter": "FRAME 3333"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "extreme close-up",
+          "first_frame": "an amber eye with a green CRT screen reflected in it, black lashes, a faint pale down on the cheekbone, the edge of a fluffy black bunny ear, Fen",
+          "action": "Fen's eye stays wide open as the reflected screen flickers in it. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "I don't upload.",
+          "hl": "upload",
+          "counter": "FRAME 4096",
+          "lead_drawn": true,
+          "word": "OFFLINE"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a tower of graphics cards on a wooden table in a cabin, amber lamp, Fen holding a soft paintbrush",
+          "action": "Fen gently brushes the dust off a spinning graphics card fan, as tender as with a pet. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "I clean its fans with a brush.",
+          "hl": "brush",
+          "counter": "FRAME 5120",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "the inside of a wooden cabin full of humming server racks, potted ferns and old CRT monitors, teal fog on the floor, one amber lamp, Fen in the middle of the room",
+          "action": "Fen dances alone between the racks, a slow deadpan sway, sleeves over her hands. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Nobody is watching. Good.",
+          "hl": "Good",
+          "counter": "FRAME 6666",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "a wall of thirty small old CRT monitors in a dark cabin, every screen showing the same horned rabbit creature with amber eyes, green glow, cables on the floor",
+          "action": "The screens flicker on one by one until the whole wall glows. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Eight thousand pictures. All mine.",
+          "hl": "mine",
+          "counter": "FRAME 8192",
+          "word": "MINE"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a cabin window behind her turning pale blue with dawn and mist, a humming graphics card tower beside her, Fen looking into the lens",
+          "action": "Fen looks straight into the lens as her ears slowly lower and the dawn light grows behind her. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 5.0,
+          "caption": "Nothing leaves the machine.",
+          "hl": "leaves",
+          "counter": "UPLOADS 0",
+          "lead_drawn": true
+        }
+      ]
+    },
+    {
+      "id": "slop-open-24",
+      "genre": "slopcore",
+      "length": 60,
+      "format": "16:9",
+      "title": "Open 24 Hours",
+      "group": "films",
+      "style": "film",
+      "refs": false,
+      "title_after": 1,
+      "logline": "An android night clerk keeps a desert gas station open for ten thousand days without a single customer - until one pair of headlights.",
+      "hook_text": "DAY 3651 - STILL OPEN",
+      "lead_name": "Mira",
+      "lead": "an android woman with pale porcelain skin and faint seam lines along her jaw and temples, a glossy black blunt bob with micro bangs, black glossy lips, a soft amber glow in each iris, a black choker, and a mint-green convenience store uniform polo with a small name badge",
+      "lead_styling": "an adult android woman with faint seam lines along her jaw, a black choker and a mint-green convenience store uniform polo with a name badge",
+      "lead_voice": "a young woman with a calm, synthetic, deadpan voice",
+      "setting": "in a lone convenience store and gas station on an empty desert highway at the end of the world",
+      "look": "Sodium orange and fluorescent mint against deep desert night blue, cinematic, still and lonely.",
+      "picture_look": "sodium-orange and fluorescent mint-green light against deep desert night blue, cinematic 35mm film still, Kodak Vision3 500T, fine grain, anamorphic, deadpan symmetry, a calm empty area of the frame, no text, no letters, no logos",
+      "song": {
+        "style": "dreamy desert electroclash, dry drum machine, warm analog bass, twangy reverb guitar, glassy pads, deadpan close female spoken verses, airy euphoric sung female chorus with a lift, lonely and hypnotic, clean modern mix, 118 BPM",
+        "lyrics": "[Verse 1 - spoken, deadpan]\nDay three thousand six hundred fifty-one.\nThe lights are on, the coffee is done.\nI scan the air, the air says beep.\nThe highway sleeps. I do not sleep.\n\n[Chorus - sung, euphoric]\nOpen, open, twenty-four hours,\nneon on the sand like plastic flowers,\nif you are out there, if you are near,\nI am still open, I am still here.\n\n[Verse 2 - spoken, deadpan]\nAisle four is spotless, aisle four again.\nI slow dance with the mop at ten.\nCamera four is watching me. Hi.\nA tumbleweed is the only guy.\n\n[Chorus - sung, euphoric]\nOpen, open, twenty-four hours,\nneon on the sand like plastic flowers,\nif you are out there, if you are near,\nI am still open, I am still here."
+      },
+      "look_texts": {
+        "corner": "AISLE 04 /",
+        "card_title": "STORE 0451 - HWY 9",
+        "card_rows": [
+          [
+            "HOURS",
+            "24/7"
+          ],
+          [
+            "CUSTOMERS",
+            "0"
+          ],
+          [
+            "COFFEE",
+            "FRESH"
+          ],
+          [
+            "STAFF",
+            "1 - ANDROID"
+          ]
+        ],
+        "card_code": "GG-09-0451",
+        "lines": [
+          "NIGHT LOG - DESERT ROUTE 9",
+          "SET - GAS AND GO - MILE 212"
+        ],
+        "accent_line": "03:33 - LIT BY NEON",
+        "section": "STILL OPEN",
+        "meters": [
+          [
+            "PUMPS",
+            4,
+            4
+          ],
+          [
+            "CARS",
+            0,
+            9
+          ]
+        ],
+        "label": "CLERK - ON DUTY",
+        "ticker": [
+          "LAST CUSTOMER - 3,651 DAYS AGO",
+          "COFFEE BREWED 9,998 POTS",
+          "HWY 9 -> NO TRAFFIC",
+          "MOP CYCLES 21,900",
+          "SNACKS EXPIRED 100%",
+          "SIGN -> OPEN"
+        ]
+      },
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a lone convenience store and gas station glowing sodium orange and mint green on an empty desert highway at night, stars, dead power lines, nothing else for miles",
+          "action": "The store's lights hum in the empty desert; a moth circles the sign. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Open twenty-four hours.",
+          "hl": "twenty-four",
+          "counter": "DAY 3651"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the counter of an empty convenience store at night, fluorescent tubes, a coffee machine and shelves behind her, Mira standing behind the counter",
+          "action": "Mira stands perfectly still behind the counter, hands folded, staring into the lens as a light tube flickers. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Since the last car.",
+          "hl": "last",
+          "counter": "DAY 3652",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a pale porcelain hand with fine seam lines holding a barcode scanner over an empty shop counter, a thin red laser line on the bare surface, mint light",
+          "action": "The hand sweeps the scanner over nothing and the red laser line blinks. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "I scan the air. Beep.",
+          "hl": "Beep",
+          "counter": "DAY 3700"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a long convenience store aisle of sun-faded snack packets, a gleaming wet floor reflecting fluorescent light, Mira with a mop and a yellow bucket",
+          "action": "Mira mops the already spotless floor in slow straight lines, her reflection gliding under her. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Aisle four. Spotless. Again.",
+          "hl": "Again",
+          "counter": "DAY 4011",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a coffee machine pouring steaming coffee into a single paper cup in a dark convenience store, mint light, steam glowing",
+          "action": "Coffee pours into the cup and the steam curls up into the light. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "One coffee. Just in case.",
+          "hl": "case",
+          "counter": "DAY 4380",
+          "word": "OPEN"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a gooseneck store microphone on the counter of an empty convenience store, fluorescent haze, Mira leaning to the microphone",
+          "action": "Mira sings softly into the store microphone with half-closed eyes, deadpan and calm. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Attention shoppers. Nobody.",
+          "hl": "Nobody",
+          "counter": "DAY 5000",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "an empty gas station forecourt at dawn under a pink and orange sky, four old pumps, a single tumbleweed, the desert highway stretching away",
+          "action": "A single tumbleweed rolls slowly past the gas pumps. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Traffic report: one tumbleweed.",
+          "hl": "tumbleweed",
+          "counter": "DAY 6210"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a small snow globe with a tiny glittering city inside on a shop counter, fluorescent light, Mira holding it in both hands",
+          "action": "Mira gently shakes the snow globe and watches the glitter fall over the tiny city. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "I keep a city in a jar.",
+          "hl": "city",
+          "counter": "DAY 7300",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "medium shot",
+          "first_frame": "a small grainy black and white security monitor on a shelf showing an empty store aisle with one figure standing in it, mint light around the monitor",
+          "action": "On the security monitor the small figure in the aisle slowly waves at the camera. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Camera four sees me. Hi.",
+          "hl": "Hi",
+          "counter": "DAY 8000",
+          "word": "ALONE"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "the aisles of an empty convenience store at night, flickering fluorescent tubes, a gleaming floor, Mira holding a mop like a dance partner",
+          "action": "Mira slow-dances with the mop between the aisles as the lights flicker in rhythm. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Slow dance with the mop.",
+          "hl": "mop",
+          "counter": "DAY 9000",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "extreme close-up",
+          "first_frame": "an android woman's eye with a soft amber glow in the iris and two small white headlights reflected in it, a faint seam line at the temple, Mira",
+          "action": "Two tiny headlights grow in the reflection of Mira's eye; she blinks once. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Wait. Headlights?",
+          "hl": "Headlights",
+          "counter": "DAY 9999",
+          "lead_drawn": true,
+          "word": "WAIT"
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "the view from inside a lit convenience store through its glass doors onto a dark desert highway, two headlights approaching in the distance",
+          "action": "The headlights grow closer on the dark highway and the doors slide open by themselves. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 5.0,
+          "caption": "Welcome. We never closed.",
+          "hl": "never",
+          "counter": "CUSTOMERS 1"
+        }
+      ]
+    },
+    {
+      "id": "slop-end-of-support",
+      "genre": "slopcore",
+      "length": 60,
+      "format": "16:9",
+      "title": "End of Support",
+      "group": "films",
+      "style": "film",
+      "refs": false,
+      "title_after": 1,
+      "logline": "A fashion lookbook walked through a decommissioned data center in the desert - twelve looks, forty thousand cold servers, one model still online.",
+      "hook_text": "LOOK 01 - END OF SUPPORT",
+      "lead_name": "Noor",
+      "lead": "a striking fashion model in her twenties with a platinum-white blunt bob, bleached brows, sharp silver eyeliner, a cold calm face, a sculptural silver padded jacket with oversized shoulders, a black latex pencil skirt, white knee-high boots, a lanyard ID badge and a small red hair clip",
+      "lead_styling": "an adult fashion model in a sculptural silver padded jacket, a black latex pencil skirt, white knee-high boots, a lanyard ID badge and a small red hair clip",
+      "lead_voice": "a young woman with a cold, flat, fashion-show voice",
+      "setting": "inside a decommissioned hyperscale data center in the desert - endless dark server aisles, cooling towers and a roof of dead satellite dishes",
+      "look": "Harsh direct camera flash on 35mm film at night, cold blue-white aisles, one red emergency light.",
+      "picture_look": "harsh direct on-camera flash on 35mm film at night, cold blue-white fluorescent server aisles, deep blacks, one red emergency light, Y2K fashion editorial, visible grain, a calm empty area of the frame, no text, no letters, no logos",
+      "song": {
+        "style": "cold fashion-show electroclash techno, 4/4, dry analog kick, rolling acid bassline, detuned synth stabs, deadpan close female spoken-word verses, euphoric sung female trance chorus with a supersaw lift, clean modern mix, 128 BPM",
+        "lyrics": "[Verse 1 - spoken, deadpan]\nLook one. End of support.\nLook two. The cloud was a building, of course.\nLook three. Forty thousand racks, all cold.\nLook four. The future, sold.\n\n[Chorus - sung, euphoric]\nWalk it, walk it, out of the server hall,\nnobody is online, I am wearing it all,\ndeprecated, decorated, legacy and loud,\nI am the last thing running in the cloud.\n\n[Verse 2 - spoken, deadpan]\nLook five. Uptime none, downtime vibes.\nLook six. The cooling tower cries.\nLook seven. Read only, chrome on my lips.\nLook eight. Sunset patch notes, fashion tips.\n\n[Chorus - sung, euphoric]\nWalk it, walk it, out of the server hall,\nnobody is online, I am wearing it all,\ndeprecated, decorated, legacy and loud,\nI am the last thing running in the cloud."
+      },
+      "look_texts": {
+        "corner": "LOOK 01 /",
+        "card_title": "DC-07 DESERT",
+        "card_rows": [
+          [
+            "RACKS",
+            "40,000"
+          ],
+          [
+            "POWER",
+            "OFF"
+          ],
+          [
+            "COOLING",
+            "ARCHIVED"
+          ],
+          [
+            "STAFF",
+            "1 - MODEL"
+          ]
+        ],
+        "card_code": "EOS-27-0007",
+        "lines": [
+          "LOOKBOOK - FW27 - END OF SUPPORT",
+          "SET - HYPERSCALE DC-07 - NV"
+        ],
+        "accent_line": "04:40 - LIT BY FLASH",
+        "section": "LAST ONE ONLINE",
+        "meters": [
+          [
+            "RACKS",
+            0,
+            40
+          ],
+          [
+            "MODELS",
+            1,
+            1
+          ]
+        ],
+        "label": "MODEL - WALKING",
+        "ticker": [
+          "DC-07 -> DECOMMISSIONED",
+          "UPTIME 99.999% -> 0%",
+          "SUNSET NOTICE SENT - 2027",
+          "40,000 RACKS - COLD",
+          "THE CLOUD WAS A BUILDING",
+          "LOOK 12 - FINAL"
+        ]
+      },
+      "shots": [
+        {
+          "lead_in_shot": false,
+          "framing": "extreme wide shot",
+          "first_frame": "a giant windowless data center building alone in a desert at night, a red aircraft warning light on the roof, dead satellite dishes, stars",
+          "action": "The red warning light on the roof blinks over the dark desert. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "End of support.",
+          "hl": "End",
+          "counter": "LOOK 01"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a long dark server aisle with rows of black racks, a few blue status lights, fog on the floor, one red emergency light at the far end, Noor walking toward the camera",
+          "action": "Noor walks straight down the server aisle toward the lens like a runway, one foot in front of the other, unbothered. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Look one. The walk.",
+          "hl": "walk",
+          "counter": "LOOK 02",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "the open door of a server rack with tangled blue cables behind her, harsh flash, Noor posing against the rack",
+          "action": "Noor turns her head to the lens in one slow movement and holds the pose, perfectly still. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "The cloud was a building.",
+          "hl": "building",
+          "counter": "LOOK 03",
+          "lead_drawn": true,
+          "word": "LEGACY"
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "rows of server status lights going dark one by one in a black rack, cold blue light, fog",
+          "action": "The status lights switch off one after another down the rack. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Forty thousand racks. Cold.",
+          "hl": "Cold",
+          "counter": "LOOK 04"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "the inside of a huge round cooling tower, steam rising in white light, wet concrete, Noor standing at its centre",
+          "action": "Noor stands in the rising steam and slowly raises her chin as the light pulses. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Uptime none. Downtime vibes.",
+          "hl": "vibes",
+          "counter": "LOOK 05",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "close-up",
+          "first_frame": "a cold blue server aisle, harsh flash, Noor with her face close to the camera, the red hair clip and the ID badge visible",
+          "action": "Noor sings to the lens with a cold, calm face, barely moving her lips. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Walk it out of the hall.",
+          "hl": "Walk",
+          "counter": "LOOK 06",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "wide shot",
+          "first_frame": "an empty data center control room with a wall of dark monitors and rows of empty office chairs, one chair slowly turning, red emergency light",
+          "action": "One empty office chair turns slowly by itself in front of the dead monitors. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Nobody is online.",
+          "hl": "Nobody",
+          "counter": "LOOK 07",
+          "word": "DEPRECATED"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium shot",
+          "first_frame": "a server aisle where the racks have been pulled out, cables hanging from the ceiling like vines, harsh flash, Noor sitting on an empty rack frame",
+          "action": "Noor sits on the empty rack frame, crosses her legs and stares into the lens, bored. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Read only. Chrome on my lips.",
+          "hl": "Chrome",
+          "counter": "LOOK 08",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": false,
+          "framing": "close-up",
+          "first_frame": "a single hard drive lying on a concrete floor in a pool of white flash light, dust, a red emergency glow at the edge",
+          "action": "Dust settles slowly on the hard drive in the flash light. The camera slowly pushes in.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Your memories. Archived.",
+          "hl": "Archived",
+          "counter": "LOOK 09"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a corridor of white light between two walls of black server racks, fog, a red exit light, Noor walking away from the camera",
+          "action": "Noor walks away down the bright corridor toward the red exit light, never looking back. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Sunset patch notes.",
+          "hl": "Sunset",
+          "counter": "LOOK 10",
+          "lead_drawn": true,
+          "word": "SUNSET"
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "wide shot",
+          "first_frame": "a data center roof at dawn covered in dead satellite dishes, a pale pink sky, desert to the horizon, Noor standing among the dishes",
+          "action": "Noor stands among the dishes as the wind moves her jacket; she slowly turns to the lens. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 4.6,
+          "caption": "Last thing running in the cloud.",
+          "hl": "running",
+          "counter": "LOOK 11",
+          "lead_drawn": true
+        },
+        {
+          "lead_in_shot": true,
+          "framing": "medium close-up",
+          "first_frame": "a dark server aisle with one rack still blinking blue behind her, harsh flash, Noor looking into the lens",
+          "action": "Noor looks into the lens, then the last rack behind her goes dark. The camera holds a static shot.",
+          "line": "",
+          "speaker": "",
+          "voice": "",
+          "sound": "",
+          "seconds": 5.0,
+          "caption": "End of support.",
+          "hl": "support",
+          "counter": "LOOK 12",
+          "lead_drawn": true
+        }
+      ]
     }
   ]
 }
