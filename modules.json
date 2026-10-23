@@ -117,7 +117,8 @@
       "family_description": "Repaint part of a picture - paint the mask yourself, or let it find the area.",
       "area": "image",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
+      "_disabled_why": "2026-10-23: hidden by the owner. Auto masks of whole garments repaint into the mask's silhouette (giant shoulders); manual mask covers the small edits. Kept to bring back.",
       "tabs": [
         "image",
         "extras-01-inpaint-pro"
@@ -138,7 +139,7 @@
       "label": "Inpaint · manual mask",
       "family": "sdxl",
       "family_label": "SDXL",
-      "family_description": "Batches from text, and repainting part of a picture.",
+      "family_description": "Repaint a small part of a picture - paint the mask yourself.",
       "area": "image",
       "pack": "booster",
       "enabled": true,
@@ -489,7 +490,8 @@
       "family_description": "Repaint part of a picture - paint the mask yourself, or let it find the area.",
       "area": "image",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
+      "_disabled_why": "2026-10-23: hidden by the owner, same reason as extras-01-inpaint-pro. Kept to bring back.",
       "tabs": [
         "image",
         "extras-01-inpaint-krea2"
