@@ -379,7 +379,7 @@
     },
     {
       "id": "extras-01-qwen-uncensored",
-      "status": "beta",
+      "status": "verified",
       "label": "Uncensored",
       "family": "qwen-image",
       "area": "image",
