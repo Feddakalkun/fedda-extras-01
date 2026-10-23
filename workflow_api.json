@@ -430,6 +430,15 @@
         "label": "Soften mask (px)",
         "note": "How far the edge fades. Keep it near mask_grow."
       },
+      "mask_context": {
+        "node_id": "502",
+        "input_key": "context_from_mask_extend_factor",
+        "label": "Picture around the mask",
+        "ui_min": 1.0,
+        "ui_max": 3.0,
+        "ui_step": 0.1,
+        "note": "How much of the picture the model sees around what it repaints, as a multiple of the mask. Too little and it cannot tell where it is - a torso without its head gets a face painted on it. 2 suits clothes and bodies; 1.2 to 1.5 is enough for a small part."
+      },
       "guidance_strength": {
         "node_id": "499",
         "input_key": "strength",
@@ -3002,6 +3011,15 @@
         "label": "Soften mask (px)",
         "note": "How far the edge fades. Keep it near mask_grow."
       },
+      "mask_context": {
+        "node_id": "502",
+        "input_key": "context_from_mask_extend_factor",
+        "label": "Picture around the mask",
+        "ui_min": 1.0,
+        "ui_max": 3.0,
+        "ui_step": 0.1,
+        "note": "How much of the picture the model sees around what it repaints, as a multiple of the mask. Too little and it cannot tell where it is - a torso without its head gets a face painted on it. 2 suits clothes and bodies; 1.2 to 1.5 is enough for a small part."
+      },
       "prompt": {
         "node_id": "609",
         "input_key": "string",
@@ -3121,6 +3139,15 @@
         "input_key": "amount",
         "label": "Soften mask (px)",
         "note": "How far the edge fades. Keep it near mask_grow."
+      },
+      "mask_context": {
+        "node_id": "502",
+        "input_key": "context_from_mask_extend_factor",
+        "label": "Picture around the mask",
+        "ui_min": 1.0,
+        "ui_max": 3.0,
+        "ui_step": 0.1,
+        "note": "How much of the picture the model sees around what it repaints, as a multiple of the mask. Too little and it cannot tell where it is - a torso without its head gets a face painted on it. 2 suits clothes and bodies; 1.2 to 1.5 is enough for a small part."
       },
       "prompt": {
         "node_id": "609",
