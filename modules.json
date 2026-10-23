@@ -432,7 +432,7 @@
     },
     {
       "id": "extras-01-character-creator",
-      "status": "verified",
+      "status": "beta",
       "label": "Character Creator",
       "family": "character-creator",
       "family_label": "Character Creator",
