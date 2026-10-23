@@ -442,7 +442,8 @@
       "family_description": "Make your own consistent character and generate a whole set.",
       "area": "image",
       "pack": "booster",
-      "enabled": true,
+      "enabled": false,
+      "_disabled_why": "2026-10-23: hidden by the owner - never finished. Kept to bring back.",
       "tabs": [
         "image",
         "extras-01-character-creator"
@@ -509,7 +510,7 @@
     },
     {
       "id": "extras-01-inpaint-fluxfill",
-      "status": "beta",
+      "status": "verified",
       "label": "Inpaint · auto mask",
       "family": "flux-fill",
       "family_label": "FLUX Fill",
