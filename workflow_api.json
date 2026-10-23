@@ -433,8 +433,11 @@
       "guidance_strength": {
         "node_id": "499",
         "input_key": "strength",
-        "label": "Hold to original",
-        "note": "The ControlNet's hold on the original. Lower it if the result keeps coming back unchanged; 0 turns it off.",
+        "label": "Fit to the picture",
+        "note": "How closely the repainted part follows the rest of the picture - pose, light, skin. The ControlNet never sees what was under the mask, so this cannot bring it back. 0 turns it off and leaves the model to invent anything.",
+        "ui_min": 0,
+        "ui_max": 1.5,
+        "ui_step": 0.05,
         "basic": true
       },
       "guidance_end": {
@@ -485,7 +488,7 @@
       "denoise": 1,
       "mask_grow": 50,
       "mask_softness": 50,
-      "guidance_strength": 0.4,
+      "guidance_strength": 1.0,
       "cfg": 1.0,
       "sampler": "lcm"
     },

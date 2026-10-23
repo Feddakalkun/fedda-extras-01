@@ -93,7 +93,7 @@
   "496": {
     "class_type": "SetUnionControlNetType",
     "inputs": {
-      "type": "segment",
+      "type": "repaint",
       "control_net": [
         "510",
         0
@@ -132,9 +132,9 @@
   "499": {
     "class_type": "ControlNetInpaintingAliMamaApply",
     "inputs": {
-      "strength": 0.4,
+      "strength": 1.0,
       "start_percent": 0,
-      "end_percent": 0.5,
+      "end_percent": 1.0,
       "positive": [
         "511",
         0
@@ -152,8 +152,8 @@
         2
       ],
       "image": [
-        "502",
-        1
+        "532",
+        0
       ],
       "mask": [
         "502",
@@ -394,6 +394,54 @@
     },
     "_meta": {
       "title": "SOURCE SWITCH"
+    }
+  },
+  "530": {
+    "class_type": "ThresholdMask",
+    "inputs": {
+      "value": 0.5,
+      "mask": [
+        "502",
+        2
+      ]
+    },
+    "_meta": {
+      "title": "Hole for the ControlNet"
+    }
+  },
+  "531": {
+    "class_type": "EmptyImage",
+    "inputs": {
+      "width": 1024,
+      "height": 1024,
+      "batch_size": 1,
+      "color": 0
+    },
+    "_meta": {
+      "title": "Black"
+    }
+  },
+  "532": {
+    "class_type": "ImageCompositeMasked",
+    "inputs": {
+      "destination": [
+        "502",
+        1
+      ],
+      "source": [
+        "531",
+        0
+      ],
+      "x": 0,
+      "y": 0,
+      "resize_source": true,
+      "mask": [
+        "530",
+        0
+      ]
+    },
+    "_meta": {
+      "title": "Picture with the hole blacked out"
     }
   }
 }
