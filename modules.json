@@ -74,6 +74,7 @@
     },
     {
       "id": "extras-01-realism-converter",
+      "status": "verified",
       "label": "Realism Converter",
       "family": "extras-01-image",
       "family_label": "Image Tools",
@@ -157,6 +158,7 @@
     },
     {
       "id": "extras-01-kontext-edit",
+      "status": "verified",
       "label": "Kontext Edit",
       "family": "extras-01-image",
       "family_label": "Image Tools",
@@ -182,7 +184,7 @@
     },
     {
       "id": "extras-01-kontext-undress",
-      "status": "beta",
+      "status": "verified",
       "label": "Kontext Undress",
       "family": "extras-01-image",
       "family_label": "Image Tools",
