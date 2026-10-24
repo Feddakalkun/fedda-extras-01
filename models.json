@@ -669,5 +669,47 @@
     "min_bytes": 104857600,
     "optional": true,
     "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "jfj-deepthroat-W22-I2V-HN.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/AOT/Wan_Video_Lora/resolve/main/jfj-deepthroat-W22-I2V-HN.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
+  },
+  "jfj-deepthroat-W22-I2V-LN.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/2152583?fileId=2045910",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
+  },
+  "wan2.2-i2v-high-oral-insertion-v1.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/TechScribe42/wan22-pub-lora/resolve/main/wan2.2-i2v-oral-insertion-v1.0/wan2.2-i2v-high-oral-insertion-v1.0.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
+  },
+  "wan2.2-i2v-low-oral-insertion-v1.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/TechScribe42/wan22-pub-lora/resolve/main/wan2.2-i2v-oral-insertion-v1.0/wan2.2-i2v-low-oral-insertion-v1.0.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
+  },
+  "Instareal_high.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Instara/instareal-wan-2.2/resolve/main/Instareal_high.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
+  },
+  "Instareal_low.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/Instara/instareal-wan-2.2/resolve/main/Instareal_low.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when switched on (sources checked 2026-10-25)."
   }
 }
