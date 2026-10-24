@@ -442,5 +442,232 @@
     "url": "https://huggingface.co/vrgamedevgirl84/Wan14BT2VFusioniX/resolve/main/FusionX_LoRa/Wan2.1_I2V_14B_FusionX_LoRA.safetensors",
     "min_bytes": 314572800,
     "_note": "FusionX I2V LoRA (371 MB) - always on in the Wan I2V graph, both passes."
+  },
+  "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.1_loras/resolve/main/SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+    "min_bytes": 104857600,
+    "_note": "Always on in the Wan graphs, both passes."
+  },
+  "wan-nsfw-e14-fixed.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.1_loras/resolve/main/wan-nsfw-e14-fixed.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "CumShot-High.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/orins/resolve/main/CumShot-High.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "CumShot-Low.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/orins/resolve/main/CumShot-Low.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Oral-Ins-High.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/orins/resolve/main/Oral-Ins-High.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Oral-Ins-Low.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/orins/resolve/main/Oral-Ins-Low.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Wan2.2_Double-Penetration-High.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan2.2_Double-Penetration-High.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Wan2.2_Double-Penetration-Low.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan2.2_Double-Penetration-Low.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "PussyLoRA_HighNoise_Wan2.2_HearmemanAI.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/PussyLoRA_HighNoise_Wan2.2_HearmemanAI.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "PussyLoRA_LowNoise_Wan2.2_HearmemanAI.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/PussyLoRA_LowNoise_Wan2.2_HearmemanAI.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "V3TWERKHIGH.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/V3TWERKHIGH.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "V3TWERKLOW.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/V3TWERKLOW.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Fingering-I2V.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Fingering-I2V.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_high_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_high_noise.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_low_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/mql_casting_sex_doggy_kneel_diagonally_behind_vagina_wan22_i2v_v1_low_noise.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_high_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_high_noise.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_low_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/mql_casting_sex_reverse_cowgirl_lie_front_vagina_wan22_i2v_v1_low_noise.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "KISSHIGH.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/KISSHIGH.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "KISSLOW.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/KISSLOW.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "W22_HN_i2v_POV_Missionary_Insertion_v1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/2245356?fileId=2137595",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "W22_LN_i2v_POV_Missionary_Insertion_v1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/2245426?fileId=2137648",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Sensual_fingering_v1_high_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/2209275?fileId=2102408",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Sensual_fingering_v1_low_noise.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/2209481?fileId=2102444",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan act LoRA - fetched when its act switches it on."
+  },
+  "Wan2.2-T2V-4steps-HIGH-rank64-Seko-V2.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-T2V-A14B-4steps-lora-rank64-Seko-V2.0/high_noise_model.safetensors",
+    "min_bytes": 104857600,
+    "_note": "Always on in the Wan T2V graph."
+  },
+  "Wan2.2-T2V-4steps-LOW-rank64-Seko-V2.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-T2V-A14B-4steps-lora-rank64-Seko-V2.0/low_noise_model.safetensors",
+    "min_bytes": 104857600,
+    "_note": "Always on in the Wan T2V graph."
+  },
+  "Wan2.1_T2V_14B_FusionX_LoRA.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/vrgamedevgirl84/Wan14BT2VFusioniX/resolve/main/FusionX_LoRa/Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
+    "min_bytes": 104857600,
+    "_note": "Always on in the Wan T2V graph."
+  },
+  "wan2.2_t2v_highnoise_pov_missionary_v1.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/wan2.2_t2v_highnoise_pov_missionary_v1.0.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "wan2.2_t2v_lownoise_pov_missionary_v1.0.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/wan2.2_t2v_lownoise_pov_missionary_v1.0.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "Wan22-T2V-DildoRide-HIGH.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan22-T2V-DildoRide-HIGH.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "Wan22-T2V-DildoRide-LOW.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan22-T2V-DildoRide-LOW.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "Wan22-T2V-DoggyStyle-HIGH.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan22-T2V-DoggyStyle-HIGH.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "Wan22-T2V-DoggyStyle-LOW.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Wan22-T2V-DoggyStyle-LOW.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
+  },
+  "Fingering-T2V.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/comfyuistudio/wan2.2_xxx-loras/resolve/main/Fingering-T2V.safetensors",
+    "min_bytes": 104857600,
+    "optional": true,
+    "_note": "Wan T2V act LoRA - fetched when switched on."
   }
 }

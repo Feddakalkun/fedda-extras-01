@@ -195,14 +195,14 @@
         "strengthTwo": null
       },
       "lora_2": {
-        "on": false,
-        "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 0.8,
         "strengthTwo": null
       },
       "lora_3": {
         "on": true,
-        "lora": "Antigravity\\wan\\Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
+        "lora": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
         "strength": 1,
         "strengthTwo": null
       },
@@ -402,14 +402,14 @@
         "strengthTwo": null
       },
       "lora_2": {
-        "on": false,
-        "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
+        "on": true,
+        "lora": "SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 0.8,
         "strengthTwo": null
       },
       "lora_3": {
         "on": true,
-        "lora": "Antigravity\\wan\\Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
+        "lora": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors",
         "strength": 1,
         "strengthTwo": null
       },
