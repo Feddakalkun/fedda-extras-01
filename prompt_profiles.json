@@ -206,6 +206,7 @@
   "acts": [
     {
       "id": "undress",
+      "detect": ["lingerie", "bra", "underwear", "panties", "fully clothed", "wearing a dress", "wearing a shirt", "wearing a top"],
       "prompt": "She reaches up and slides the strap off her shoulder, pulls the top down off her breasts, and works the rest of her clothing down and off, baring her body. Slow and continuous, her hands doing the moving while the frame stays still.",
       "loras": [],
       "label": "Undress",
@@ -213,6 +214,7 @@
     },
     {
       "id": "kiss",
+      "detect": ["!kissing", "kiss", "lips pressed", "lips touching"],
       "prompt": "The two of them lean in and kiss, mouths meeting and moving together, a hand sliding to the back of the other's head and drawing them closer. Slow and continuous, the frame held still.",
       "loras": ["kiss"],
       "label": "Kiss",
@@ -220,6 +222,7 @@
     },
     {
       "id": "handjob",
+      "detect": ["!handjob", "!hand job", "!jerking", "stroking his penis", "stroking his cock", "stroking a man", "stroking the penis", "penis with her hand", "cock with her hand", "hand around his penis", "hand around his cock", "hand on his penis", "holding his penis", "holding his cock", "gripping his"],
       "prompt": "She wraps her hand around his cock and strokes it, her grip firm, sliding up and down the shaft at a steady, building pace. If it is still covered, she pulls it free first. Continuous, the frame held still.",
       "loras": [],
       "label": "Handjob",
@@ -227,6 +230,7 @@
     },
     {
       "id": "oral",
+      "detect": ["!blowjob", "!blow job", "!fellatio", "!oral sex", "penis in her mouth", "cock in her mouth", "sucking his", "mouth around his", "lips around his", "licking his penis", "licking his cock"],
       "prompt": "She leans in and takes his cock into her mouth, her lips sliding down the shaft and back up, her head bobbing in a steady rhythm with one hand at the base. Continuous, the frame held still.",
       "loras": ["oral-ins-"],
       "label": "Blowjob",
@@ -234,6 +238,7 @@
     },
     {
       "id": "deepthroat",
+      "detect": ["!deepthroat", "!deep throat", "!deep-throat", "deep in her throat", "down her throat"],
       "prompt": "She takes his cock deep into her mouth and throat, pushing down until her lips reach the base and drawing back, over and over in a steady rhythm. Continuous, the frame held still.",
       "loras": ["deepthroat"],
       "label": "Deepthroat",
@@ -241,6 +246,7 @@
     },
     {
       "id": "fingering",
+      "detect": ["!fingering", "fingers inside her", "fingers in her", "touching herself", "masturbating", "hand between her legs", "rubbing her clit", "rubbing her pussy"],
       "prompt": "Her fingers work between her legs, rubbing her clit and sliding into her pussy at a steady, quickening pace, her hips answering the motion. If clothing covers her, it is pulled aside first. Continuous, the frame held still.",
       "loras": ["fingering-i2v", "sensual_fingering"],
       "label": "Fingering",
@@ -248,6 +254,7 @@
     },
     {
       "id": "penetrate",
+      "detect": ["!penetrat", "!intercourse", "having sex", "penis inside her", "cock inside her", "vaginal"],
       "prompt": "His cock slides into her pussy, drawing back and pushing in again at a steady, deepening rhythm, their hips meeting with each thrust. If clothing is in the way, it is pulled aside first. Continuous, the frame held still.",
       "loras": ["wan-nsfw-e14"],
       "label": "Penetration",
@@ -255,6 +262,7 @@
     },
     {
       "id": "missionary",
+      "detect": ["!missionary", "!lying on her back", "on her back", "legs spread", "legs apart"],
       "prompt": "From his point of view, his cock slides into her as she lies back beneath him, thrusting at a steady, deepening rhythm, her body rocking with each push. Continuous, the frame held still.",
       "loras": ["pov_missionary"],
       "label": "Missionary POV",
@@ -262,6 +270,7 @@
     },
     {
       "id": "doggy",
+      "detect": ["!doggy", "!on all fours", "!on her hands and knees", "from behind", "bent over"],
       "prompt": "She is on all fours and he enters her from behind, thrusting into her at a steady, quickening pace, her hips driven forward with each push. Continuous, the frame held still.",
       "loras": ["doggy"],
       "label": "Doggy",
@@ -269,6 +278,7 @@
     },
     {
       "id": "cowgirl",
+      "detect": ["!cowgirl", "!riding him", "!straddling", "!on top of him", "sitting on his"],
       "prompt": "She rides him facing away, her hips rising and dropping as she takes his cock, the pace building and her back arching. Continuous, the frame held still.",
       "loras": ["reverse_cowgirl"],
       "label": "Reverse Cowgirl",
@@ -276,6 +286,7 @@
     },
     {
       "id": "cumshot",
+      "detect": ["!cumshot", "!cum on", "!facial", "semen", "ejaculat", "cum dripping", "covered in cum"],
       "prompt": "He finishes and his cum lands across her - her open mouth, her face, her breasts, whatever the frame holds - in spurts. Continuous, the frame held still.",
       "loras": ["cumshot"],
       "label": "Cumshot",
@@ -283,6 +294,7 @@
     },
     {
       "id": "twerk",
+      "detect": ["!twerk", "!twerking", "!shaking her ass", "!shaking her butt", "!bouncing her ass", "showing her ass"],
       "prompt": "She arches and works her hips and ass, bouncing and shaking in a steady rhythm, no partner in frame. Continuous, the frame held still.",
       "loras": ["v3twerk"],
       "label": "Twerk",
