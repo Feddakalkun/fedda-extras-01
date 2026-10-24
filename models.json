@@ -424,5 +424,23 @@
     "relative_dir": "foley",
     "url": "https://huggingface.co/phazei/HunyuanVideo-Foley/resolve/main/synchformer_state_dict_fp16.safetensors",
     "min_bytes": 419430400
+  },
+  "Wan2.2-I2V-HIGH-4steps-lora-rank64-Seko-V1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1/high_noise_model.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "lightx2v Wan 2.2 Lightning, 4-step I2V, high-noise half (1.2 GB) - always on in the Wan I2V graph."
+  },
+  "Wan2.2-I2V-LOW-4steps-lora-rank64-Seko-V1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/lightx2v/Wan2.2-Lightning/resolve/main/Wan2.2-I2V-A14B-4steps-lora-rank64-Seko-V1/low_noise_model.safetensors",
+    "min_bytes": 1073741824,
+    "_note": "lightx2v Wan 2.2 Lightning, 4-step I2V, low-noise half (1.2 GB) - always on in the Wan I2V graph."
+  },
+  "Wan2.1_I2V_14B_FusionX_LoRA.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/vrgamedevgirl84/Wan14BT2VFusioniX/resolve/main/FusionX_LoRa/Wan2.1_I2V_14B_FusionX_LoRA.safetensors",
+    "min_bytes": 314572800,
+    "_note": "FusionX I2V LoRA (371 MB) - always on in the Wan I2V graph, both passes."
   }
 }

@@ -379,7 +379,7 @@
         "strengthTwo": null
       },
       "lora_12": {
-        "on": true,
+        "on": false,
         "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 1,
         "strengthTwo": null
@@ -519,7 +519,7 @@
         "strengthTwo": null
       },
       "lora_12": {
-        "on": true,
+        "on": false,
         "lora": "Antigravity\\xxx\\wan\\SECRET_SAUCE_WAN2.1_14B_fp8.safetensors",
         "strength": 1,
         "strengthTwo": null
