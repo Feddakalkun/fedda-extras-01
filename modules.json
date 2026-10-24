@@ -576,6 +576,36 @@
         "minimax_h3_latent_upscaler_3d_fp16.safetensors"
       ],
       "notes": "Dormant (enabled:false) until an end-to-end run is verified. Long-take MiniMax H3 ref2va: a reference image, a voice clip and per-shot prompts rendered as one continuous video. Very heavy - about 40 GB of weights juggled on a 24 GB card via offloading (64 GB system RAM recommended); keep frames x megapixels under ~540 per shot or it OOMs. int8 video VAE is the default to save VRAM. FFmpeg is required for Easy-Media."
+    },
+    {
+      "id": "extras-01-add-sound",
+      "status": "beta",
+      "label": "Add Sound",
+      "area": "video",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "video",
+        "extras-01-add-sound"
+      ],
+      "workflows": [
+        "sound/foley.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "ComfyUI-HunyuanVideo-Foley",
+          "url": "https://github.com/phazei/ComfyUI-HunyuanVideo-Foley.git",
+          "folder": "ComfyUI-HunyuanVideo-Foley",
+          "note": "HunyuanVideo-Foley - sound made from what a silent clip shows (Tencent, video-to-audio)",
+          "pin": "afd2960b8ad9036a9f55a15daf514112ff68e010"
+        }
+      ],
+      "models": [
+        "hunyuanvideo_foley.safetensors",
+        "vae_128d_48k_fp16.safetensors",
+        "synchformer_state_dict_fp16.safetensors"
+      ],
+      "notes": "Puts sound under a silent clip (a Wan act, any video): HunyuanVideo-Foley hears nothing - it makes the sound from what the frames show and the words in Sounds, 48 kHz, synced to the motion. Up to 60 s. SigLIP2 and CLAP are fetched by the node itself on the first run."
     }
   ]
 }

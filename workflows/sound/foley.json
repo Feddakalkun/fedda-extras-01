@@ -1,0 +1,98 @@
+{
+  "1": {
+    "class_type": "VHS_LoadVideo",
+    "inputs": {
+      "video": "",
+      "force_rate": 0,
+      "custom_width": 0,
+      "custom_height": 0,
+      "frame_load_cap": 0,
+      "skip_first_frames": 0,
+      "select_every_nth": 1,
+      "format": "AnimateDiff"
+    }
+  },
+  "2": {
+    "class_type": "VHS_VideoInfoLoaded",
+    "inputs": {
+      "video_info": [
+        "1",
+        3
+      ]
+    }
+  },
+  "3": {
+    "class_type": "HunyuanModelLoader",
+    "inputs": {
+      "model_name": "hunyuanvideo_foley.safetensors",
+      "precision": "bf16",
+      "quantization": "auto"
+    }
+  },
+  "4": {
+    "class_type": "HunyuanDependenciesLoader",
+    "inputs": {
+      "vae_name": "vae_128d_48k_fp16.safetensors",
+      "synchformer_name": "synchformer_state_dict_fp16.safetensors"
+    }
+  },
+  "5": {
+    "class_type": "HunyuanFoleySampler",
+    "inputs": {
+      "hunyuan_model": [
+        "3",
+        0
+      ],
+      "hunyuan_deps": [
+        "4",
+        0
+      ],
+      "frame_rate": [
+        "2",
+        0
+      ],
+      "duration": [
+        "2",
+        2
+      ],
+      "prompt": "",
+      "negative_prompt": "music, singing, speech, talking, noisy, harsh, distorted",
+      "cfg_scale": 4.5,
+      "steps": 50,
+      "sampler": "euler",
+      "batch_size": 1,
+      "seed": 1,
+      "force_offload": true,
+      "image": [
+        "1",
+        0
+      ]
+    }
+  },
+  "6": {
+    "class_type": "VHS_VideoCombine",
+    "inputs": {
+      "images": [
+        "1",
+        0
+      ],
+      "audio": [
+        "5",
+        0
+      ],
+      "frame_rate": [
+        "2",
+        0
+      ],
+      "loop_count": 0,
+      "filename_prefix": "VIDEO/SOUND/0",
+      "format": "video/h264-mp4",
+      "pix_fmt": "yuv420p",
+      "crf": 19,
+      "save_metadata": true,
+      "trim_to_audio": false,
+      "pingpong": false,
+      "save_output": true
+    }
+  }
+}

@@ -3643,5 +3643,100 @@
         "note": "How tightly the character keeps the picture's look. Above 1 resists drift; below lets the prompt restyle."
       }
     }
+  },
+  "extras-01-add-sound": {
+    "name": "Add Sound",
+    "filename": "sound/foley.json",
+    "module": "extras-01-add-sound",
+    "agent": false,
+    "description": "Sound for a silent clip - made from what the frames show and the words below, in sync with the motion.",
+    "prompt_presets": [
+      {
+        "label": "Breathing & moans",
+        "text": "soft female moaning and heavy breathing, intimate, close microphone, quiet room"
+      },
+      {
+        "label": "Kissing",
+        "text": "wet kissing sounds and soft breathing, intimate, close microphone"
+      },
+      {
+        "label": "Oral",
+        "text": "wet sucking and slurping sounds, soft muffled moans, heavy breathing, close microphone"
+      },
+      {
+        "label": "Bed & body",
+        "text": "rhythmic bed creaking, skin slapping against skin, heavy breathing and moaning"
+      },
+      {
+        "label": "Room only",
+        "text": "quiet bedroom ambience, soft breathing, faint fabric rustle"
+      }
+    ],
+    "inputs": {
+      "video": {
+        "node_id": "1",
+        "input_key": "video",
+        "label": "Video",
+        "control": "file",
+        "accept": "video",
+        "note": "The silent clip - a Wan scene or any video, up to 60 seconds. Its own sound, if any, is replaced."
+      },
+      "prompt": {
+        "node_id": "5",
+        "input_key": "prompt",
+        "label": "Sounds",
+        "note": "What is heard - the sounds, how close, the room. The frames decide when; the words decide what."
+      },
+      "negative": {
+        "node_id": "5",
+        "input_key": "negative_prompt",
+        "label": "Negative prompt"
+      },
+      "takes": {
+        "type": "takes",
+        "node_ids": [
+          "5",
+          "6"
+        ],
+        "label": "Takes",
+        "basic": true,
+        "note": "Several sound versions of the same clip in one run - pick the best."
+      },
+      "strength": {
+        "node_id": "5",
+        "input_key": "cfg_scale",
+        "label": "Follows the words",
+        "basic": true,
+        "ui_min": 2,
+        "ui_max": 8,
+        "ui_step": 0.5,
+        "note": "Higher keeps closer to what Sounds says; lower lets the picture decide more. 4.5 is the model's own."
+      },
+      "model_build": {
+        "node_id": "3",
+        "input_key": "model_name",
+        "label": "Model build",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {
+            "value": "hunyuanvideo_foley.safetensors",
+            "label": "Full (fp16)"
+          },
+          {
+            "value": "hunyuanvideo_foley_fp8_e4m3fn.safetensors",
+            "label": "Small (fp8)"
+          }
+        ],
+        "note": "Same model, different precision. Full (10.3 GB) is the model's own; Small (5.3 GB) leaves more room on the card."
+      },
+      "seed": {
+        "node_ids": [
+          "5"
+        ],
+        "input_key": "seed",
+        "label": "Seed"
+      }
+    }
   }
 }

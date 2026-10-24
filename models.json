@@ -403,5 +403,26 @@
       "extras-01-qwen-uncensored"
     ],
     "_note": "NSFW for Qwen-Image 2.1 by TheseAlpacas, 0.8."
+  },
+  "hunyuanvideo_foley.safetensors": {
+    "relative_dir": "foley",
+    "url": "https://huggingface.co/phazei/HunyuanVideo-Foley/resolve/main/hunyuanvideo_foley.safetensors",
+    "min_bytes": 9663676416,
+    "_note": "HunyuanVideo-Foley, fp16 (10.3 GB) - the full build; fp8 is the smaller one."
+  },
+  "hunyuanvideo_foley_fp8_e4m3fn.safetensors": {
+    "relative_dir": "foley",
+    "url": "https://huggingface.co/phazei/HunyuanVideo-Foley/resolve/main/hunyuanvideo_foley_fp8_e4m3fn.safetensors",
+    "min_bytes": 5368709120
+  },
+  "vae_128d_48k_fp16.safetensors": {
+    "relative_dir": "foley",
+    "url": "https://huggingface.co/phazei/HunyuanVideo-Foley/resolve/main/vae_128d_48k_fp16.safetensors",
+    "min_bytes": 629145600
+  },
+  "synchformer_state_dict_fp16.safetensors": {
+    "relative_dir": "foley",
+    "url": "https://huggingface.co/phazei/HunyuanVideo-Foley/resolve/main/synchformer_state_dict_fp16.safetensors",
+    "min_bytes": 419430400
   }
 }
