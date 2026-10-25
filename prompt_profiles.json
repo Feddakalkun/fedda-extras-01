@@ -206,6 +206,7 @@
   "acts": [
     {
       "id": "undress",
+      "frame": "she stands facing the camera in lace lingerie, one bra strap on her shoulder, looking at the lens, her whole body in frame",
       "detect": ["lingerie", "bra", "underwear", "panties", "fully clothed", "wearing a dress", "wearing a shirt", "wearing a top"],
       "prompt": "She reaches up and slides the strap off her shoulder, pulls the top down off her breasts, and works the rest of her clothing down and off, baring her body. Slow and continuous, her hands doing the moving while the frame stays still.",
       "loras": [],
@@ -246,6 +247,7 @@
     },
     {
       "id": "fingering",
+      "frame": "she lies back on the bed propped on one elbow, naked, her legs parted toward the camera, one hand resting between her thighs, looking at the lens",
       "detect": ["!fingering", "fingers inside her", "fingers in her", "touching herself", "masturbating", "hand between her legs", "rubbing her clit", "rubbing her pussy"],
       "prompt": "Her fingers work between her legs, rubbing her clit and sliding into her pussy at a steady, quickening pace, her hips answering the motion. If clothing covers her, it is pulled aside first. Continuous, the frame held still.",
       "loras": ["fingering-i2v", "sensual_fingering"],
@@ -294,6 +296,7 @@
     },
     {
       "id": "twerk",
+      "frame": "she stands with her back to the camera in a thong, hips pushed out, looking back over her shoulder at the lens, her whole body in frame",
       "detect": ["!twerk", "!twerking", "!shaking her ass", "!shaking her butt", "!bouncing her ass", "showing her ass"],
       "prompt": "She arches and works her hips and ass, bouncing and shaking in a steady rhythm, no partner in frame. Continuous, the frame held still.",
       "loras": ["v3twerk"],
