@@ -695,22 +695,31 @@
         "ui_max": 10,
         "ui_step": 1
       },
-      "width": {
+      "size": {
         "node_id": "314",
-        "input_key": "width",
-        "label": "Width"
-      },
-      "aspect_ratio": {
-        "node_id": "314",
-        "input_key": "aspect_ratio",
-        "label": "Aspect ratio",
-        "control": "select"
-      },
-      "direction": {
-        "node_id": "314",
-        "input_key": "direction",
-        "label": "Orientation",
-        "control": "select"
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {
+            "value": 0.25,
+            "label": "Draft"
+          },
+          {
+            "value": 0.4,
+            "label": "480p"
+          },
+          {
+            "value": 0.6,
+            "label": "600p"
+          },
+          {
+            "value": 0.9,
+            "label": "720p"
+          }
+        ],
+        "note": "How many pixels the clip has. The shape always follows your source image - portrait stays portrait, wide stays wide. 720p is heavy on a 24 GB card."
       },
       "seed": {
         "node_ids": [
@@ -790,25 +799,25 @@
     "presets": [
       {
         "label": "Fast",
-        "note": "Quick tries. 480p, 3s.",
+        "note": "Quick tries. Draft size, 3 s.",
         "values": {
-          "width": 480,
+          "size": 0.25,
           "length": 3
         }
       },
       {
         "label": "Balanced",
-        "note": "The one to keep. 640p, 4s.",
+        "note": "The one to keep. 480p, 4 s.",
         "values": {
-          "width": 640,
+          "size": 0.4,
           "length": 4
         }
       },
       {
         "label": "Best",
-        "note": "Slower, for a keeper. 768p, 5s.",
+        "note": "Slower, for a keeper. 600p, 5 s.",
         "values": {
-          "width": 768,
+          "size": 0.6,
           "length": 5
         }
       }
