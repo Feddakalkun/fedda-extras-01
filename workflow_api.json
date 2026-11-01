@@ -829,6 +829,33 @@
     "module": "extras-01-wan22-flf2vid",
     "filename": "wan22/flf2vid.json",
     "inputs": {
+      "size": {
+        "node_id": "315",
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {
+            "value": 0.25,
+            "label": "Draft"
+          },
+          {
+            "value": 0.4,
+            "label": "480p"
+          },
+          {
+            "value": 0.6,
+            "label": "600p"
+          },
+          {
+            "value": 0.9,
+            "label": "720p"
+          }
+        ],
+        "note": "How many pixels the clip has. The shape always follows your source image - portrait stays portrait, wide stays wide. 720p is heavy on a 24 GB card.",
+        "default": 0.4
+      },
       "image": {
         "node_id": "241",
         "input_key": "image",
@@ -862,32 +889,6 @@
         "input_key": "value",
         "label": "Frames",
         "note": "Wan 2.2 generates about five seconds - roughly 81 frames at 16 fps. Past that the clip repeats rather than continuing. Chain from the last frame this saves beside the video to go further."
-      },
-      "width": {
-        "node_ids": [
-          "315",
-          "316"
-        ],
-        "input_key": "width",
-        "label": "Width"
-      },
-      "aspect_ratio": {
-        "node_ids": [
-          "315",
-          "316"
-        ],
-        "input_key": "aspect_ratio",
-        "label": "Aspect ratio",
-        "control": "select"
-      },
-      "direction": {
-        "node_ids": [
-          "315",
-          "316"
-        ],
-        "input_key": "direction",
-        "label": "Orientation",
-        "control": "select"
       },
       "seed": {
         "node_ids": [
@@ -2490,6 +2491,33 @@
     "module": "extras-01-wan22-img2vid",
     "filename": "wan22/scene4.json",
     "inputs": {
+      "size": {
+        "node_id": "314",
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {
+            "value": 0.25,
+            "label": "Draft"
+          },
+          {
+            "value": 0.4,
+            "label": "480p"
+          },
+          {
+            "value": 0.6,
+            "label": "600p"
+          },
+          {
+            "value": 0.9,
+            "label": "720p"
+          }
+        ],
+        "note": "How many pixels the clip has. The shape always follows your source image - portrait stays portrait, wide stays wide. 720p is heavy on a 24 GB card.",
+        "default": 0.4
+      },
       "image": {
         "node_id": "278",
         "input_key": "image",
@@ -2533,23 +2561,6 @@
         "label": "Length of each stretch (seconds)",
         "unit": "seconds",
         "note": "Per stretch, not for the whole scene. Four of them, so six seconds here is a twenty-four second clip - and four times the render time."
-      },
-      "width": {
-        "node_id": "314",
-        "input_key": "width",
-        "label": "Width"
-      },
-      "aspect_ratio": {
-        "node_id": "314",
-        "input_key": "aspect_ratio",
-        "label": "Aspect ratio",
-        "control": "select"
-      },
-      "direction": {
-        "node_id": "314",
-        "input_key": "direction",
-        "label": "Orientation",
-        "control": "select"
       },
       "seed": {
         "node_ids": [
@@ -2666,9 +2677,18 @@
         "control": "chips",
         "basic": true,
         "choices": [
-          {"value": "krea2_turbo_fp8_scaled.safetensors", "label": "Krea 2 Turbo"},
-          {"value": "Moody-Krea-Mix-v7_00002__clean_convrot_int8.safetensors", "label": "Moody Mix"},
-          {"value": "krea_kroma_v0.3.1_turbo_opd_int8_convrot.safetensors", "label": "Kroma"}
+          {
+            "value": "krea2_turbo_fp8_scaled.safetensors",
+            "label": "Krea 2 Turbo"
+          },
+          {
+            "value": "Moody-Krea-Mix-v7_00002__clean_convrot_int8.safetensors",
+            "label": "Moody Mix"
+          },
+          {
+            "value": "krea_kroma_v0.3.1_turbo_opd_int8_convrot.safetensors",
+            "label": "Kroma"
+          }
         ],
         "note": "Moody Mix is a community Krea 2 merge tuned for uncensored realism (14.1 GB). Kroma is the Chroma author's full fine-tune of Krea 2 - broader range, uncensored (14.1 GB). Either downloads on Run."
       },
@@ -3225,24 +3245,97 @@
     "filename": "minimax/infinite.json",
     "layout": "minimax-infinite",
     "inputs": {
-      "track_data": { "node_id": "46", "input_key": "track_data", "label": "Timeline" },
-      "resolution": { "node_id": "46", "input_key": "resolution", "label": "Resolution" },
-      "project_name": { "node_id": "15", "input_key": "project_name", "label": "Project name" },
-      "project_save": { "node_id": "15", "input_key": "project_save", "label": "On save" },
-      "seed": { "node_id": "15", "input_key": "seed", "label": "Seed", "role": "seed" },
-      "segment_start_index": { "node_id": "15", "input_key": "segment_start_index", "label": "From shot (0-based)" },
-      "segment_count": { "node_id": "15", "input_key": "segment_count", "label": "Shot count" },
-      "sampling_plan": { "node_id": "15", "input_key": "sampling_plan", "label": "Sampling plan" },
-      "sampling_mode": { "node_id": "15", "input_key": "sampling_mode", "label": "Sampling mode" },
-      "first_pass_only": { "node_id": "15", "input_key": "sampling_mode.1st_pass_only", "label": "1st pass only" },
-      "disable_noise": { "node_id": "15", "input_key": "sampling_mode.disable_noise", "label": "Disable 2nd-pass noise" },
-      "upscale_by": { "node_id": "15", "input_key": "sampling_mode.upscale_by", "label": "Upscale by" },
-      "upscale_model": { "node_id": "15", "input_key": "upscale_model", "label": "Upscale model" },
-      "steps": { "node_id": "22", "input_key": "steps", "label": "Steps" },
-      "scheduler": { "node_id": "22", "input_key": "scheduler", "label": "Scheduler" },
-      "denoise": { "node_id": "22", "input_key": "denoise", "label": "Denoise" },
-      "sampler": { "node_id": "20", "input_key": "sampler_name", "label": "Sampler" },
-      "lora_state": { "node_id": "37", "input_key": "LoraLoaderState", "label": "LoRAs" }
+      "track_data": {
+        "node_id": "46",
+        "input_key": "track_data",
+        "label": "Timeline"
+      },
+      "resolution": {
+        "node_id": "46",
+        "input_key": "resolution",
+        "label": "Resolution"
+      },
+      "project_name": {
+        "node_id": "15",
+        "input_key": "project_name",
+        "label": "Project name"
+      },
+      "project_save": {
+        "node_id": "15",
+        "input_key": "project_save",
+        "label": "On save"
+      },
+      "seed": {
+        "node_id": "15",
+        "input_key": "seed",
+        "label": "Seed",
+        "role": "seed"
+      },
+      "segment_start_index": {
+        "node_id": "15",
+        "input_key": "segment_start_index",
+        "label": "From shot (0-based)"
+      },
+      "segment_count": {
+        "node_id": "15",
+        "input_key": "segment_count",
+        "label": "Shot count"
+      },
+      "sampling_plan": {
+        "node_id": "15",
+        "input_key": "sampling_plan",
+        "label": "Sampling plan"
+      },
+      "sampling_mode": {
+        "node_id": "15",
+        "input_key": "sampling_mode",
+        "label": "Sampling mode"
+      },
+      "first_pass_only": {
+        "node_id": "15",
+        "input_key": "sampling_mode.1st_pass_only",
+        "label": "1st pass only"
+      },
+      "disable_noise": {
+        "node_id": "15",
+        "input_key": "sampling_mode.disable_noise",
+        "label": "Disable 2nd-pass noise"
+      },
+      "upscale_by": {
+        "node_id": "15",
+        "input_key": "sampling_mode.upscale_by",
+        "label": "Upscale by"
+      },
+      "upscale_model": {
+        "node_id": "15",
+        "input_key": "upscale_model",
+        "label": "Upscale model"
+      },
+      "steps": {
+        "node_id": "22",
+        "input_key": "steps",
+        "label": "Steps"
+      },
+      "scheduler": {
+        "node_id": "22",
+        "input_key": "scheduler",
+        "label": "Scheduler"
+      },
+      "denoise": {
+        "node_id": "22",
+        "input_key": "denoise",
+        "label": "Denoise"
+      },
+      "sampler": {
+        "node_id": "20",
+        "input_key": "sampler_name",
+        "label": "Sampler"
+      },
+      "lora_state": {
+        "node_id": "37",
+        "input_key": "LoraLoaderState",
+        "label": "LoRAs"
+      }
     }
   },
   "extras-01-kontext-undress": {
@@ -3564,6 +3657,33 @@
       "motion": "A woman dancing playfully, swaying her hips and turning on the spot."
     },
     "inputs": {
+      "size": {
+        "node_id": "12",
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "choices": [
+          {
+            "value": 0.25,
+            "label": "Draft"
+          },
+          {
+            "value": 0.4,
+            "label": "480p"
+          },
+          {
+            "value": 0.6,
+            "label": "600p"
+          },
+          {
+            "value": 0.9,
+            "label": "720p"
+          }
+        ],
+        "note": "How many pixels the clip has. The shape always follows your video - portrait stays portrait, wide stays wide. 720p is heavy on a 24 GB card.",
+        "default": 0.4
+      },
       "image": {
         "node_id": "10",
         "input_key": "image",
@@ -3586,20 +3706,6 @@
         "input_key": "text",
         "label": "Motion",
         "note": "One line on the movement in the video, e.g. 'a man doing energetic street dance'."
-      },
-      "width": {
-        "node_id": "12",
-        "input_key": "resize_type.width",
-        "label": "Width",
-        "ui_max": 1280,
-        "ui_step": 16
-      },
-      "height": {
-        "node_id": "12",
-        "input_key": "resize_type.height",
-        "label": "Height",
-        "ui_max": 1280,
-        "ui_step": 16
       },
       "length": {
         "node_id": "18",

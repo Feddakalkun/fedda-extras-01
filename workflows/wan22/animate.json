@@ -91,17 +91,15 @@
     }
   },
   "12": {
-    "class_type": "ResizeImageMaskNode",
+    "class_type": "ImageScaleToTotalPixels",
     "inputs": {
-      "input": [
+      "image": [
         "11",
         0
       ],
-      "resize_type": "scale dimensions",
-      "resize_type.width": 480,
-      "resize_type.height": 832,
-      "resize_type.crop": "center",
-      "scale_method": "area"
+      "upscale_method": "lanczos",
+      "megapixels": 0.4,
+      "resolution_steps": 16
     }
   },
   "13": {

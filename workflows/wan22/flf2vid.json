@@ -64,12 +64,12 @@
     "class_type": "WanFirstLastFrameToVideo",
     "inputs": {
       "width": [
-        "315",
-        1
+        "317",
+        0
       ],
       "height": [
-        "315",
-        2
+        "317",
+        1
       ],
       "length": [
         "235",
@@ -241,7 +241,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "\u2795 Add Lora": "",
+      "➕ Add Lora": "",
       "model": [
         "246",
         0
@@ -267,7 +267,7 @@
         "strength": 1,
         "strengthTwo": null
       },
-      "\u2795 Add Lora": "",
+      "➕ Add Lora": "",
       "model": [
         "231",
         0
@@ -376,37 +376,34 @@
     }
   },
   "315": {
-    "class_type": "AspectRatioResizeImage",
+    "class_type": "ImageScaleToTotalPixels",
     "inputs": {
-      "width": 720,
-      "height": 0,
-      "aspect_ratio": "4:3",
-      "direction": "Vertical",
-      "crop_method": "Stretch",
       "image": [
         "241",
         0
-      ]
-    },
-    "_meta": {
-      "title": "AspectRatioResizeImage"
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.4,
+      "resolution_steps": 16
     }
   },
   "316": {
-    "class_type": "AspectRatioResizeImage",
+    "class_type": "ImageScale",
     "inputs": {
-      "width": 720,
-      "height": 0,
-      "aspect_ratio": "4:3",
-      "direction": "Vertical",
-      "crop_method": "Stretch",
       "image": [
         "239",
         0
-      ]
-    },
-    "_meta": {
-      "title": "AspectRatioResizeImage"
+      ],
+      "upscale_method": "lanczos",
+      "width": [
+        "317",
+        0
+      ],
+      "height": [
+        "317",
+        1
+      ],
+      "crop": "center"
     }
   },
   "467": {
@@ -478,6 +475,15 @@
     },
     "_meta": {
       "title": "Last frame - feed this into Image to Video to continue"
+    }
+  },
+  "317": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "315",
+        0
+      ]
     }
   }
 }

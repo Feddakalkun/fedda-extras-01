@@ -46,12 +46,12 @@
     "class_type": "WanImageToVideo",
     "inputs": {
       "width": [
-        "314",
-        1
+        "315",
+        0
       ],
       "height": [
-        "314",
-        2
+        "315",
+        1
       ],
       "length": [
         "470",
@@ -251,20 +251,15 @@
     }
   },
   "314": {
-    "class_type": "AspectRatioResizeImage",
+    "class_type": "ImageScaleToTotalPixels",
     "inputs": {
-      "width": 720,
-      "height": 0,
-      "aspect_ratio": "1:1",
-      "direction": "Horizontal",
-      "crop_method": "Stretch",
       "image": [
         "278",
         0
-      ]
-    },
-    "_meta": {
-      "title": "AspectRatioResizeImage"
+      ],
+      "upscale_method": "lanczos",
+      "megapixels": 0.4,
+      "resolution_steps": 16
     }
   },
   "465": {
@@ -611,12 +606,12 @@
     "class_type": "WanImageToVideo",
     "inputs": {
       "width": [
-        "314",
-        1
+        "315",
+        0
       ],
       "height": [
-        "314",
-        2
+        "315",
+        1
       ],
       "length": [
         "470",
@@ -743,12 +738,12 @@
     "class_type": "WanImageToVideo",
     "inputs": {
       "width": [
-        "314",
-        1
+        "315",
+        0
       ],
       "height": [
-        "314",
-        2
+        "315",
+        1
       ],
       "length": [
         "470",
@@ -875,12 +870,12 @@
     "class_type": "WanImageToVideo",
     "inputs": {
       "width": [
-        "314",
-        1
+        "315",
+        0
       ],
       "height": [
-        "314",
-        2
+        "315",
+        1
       ],
       "length": [
         "470",
@@ -1114,6 +1109,15 @@
     },
     "_meta": {
       "title": "Last frame - start the next scene from this"
+    }
+  },
+  "315": {
+    "class_type": "GetImageSize",
+    "inputs": {
+      "image": [
+        "314",
+        0
+      ]
     }
   }
 }
