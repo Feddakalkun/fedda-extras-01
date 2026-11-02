@@ -2773,6 +2773,147 @@
       "prompt": "a woman lying back on rumpled white sheets, morning light across her stomach, one knee raised, looking at the camera"
     }
   },
+  "extras-01-krea2-edit": {
+    "name": "Krea 2 Edit",
+    "filename": "krea2/edit.json",
+    "module": "extras-01-krea2-edit",
+    "description": "Change a picture with words on Krea 2: a new place, new clothes, a new pose. The person stays the same, and the result keeps the shape of the picture.",
+    "agent": false,
+    "inputs": {
+      "image": {
+        "node_id": "5",
+        "input_key": "image",
+        "label": "Picture to edit",
+        "control": "file",
+        "accept": "image/*",
+        "wide": true,
+        "required": true
+      },
+      "prompt": {
+        "node_id": "10",
+        "input_key": "prompt",
+        "label": "What to change",
+        "control": "text",
+        "multiline": true,
+        "note": "Start with a clear action word: change, replace, add, remove or make."
+      },
+      "size": {
+        "node_id": "6",
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "default": 1.5,
+        "choices": [
+          {"value": 1.0, "label": "1 MP"},
+          {"value": 1.5, "label": "1.5 MP"},
+          {"value": 2.0, "label": "2 MP"}
+        ],
+        "note": "Above about 2 MP it starts to double the person."
+      },
+      "seed": {
+        "node_id": "13",
+        "input_key": "seed",
+        "label": "Seed",
+        "advanced": true
+      },
+      "hold": {
+        "node_id": "12",
+        "input_key": "ref_boost",
+        "label": "Hold on to the picture",
+        "advanced": true,
+        "ui_min": 1,
+        "ui_max": 8,
+        "ui_step": 0.5,
+        "note": "How hard it keeps to the picture. 1 changes more, 4 is the normal setting."
+      },
+      "steps": {
+        "node_id": "13",
+        "input_key": "steps",
+        "label": "Steps",
+        "advanced": true
+      },
+      "cfg": {
+        "node_id": "13",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "advanced": true,
+        "note": "Krea 2 Turbo is distilled and wants 1."
+      }
+    },
+    "example": {
+      "prompt": "Change the place to a rainy street at night with neon signs. Keep the face, hair and clothes the same."
+    }
+  },
+  "extras-01-krea2-edit-xxx": {
+    "name": "Krea 2 Edit XXX",
+    "filename": "krea2/edit-xxx.json",
+    "module": "extras-01-krea2-edit-xxx",
+    "description": "Krea 2 Edit with the NSFW LoRA. Takes a picture you made here from text, and keeps its shape.",
+    "agent": false,
+    "inputs": {
+      "image": {
+        "node_id": "5",
+        "input_key": "image",
+        "label": "Picture you made",
+        "control": "made",
+        "basic": true,
+        "wide": true,
+        "required": true
+      },
+      "prompt": {
+        "node_id": "10",
+        "input_key": "prompt",
+        "label": "What to change",
+        "control": "text",
+        "multiline": true,
+        "note": "Start with a clear action word: change, replace, add, remove or make."
+      },
+      "size": {
+        "node_id": "6",
+        "input_key": "megapixels",
+        "label": "Size",
+        "control": "chips",
+        "basic": true,
+        "default": 1.5,
+        "choices": [
+          {"value": 1.0, "label": "1 MP"},
+          {"value": 1.5, "label": "1.5 MP"},
+          {"value": 2.0, "label": "2 MP"}
+        ],
+        "note": "Above about 2 MP it starts to double the person."
+      },
+      "seed": {
+        "node_id": "13",
+        "input_key": "seed",
+        "label": "Seed",
+        "advanced": true
+      },
+      "hold": {
+        "node_id": "12",
+        "input_key": "ref_boost",
+        "label": "Hold on to the picture",
+        "advanced": true,
+        "ui_min": 1,
+        "ui_max": 8,
+        "ui_step": 0.5,
+        "note": "How hard it keeps to the picture. 1 changes more, 4 is the normal setting."
+      },
+      "steps": {
+        "node_id": "13",
+        "input_key": "steps",
+        "label": "Steps",
+        "advanced": true
+      },
+      "cfg": {
+        "node_id": "13",
+        "input_key": "cfg",
+        "label": "CFG Scale",
+        "advanced": true,
+        "note": "Krea 2 Turbo is distilled and wants 1."
+      }
+    }
+  },
   "extras-01-character-creator": {
     "name": "Character Creator",
     "filename": "krea2/nsfw.json",

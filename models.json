@@ -196,6 +196,16 @@
     "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/snofs_krea_v1_4.safetensors",
     "min_bytes": 1258291200
   },
+  "krea2_identity_edit_v1_2.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/conradlocke/krea2-identity-edit/resolve/main/krea2_identity_edit_v1_2.safetensors",
+    "min_bytes": 1610612736
+  },
+  "krea2RealVae_v10.safetensors": {
+    "relative_dir": "vae",
+    "url": "https://huggingface.co/artsyww/KREA2REALVAE/resolve/main/krea2RealVae_v10.safetensors",
+    "min_bytes": 419430400
+  },
   "Krea2-realism-V2.safetensors": {
     "relative_dir": "loras",
     "url": "https://huggingface.co/cusiman/Krea2-realism-V2/resolve/main/Krea2-realism-V2.safetensors",

@@ -434,6 +434,75 @@
       "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     },
     {
+      "id": "extras-01-krea2-edit",
+      "status": "beta",
+      "label": "Krea 2 Edit",
+      "family": "krea2",
+      "family_label": "Krea 2",
+      "family_description": "Pictures from text, and changing one you have.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-krea2-edit"
+      ],
+      "workflows": [
+        "krea2/edit.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "comfyui-krea2edit",
+          "url": "https://github.com/lbouaraba/comfyui-krea2edit.git",
+          "folder": "comfyui-krea2edit",
+          "note": "Krea2EditModelPatch and Krea2EditGroundedEncode: the picture goes in as context, the words edit it",
+          "pin": "13ef60f20828949becada815d3cbc371eb5ccaab"
+        }
+      ],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2RealVae_v10.safetensors",
+        "krea2_identity_edit_v1_2.safetensors"
+      ],
+      "notes": "Changes a picture from words on Krea 2 Turbo with the Identity Edit LoRA; the person stays. No LoRA picker on this card."
+    },
+    {
+      "id": "extras-01-krea2-edit-xxx",
+      "status": "beta",
+      "label": "Krea 2 Edit XXX",
+      "family": "krea2",
+      "family_label": "Krea 2",
+      "family_description": "Pictures from text, and changing one you have.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-krea2-edit-xxx"
+      ],
+      "workflows": [
+        "krea2/edit-xxx.json"
+      ],
+      "custom_nodes": [
+        {
+          "name": "comfyui-krea2edit",
+          "url": "https://github.com/lbouaraba/comfyui-krea2edit.git",
+          "folder": "comfyui-krea2edit",
+          "note": "Krea2EditModelPatch and Krea2EditGroundedEncode: the picture goes in as context, the words edit it",
+          "pin": "13ef60f20828949becada815d3cbc371eb5ccaab"
+        }
+      ],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "krea2RealVae_v10.safetensors",
+        "krea2_identity_edit_v1_2.safetensors",
+        "snofs_krea_v1_4.safetensors"
+      ],
+      "notes": "Krea 2 Edit with the snofs LoRA. The picture comes from those the app drew from text, with no upload, so the control is `made`. No LoRA picker on this card."
+    },
+    {
       "id": "extras-01-character-creator",
       "status": "beta",
       "label": "Character Creator",
