@@ -196,6 +196,12 @@
     "url": "https://huggingface.co/comfyuistudio/krea2Loras/resolve/main/snofs_krea_v1_4.safetensors",
     "min_bytes": 1258291200
   },
+  "snofs_krea_v1_5.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://huggingface.co/asd44633/SNOFS/resolve/main/snofs_krea_v1_5.safetensors",
+    "min_bytes": 1258291200,
+    "_note": "v1.5 (Civitai 1972981, version 3390681). This Hugging Face copy is byte for byte the Civitai file: sha256 326a1f23...e14d1c on both. v1.6 is Civitai-only and needs a login, so it waits for a public copy."
+  },
   "krea2_identity_edit_v1_2.safetensors": {
     "relative_dir": "loras",
     "url": "https://huggingface.co/conradlocke/krea2-identity-edit/resolve/main/krea2_identity_edit_v1_2.safetensors",
