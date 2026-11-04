@@ -196,7 +196,7 @@
       },
       "lora_2": {
         "on": true,
-        "lora": "snofs_krea_v1_5.safetensors",
+        "lora": "snofs_krea_v1_6.safetensors",
         "strength": 1,
         "strengthTwo": null
       },

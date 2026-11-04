@@ -428,7 +428,7 @@
         "qwen3vl_4b_fp8_scaled.safetensors",
         "qwen_image_vae.safetensors",
         "MidJounreyNSFWKrea2Raw.safetensors",
-        "snofs_krea_v1_5.safetensors",
+        "snofs_krea_v1_6.safetensors",
         "Krea2-realism-V2.safetensors"
       ],
       "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
@@ -498,7 +498,7 @@
         "qwen3vl_4b_fp8_scaled.safetensors",
         "krea2RealVae_v10.safetensors",
         "krea2_identity_edit_v1_2.safetensors",
-        "snofs_krea_v1_5.safetensors"
+        "snofs_krea_v1_6.safetensors"
       ],
       "notes": "Krea 2 Edit with the snofs LoRA. The picture comes from those the app drew from text, with no upload, so the control is `made`. No LoRA picker on this card."
     },
@@ -526,7 +526,7 @@
         "qwen3vl_4b_fp8_scaled.safetensors",
         "qwen_image_vae.safetensors",
         "MidJounreyNSFWKrea2Raw.safetensors",
-        "snofs_krea_v1_5.safetensors",
+        "snofs_krea_v1_6.safetensors",
         "Krea2-realism-V2.safetensors"
       ],
       "notes": "Consistent-character creator on Krea 2 - preview + gallery on the left, the builder on the right.",
