@@ -2847,7 +2847,7 @@
         "node_id": "4",
         "input_key": "strength_model",
         "label": "Left LoRA strength",
-        "advanced": true
+        "basic": true
       },
       "right_lora": {
         "node_id": "5",
@@ -2868,7 +2868,7 @@
         "node_id": "5",
         "input_key": "strength_model",
         "label": "Right LoRA strength",
-        "advanced": true
+        "basic": true
       },
       "snofs_version": {
         "node_id": "6",
@@ -2907,7 +2907,8 @@
             "label": "v1.0"
           }
         ],
-        "note": "Which build of the snofs LoRA. v1.6 is the newest; an older one you pick downloads on Run (Civitai key needed)."
+        "note": "Which build of the snofs LoRA. v1.6 is the newest; an older one you pick downloads on Run (Civitai key needed).",
+        "basic": true
       },
       "scene_loras": {
         "node_ids": [
@@ -2916,13 +2917,6 @@
         "basic": true,
         "type": "lora_slots",
         "label": "LoRAs"
-      },
-      "loras": {
-        "node_ids": [
-          "6"
-        ],
-        "type": "loras",
-        "label": "Add LoRAs"
       },
       "aspect_ratio": {
         "node_id": "7",
@@ -2943,11 +2937,11 @@
         ],
         "input_key": "denoise",
         "label": "Likeness",
-        "advanced": true,
         "ui_min": 0.4,
         "ui_max": 0.85,
         "ui_step": 0.01,
-        "note": "How much each person is repainted with her LoRA. Higher is more like her, lower keeps the pose and light of the scene."
+        "note": "How much each person is repainted with her LoRA. Higher is more like her, lower keeps the pose and light of the scene.",
+        "basic": true
       },
       "face_pass": {
         "type": "bypass",
@@ -2968,16 +2962,16 @@
         ],
         "input_key": "denoise",
         "label": "Face likeness",
-        "advanced": true,
         "ui_min": 0.2,
         "ui_max": 0.7,
-        "ui_step": 0.01
+        "ui_step": 0.01,
+        "basic": true
       },
       "seed": {
         "node_id": "13",
         "input_key": "seed",
         "label": "Seed",
-        "advanced": true
+        "basic": true
       }
     },
     "example": {
