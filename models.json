@@ -208,6 +208,30 @@
     "min_bytes": 1258291200,
     "_note": "v1.6 (Civitai 1972981, version 3446779, sha256 fb6448ca...674f08). Civitai only: the app sends the user's Civitai key, and without one it says to add the free key from the top bar."
   },
+  "snofs_krea_v1_3D.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/3220691?type=Model&format=SafeTensor",
+    "min_bytes": 1258291200,
+    "_note": "snofs v1.3D for Krea 2 (Civitai 1972981). Civitai only, with the user's Civitai key; picked on the snofs version chips."
+  },
+  "snofs_krea_v1_3.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/3198230?type=Model&format=SafeTensor",
+    "min_bytes": 1258291200,
+    "_note": "snofs v1.3 for Krea 2 (Civitai 1972981). Civitai only, with the user's Civitai key; picked on the snofs version chips."
+  },
+  "snofs_krea_v1_1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/3104629?type=Model&format=SafeTensor",
+    "min_bytes": 1258291200,
+    "_note": "snofs v1.1 for Krea 2 (Civitai 1972981). Civitai only, with the user's Civitai key; picked on the snofs version chips."
+  },
+  "snofs_krea_v1.safetensors": {
+    "relative_dir": "loras",
+    "url": "https://civitai.com/api/download/models/3072664?type=Model&format=SafeTensor",
+    "min_bytes": 1258291200,
+    "_note": "snofs v1.0 for Krea 2 (Civitai 1972981). Civitai only, with the user's Civitai key; picked on the snofs version chips."
+  },
   "krea2_identity_edit_v1_2.safetensors": {
     "relative_dir": "loras",
     "url": "https://huggingface.co/conradlocke/krea2-identity-edit/resolve/main/krea2_identity_edit_v1_2.safetensors",

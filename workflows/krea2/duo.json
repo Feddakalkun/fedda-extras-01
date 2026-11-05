@@ -1,0 +1,583 @@
+{
+ "1": {
+  "class_type": "UNETLoader",
+  "inputs": {
+   "unet_name": "krea2_turbo_fp8_scaled.safetensors",
+   "weight_dtype": "default"
+  },
+  "_meta": {
+   "title": "UNETLoader"
+  }
+ },
+ "2": {
+  "class_type": "CLIPLoader",
+  "inputs": {
+   "clip_name": "qwen3vl_4b_fp8_scaled.safetensors",
+   "type": "krea2",
+   "device": "default"
+  },
+  "_meta": {
+   "title": "CLIPLoader"
+  }
+ },
+ "3": {
+  "class_type": "VAELoader",
+  "inputs": {
+   "vae_name": "qwen_image_vae.safetensors"
+  },
+  "_meta": {
+   "title": "VAELoader"
+  }
+ },
+ "6": {
+  "class_type": "Power Lora Loader (rgthree)",
+  "inputs": {
+   "model": [
+    "1",
+    0
+   ],
+   "lora_1": {
+    "on": false,
+    "lora": "MidJounreyNSFWKrea2Raw.safetensors",
+    "strength": 0.6,
+    "strengthTwo": null
+   },
+   "lora_2": {
+    "on": true,
+    "lora": "snofs_krea_v1_6.safetensors",
+    "strength": 1,
+    "strengthTwo": null
+   },
+   "lora_3": {
+    "on": true,
+    "lora": "Krea2-realism-V2.safetensors",
+    "strength": 1,
+    "strengthTwo": null
+   },
+   "PowerLoraLoaderHeaderWidget": {
+    "type": "PowerLoraLoaderHeaderWidget"
+   }
+  },
+  "_meta": {
+   "title": "Shared LoRAs"
+  }
+ },
+ "4": {
+  "class_type": "LoraLoaderModelOnly",
+  "inputs": {
+   "model": [
+    "6",
+    0
+   ],
+   "lora_name": "",
+   "strength_model": 1.0
+  },
+  "_meta": {
+   "title": "Character LoRA - left"
+  }
+ },
+ "5": {
+  "class_type": "LoraLoaderModelOnly",
+  "inputs": {
+   "model": [
+    "6",
+    0
+   ],
+   "lora_name": "",
+   "strength_model": 1.0
+  },
+  "_meta": {
+   "title": "Character LoRA - right"
+  }
+ },
+ "7": {
+  "class_type": "ResolutionSelector",
+  "inputs": {
+   "aspect_ratio": "3:2 (Photo)",
+   "megapixels": 1.6,
+   "multiple": 8
+  },
+  "_meta": {
+   "title": "ResolutionSelector"
+  }
+ },
+ "10": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "2",
+    0
+   ],
+   "text": ""
+  },
+  "_meta": {
+   "title": "Scene"
+  }
+ },
+ "11": {
+  "class_type": "ConditioningZeroOut",
+  "inputs": {
+   "conditioning": [
+    "10",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "ConditioningZeroOut"
+  }
+ },
+ "12": {
+  "class_type": "EmptyLatentImage",
+  "inputs": {
+   "width": [
+    "7",
+    0
+   ],
+   "height": [
+    "7",
+    1
+   ],
+   "batch_size": 1
+  },
+  "_meta": {
+   "title": "EmptyLatentImage"
+  }
+ },
+ "13": {
+  "class_type": "KSampler",
+  "inputs": {
+   "model": [
+    "6",
+    0
+   ],
+   "positive": [
+    "10",
+    0
+   ],
+   "negative": [
+    "11",
+    0
+   ],
+   "latent_image": [
+    "12",
+    0
+   ],
+   "seed": 1234,
+   "steps": 8,
+   "cfg": 1.0,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "denoise": 1.0
+  },
+  "_meta": {
+   "title": "Scene"
+  }
+ },
+ "14": {
+  "class_type": "VAEDecode",
+  "inputs": {
+   "samples": [
+    "13",
+    0
+   ],
+   "vae": [
+    "3",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "VAEDecode"
+  }
+ },
+ "20": {
+  "class_type": "UltralyticsDetectorProvider",
+  "inputs": {
+   "model_name": "segm/person_yolov8m-seg.pt"
+  },
+  "_meta": {
+   "title": "Person finder"
+  }
+ },
+ "21": {
+  "class_type": "SegmDetectorSEGS",
+  "inputs": {
+   "segm_detector": [
+    "20",
+    1
+   ],
+   "image": [
+    "14",
+    0
+   ],
+   "threshold": 0.5,
+   "dilation": 12,
+   "crop_factor": 1.25,
+   "drop_size": 96,
+   "labels": "all"
+  },
+  "_meta": {
+   "title": "Find the people"
+  }
+ },
+ "22": {
+  "class_type": "ImpactSEGSOrderedFilter",
+  "inputs": {
+   "segs": [
+    "21",
+    0
+   ],
+   "target": "x1",
+   "order": false,
+   "take_start": 0,
+   "take_count": 1
+  },
+  "_meta": {
+   "title": "Person on the left"
+  }
+ },
+ "23": {
+  "class_type": "ImpactSEGSOrderedFilter",
+  "inputs": {
+   "segs": [
+    "21",
+    0
+   ],
+   "target": "x1",
+   "order": false,
+   "take_start": 1,
+   "take_count": 1
+  },
+  "_meta": {
+   "title": "Person on the right"
+  }
+ },
+ "30": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "2",
+    0
+   ],
+   "text": ""
+  },
+  "_meta": {
+   "title": "Left person"
+  }
+ },
+ "31": {
+  "class_type": "ConditioningZeroOut",
+  "inputs": {
+   "conditioning": [
+    "30",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "ConditioningZeroOut"
+  }
+ },
+ "32": {
+  "class_type": "DetailerForEach",
+  "inputs": {
+   "image": [
+    "14",
+    0
+   ],
+   "segs": [
+    "22",
+    0
+   ],
+   "model": [
+    "4",
+    0
+   ],
+   "clip": [
+    "2",
+    0
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "positive": [
+    "30",
+    0
+   ],
+   "negative": [
+    "31",
+    0
+   ],
+   "seed": 2001,
+   "denoise": 0.62,
+   "guide_size": 1024,
+   "guide_size_for": true,
+   "max_size": 1536,
+   "steps": 8,
+   "cfg": 1.0,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "feather": 12,
+   "noise_mask": true,
+   "force_inpaint": true,
+   "wildcard": "",
+   "cycle": 1,
+   "noise_mask_feather": 24
+  },
+  "_meta": {
+   "title": "Left person with her LoRA"
+  }
+ },
+ "33": {
+  "class_type": "CLIPTextEncode",
+  "inputs": {
+   "clip": [
+    "2",
+    0
+   ],
+   "text": ""
+  },
+  "_meta": {
+   "title": "Right person"
+  }
+ },
+ "34": {
+  "class_type": "ConditioningZeroOut",
+  "inputs": {
+   "conditioning": [
+    "33",
+    0
+   ]
+  },
+  "_meta": {
+   "title": "ConditioningZeroOut"
+  }
+ },
+ "35": {
+  "class_type": "DetailerForEach",
+  "inputs": {
+   "image": [
+    "32",
+    0
+   ],
+   "segs": [
+    "23",
+    0
+   ],
+   "model": [
+    "5",
+    0
+   ],
+   "clip": [
+    "2",
+    0
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "positive": [
+    "33",
+    0
+   ],
+   "negative": [
+    "34",
+    0
+   ],
+   "seed": 2002,
+   "denoise": 0.62,
+   "guide_size": 1024,
+   "guide_size_for": true,
+   "max_size": 1536,
+   "steps": 8,
+   "cfg": 1.0,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "feather": 12,
+   "noise_mask": true,
+   "force_inpaint": true,
+   "wildcard": "",
+   "cycle": 1,
+   "noise_mask_feather": 24
+  },
+  "_meta": {
+   "title": "Right person with her LoRA"
+  }
+ },
+ "40": {
+  "class_type": "UltralyticsDetectorProvider",
+  "inputs": {
+   "model_name": "bbox/face_yolov8m.pt"
+  },
+  "_meta": {
+   "title": "Face finder"
+  }
+ },
+ "41": {
+  "class_type": "BboxDetectorSEGS",
+  "inputs": {
+   "bbox_detector": [
+    "40",
+    0
+   ],
+   "image": [
+    "35",
+    0
+   ],
+   "threshold": 0.5,
+   "dilation": 8,
+   "crop_factor": 2.6,
+   "drop_size": 32,
+   "labels": "all"
+  },
+  "_meta": {
+   "title": "Find the faces"
+  }
+ },
+ "42": {
+  "class_type": "ImpactSEGSOrderedFilter",
+  "inputs": {
+   "segs": [
+    "41",
+    0
+   ],
+   "target": "x1",
+   "order": false,
+   "take_start": 0,
+   "take_count": 1
+  },
+  "_meta": {
+   "title": "Face on the left"
+  }
+ },
+ "43": {
+  "class_type": "ImpactSEGSOrderedFilter",
+  "inputs": {
+   "segs": [
+    "41",
+    0
+   ],
+   "target": "x1",
+   "order": false,
+   "take_start": 1,
+   "take_count": 1
+  },
+  "_meta": {
+   "title": "Face on the right"
+  }
+ },
+ "44": {
+  "class_type": "DetailerForEach",
+  "inputs": {
+   "image": [
+    "35",
+    0
+   ],
+   "segs": [
+    "42",
+    0
+   ],
+   "model": [
+    "4",
+    0
+   ],
+   "clip": [
+    "2",
+    0
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "positive": [
+    "30",
+    0
+   ],
+   "negative": [
+    "31",
+    0
+   ],
+   "seed": 3001,
+   "denoise": 0.42,
+   "guide_size": 896,
+   "guide_size_for": true,
+   "max_size": 1280,
+   "steps": 8,
+   "cfg": 1.0,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "feather": 8,
+   "noise_mask": true,
+   "force_inpaint": true,
+   "wildcard": "",
+   "cycle": 1,
+   "noise_mask_feather": 16
+  },
+  "_meta": {
+   "title": "Left face"
+  }
+ },
+ "45": {
+  "class_type": "DetailerForEach",
+  "inputs": {
+   "image": [
+    "44",
+    0
+   ],
+   "segs": [
+    "43",
+    0
+   ],
+   "model": [
+    "5",
+    0
+   ],
+   "clip": [
+    "2",
+    0
+   ],
+   "vae": [
+    "3",
+    0
+   ],
+   "positive": [
+    "33",
+    0
+   ],
+   "negative": [
+    "34",
+    0
+   ],
+   "seed": 3002,
+   "denoise": 0.42,
+   "guide_size": 896,
+   "guide_size_for": true,
+   "max_size": 1280,
+   "steps": 8,
+   "cfg": 1.0,
+   "sampler_name": "euler",
+   "scheduler": "simple",
+   "feather": 8,
+   "noise_mask": true,
+   "force_inpaint": true,
+   "wildcard": "",
+   "cycle": 1,
+   "noise_mask_feather": 16
+  },
+  "_meta": {
+   "title": "Right face"
+  }
+ },
+ "51": {
+  "class_type": "SaveImage",
+  "inputs": {
+   "images": [
+    "45",
+    0
+   ],
+   "filename_prefix": "IMAGE/KREA2DUO/0"
+  },
+  "_meta": {
+   "title": "SaveImage"
+  }
+ }
+}

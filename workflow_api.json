@@ -2716,6 +2716,45 @@
         "label": "Size (megapixels)",
         "basic": true
       },
+      "snofs_version": {
+        "node_id": "173",
+        "input_key": "lora",
+        "slot": "lora_2",
+        "default": "snofs_krea_v1_6.safetensors",
+        "label": "snofs version",
+        "control": "chips",
+        "choices": [
+          {
+            "value": "snofs_krea_v1_6.safetensors",
+            "label": "v1.6"
+          },
+          {
+            "value": "snofs_krea_v1_5.safetensors",
+            "label": "v1.5"
+          },
+          {
+            "value": "snofs_krea_v1_4.safetensors",
+            "label": "v1.4"
+          },
+          {
+            "value": "snofs_krea_v1_3D.safetensors",
+            "label": "v1.3D"
+          },
+          {
+            "value": "snofs_krea_v1_3.safetensors",
+            "label": "v1.3"
+          },
+          {
+            "value": "snofs_krea_v1_1.safetensors",
+            "label": "v1.1"
+          },
+          {
+            "value": "snofs_krea_v1.safetensors",
+            "label": "v1.0"
+          }
+        ],
+        "note": "Which build of the snofs LoRA. v1.6 is the newest; an older one you pick downloads on Run (Civitai key needed)."
+      },
       "scene_loras": {
         "node_ids": [
           "173"
@@ -2771,6 +2810,180 @@
     },
     "example": {
       "prompt": "a woman lying back on rumpled white sheets, morning light across her stomach, one knee raised, looking at the camera"
+    }
+  },
+  "extras-01-krea2-duo": {
+    "name": "Krea 2 Duo",
+    "filename": "krea2/duo.json",
+    "module": "extras-01-krea2-duo",
+    "agent": false,
+    "description": "Two people in one picture, each with her own character LoRA. Krea 2 draws the scene with no character LoRA, finds the two people, and paints the one on the left with the left LoRA and the one on the right with the right LoRA, each only inside her own outline - then each face once more. Neither LoRA leaks onto the other.",
+    "inputs": {
+      "scene": {
+        "node_id": "10",
+        "input_key": "text",
+        "label": "The picture",
+        "control": "text",
+        "multiline": true,
+        "required": true,
+        "note": "Both people in it: who stands on the left, who on the right, what they do, the place and the light. No trigger words here."
+      },
+      "left_lora": {
+        "node_id": "4",
+        "input_key": "lora_name",
+        "label": "Character LoRA - left",
+        "basic": true,
+        "required": true
+      },
+      "left_prompt": {
+        "node_id": "30",
+        "input_key": "text",
+        "label": "Left person",
+        "control": "text",
+        "multiline": true,
+        "note": "Her trigger word first, then her hair and clothes as in the picture, in the same words as the picture."
+      },
+      "left_strength": {
+        "node_id": "4",
+        "input_key": "strength_model",
+        "label": "Left LoRA strength",
+        "advanced": true
+      },
+      "right_lora": {
+        "node_id": "5",
+        "input_key": "lora_name",
+        "label": "Character LoRA - right",
+        "basic": true,
+        "required": true
+      },
+      "right_prompt": {
+        "node_id": "33",
+        "input_key": "text",
+        "label": "Right person",
+        "control": "text",
+        "multiline": true,
+        "note": "Her trigger word first, then her hair and clothes as in the picture."
+      },
+      "right_strength": {
+        "node_id": "5",
+        "input_key": "strength_model",
+        "label": "Right LoRA strength",
+        "advanced": true
+      },
+      "snofs_version": {
+        "node_id": "6",
+        "input_key": "lora",
+        "slot": "lora_2",
+        "default": "snofs_krea_v1_6.safetensors",
+        "label": "snofs version",
+        "control": "chips",
+        "choices": [
+          {
+            "value": "snofs_krea_v1_6.safetensors",
+            "label": "v1.6"
+          },
+          {
+            "value": "snofs_krea_v1_5.safetensors",
+            "label": "v1.5"
+          },
+          {
+            "value": "snofs_krea_v1_4.safetensors",
+            "label": "v1.4"
+          },
+          {
+            "value": "snofs_krea_v1_3D.safetensors",
+            "label": "v1.3D"
+          },
+          {
+            "value": "snofs_krea_v1_3.safetensors",
+            "label": "v1.3"
+          },
+          {
+            "value": "snofs_krea_v1_1.safetensors",
+            "label": "v1.1"
+          },
+          {
+            "value": "snofs_krea_v1.safetensors",
+            "label": "v1.0"
+          }
+        ],
+        "note": "Which build of the snofs LoRA. v1.6 is the newest; an older one you pick downloads on Run (Civitai key needed)."
+      },
+      "scene_loras": {
+        "node_ids": [
+          "6"
+        ],
+        "basic": true,
+        "type": "lora_slots",
+        "label": "LoRAs"
+      },
+      "loras": {
+        "node_ids": [
+          "6"
+        ],
+        "type": "loras",
+        "label": "Add LoRAs"
+      },
+      "aspect_ratio": {
+        "node_id": "7",
+        "input_key": "aspect_ratio",
+        "label": "Aspect ratio",
+        "basic": true
+      },
+      "megapixels": {
+        "node_id": "7",
+        "input_key": "megapixels",
+        "label": "Size (megapixels)",
+        "basic": true
+      },
+      "likeness": {
+        "node_ids": [
+          "32",
+          "35"
+        ],
+        "input_key": "denoise",
+        "label": "Likeness",
+        "advanced": true,
+        "ui_min": 0.4,
+        "ui_max": 0.85,
+        "ui_step": 0.01,
+        "note": "How much each person is repainted with her LoRA. Higher is more like her, lower keeps the pose and light of the scene."
+      },
+      "face_pass": {
+        "type": "bypass",
+        "node_ids": [
+          "44",
+          "45"
+        ],
+        "pass_input": "image",
+        "label": "Face pass",
+        "label_on": "On",
+        "label_off": "Off",
+        "note": "One more closer pass on each face with her own LoRA."
+      },
+      "face_likeness": {
+        "node_ids": [
+          "44",
+          "45"
+        ],
+        "input_key": "denoise",
+        "label": "Face likeness",
+        "advanced": true,
+        "ui_min": 0.2,
+        "ui_max": 0.7,
+        "ui_step": 0.01
+      },
+      "seed": {
+        "node_id": "13",
+        "input_key": "seed",
+        "label": "Seed",
+        "advanced": true
+      }
+    },
+    "example": {
+      "scene": "Two grown women side by side in a dim bar, the one on the left in a red dress leans on the counter, the one on the right in a black leather jacket laughs, warm neon light, 35mm photo",
+      "left_prompt": "TRIGGER, a grown woman in a red dress",
+      "right_prompt": "TRIGGER, a grown woman in a black leather jacket"
     }
   },
   "extras-01-krea2-edit": {

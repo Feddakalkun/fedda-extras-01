@@ -434,6 +434,34 @@
       "notes": "Text to image on Krea 2 Turbo with the NSFW LoRA pair."
     },
     {
+      "id": "extras-01-krea2-duo",
+      "status": "beta",
+      "label": "Krea 2 Duo",
+      "family": "krea2",
+      "family_label": "Krea 2",
+      "family_description": "Pictures from text, and changing one you have.",
+      "area": "image",
+      "pack": "booster",
+      "enabled": true,
+      "tabs": [
+        "image",
+        "extras-01-krea2-duo"
+      ],
+      "workflows": [
+        "krea2/duo.json"
+      ],
+      "custom_nodes": [],
+      "models": [
+        "krea2_turbo_fp8_scaled.safetensors",
+        "qwen3vl_4b_fp8_scaled.safetensors",
+        "qwen_image_vae.safetensors",
+        "MidJounreyNSFWKrea2Raw.safetensors",
+        "snofs_krea_v1_6.safetensors",
+        "Krea2-realism-V2.safetensors"
+      ],
+      "notes": "Two people, two character LoRAs: the scene on Krea 2, then each person and face repainted with her own LoRA inside her own mask (person_yolov8m-seg, sorted left to right)."
+    },
+    {
       "id": "extras-01-krea2-edit",
       "status": "beta",
       "label": "Krea 2 Edit",
